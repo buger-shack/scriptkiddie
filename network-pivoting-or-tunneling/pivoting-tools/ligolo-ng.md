@@ -97,4 +97,4 @@ Start
 
 //This will now route the sub network 192.168.0.0 via the ligolo TUN interface and through the ligolo tunnel.
 ```
-![image](https://user-images.githubusercontent.com/90450439/221321355-726da2ad-6064-462d-aaa2-dda9265284d2.png)
+![image](https://user-images.githubusercontent.com/90450439/221322376-4f8ff91f-54c9-4cef-8e52-2d824340b089.png)
