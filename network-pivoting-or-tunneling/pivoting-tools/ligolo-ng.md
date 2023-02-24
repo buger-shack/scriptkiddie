@@ -72,7 +72,7 @@ Once you have added the TUN Interface and the sub networks that you want to acce
 
 ```
 # 1. On the attacking machine :
-TODO
+TODO :)
 ```
 
 ### Use Cases&#x20;
