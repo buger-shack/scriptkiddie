@@ -79,7 +79,7 @@ TODO :)
 
 ### 1. Accessing the Target Network
 
-Once a connection is establised on the Public Facing Server that is in the Target Network via a reverse shell, it is possible to access/enumerate or exploit any vulnerabilities against a different target in the same network trough ligolo allowing an attcker to use their very own tools from the attacking machine.
+Once a connection is establised on the Public Facing Server that is in the Target Network via a reverse shell, it is possible to access/enumerate or exploit any vulnerabilities against a different target in the same network trough ligolo. This allows an attcker to use their very own tools from the attacking machine.
 
 ```
 # 1. Follow the ligolo setup process and start the ligolo proxy on the attacking machine 
@@ -105,9 +105,20 @@ start
 
 ### 1.1 Forwarding a reverse shell from the Target Network
 
-```
+Using the Ligolo's Agent Binding/Listening feature, it is possible to recieve a reverse shell connection from a target (in the Target Network) that does not have direct access to the attacking machine. An agent in a compromised server that can communicate with the target can also act as a listner, thus allowing to forward reverse shells through the ligolo tunnel back to the attacking machine. 
 
+```
+# 1. Establish an agent in the Public Facing server via ligolo agent
+
+# 2. On the ligolo proxy (on the attacking machine), select the agent
+
+# 3. Provide the following command
 listener_add --addr 0.0.0.0:1234 --to 127.0.0.1:4321 --tcp
+
+# 4. Launch netcat/pwncat-cs on the attacker machine to recieve the reverse shell
+
+//Flags : --addr 0.0.0.0:1234 (the listener IP and port on the compromised server)
+//Flags : --to 127.0.0.1:4321 (the netcat/pwncat-cs listner on the attackers machine)
 ```
 ![image](https://user-images.githubusercontent.com/90450439/221354631-dbcb392f-af06-49d8-a63c-c5c03201c2cd.png)
 
