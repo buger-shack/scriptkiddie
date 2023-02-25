@@ -113,14 +113,21 @@ Using the Ligolo's Agent Binding/Listening feature, it is possible to recieve a 
 # 2. On the ligolo proxy (on the attacking machine), select the agent
 
 # 3. Provide the following command
-listener_add --addr 0.0.0.0:1234 --to 127.0.0.1:4321 --tcp
+listener_add --addr 0.0.0.0:1234 --to 127.0.0.1:8899 --tcp
 
 # 4. Launch netcat/pwncat-cs on the attacker machine to recieve the reverse shell
 
 //Flags : --addr 0.0.0.0:1234 (the listener IP and port on the compromised server)
-//Flags : --to 127.0.0.1:4321 (the netcat/pwncat-cs listner on the attackers machine)
+//Flags : --to 127.0.0.1:8899 (the netcat/pwncat-cs listner on the attackers machine)
 ```
+
+{% hint style="info" %}
+In the following example, The reverse shell is initiated from the machine 192.168.0.10 in the target network that do not have direct access to the Attacker machine but to the Public Facing Server.
+When configuring the reverse shell, the connection must be directed to the Public Facing Server's IP address as it is there were the ligolo agent will start it's listner that was initiated via listner_add.
+{% endhint %}
+
 ![image](https://user-images.githubusercontent.com/90450439/221354631-dbcb392f-af06-49d8-a63c-c5c03201c2cd.png)
+
 
 ### 2. Accessing the Internal Network
 
