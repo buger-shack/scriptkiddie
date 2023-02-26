@@ -81,6 +81,10 @@ TODO :)
 
 Once a connection is establised on the Public Facing Server that is in the Target Network via a reverse shell, it is possible to access/enumerate or exploit any vulnerabilities against a different target in the same network trough ligolo. This allows an attcker to use their very own tools from the attacking machine.
 
+{% hint style="info" %}
+The following method works only when the Target Network has direct access to the attacking machine network, such as in a local network, via port forwarding or a VPN connection 
+{% endhint %}
+
 ```
 # 1. Follow the ligolo setup process and start the ligolo proxy on the attacking machine 
 ./proxy -selfcert -laddr 0.0.0.0:9901
