@@ -1,6 +1,6 @@
 # Table of contents
 
-* [➡ /home/script-kiddie](README.md)
+* [➡ /home/red-squad](README.md)
   * [☑ Recently Added](readme/pipline.md)
   * [🍻 Support our projects](readme/support-our-projects.md)
 
