@@ -2,7 +2,7 @@
 description: Test your pentesting knowledge!
 ---
 
-# 🍎 Free Labs
+# 🍬 Free Labs
 
 ## Web
 

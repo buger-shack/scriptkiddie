@@ -1,4 +1,4 @@
-# 🎩 OSINT
+# 👓 OSINT
 
 {% hint style="info" %}
 **OSINT (open-source intelligence)** is a branch of intelligence that analyzes information about people or organizations from sources available to the public.
