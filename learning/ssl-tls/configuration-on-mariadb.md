@@ -4,7 +4,7 @@
 
 ![Username and DB name in clear + hashed password](<../../.gitbook/assets/image (106).png>)
 
-![Hashed password ](<../../.gitbook/assets/image (49).png>)
+![Hashed password ](<../../.gitbook/assets/image (108).png>)
 
 ### Step 1 : Protect MariaDB/MySQL
 

@@ -11,7 +11,7 @@
   * [Internal Audit - Plan](web-hacking/initial-foothold/internal-audit-plan.md)
   * [External Audit - Plan](web-hacking/initial-foothold/external-audit-plan.md)
 * [🚩 CTFs shortcuts](web-hacking/ctfs-shortcuts.md)
-* [👨🔬 Enumeration](web-hacking/enumeration/README.md)
+* [👨🔬 👨🔬 Enumeration](web-hacking/enumeration/README.md)
   * [🖥 Network Scanners](web-hacking/enumeration/network-scanners.md)
   * [🗃 Directory/Files Scanners](web-hacking/enumeration/directory-files-scanners.md)
   * [🌎 Web Scanners](web-hacking/enumeration/web-scanners.md)
@@ -115,7 +115,7 @@
       * [Other CVEs](windows-hacking/active-directory/5.-privesc-and-misc/exploits/other-cves.md)
 * [🥁 Bypass AV](windows-hacking/bypass-av.md)
 
-## 👷♀ Systems
+## 👷♀ 👷♀ Systems
 
 * [➕ Services Enumeration](systems/services-enumeration.md)
 * [🖨 Printers](systems/printers/README.md)
@@ -130,7 +130,7 @@
 * [🕵 Encoding | Decoding Tools](cracking-or-encoding/encoding-or-decoding-tools.md)
 * [🎨 Steganography | Cipher](cracking-or-encoding/steganography-or-cipher.md)
 
-## 🎆 Network Pivoting | Tunneling
+## 🎆 Network Pivoting | Tunneling
 
 * [❓ What is Pivoting ?](network-pivoting-or-tunneling/what-is-pivoting.md)
 * [⚙ Pivoting tools](network-pivoting-or-tunneling/pivoting-tools/README.md)
@@ -221,7 +221,7 @@
 
 * [🧾 IDE](developers/ide.md)
 
-## 🧑🎓 LEARNING
+## 🧑🎓 🧑🎓 LEARNING
 
 * [Windows](learning/windows/README.md)
   * [Active Directory](learning/windows/active-directory.md)
