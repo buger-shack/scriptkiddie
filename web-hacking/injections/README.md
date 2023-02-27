@@ -2,7 +2,7 @@
 description: >-
   Injections are a security vulnerability in websites and web applications where
   attackers inject malicious code/data by exploiting a flaw in the way the
-  application handles user in
+  application handles user input.
 ---
 
 # 💉 Injections
