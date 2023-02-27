@@ -12,9 +12,9 @@
   * [External Audit - Plan](web-hacking/initial-foothold/external-audit-plan.md)
 * [🚩 CTFs shortcuts](web-hacking/ctfs-shortcuts.md)
 * [➕ Enumeration](web-hacking/enumeration/README.md)
-  * [🎆 Network Scanners](web-hacking/enumeration/network-scanners.md)
+  * [🖥 Network Scanners](web-hacking/enumeration/network-scanners.md)
   * [🗃 Directory/Files Scanners](web-hacking/enumeration/directory-files-scanners.md)
-  * [🕸 Web Scanners](web-hacking/enumeration/web-scanners.md)
+  * [🌎 Web Scanners](web-hacking/enumeration/web-scanners.md)
 * [🌎 HTTP Stuff](web-hacking/http-stuff/README.md)
   * [🛣 HTTP Methods](web-hacking/http-stuff/http-methods/README.md)
     * [⛔ 403 Bypass](web-hacking/http-stuff/http-methods/403-bypass.md)
@@ -24,11 +24,11 @@
     * [Attacking JWT](web-hacking/http-stuff/jwt/attacking-jwt.md)
   * [⚒ Parameters](web-hacking/http-stuff/parameters.md)
 * [💉 Injections](web-hacking/injections/README.md)
-  * [XXE](web-hacking/injections/xxe.md)
   * [HTML | XSS](web-hacking/injections/html-or-xss.md)
   * [SQLi](web-hacking/injections/sqli/README.md)
     * [SQLmap](web-hacking/injections/sqli/sqlmap.md)
     * [NoSQLi](web-hacking/injections/sqli/nosqli.md)
+  * [XXE](web-hacking/injections/xxe.md)
 * [🕸 Web Vulnerabilities](web-hacking/web-vulnerabilities/README.md)
   * [👆 CSRF](web-hacking/web-vulnerabilities/csrf.md)
   * [🖱 ClickJacking](web-hacking/web-vulnerabilities/clickjacking.md)
@@ -61,7 +61,7 @@
 * [🪜 Privilege Escalation](linux-hacking/privilege-escalation/README.md)
   * [Manual Checks](linux-hacking/privilege-escalation/manual-checks.md)
   * [Automated Checks](linux-hacking/privilege-escalation/automated-checks.md)
-* [🔄 Reverse Shells](linux-hacking/reverse-shells/README.md)
+* [⭕ Reverse Shells](linux-hacking/reverse-shells/README.md)
   * [Shell Stabilizing](linux-hacking/reverse-shells/shell-stabilizing.md)
   * [PwnCat](linux-hacking/reverse-shells/pwncat.md)
   * [🏓 Ping-Pong](linux-hacking/reverse-shells/ping-pong.md)
@@ -167,7 +167,7 @@
 ## 🐷 Thick Client Hacking
 
 * [📜 Thick Client Pentesting Methodology](thick-client-hacking/thick-client-pentesting-methodology.md)
-* [📚 Resources](thick-client-hacking/resources.md)
+* [🥑 Resources](thick-client-hacking/resources.md)
 
 ## 💥 MISC
 
@@ -180,8 +180,8 @@
   * [\[CVE-2021-45105\] - Log4J](misc/cves/cve-2021-45105-log4j.md)
   * [\[CVE-2018-15473\] - OPENSSH < 7.7](misc/cves/cve-2018-15473-openssh-less-than-7.7.md)
 * [🦊 Firefox Extensions](misc/firefox-extensions.md)
-* [🍬 Free Labs](misc/free-labs.md)
-* [👓 OSINT](misc/osint.md)
+* [🍎 Free Labs](misc/free-labs.md)
+* [🎩 OSINT](misc/osint.md)
 * [🧞 Exploitation Frameworks](misc/exploitation-frameworks.md)
 * [💬 Hacking Forums](misc/hacking-forums.md)
 * [👹 Evil Side](misc/evil-side/README.md)
@@ -200,7 +200,7 @@
 
 ## 🔴 RED TEAM
 
-* [📹 Spy cam](red-team/spy-cam.md)
+* [🕵 Spy cam](red-team/spy-cam.md)
 * [🗝 Lock Picking](red-team/lock-picking.md)
 * [🎯 Scrapping](red-team/scrapping.md)
 * [🎣 Phishing](red-team/phishing/README.md)
@@ -210,7 +210,7 @@
 ## 🔵 BLUE TEAM
 
 * [🐾 Forensics](blue-team/forensics.md)
-* [🐎 Malware Analysis](blue-team/malware-analysis.md)
+* [🖲 Malware Analysis](blue-team/malware-analysis.md)
 * [🔧 Tools](blue-team/tools.md)
 * [🍯 HoneyPots](blue-team/honeypots.md)
 * [🎆 Networks Security](blue-team/networks-security.md)

@@ -1,4 +1,4 @@
-# 📹 Spy cam
+# 🕵 Spy cam
 
 ## Horus
 

@@ -1,4 +1,4 @@
-# 🕸 Web Scanners
+# 🌎 Web Scanners
 
 ## nikto&#x20;
 
