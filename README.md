@@ -2,7 +2,9 @@
 description: Introduction
 ---
 
-# ➡ /home/script-kiddie
+# ➡ /home/red-squad
+
+<figure><img src=".gitbook/assets/637A323A-181D-4AED-82B3-CBB896B86284.PNG" alt="Red Squad Logo"><figcaption></figcaption></figure>
 
 ## `whoami`
 
