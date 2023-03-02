@@ -91,7 +91,7 @@ run $(python -c 'print "\x55" * (1040 - 100 - 150 - 4) + "\x90" * 100 + "\x44" *
 
 #### 6 : Testing for Bad Chars
 
-⚠️ **FACULTATIF**, BUT... MUST CHECK WHEN USING **ONLINE SHELLCODES** ⚠️
+⚠️ **FACULTATIVE**, BUT... MUST CHECK WHEN USING **ONLINE SHELLCODES** ⚠️
 
 ```bash
     # Most Bad Chars
