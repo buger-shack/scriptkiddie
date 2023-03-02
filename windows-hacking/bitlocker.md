@@ -17,6 +17,7 @@
 ### Check if enabled
 
 ```powershell
+# cmd
 manage-bde -status
 # powershell
 Get-BitLockerVolume
