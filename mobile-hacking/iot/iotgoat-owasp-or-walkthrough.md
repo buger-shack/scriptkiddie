@@ -170,7 +170,7 @@ The MiniUPnP version is vulnerable to these exploits:
 
 The version of dnsmasq is outdated and vulnerable to 20 exploits:
 
-![1](<../../.gitbook/assets/image (53).png>)
+![1](<../../.gitbook/assets/image (137) (2).png>)
 
 ![2](<../../.gitbook/assets/image (87).png>)
 

@@ -115,7 +115,7 @@
       * [Other CVEs](windows-hacking/active-directory/5.-privesc-and-misc/exploits/other-cves.md)
 * [🧱 Bypass AV](windows-hacking/bypass-av.md)
 
-## 👷♀ 👷♀ Systems
+## 👷♀ Systems
 
 * [➕ Services Enumeration](systems/services-enumeration.md)
 * [🖨 Printers](systems/printers/README.md)
@@ -220,7 +220,7 @@
 
 * [🧾 IDE](developers/ide.md)
 
-## 🧑🎓 🧑🎓 LEARNING
+## 🧑🎓 LEARNING
 
 * [Windows](learning/windows/README.md)
   * [Active Directory](learning/windows/active-directory.md)
