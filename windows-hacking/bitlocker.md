@@ -2,7 +2,13 @@
 
 ## Bypassing Bitlocker
 
-Bitlocker uses 2 passwords. The one used by the user, and the recovery password (48 digits). If you are lucky and inside the current session of Windows exists the file C:\Windows\MEMORY.DMP (It is a memory dump) you could try to search inside of it the recovery password. You can get this file and a copy of the filesytem and then use Elcomsoft Forensic Disk Decryptor to get the content (this will only work if the password is inside the memory dump). You could also force the memory dump using NotMyFault of Sysinternals, but this will reboot the system and has to be executed as Administrator. You could also try a bruteforce attack using Passware Kit Forensic.
+>Bitlocker uses **2 passwords** : 
+>- The one used by the user, 
+>- The recovery password (48 digits). 
+>Try to search for the recovery password in : **C:\Windows\MEMORY.DMP** (memory dump). 
+>You can get this file and a copy of the filesytem and then use **Elcomsoft Forensic Disk Decryptor** to get the content (this will only work if the password is inside the memory dump). 
+>You could also force the memory dump using **NotMyFault** of Sysinternals, but this will reboot the system and has to be executed as Administrator. 
+>You could also try a **bruteforce attack** using *Passware Kit Forensic*.
 
 ### Check if enabled
 
