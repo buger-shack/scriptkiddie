@@ -133,7 +133,7 @@
 ## 🎆 Network Pivoting | Tunneling
 
 * [❓ What is Pivoting ?](network-pivoting-or-tunneling/what-is-pivoting.md)
-* [⚙ Pivoting tools](network-pivoting-or-tunneling/pivoting-tools/README.md)
+* [⚙ Pivoting tools / guide](network-pivoting-or-tunneling/pivoting-tools/README.md)
   * [Proxychains / FoxyProxy](network-pivoting-or-tunneling/pivoting-tools/proxychains-foxyproxy.md)
   * [SSH Tunnelling / Port Forwarding](network-pivoting-or-tunneling/pivoting-tools/ssh-tunnelling-port-forwarding.md)
   * [Plinx.exe](network-pivoting-or-tunneling/pivoting-tools/plinx.exe.md)
