@@ -9,7 +9,7 @@ description: Introduction
 ## `whoami`
 
 {% hint style="danger" %}
-This gitbook is maintained by 2 young pentesters which is an inventory of everything we use in a daily basis and things learned about cybersecurity/pentesting these past few years. We will try our best to update the gitbook alongside with new challanges that we meet.
+This gitbook is maintained by 2 young pentesters which is an inventory of everything we use in a daily basis and things learned about cybersecurity/pentesting/redteaming these past few years. We will try our best to update the gitbook alongside with new challanges that we meet.
 
 
 
