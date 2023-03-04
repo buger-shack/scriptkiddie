@@ -17,7 +17,7 @@ The agent does not require higher privileges on the target machine, so you can u
 Latest link in github to download ligolo-ng
 {% endembed %}
 
-<figure><img src="../../.gitbook/assets/Untitled Diagram (4).jpg" alt=""><figcaption><p>A classic scenario for pivoting use cases</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Untitled Diagram.jpg" alt=""><figcaption><p>A classic scenario for pivoting use cases</p></figcaption></figure>
 
 ### Setting up Ligolo-ng
 

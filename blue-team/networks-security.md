@@ -125,4 +125,4 @@ During the attack :&#x20;
 
 During an attack :&#x20;
 
-![](<../.gitbook/assets/image (141).png>)
+![](<../.gitbook/assets/image (72).png>)

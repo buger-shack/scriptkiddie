@@ -1,6 +1,6 @@
 # IOTGoat OWASP | Walkthrough
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (25).png>)
 
 > Copyright to Script Kiddie Bible
 
@@ -55,7 +55,7 @@ dd if=IoTGoat-raspberry-pi2.img bs=1 skip=29360128 of=iotgoat.bin
 
 It is a squashfs file system so we can use **unsquashfs**, which will allow us to unpack the squashfs file system:
 
-![](<../../.gitbook/assets/image (92).png>)
+![](<../../.gitbook/assets/image (95).png>)
 
 ### 🐞 Vulnerabilities <a href="#lady_beetle-vulnerabilities" id="lady_beetle-vulnerabilities"></a>
 
@@ -121,7 +121,7 @@ Firmwalker found a database containing personal information, unsecured since it 
 This allowed us to extract unsecured sensitive information :\
 
 
-![](<../../.gitbook/assets/image (73).png>)
+![](<../../.gitbook/assets/image (34).png>)
 
 ## ⬛ Dynamic Analysis (1) <a href="#dynamic-analysis-black-box-black_large_square" id="dynamic-analysis-black-box-black_large_square"></a>
 
@@ -170,9 +170,9 @@ The MiniUPnP version is vulnerable to these exploits:
 
 The version of dnsmasq is outdated and vulnerable to 20 exploits:
 
-![1](<../../.gitbook/assets/image (137) (2).png>)
+![1](<../../.gitbook/assets/image (137) (1).png>)
 
-![2](<../../.gitbook/assets/image (87).png>)
+![2](<../../.gitbook/assets/image (62).png>)
 
 Some **PoC** are available here :
 
@@ -185,7 +185,7 @@ Some **PoC** are available here :
 **4. DropBear 2017.75-7.1**\
 
 
-![](<../../.gitbook/assets/image (29).png>)
+![](<../../.gitbook/assets/image (89).png>)
 
 This version is **vulnerable to 4 exploits** :
 
@@ -229,7 +229,7 @@ The web service is potentially vulnerable to **Lucky13** :&#x20;
 
 **2.** Finally, running an OWASP ZAP scan on the web service :&#x20;
 
-![](<../../.gitbook/assets/image (139).png>)
+![](<../../.gitbook/assets/image (133).png>)
 
 * The absence of the **X-Frame-Options** header
   * Could lead to a **ClickJacking** attack.
@@ -244,13 +244,13 @@ After having decrypted the password of the **iotgoatuser** user, we connect to t
 Many manual tests have been done to try to **escalate privileges** and become root (_cf._ [_https://hackerbible.gitbook.io/en/pentest-linux/privilege-escalation/manual-checks_](https://hackerbible.gitbook.io/en/pentest-linux/privilege-escalation/manual-checks)).\
 For example, we have run **Linpeas** on the machine in order to try to find points of privilege escalation attempts:
 
-![](<../../.gitbook/assets/image (144).png>)
+![](<../../.gitbook/assets/image (107).png>)
 
 Linpeas allowed us to list the active ports on the machine, this allowed us to see 2 interesting ports open on the machine: **5515** and **65534**.
 
 The port **65534** is open on the machine, we try to connect to it with netcat :&#x20;
 
-![](<../../.gitbook/assets/image (80).png>)
+![](<../../.gitbook/assets/image (117).png>)
 
 We were not able to crack the root password, so this backdoor is not useful because we can only connect as _iotgoatuser_.
 
@@ -305,12 +305,12 @@ This version of pppd is vulnerable to a denial of service and arbitrary code exe
 * **OpenWRT Version :**\
 
 
-![](<../../.gitbook/assets/image (11) (1).png>)
+![](<../../.gitbook/assets/image (11) (2) (1).png>)
 
 This version is **vulnerable** to **21 exploits** :\
 
 
-![](<../../.gitbook/assets/image (67).png>)
+![](<../../.gitbook/assets/image (64).png>)
 
 ![](<../../.gitbook/assets/image (45).png>)
 
@@ -333,7 +333,7 @@ An XSS payload has been inserted in _/cgi-bin/luci/admin/network/firewall/rules_
 Then we click on _Edit_ to trigger the XSS :\
 
 
-![](<../../.gitbook/assets/image (126).png>)
+![](<../../.gitbook/assets/image (85).png>)
 
 This XSS is also present in the **New Forward Rule** and **New Source Nat** fields, as well as in **Traffic Rules Name**.
 
