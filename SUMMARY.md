@@ -70,6 +70,7 @@
 
 ## 🪟 Windows Hacking
 
+* [🐚 Shells](windows-hacking/shells.md)
 * [🔓 AppLocker](windows-hacking/applocker.md)
 * [🔏 BitLocker](windows-hacking/bitlocker.md)
 * [🪜 Privilege Escalation](windows-hacking/privilege-escalation.md)
