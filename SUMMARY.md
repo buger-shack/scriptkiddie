@@ -115,7 +115,7 @@
       * [Other CVEs](windows-hacking/active-directory/5.-privesc-and-misc/exploits/other-cves.md)
 * [🧱 Bypass AV](windows-hacking/bypass-av.md)
 
-## 👷♀ 👷♀ 👷♀ Systems
+## 👷♀ 👷♀ 👷♀ 👷♀ Systems
 
 * [➕ Services Enumeration](systems/services-enumeration.md)
 * [🖨 Printers](systems/printers/README.md)
@@ -144,7 +144,7 @@
 
 ## 📱 Mobile Hacking
 
-* [🤖 Android](mobile-hacking/android/README.md)
+* [🤖 Android](mobile-hacking/android.md)
   * [Genymotion](mobile-hacking/android/genymotion.md)
 * [🍏 iOS](mobile-hacking/ios.md)
 * [📺 IOT](mobile-hacking/iot/README.md)
@@ -221,7 +221,7 @@
 
 * [🧾 IDE](developers/ide.md)
 
-## 🧑🎓 🧑🎓 🧑🎓 LEARNING
+## 🧑🎓 🧑🎓 🧑🎓 🧑🎓 LEARNING
 
 * [Windows](learning/windows/README.md)
   * [Active Directory](learning/windows/active-directory.md)

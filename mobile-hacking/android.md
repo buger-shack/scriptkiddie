@@ -1,6 +1,6 @@
 # 🤖 Android
 
-![](../../.gitbook/assets/android.gif)
+![](../.gitbook/assets/android.gif)
 
 ## Tools
 

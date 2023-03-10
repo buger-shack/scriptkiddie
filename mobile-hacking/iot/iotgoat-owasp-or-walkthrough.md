@@ -305,7 +305,7 @@ This version of pppd is vulnerable to a denial of service and arbitrary code exe
 * **OpenWRT Version :**\
 
 
-![](<../../.gitbook/assets/image (11) (2) (1).png>)
+![](<../../.gitbook/assets/image (11) (2).png>)
 
 This version is **vulnerable** to **21 exploits** :\
 
