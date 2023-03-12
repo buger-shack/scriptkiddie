@@ -161,8 +161,9 @@ start
 
 ### 2. Pivoting Ligolo-Ng with SSH access
 
+Assuming that the Target Network as well as the Internal Network has no possibility to contact the attacking machine but via a SSH connection, it is possible to initiate a connection from a ligolo agent implanted in the Public Facing Server via a SSH Reverse tunnel. 
+
 ![image](https://user-images.githubusercontent.com/90450439/224557695-01ad05f3-a9ca-4456-ac94-246f2b3f5228.png)
 
-
-![image](https://user-images.githubusercontent.com/90450439/224557651-01a39735-3d29-44fd-b1ea-ace99322099d.png)
+![image](https://user-images.githubusercontent.com/90450439/224558041-d257541d-a8f5-4fdd-9450-e4ef64ae4489.png)
 
