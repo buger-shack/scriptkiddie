@@ -141,7 +141,7 @@
   * [Socat](network-pivoting-or-tunneling/pivoting-tools/socat.md)
   * [Chisel](network-pivoting-or-tunneling/pivoting-tools/chisel.md)
   * [Sshuttle](network-pivoting-or-tunneling/pivoting-tools/sshuttle.md)
-  * [Ligolo-Ng](network-pivoting-or-tunneling/pivoting-tools/ligolo-ng.md)
+  * [Ligolo-Ng : Pivoting use cases](network-pivoting-or-tunneling/pivoting-tools/ligolo-ng.md)
 
 ## 📱 Mobile Hacking
 
