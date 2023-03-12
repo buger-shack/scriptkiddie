@@ -78,12 +78,7 @@ Once you have added the TUN Interface and the sub networks that you want to acce
 
 `Agent Binding/listening on ligolo allows you to capture reverse shells from an internal network and forward it through the ligolo connection. You can then launch a netcat/pwncat-cs from the attacking machine seamlessly, give you the impression as if you were already in the target network.`
 
-```
-# 1. On the attacking machine :
-TODO :)
-```
-
-### Ligolo-Ng Tutorial / Use Cases
+## Ligolo-Ng Pivoting Tutorials / Use Cases
 
 ### 1. Accessing the Target Network
 
@@ -163,3 +158,6 @@ start
 //Allowing you to use any tool from the attacking maching against the new target machine
 ```
 ![image](https://user-images.githubusercontent.com/90450439/224545307-05571c12-31a9-41b7-b8cc-8b4365336e77.png)
+
+### 2. Pivoting Ligolo-Ng with SSH access
+
