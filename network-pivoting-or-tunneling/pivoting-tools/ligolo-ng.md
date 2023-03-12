@@ -161,3 +161,8 @@ start
 
 ### 2. Pivoting Ligolo-Ng with SSH access
 
+![image](https://user-images.githubusercontent.com/90450439/224557695-01ad05f3-a9ca-4456-ac94-246f2b3f5228.png)
+
+
+![image](https://user-images.githubusercontent.com/90450439/224557651-01a39735-3d29-44fd-b1ea-ace99322099d.png)
+
