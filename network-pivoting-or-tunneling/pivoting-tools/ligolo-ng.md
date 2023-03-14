@@ -189,3 +189,4 @@ The following method allows only a single ligolo agent connection. Due to the na
 
 ### 2.1 Pivoting Ligolo-Ng with SSH access + SOCAT
 
+In order to avoid initiating multiple SSH connections per ligolo agent connection, you can tunnel these connections through a single SSH connection. To achieve this, we will be using the tool socat. 
