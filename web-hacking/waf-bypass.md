@@ -264,3 +264,7 @@ More | WAF Bypass Techniques
 {% embed url="https://portswigger.net/bappstore/ae2611da3bbc4687953a1f4ba6a4e04c" %}
 PortSwigger | WAF Bypass with BApp
 {% endembed %}
+
+{% embed url="https://blog.yeswehack.com/yeswerhackers/web-application-firewall-bypass/" %}
+YesWeHack | WAF Bypass
+{% endembed %}
