@@ -177,6 +177,7 @@ Once the ssh tunnel is established, now you can transfer the ligolo agent and ru
 {% hint style="info" %}
 The following method allows only a single ligolo agent connection. Due to the nature of the port mapping that is provided in the SSH reverse connection, once a ligolo agent "occupies" a port, it is not possible to use another ligolo agent on the same port. 
 {% endhint %}
+
 ```
 //On the attacking machine 
 ./proxy -selfcert -laddr 127.0.0.1:1337
