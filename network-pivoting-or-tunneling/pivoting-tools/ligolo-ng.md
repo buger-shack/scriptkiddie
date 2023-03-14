@@ -165,7 +165,21 @@ In the case where the Target Network as well as the Internal Network has no poss
 
 To do this, you will first have to initiate a Reverse SSH Connection. This is mainly because the ligolo proxy always listens to connections that are first initiated by the ligolo agent. A reverse ssh connection will allow us to open a port within the Public Facing Server and whatever that connects to that perticular port will then be tunnled trough the SSH connection.
 
+```
+//Initiate a Reverse ssh connection to the target server
+
+ssh -R 7878:127.0.0.1:1337 user@target_server_ip
+```
 ![image](https://user-images.githubusercontent.com/90450439/224557695-01ad05f3-a9ca-4456-ac94-246f2b3f5228.png)
 
+```
+Once the ssh tunnel is established, now you can transfer the ligolo agent and run the ligolo agent from the target server
+
+//On the attacking machine 
+./proxy -selfcert -laddr 127.0.0.1:1337
+
+//On the target machine 
+./agent -connect 127.0.0.1:7878 -ignore-cert
+```
 ![image](https://user-images.githubusercontent.com/90450439/224558041-d257541d-a8f5-4fdd-9450-e4ef64ae4489.png)
 
