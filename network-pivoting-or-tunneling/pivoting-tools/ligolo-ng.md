@@ -172,9 +172,12 @@ ssh -R 7878:127.0.0.1:1337 user@target_server_ip
 ```
 ![image](https://user-images.githubusercontent.com/90450439/224557695-01ad05f3-a9ca-4456-ac94-246f2b3f5228.png)
 
-```
-Once the ssh tunnel is established, now you can transfer the ligolo agent and run the ligolo agent from the target server
+Once the ssh tunnel is established, now you can transfer the ligolo agent and run the ligolo agent from the target server, simmilar to the steps shown above..
 
+{% hint style="info" %}
+The following method allows only a single ligolo agent connection. Due to the nature of the port mapping that is provided in the SSH reverse connection, once a ligolo agent "occupies" a port, it is not possible to use another ligolo agent on the same port. 
+{% endhint %}
+```
 //On the attacking machine 
 ./proxy -selfcert -laddr 127.0.0.1:1337
 
@@ -182,4 +185,6 @@ Once the ssh tunnel is established, now you can transfer the ligolo agent and ru
 ./agent -connect 127.0.0.1:7878 -ignore-cert
 ```
 ![image](https://user-images.githubusercontent.com/90450439/224558041-d257541d-a8f5-4fdd-9450-e4ef64ae4489.png)
+
+### 2.1 Pivoting Ligolo-Ng with SSH access + SOCAT
 
