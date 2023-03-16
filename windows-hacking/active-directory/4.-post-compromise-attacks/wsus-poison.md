@@ -1,6 +1,6 @@
 # WSUS Poison
 
-## pBrief
+## Brief
 
 You can compromise the system if the updates are not requested using **httpS** but **http**.
 
