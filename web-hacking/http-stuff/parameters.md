@@ -6,7 +6,7 @@
 Arjun repo
 {% endembed %}
 
-Sometimes hidden parameters are set on pages You can use tools like Arjun to find them
+>Find hidden HTTP parameters
 
 ```bash
 # usage / install
@@ -14,7 +14,14 @@ pip3 install arjun
 arjun --help
 arjun -u https://$target
 ```
-
+## ParamSpider
+>Parameter miner for humans
+```bash
+git clone https://github.com/devanshbatham/ParamSpider
+cd ParamSpider
+pip3 install -r requirements.txt
+python3 paramspider.py --domain hackerone.com
+```
 ## Parameters Pollution
 
 {% hint style="info" %}
