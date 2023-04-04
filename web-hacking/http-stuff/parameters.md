@@ -12,7 +12,7 @@ Arjun repo
 # usage / install
 pip3 install arjun
 arjun --help
-arjun -u https://$target
+arjun -u $target_url
 ```
 ## ParamSpider
 >Parameter miner for humans
@@ -20,7 +20,7 @@ arjun -u https://$target
 git clone https://github.com/devanshbatham/ParamSpider
 cd ParamSpider
 pip3 install -r requirements.txt
-python3 paramspider.py --domain hackerone.com
+python3 paramspider.py --domain $domain
 ```
 ## Parameters Pollution
 
