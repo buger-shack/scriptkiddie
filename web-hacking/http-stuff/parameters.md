@@ -1,11 +1,6 @@
 # ⚒ Parameters
-
-## Arjun
-
-{% embed url="https://github.com/s0md3v/Arjun" %}
-Arjun repo
-{% endembed %}
-
+## Find Parameters
+### Arjun
 >Find hidden HTTP parameters
 
 ```bash
@@ -14,7 +9,7 @@ pip3 install arjun
 arjun --help
 arjun -u $target_url
 ```
-## ParamSpider
+### ParamSpider
 >Parameter miner for humans
 ```bash
 git clone https://github.com/devanshbatham/ParamSpider
@@ -22,7 +17,7 @@ cd ParamSpider
 pip3 install -r requirements.txt
 python3 paramspider.py --domain $domain
 ```
-## Parameters Pollution
+## Parameter Pollution
 
 {% hint style="info" %}
 When you manipulate any parameter, it’s manipulation depends on how each web technology is parsing their parameters.&#x20;
