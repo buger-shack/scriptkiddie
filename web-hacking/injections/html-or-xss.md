@@ -133,31 +133,6 @@ nano config.yaml # change username and password
 <!-- use waf bypass -->
 ```
 
-### XSSER
-
-{% hint style="info" %}
-XSSer is an automatic **framework**, which **detects XSS vulnerabilities** over in the web-applications and even provides up several options to exploit them.
-{% endhint %}
-
-```bash
-# install
-git clone https://github.com/epsylon/xsser.git
-```
-
-![](<../../.gitbook/assets/image (102).png>)
-
-**Capture the browser request with Burp, use request value (cookies value...) :**
-
-![](<../../.gitbook/assets/image (119).png>)
-
-```bash
-# Run XSSER
-cd xsser/
-python3 xsser --url "http://192.168.0.9/bWAPP/xss_get.php?firstname=XSS&lastname=test1&form=submit" --cookie "PHPSESSID=q6t1k21lah0ois25m0b4egps85; security_level=1" --auto
-```
-
-![Output result](<../../.gitbook/assets/image (100).png>)
-
 ### Mitigations
 
 * Developers should implement a **whitelist** of allowable inputs, and if not possible then there should be some input validations and the data entered by the user must be filtered as much as possible.
