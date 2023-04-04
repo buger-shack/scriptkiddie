@@ -39,3 +39,6 @@ Unicode char can cause breaks in some applications. Example with the pile of poo
 {% embed url="https://emojipedia.org/pile-of-poo/" %}
 pile of poo emoji
 {% endembed %}
+
+>Understand it :
+{% embed url="https://shahjerry33.medium.com/http-parameter-pollution-its-contaminated-85edc0805654" %}
