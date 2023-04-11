@@ -3,8 +3,10 @@
 ## List
 
 ```
-https://leakbase[.]cc/
+https://lb[.]sb
+https://seekshell[.]com
 https://cracked[.]io
+https://leakzone[.]net
 https://zelenka[.]guru/
 https://selkis[.]online/
 https://crackia[.]com
@@ -30,5 +32,5 @@ https://leakforum[.]org/
 https://leetforums[.]ru/
 https://niflheim[.]top/
 https://devilteam[.]pl/
-https://breached[.]vc/
+https://breached[.]vc/  # RIP
 ```
