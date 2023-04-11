@@ -147,8 +147,10 @@
 ## 📱 Mobile Hacking
 
 * [🤖 Android](mobile-hacking/android.md)
-  * [Genymotion](mobile-hacking/android/genymotion.md)
   * [Introduction](mobile-hacking/android/introduction.md)
+  * [Reversing](mobile-hacking/android/reversing.md)
+  * [Static Analysis](mobile-hacking/android/static-analysis.md)
+  * [Dynamic Analysis](mobile-hacking/android/dynamic-analysis.md)
 * [🍏 iOS](mobile-hacking/ios.md)
 * [📺 IOT](mobile-hacking/iot/README.md)
   * [IOTGoat OWASP | Walkthrough](mobile-hacking/iot/iotgoat-owasp-or-walkthrough.md)
