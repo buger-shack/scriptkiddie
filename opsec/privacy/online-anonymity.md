@@ -46,7 +46,7 @@ Change your MAC address, many softwares exist.
 {% endhint %}
 
 {% hint style="info" %}
-****:tada:**YOU CAN NOW SURF WITHOUT RISK ! YOU ARE ANONYMOUS !**&#x20;
+:tada:**YOU CAN NOW SURF WITHOUT RISK ! YOU ARE ANONYMOUS !**&#x20;
 
 **Of course, total anonymity does not exist. Always be careful.**
 {% endhint %}

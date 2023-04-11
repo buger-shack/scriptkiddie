@@ -62,7 +62,7 @@ Disable on all ports except the one connected to R1.
 
 _Cisco Discovery Protocol (CDP) is a Cisco proprietary protocol designed to facilitate the network management of Cisco devices by discovering hardware and protocol information about neighboring devices. By using CDP, Network Engineers can gather information about neighboring network devices, determining the type of hardware or equipment, software version, active interfaces the device is using (whether physical or VLAN), how they are configured, and other useful information. That is quite a bit of information, and this is useful for troubleshooting and documenting the network._
 
-__
+
 
 ## TCP Syn Flood - Protection
 

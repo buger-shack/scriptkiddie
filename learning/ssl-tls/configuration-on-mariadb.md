@@ -176,10 +176,10 @@ The Change Cipher Spec message is sent by the client and server to notify the re
 
 [**MySQL Traffic on Wireshark** ](https://stackoverflow.com/questions/48477121/wireshark-password-capture-of-mysql-traffic)
 
-****[**Capture passwords using Wireshark** ](https://www.infosecmatter.com/capture-passwords-using-wireshark/)
+[**Capture passwords using Wireshark** ](https://www.infosecmatter.com/capture-passwords-using-wireshark/)
 
-****[**SSL/TLS Setup**](https://www.cyberciti.biz/faq/how-to-setup-mariadb-ssl-and-secure-connections-from-clients/)****
+[**SSL/TLS Setup**](https://www.cyberciti.biz/faq/how-to-setup-mariadb-ssl-and-secure-connections-from-clients/)
 
-****[**Two-Way TLS**](https://mariadb.com/docs/clients/mariadb-connectors/connector-j/tls/)&#x20;
+[**Two-Way TLS**](https://mariadb.com/docs/clients/mariadb-connectors/connector-j/tls/)&#x20;
 
-****[**SSL/TLS Handshake**](https://www.linuxbabe.com/security/ssltls-handshake-process-explained-with-wireshark-screenshot)****
+[**SSL/TLS Handshake**](https://www.linuxbabe.com/security/ssltls-handshake-process-explained-with-wireshark-screenshot)

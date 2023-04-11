@@ -34,7 +34,7 @@ hashcat -m 10000 -a 0 -O hash.txt --wordlist /usr/share/wordlists/rockyou.txt
 ```
 
 {% hint style="info" %}
-**Rule based attacks** :boom:****
+**Rule based attacks** :boom:
 
 It is more like a **programming language** designed for password candidate generation. It has functions that can modify and mutate any given word list with literally anything you can imagine allowing you to have a higher rate of successly cracking a hash.
 
