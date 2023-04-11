@@ -103,6 +103,7 @@ qark --java $file_java
 ```
 ## Obfuscated code - Frameworks
 http://apk-deguard.com/
+
 https://github.com/java-deobfuscator/deobfuscator
 - **How to :**
 https://medium.com/rahasak/reverse-engineering-obfuscated-android-apk-67da84b259e4
