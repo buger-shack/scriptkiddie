@@ -2,7 +2,7 @@
 
 ![](<../../.gitbook/assets/image (25).png>)
 
-> Copyright to Script Kiddie Bible
+> Copyright to book.redsquad.xyz
 
 ## Prerequisites
 
