@@ -12,6 +12,9 @@ https://mobile-security.gitbook.io/mobile-security-testing-guide/
 https://www.udemy.com/course/android-hacking-and-penetration-testing/
 https://www.tutorialspoint.com/android_penetration_testing_online_training/index.asp
 
+# MindMap
+https://www.xmind.net/m/GkgaYH/
+
 # Labs
 ## Complete
 https://github.com/t0thkr1s/allsafe
