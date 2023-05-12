@@ -1,18 +1,18 @@
 # 💣 DDoS
 
 {% hint style="info" %}
-**Distributed denial-of-service** attacks target **websites** and online **services**. The aim is to overwhelm them with more traffic than the server or network can accommodate.&#x20;
+**Distributed denial-of-service** attacks target **websites** and online **services**. The aim is to overwhelm them with more traffic than the server or network can accommodate.
 
 **The goal is to render the website or service inoperable.**
 {% endhint %}
 
 {% hint style="danger" %}
-## ⚠️<mark style="color:red;">WARNING</mark>⚠️
+### ⚠️<mark style="color:red;">WARNING</mark>⚠️
 
 * _<mark style="color:yellow;">Do not use these commands against any IP that you have not been given explicit permission to test. If used otherwise you may violate local laws, or at least ISP terms of service.</mark>_
 * _<mark style="color:yellow;">Commands that employ spoofing might cause responses to active public IP(s). Make sure you are runing in an isolated lab environmen that cannot route out to the Internet, or employ filters to prevent responses from leaking out.</mark>_
 * <mark style="color:yellow;">**It is assumed that the user of this document knows which services are open and what ports they are running on.**</mark>
-* <mark style="color:yellow;">Items in</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">**< >**</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">brackets are parameters. Remove the brackets and enter the data specified</mark>
+* <mark style="color:yellow;">Items in</mark> <mark style="color:yellow;">**< >**</mark> <mark style="color:yellow;">brackets are parameters. Remove the brackets and enter the data specified</mark>
 * <mark style="color:yellow;">In hping3 commands, remove the "--rand-source" for tests to use single source IP</mark>
 * <mark style="color:yellow;">Scapy can be exited with a CTRL-D</mark>
 {% endhint %}

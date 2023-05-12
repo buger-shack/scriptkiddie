@@ -44,6 +44,9 @@
   * [Shodan](web-hacking/dorking/shodan.md)
 * [🧱 WAF Bypass](web-hacking/waf-bypass.md)
 * [🏛 Servers / CMS](web-hacking/servers-cms/README.md)
+  * [🐈 Tomcat](web-hacking/servers-cms/tomcat.md)
+  * [💧 Drupal](web-hacking/servers-cms/drupal.md)
+  * [✏ Apex](web-hacking/servers-cms/apex.md)
   * [🐦 Apache](web-hacking/servers-cms/apache.md)
   * [🔷 WordPress](web-hacking/servers-cms/wordpress.md)
   * [⏩ SAP](web-hacking/servers-cms/sap.md)
@@ -59,6 +62,8 @@
 * [🚪 Backdoors](linux-hacking/backdoors.md)
 * [👁 Compiled Binaries](linux-hacking/compiled-binaries.md)
 * [🪜 Privilege Escalation](linux-hacking/privilege-escalation/README.md)
+  * [Find passwords](linux-hacking/privilege-escalation/find-passwords.md)
+  * [Ansible](linux-hacking/privilege-escalation/ansible.md)
   * [Manual Checks](linux-hacking/privilege-escalation/manual-checks.md)
   * [Automated Checks](linux-hacking/privilege-escalation/automated-checks.md)
 * [⭕ Reverse Shells](linux-hacking/reverse-shells/README.md)
@@ -117,7 +122,7 @@
       * [Other CVEs](windows-hacking/active-directory/5.-privesc-and-misc/exploits/other-cves.md)
 * [🧱 Bypass AV](windows-hacking/bypass-av.md)
 
-## 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ Systems
+## 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ Systems
 
 * [➕ Services Enumeration](systems/services-enumeration.md)
 * [🖨 Printers](systems/printers/README.md)
@@ -226,7 +231,7 @@
 
 * [🧾 IDE](developers/ide.md)
 
-## 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 LEARNING
+## 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 LEARNING
 
 * [Windows](learning/windows/README.md)
   * [Active Directory](learning/windows/active-directory.md)

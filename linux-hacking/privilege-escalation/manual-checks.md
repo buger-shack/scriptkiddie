@@ -1,7 +1,7 @@
 # Manual Checks
 
 {% hint style="info" %}
-<mark style="color:blue;">Manual checks can help</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**understand way more how attacks work**</mark><mark style="color:blue;">. Check this out !</mark>
+<mark style="color:blue;">Manual checks can help</mark> <mark style="color:blue;">**understand way more how attacks work**</mark><mark style="color:blue;">. Check this out !</mark>
 {% endhint %}
 
 ## Walkthrough (Kinda)
@@ -209,7 +209,7 @@ find / -mmin -10 2>/dev/null | grep -Ev "^/proc"
 #### Capabilities
 
 {% hint style="info" %}
-<mark style="color:blue;">Check for files with</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**capabilities**</mark><mark style="color:blue;">. These may allow us to access restricted files or directories. Having the capability **=ep** means the binary has all the capabilities.</mark>
+<mark style="color:blue;">Check for files with</mark> <mark style="color:blue;">**capabilities**</mark><mark style="color:blue;">. These may allow us to access restricted files or directories. Having the capability</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**=ep**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">means the binary has all the capabilities.</mark>
 {% endhint %}
 
 ```bash
@@ -237,24 +237,26 @@ python2.7 -c 'import os; os.setuid(0); os.system("/bin/sh")'
 sh-5.0# id
 uid=0(root) gid=1000(swissky)
 ```
+
 ### Capabilities list
-| Capabilities name  | Description |
-|---|---|
-| CAP_AUDIT_CONTROL  | Allow to enable/disable kernel auditing |
-| CAP_AUDIT_WRITE  | Helps to write records to kernel auditing log |
-| CAP_BLOCK_SUSPEND  | This feature can block system suspends   |
-| CAP_CHOWN  | Allow user to make arbitrary change to files UIDs and GIDs |
-| CAP_DAC_OVERRIDE  | This helps to bypass file read, write and execute permission checks |
-| CAP_DAC_READ_SEARCH  | This only bypasses file and directory read/execute permission checks  |
-| CAP_FOWNER  | This enables bypass of permission checks on operations that normally require the filesystem UID of the process to match the UID of the file  |
-| CAP_KILL  | Allow the sending of signals to processes belonging to others  |
-| CAP_SETGID  | Allow changing of the GID  |
-| CAP_SETUID  | Allow changing of the UID  |
-| CAP_SETPCAP  | Helps to transferring and removal of current set to any PID |
-| CAP_IPC_LOCK  | This helps to lock memory  |
-| CAP_MAC_ADMIN  | Allow MAC configuration or state changes  |
-| CAP_NET_RAW  | Use RAW and PACKET sockets |
-| CAP_NET_BIND_SERVICE  | SERVICE Bind a socket to internet domain privileged ports  |
+
+| Capabilities name       | Description                                                                                                                                 |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| CAP\_AUDIT\_CONTROL     | Allow to enable/disable kernel auditing                                                                                                     |
+| CAP\_AUDIT\_WRITE       | Helps to write records to kernel auditing log                                                                                               |
+| CAP\_BLOCK\_SUSPEND     | This feature can block system suspends                                                                                                      |
+| CAP\_CHOWN              | Allow user to make arbitrary change to files UIDs and GIDs                                                                                  |
+| CAP\_DAC\_OVERRIDE      | This helps to bypass file read, write and execute permission checks                                                                         |
+| CAP\_DAC\_READ\_SEARCH  | This only bypasses file and directory read/execute permission checks                                                                        |
+| CAP\_FOWNER             | This enables bypass of permission checks on operations that normally require the filesystem UID of the process to match the UID of the file |
+| CAP\_KILL               | Allow the sending of signals to processes belonging to others                                                                               |
+| CAP\_SETGID             | Allow changing of the GID                                                                                                                   |
+| CAP\_SETUID             | Allow changing of the UID                                                                                                                   |
+| CAP\_SETPCAP            | Helps to transferring and removal of current set to any PID                                                                                 |
+| CAP\_IPC\_LOCK          | This helps to lock memory                                                                                                                   |
+| CAP\_MAC\_ADMIN         | Allow MAC configuration or state changes                                                                                                    |
+| CAP\_NET\_RAW           | Use RAW and PACKET sockets                                                                                                                  |
+| CAP\_NET\_BIND\_SERVICE | SERVICE Bind a socket to internet domain privileged ports                                                                                   |
 
 #### Docker
 
@@ -263,7 +265,9 @@ docker run -it -v /:/mnt bash chroot
 
 docker run -v /root:/mnt -it bash
 ```
-##### More about Docker
+
+**More about Docker**
+
 {% embed url="https://book.hacktricks.xyz/linux-unix/privilege-escalation/docker-breakout" %}
 
 {% embed url="https://github.com/stealthcopter/deepce" %}
