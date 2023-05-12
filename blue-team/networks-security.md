@@ -34,7 +34,7 @@ show inter status err-disabled
 
 ## Protection
 
-**Limit rate** on every interfaces :&#x20;
+**Limit rate** on every interfaces :
 
 ![](<../.gitbook/assets/image (26).png>)
 
@@ -61,8 +61,6 @@ Disable on all ports except the one connected to R1.
 ### Why did Cisco create CDP ?
 
 _Cisco Discovery Protocol (CDP) is a Cisco proprietary protocol designed to facilitate the network management of Cisco devices by discovering hardware and protocol information about neighboring devices. By using CDP, Network Engineers can gather information about neighboring network devices, determining the type of hardware or equipment, software version, active interfaces the device is using (whether physical or VLAN), how they are configured, and other useful information. That is quite a bit of information, and this is useful for troubleshooting and documenting the network._
-
-
 
 ## TCP Syn Flood - Protection
 
@@ -93,7 +91,7 @@ show tcp intercept statistics
 
 ## OSPF - Protection
 
-**On routers,** setting up **authentication** process :&#x20;
+**On routers,** setting up **authentication** process :
 
 ```
 R1(config)# router ospf 1
@@ -105,7 +103,7 @@ R1(config-if)# int s0/1/1
 R1(config-if)# ip ospf message-digest-key 1 md5 passworD
 ```
 
-During the attack :&#x20;
+During the attack :
 
 ![](<../.gitbook/assets/image (124).png>)
 
@@ -123,6 +121,6 @@ During the attack :&#x20;
 
 ![](<../.gitbook/assets/image (94).png>)
 
-During an attack :&#x20;
+During an attack :
 
-![](<../.gitbook/assets/image (72).png>)
+![](<../.gitbook/assets/image (141).png>)

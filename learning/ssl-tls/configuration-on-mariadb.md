@@ -4,7 +4,7 @@
 
 ![Username and DB name in clear + hashed password](<../../.gitbook/assets/image (106).png>)
 
-![Hashed password ](<../../.gitbook/assets/image (49).png>)
+![Hashed password](<../../.gitbook/assets/image (108).png>)
 
 ### Step 1 : Protect MariaDB/MySQL
 
@@ -103,7 +103,7 @@ grep mysqld /var/log/syslog | grep -i ssl
 
 ```
 
-Configure the MariaDB client to use SSL (add in the client configuration file /etc/mysql/mariadb.conf.d/50-mysql-clients.cnf) :&#x20;
+Configure the MariaDB client to use SSL (add in the client configuration file /etc/mysql/mariadb.conf.d/50-mysql-clients.cnf) :
 
 ![](<../../.gitbook/assets/image (42).png>)
 
@@ -125,8 +125,6 @@ MariaDB [(bank)]> status;
 ![](<../../.gitbook/assets/image (19).png>)
 
 ![](<../../.gitbook/assets/image (47).png>)
-
-
 
 ### 4. Two-Way TLS
 
@@ -150,7 +148,7 @@ Check by logging in as a **foo** user:
 
 ![](<../../.gitbook/assets/image (46).png>)
 
-### 5. Perform a flow capture with Wireshark of a mutual-auth TLS encrypted connection to the database, identify the key exchanges&#x20;
+### 5. Perform a flow capture with Wireshark of a mutual-auth TLS encrypted connection to the database, identify the key exchanges
 
 ![](<../../.gitbook/assets/image (44).png>)
 
@@ -158,7 +156,7 @@ Check by logging in as a **foo** user:
 
 ![](../../.gitbook/assets/image.png)
 
-2 : Then a "**Server Hello**" packet arrives. The server consults the list of SSL/TLS versions and cipher suites and chooses the most recent one it can use. Then the server sends a message to the client containing the SSL/TLS version and the cipher suite it has chosen :&#x20;
+2 : Then a "**Server Hello**" packet arrives. The server consults the list of SSL/TLS versions and cipher suites and chooses the most recent one it can use. Then the server sends a message to the client containing the SSL/TLS version and the cipher suite it has chosen :
 
 ![](<../../.gitbook/assets/image (140).png>)
 
@@ -174,12 +172,12 @@ The Change Cipher Spec message is sent by the client and server to notify the re
 
 ## Appendices
 
-[**MySQL Traffic on Wireshark** ](https://stackoverflow.com/questions/48477121/wireshark-password-capture-of-mysql-traffic)
+[**MySQL Traffic on Wireshark**](https://stackoverflow.com/questions/48477121/wireshark-password-capture-of-mysql-traffic)
 
-[**Capture passwords using Wireshark** ](https://www.infosecmatter.com/capture-passwords-using-wireshark/)
+[**Capture passwords using Wireshark**](https://www.infosecmatter.com/capture-passwords-using-wireshark/)
 
 [**SSL/TLS Setup**](https://www.cyberciti.biz/faq/how-to-setup-mariadb-ssl-and-secure-connections-from-clients/)
 
-[**Two-Way TLS**](https://mariadb.com/docs/clients/mariadb-connectors/connector-j/tls/)&#x20;
+[**Two-Way TLS**](https://mariadb.com/docs/clients/mariadb-connectors/connector-j/tls/)
 
 [**SSL/TLS Handshake**](https://www.linuxbabe.com/security/ssltls-handshake-process-explained-with-wireshark-screenshot)

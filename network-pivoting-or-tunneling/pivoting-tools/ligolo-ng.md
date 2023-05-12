@@ -5,11 +5,11 @@ description: >-
   (without the need of SOCKS).
 ---
 
-# Ligolo-Ng
+# Ligolo-Ng : Pivoting use cases
 
 Ligolo-Ng is a unique pivoting tool that allows you to create VPN-like tunnels, enabling direct interaction via target IP addresses instead of using socks proxies. With an interactive CLI interface, you can easily jump from one agent to another without any hassle.
 
-Ligolo-Ng has two parts: a proxy that acts as a C2 interface to locate and select your targets, and also enables listeners on the target machine; and an agent that you implant on the target machine to initiate the VPN connection from the target machine to the attacking machine.&#x20;
+Ligolo-Ng has two parts: a proxy that acts as a C2 interface to locate and select your targets, and also enables listeners on the target machine; and an agent that you implant on the target machine to initiate the VPN connection from the target machine to the attacking machine.
 
 The agent does not require higher privileges on the target machine, so you can use a classic reverse shell to simplify any attacking methodology. With Ligolo-Ng, you can run any tool from your attacking machine against a target machine by closing the network gap between layers of networks.
 
@@ -17,7 +17,7 @@ The agent does not require higher privileges on the target machine, so you can u
 Latest link in github to download ligolo-ng
 {% endembed %}
 
-<figure><img src="../../.gitbook/assets/Untitled Diagram.jpg" alt=""><figcaption><p>A classic scenario for pivoting use cases</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Untitled Diagram (4).jpg" alt=""><figcaption><p>A classic scenario for pivoting use cases</p></figcaption></figure>
 
 ### Setting up Ligolo-ng
 
@@ -85,8 +85,7 @@ Once you have added the TUN Interface and the sub networks that you want to acce
 Once a connection is establised on the Public Facing Server that is in the Target Network via a reverse shell, it is possible to access/enumerate or exploit any vulnerabilities against a different target in the same network trough ligolo (such as a DMZ) or a target that is in a neighbouring network (in the case of a non-segmented network). This allows an attcker to use their very own tools from the attacking machine.
 
 {% hint style="info" %}
-The following method works only when the Target Network has direct access to the attacking machine network, such as in a local network, via port forwarding or a VPN connection. More advanced pivoting techniques will be detailed below.
-If the attacking machine is in a NAT network, then, port forwarding should implemented.
+The following method works only when the Target Network has direct access to the attacking machine network, such as in a local network, via port forwarding or a VPN connection. More advanced pivoting techniques will be detailed below. If the attacking machine is in a NAT network, then, port forwarding should implemented.
 {% endhint %}
 
 ```
@@ -131,14 +130,14 @@ listener_add --addr 0.0.0.0:1234 --to 127.0.0.1:8899 --tcp
 ```
 
 {% hint style="info" %}
-In the following example, The reverse shell is initiated from the machine 192.168.0.10 in the target network that do not have direct access to the Attacker machine but to the Public Facing Server. When configuring the reverse shell, the connection must be directed to the Public Facing Server's IP address as it is were the ligolo agent will start it's listner that was initiated via listner_add.
+In the following example, The reverse shell is initiated from the machine 192.168.0.10 in the target network that do not have direct access to the Attacker machine but to the Public Facing Server. When configuring the reverse shell, the connection must be directed to the Public Facing Server's IP address as it is were the ligolo agent will start it's listner that was initiated via listner\_add.
 {% endhint %}
 
 ![image](https://user-images.githubusercontent.com/90450439/221354631-dbcb392f-af06-49d8-a63c-c5c03201c2cd.png)
 
-### 1.2. Accessing the Internal Network 
+### 1.2. Accessing the Internal Network
 
-It is also possible to implant ligolo agents into deeper levels of the network in an organization inorder to compromise additional servers/devices. This follows the simmilar steps that were described for the Public Facing Server. However, this requires once again a reverse shell in the Internal Network or other sorts of foothold as a low privileged user in the internal network. 
+It is also possible to implant ligolo agents into deeper levels of the network in an organization inorder to compromise additional servers/devices. This follows the simmilar steps that were described for the Public Facing Server. However, this requires once again a reverse shell in the Internal Network or other sorts of foothold as a low privileged user in the internal network.
 
 ```
 # 2. Add a ip route on the attacker machine that will route the target sub network via the ligolo TUN interface
@@ -157,11 +156,12 @@ start
 //This will now route the sub network 10.10.0.0 via the ligolo TUN interface and through the ligolo tunnel
 //Allowing you to use any tool from the attacking maching against the new target machine
 ```
+
 ![image](https://user-images.githubusercontent.com/90450439/224545307-05571c12-31a9-41b7-b8cc-8b4365336e77.png)
 
 ### 2. Pivoting Ligolo-Ng with SSH access
 
-In the case where the Target Network as well as the Internal Network has no possibility to contact the attacking machine but via a SSH connection, it is possible to initiate a connection from a ligolo agent implanted in the Public Facing Server via a SSH Reverse tunnel. 
+In the case where the Target Network as well as the Internal Network has no possibility to contact the attacking machine but via a SSH connection, it is possible to initiate a connection from a ligolo agent implanted in the Public Facing Server via a SSH Reverse tunnel.
 
 To do this, you will first have to initiate a Reverse SSH Connection. This is mainly because the ligolo proxy always listens to connections that are first initiated by the ligolo agent. A reverse ssh connection will allow us to open a port within the Public Facing Server and whatever that connects to that perticular port will then be tunnled trough the SSH connection.
 
@@ -170,12 +170,13 @@ To do this, you will first have to initiate a Reverse SSH Connection. This is ma
 
 ssh -R 7878:127.0.0.1:1337 user@target_server_ip
 ```
+
 ![image](https://user-images.githubusercontent.com/90450439/224557695-01ad05f3-a9ca-4456-ac94-246f2b3f5228.png)
 
 Once the ssh tunnel is established, now you can transfer the ligolo agent and run the ligolo agent from the target server, simmilar to the steps shown above..
 
 {% hint style="info" %}
-The following method allows only a single ligolo agent connection. Due to the nature of the port mapping that is provided in the SSH reverse connection, once a ligolo agent "occupies" a port, it is not possible to use another ligolo agent on the same port. 
+The following method allows only a single ligolo agent connection. Due to the nature of the port mapping that is provided in the SSH reverse connection, once a ligolo agent "occupies" a port, it is not possible to use another ligolo agent on the same port.
 {% endhint %}
 
 ```
@@ -185,8 +186,9 @@ The following method allows only a single ligolo agent connection. Due to the na
 //On the target machine 
 ./agent -connect 127.0.0.1:7878 -ignore-cert
 ```
+
 ![image](https://user-images.githubusercontent.com/90450439/224558041-d257541d-a8f5-4fdd-9450-e4ef64ae4489.png)
 
 ### 2.1 Pivoting Ligolo-Ng with SSH access + SOCAT
 
-In order to avoid initiating multiple SSH connections per ligolo agent connection, you can tunnel these connections through a single SSH connection. To achieve this, we will be using the tool socat. 
+In order to avoid initiating multiple SSH connections per ligolo agent connection, you can tunnel these connections through a single SSH connection. To achieve this, we will be using the tool socat.

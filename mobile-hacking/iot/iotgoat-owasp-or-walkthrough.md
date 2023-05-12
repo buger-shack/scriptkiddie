@@ -1,6 +1,6 @@
 # IOTGoat OWASP | Walkthrough
 
-![](<../../.gitbook/assets/image (25).png>)
+![](<../../.gitbook/assets/image (1).png>)
 
 > Copyright to book.redsquad.xyz
 
@@ -55,7 +55,7 @@ dd if=IoTGoat-raspberry-pi2.img bs=1 skip=29360128 of=iotgoat.bin
 
 It is a squashfs file system so we can use **unsquashfs**, which will allow us to unpack the squashfs file system:
 
-![](<../../.gitbook/assets/image (95).png>)
+![](<../../.gitbook/assets/image (92).png>)
 
 ### 🐞 Vulnerabilities <a href="#lady_beetle-vulnerabilities" id="lady_beetle-vulnerabilities"></a>
 
@@ -118,10 +118,9 @@ Firmwalker found a database containing personal information, unsecured since it 
 
 ![](<../../.gitbook/assets/image (33).png>)
 
-This allowed us to extract unsecured sensitive information :\
+This allowed us to extract unsecured sensitive information :\\
 
-
-![](<../../.gitbook/assets/image (34).png>)
+![](<../../.gitbook/assets/image (73).png>)
 
 ## ⬛ Dynamic Analysis (1) <a href="#dynamic-analysis-black-box-black_large_square" id="dynamic-analysis-black-box-black_large_square"></a>
 
@@ -170,9 +169,9 @@ The MiniUPnP version is vulnerable to these exploits:
 
 The version of dnsmasq is outdated and vulnerable to 20 exploits:
 
-![1](<../../.gitbook/assets/image (137) (1).png>)
+![1](<../../.gitbook/assets/image (137) (1) (1) (1).png>)
 
-![2](<../../.gitbook/assets/image (62).png>)
+![2](<../../.gitbook/assets/image (87).png>)
 
 Some **PoC** are available here :
 
@@ -182,10 +181,9 @@ Some **PoC** are available here :
 **Unfortunately, we were unable to test these exploits because the virtual network interfaces had problems accessing IoTGoat and running the UPnP and Dnsmasq exploits.**
 {% endhint %}
 
-**4. DropBear 2017.75-7.1**\
+**4. DropBear 2017.75-7.1**\\
 
-
-![](<../../.gitbook/assets/image (89).png>)
+![](<../../.gitbook/assets/image (29).png>)
 
 This version is **vulnerable to 4 exploits** :
 
@@ -207,7 +205,7 @@ Moreover, a vulnerability is present in the configuration file: the **possibilit
 
 We use the **testssl.sh** tool, which allows us to check the service of a server on any port for support of TLS/SSL encryptions, protocols as well as recent cryptographic flaws and more.
 
-The cipher suites used (_CBC_) by the web service are **obsolete** :&#x20;
+The cipher suites used (_CBC_) by the web service are **obsolete** :
 
 ![](<../../.gitbook/assets/image (22).png>)
 
@@ -223,13 +221,13 @@ Moreover, the **HSTS** header is not implemented on the Web service and no secur
 
 ![](<../../.gitbook/assets/image (130).png>)
 
-The web service is potentially vulnerable to **Lucky13** :&#x20;
+The web service is potentially vulnerable to **Lucky13** :
 
 ![](<../../.gitbook/assets/image (115).png>)
 
-**2.** Finally, running an OWASP ZAP scan on the web service :&#x20;
+**2.** Finally, running an OWASP ZAP scan on the web service :
 
-![](<../../.gitbook/assets/image (133).png>)
+![](<../../.gitbook/assets/image (139).png>)
 
 * The absence of the **X-Frame-Options** header
   * Could lead to a **ClickJacking** attack.
@@ -244,13 +242,13 @@ After having decrypted the password of the **iotgoatuser** user, we connect to t
 Many manual tests have been done to try to **escalate privileges** and become root (_cf._ [_https://hackerbible.gitbook.io/en/pentest-linux/privilege-escalation/manual-checks_](https://hackerbible.gitbook.io/en/pentest-linux/privilege-escalation/manual-checks)).\
 For example, we have run **Linpeas** on the machine in order to try to find points of privilege escalation attempts:
 
-![](<../../.gitbook/assets/image (107).png>)
+![](<../../.gitbook/assets/image (144).png>)
 
 Linpeas allowed us to list the active ports on the machine, this allowed us to see 2 interesting ports open on the machine: **5515** and **65534**.
 
-The port **65534** is open on the machine, we try to connect to it with netcat :&#x20;
+The port **65534** is open on the machine, we try to connect to it with netcat :
 
-![](<../../.gitbook/assets/image (117).png>)
+![](<../../.gitbook/assets/image (80).png>)
 
 We were not able to crack the root password, so this backdoor is not useful because we can only connect as _iotgoatuser_.
 
@@ -302,15 +300,13 @@ This version of pppd is vulnerable to a denial of service and arbitrary code exe
 
 > Lack of security updates. This includes lack of firmware validation on the device, lack of secure encryption, lack of anti-rollback mechanisms, and lack of notifications of security changes due to updates.
 
-* **OpenWRT Version :**\
+* **OpenWRT Version :**\\
 
+![](<../../.gitbook/assets/image (11) (1) (1) (2).png>)
 
-![](<../../.gitbook/assets/image (11) (2).png>)
+This version is **vulnerable** to **21 exploits** :\\
 
-This version is **vulnerable** to **21 exploits** :\
-
-
-![](<../../.gitbook/assets/image (64).png>)
+![](<../../.gitbook/assets/image (67).png>)
 
 ![](<../../.gitbook/assets/image (45).png>)
 
@@ -330,10 +326,9 @@ An XSS payload has been inserted in _/cgi-bin/luci/admin/network/firewall/rules_
 
 ![](<../../.gitbook/assets/image (125).png>)
 
-Then we click on _Edit_ to trigger the XSS :\
+Then we click on _Edit_ to trigger the XSS :\\
 
-
-![](<../../.gitbook/assets/image (85).png>)
+![](<../../.gitbook/assets/image (126).png>)
 
 This XSS is also present in the **New Forward Rule** and **New Source Nat** fields, as well as in **Traffic Rules Name**.
 
@@ -349,8 +344,7 @@ This XSS payload has been inserted in _/cgi-bin/luci/admin/network/firewall/forw
 
 ![](<../../.gitbook/assets/image (7).png>)
 
-By clicking on _Edit_, we trigger the XSS :\
-
+By clicking on _Edit_, we trigger the XSS :\\
 
 ![](<../../.gitbook/assets/image (57).png>)
 
@@ -368,25 +362,21 @@ Then we click on **Save & Apply,** to trigger the XSS :
 
 #### Lack of Anti Bruteforce Mechanism
 
-We were able to test a brute force attack on the web application folders with the BurpSuite tool. This one does not implement any anti-bruteforce mechanism.\
-
+We were able to test a brute force attack on the web application folders with the BurpSuite tool. This one does not implement any anti-bruteforce mechanism.\\
 
 ![](<../../.gitbook/assets/image (52).png>)
 
 **Command Execution**
 
-There is a page _cgi-bin/luci/admin/iotgoat_ on the web service :\
-
+There is a page _cgi-bin/luci/admin/iotgoat_ on the web service :\\
 
 ![](<../../.gitbook/assets/image (15).png>)
 
-At the root of **/iotgoat**, we find this _hidden_ page:\
-
+At the root of **/iotgoat**, we find this _hidden_ page:\\
 
 ![](<../../.gitbook/assets/image (109).png>)
 
-This is a **Command Execution** vulnerability, allowing us to access the ash shell as **root** :\
-
+This is a **Command Execution** vulnerability, allowing us to access the ash shell as **root** :\\
 
 ![](<../../.gitbook/assets/image (32).png>)
 
@@ -402,7 +392,7 @@ From there, an attacker might be able to **take full control** of the machine.
 
 > Lack of security support on production-deployed devices, including asset management, update management, secure decommissioning, system monitoring and response capabilities.
 
-Logs are not enabled :&#x20;
+Logs are not enabled :
 
 ![](<../../.gitbook/assets/image (8).png>)
 

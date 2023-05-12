@@ -122,7 +122,7 @@
       * [Other CVEs](windows-hacking/active-directory/5.-privesc-and-misc/exploits/other-cves.md)
 * [🧱 Bypass AV](windows-hacking/bypass-av.md)
 
-## 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ Systems
+## 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ 👷♀ Systems
 
 * [➕ Services Enumeration](systems/services-enumeration.md)
 * [🖨 Printers](systems/printers/README.md)
@@ -191,6 +191,8 @@
   * [\[CVE-2021-45105\] - Log4J](misc/cves/cve-2021-45105-log4j.md)
   * [\[CVE-2018-15473\] - OPENSSH < 7.7](misc/cves/cve-2018-15473-openssh-less-than-7.7.md)
 * [🦊 Firefox Extensions](misc/firefox-extensions.md)
+* [🤖 AI](misc/ai/README.md)
+  * [chatGPT alternatives](misc/ai/chatgpt-alternatives.md)
 * [🍎 Free Labs](misc/free-labs.md)
 * [🎩 OSINT](misc/osint.md)
 * [🧞 Exploitation Frameworks](misc/exploitation-frameworks.md)
@@ -231,7 +233,7 @@
 
 * [🧾 IDE](developers/ide.md)
 
-## 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 LEARNING
+## 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 🧑🎓 LEARNING
 
 * [Windows](learning/windows/README.md)
   * [Active Directory](learning/windows/active-directory.md)
