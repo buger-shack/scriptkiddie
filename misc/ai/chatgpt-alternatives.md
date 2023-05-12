@@ -12,7 +12,7 @@
 * [GitHub Copilot](https://github.com/features/copilot) · Your AI pair programmer
 * [Tabnine](https://www.tabnine.com/) - AI Assistant for software developers
 * [MutableAI](https://mutable.ai/) - AI Accelerated Software Development&#x20;
-* [Safurai](https://www.safurai.com/) | Assistant for Developers - AI Coding Tool&#x20;
+* [Safurai](https://www.safurai.com/) - Assistant for Developers - AI Coding Tool&#x20;
 * [10Web](https://10web.io/) - AI Website Builder&#x20;
 
 ### Research
@@ -26,14 +26,14 @@
 
 * [Tweetmonk](https://tweetmonk.com/pricing) - AI-powered Twitter Thread Maker & Analytics&#x20;
 * [Tribescaler](https://tribescaler.com)
-* [Postwise](https://postwise.ai) | Write, Schedule & Grow with Twitter AI
-* [TweetLify](https://www.tweetlify.co/) | Twitter Growth Platform
+* [Postwise](https://postwise.ai) - Write, Schedule & Grow with Twitter AI
+* [TweetLify](https://www.tweetlify.co/) - Twitter Growth Platform
 
 ### Productivity
 
-* [Synthesia](https://www.synthesia.io/) | #1 AI Video Generation Platform
+* [Synthesia](https://www.synthesia.io/) - 1 AI Video Generation Platform
 * [Otter.ai](https://otter.ai/) - Voice Meeting Notes & Real-time Transcription
-* [Bardeen](https://www.bardeen.ai/) | Automate your repetitive tasks with one click
+* [Bardeen](https://www.bardeen.ai/) - Automate your repetitive tasks with one click
 * [CopyAI](https://www.copy.ai/) - Write better marketing copy and content with AI
 
 ### Content Creation
