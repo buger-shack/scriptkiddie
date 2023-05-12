@@ -1,8 +1,15 @@
 # Find passwords
+## MimiPenguins
+>Takes advantage of cleartext credentials in memory by dumping the process and extracting lines that have a high probability of containing cleartext passwords. Must have **root** permissions.
+{% embed url="https://github.com/huntergregal/mimipenguin" %}
+
 ```bash
-# Check file and directories permissions with :
-ls -l <file>
-# must be secured 
+# install
+git clone https://github.com/huntergregal/mimipenguin.git
+cd mimipenguin/
+
+# usage
+./mimipenguin.sh
 ```
 ## Home Directories: 
 >User's home directories can contain plaintext passwords. For example :
