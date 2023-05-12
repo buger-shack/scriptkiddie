@@ -169,7 +169,7 @@ The MiniUPnP version is vulnerable to these exploits:
 
 The version of dnsmasq is outdated and vulnerable to 20 exploits:
 
-![1](<../../.gitbook/assets/image (137) (1) (1) (1).png>)
+![1](<../../.gitbook/assets/image (137) (1) (1) (2).png>)
 
 ![2](<../../.gitbook/assets/image (87).png>)
 
@@ -302,7 +302,7 @@ This version of pppd is vulnerable to a denial of service and arbitrary code exe
 
 * **OpenWRT Version :**\\
 
-![](<../../.gitbook/assets/image (11) (1) (1) (2).png>)
+![](<../../.gitbook/assets/image (11) (1) (1) (3).png>)
 
 This version is **vulnerable** to **21 exploits** :\\
 
