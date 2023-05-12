@@ -1,4 +1,5 @@
-# Manual
+# Drupal
+## Manual
 ```bash
 # check meta
 curl https://www.drupal.org/ | grep 'content="Drupal'
@@ -10,7 +11,7 @@ curl https://www.drupal.org/user/X
 curl https://www.drupal.org/reset/user/X/1/1
 ```
 
-## Exploits
+### Exploits
 ### Drupal < 8.7.x Authenticated RCE module upload
 {% content-ref url="https://www.drupal.org/project/drupal/issues/3093274" %} RCE {% endcontent-ref %}
 {% content-ref url="https://www.drupal.org/files/issues/2019-11-08/drupal_rce.tar_.gz" %} Drupal RCE (tar) {% endcontent-ref %}
@@ -30,8 +31,8 @@ curl https://www.drupal.org/reset/user/X/1/1
 ### Check for username disclosure on old versions:
 ?q=admin/views/ajax/autocomplete/user/a
 
-# Tools
-## Drupwn
+## Tools
+### Drupwn
 >Enumeration & Exploitation
 {% content-ref url="https://github.com/immunIT/drupwn" %} Drupwn {% endcontent-ref %}
 
@@ -48,7 +49,7 @@ drupwn --mode enum --target $url
 drupwn --mode exploit --target $url
 ```
 
-## droopescan
+### droopescan
 {% content-ref url="https://github.com/SamJoan/droopescan" %} Droopescan {% endcontent-ref %}
 
 ```bash
