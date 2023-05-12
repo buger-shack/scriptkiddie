@@ -1,11 +1,11 @@
 # Find passwords
 ```bash
-# Check their permissions with :
+# Check file and directories permissions with :
 ls -l <file>
-# must be secured
+# must be secured 
 ```
 ## Home Directories: 
-User's home directories can contain plaintext passwords. For example :
+>User's home directories can contain plaintext passwords. For example :
 ```bash
 .netrc 
 .pgpass
@@ -20,7 +20,7 @@ User's home directories can contain plaintext passwords. For example :
 ```
 
 ## Configuration Files: 
-/etc directory and subdirectories
+**/etc** directory and subdirectories
 ```bash
 # (system user account information)
 /etc/passwd
@@ -51,13 +51,13 @@ find / -name 'tomcat-users.xml'
 ```
 
 ## Scheduled Jobs: 
-The cron configuration files and systemd timer units might contain scripts with embedded credentials.
+>The cron configuration files and systemd timer units might contain scripts with embedded credentials.
 ```text
 /var/spool/cron/* 
 /etc/crontab
 ```
 ## Application Files: 
-Custom applications might store passwords in their configuration files. Check any locations where you have custom software installed.
+>Custom applications might store passwords in their configuration files. Check any locations where you have custom software installed.
 ```bash
 # web app
 /var/www/html/
