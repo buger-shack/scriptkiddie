@@ -26,3 +26,15 @@ http://domain.com/sap/public/info
 |     SAPCPIC    |          ADMIN         |      000,001     |
 | EARLYWATCH     |         SUPPORT        |        066       |
 
+## Exploits
+### SAP_RECON (CVE-2020-6287, CVE-2020-6286)
+>This script allows to check SAP LM Configuration Wizard missing authorization check vulnerability and as a PoC script exploits directory traversal in queryProtocol method. Directory traversal allows to download any zip from SAP server.
+{% embed url="https://github.com/chipik/SAP_RECON" %}
+```bash
+# install
+git clone https://github.com/chipik/SAP_RECON.git
+cd SAP_RECON/
+
+# usage
+python RECON.py -h
+```
