@@ -27,5 +27,5 @@ OSINT :&#x20;
 ```bash
 smtp-user-enum -U /usr/share/seclists/Usernames/top-usernames-shortlist.txt "10.129.87.12" "25" -m RCPT
 smtp-user-enum -U ./test-users.txt "10.129.87.12" "25" -m RCPT
-```
 TEST
+```
