@@ -42,7 +42,7 @@ y = page ID
 {% embed url="https://www.neooug.org/gloc/Presentations/2018/SpendoliniHacking%20Oracle%20APEX.pdf" %}
 
 ## sqlmap
-![image](https://github.com/buger-shack/scriptkiddie/assets/61053314/8cf0f7f6-2b5a-4f38-a2d3-e0421c885ce3)
+>See slide n°24 for more infos
 
 Rewrite with **wwv_flow.show** :
 ```bash
