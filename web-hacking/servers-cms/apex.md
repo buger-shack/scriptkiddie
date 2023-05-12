@@ -39,7 +39,7 @@ y = page ID
 3. Run
 
 ## Testing SQLi
-{% embed url="https://www.neooug.org/gloc/Presentations/2018/SpendoliniHacking%20Oracle%20APEX.pdf" %} Hacking Oracle APEX (pdf) {% endcontent-ref %}
+{% embed url="https://www.neooug.org/gloc/Presentations/2018/SpendoliniHacking%20Oracle%20APEX.pdf" %}
 
 ## sqlmap
 ![image](https://github.com/buger-shack/scriptkiddie/assets/61053314/8cf0f7f6-2b5a-4f38-a2d3-e0421c885ce3)
