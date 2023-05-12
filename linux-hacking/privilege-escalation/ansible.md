@@ -1,5 +1,5 @@
 # Ansible
->If an ansible file is loaded by a root process : Privilege Escalation
+>If an ansible file is loaded by a root process : **Privilege Escalation**
 
 ## PoC
 ```bash
