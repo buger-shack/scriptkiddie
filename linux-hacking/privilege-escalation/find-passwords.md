@@ -1,6 +1,7 @@
 # Find passwords
 ## MimiPenguin
 >Takes advantage of cleartext credentials in memory by dumping the process and extracting lines that have a high probability of containing cleartext passwords. Must have **root** permissions.
+
 {% embed url="https://github.com/huntergregal/mimipenguin" %}
 
 ```bash
