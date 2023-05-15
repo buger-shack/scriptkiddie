@@ -1,4 +1,4 @@
-# ✏ Apex
+# ✏️📏 Apex
 ## Basics
 {% hint style="info" %} Oracle APEX (Application Express) is a low-code development platform that enables users to build, design, and deploy scalable and secure web applications using a web browser. It is fully integrated with the Oracle Database, making it easy to create data-driven applications quickly. APEX is particularly popular for its ease of use and the ability to create sophisticated applications with minimal coding.
 
