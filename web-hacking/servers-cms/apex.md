@@ -14,10 +14,24 @@ Application ID:Page ID:Session ID:Request:Debug:Clear Cache:Item Names:Item Valu
 APEX URL that refers to Page 1 of Application 100 : http://localhost/apex/f?p=100:1:12432087235079
 
 ### Interesting endpoints
-```text
-http://hostname:port/apex/apex_admin
-http://hostname:port/pls/apex/apex_admin
-http://hostname/ords/<workspace_name>/builder.
+```bash
+# admin interfaces
+/apex/apex_admin
+/i/apex_admin
+/pls/apex/apex_admin
+/ords/<workspace_name>/builder
+# dev URL
+/apex/wwv_flow.show?P_FLOW_ID=APP_ID
+# web service
+/apex/APP_ALIAS/wwv_flow.ajax
+/apex/APP_ALIAS/wwv_flow.file_upload
+/apex/APP_ALIAS/wwv_flow.accept
+# misc
+/apex/f?p=13000:1 # Packaged applications
+/apex/f?p=4700 # Application Builder
+/apex/f?p=4000:4500 # Team Development
+/apex/f?p=4350 # SQL Workshop
+/apex/f?p=4950 # Administration Services
 ```
 
 ## Info Leak
