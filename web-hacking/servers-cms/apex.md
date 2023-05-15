@@ -41,6 +41,16 @@ APEX_VERSION
 application-version
 apex-version
 ```
+JS files :
+```txt
+.js?v=$version
+```
+
+META :
+```html
+<!-- EXAMPLE -->
+<meta name="generator" content="Oracle Application Express 5.1">
+```
 ## Testing for IDOR
 {% embed url="https://graytier.com/blog/f/testing-for-idor-and-authorization-vulnerabilities-in-oracle-apex" %}
 ### Burp Intruder
