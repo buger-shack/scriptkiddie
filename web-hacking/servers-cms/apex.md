@@ -51,7 +51,14 @@ META :
 <!-- EXAMPLE -->
 <meta name="generator" content="Oracle Application Express 5.1">
 ```
-## Testing for IDOR
+## Testing Authorization and Authentification
+Check the login process for weaknesses, such as : 
+* **Insecure transmission of login data**,
+* **Weak password** requirements,
+* Susceptibility to **brute force attacks** (is there any account lockout ?),
+* Try to **access resources without proper authorization** to see if the application correctly restricts access.
+
+## Testing IDOR
 {% embed url="https://graytier.com/blog/f/testing-for-idor-and-authorization-vulnerabilities-in-oracle-apex" %}
 ### Burp Intruder
 https://my.app.com/apex/f?p=x:y:SESSION:::::ITEM:ITEM_VALUE
