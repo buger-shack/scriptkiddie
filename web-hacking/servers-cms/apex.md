@@ -29,11 +29,10 @@ apex-version
 ```
 ## Testing for IDOR
 {% embed url="https://graytier.com/blog/f/testing-for-idor-and-authorization-vulnerabilities-in-oracle-apex" %}
-## Application ID & Page ID
+### Burp Intruder
 https://my.app.com/apex/f?p=x:y:SESSION:::::ITEM:ITEM_VALUE
 >x = application ID
 y = page ID
-### Burp Intruder
 1. Capture a request in the proxy and send it to the Intruder tool. Set your payload position on the **pageID** parameter
 2. Under **Payloads**, choose the “**Numbers**” payload and set an appropriate range you’d like to test. 
 3. Run
