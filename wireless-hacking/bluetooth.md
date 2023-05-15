@@ -1,7 +1,7 @@
 # 🫐 Bluetooth
 
 {% embed url="https://github.com/kimbo/bluesnarfer" %}
-
+{% embed url="https://github.com/zedxpace/bluetooth-hacking-" %} Bluetooth Hacking {% endembed %}
 ```bash
 # scan peripherals
 service bluetooth start
@@ -20,4 +20,4 @@ AT+CMGS="+336875648" # sends SMS
 
 ```
 
-{% embed url="https://github.com/fO-000/bluescan" %}
+{% embed url="https://github.com/fO-000/bluescan" %} 
