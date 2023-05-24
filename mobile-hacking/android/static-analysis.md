@@ -37,7 +37,7 @@ git clone https://github.com/dwisiswant0/apkleaks
 cd apkleaks/
 pip3 install -r requirements.txt
 # usage
-python3 apkleaks.py -f $apk_file -o results.txt
+python3 apkleaks.py -f app.apk -o results.txt
 ```
 ### apkenum
 {% embed url="https://github.com/shivsahni/APKEnum" %}
@@ -46,7 +46,7 @@ python3 apkleaks.py -f $apk_file -o results.txt
 git clone https://github.com/shivsahni/APKEnum.git
 cd APKEnum
 # usage
-python2 APKEnum.py -p $apk_file
+python2 APKEnum.py -p app.apk
 ```
 
 ## Enumerate AWS buckets
@@ -104,7 +104,7 @@ cat /res/values/strings.xml | grep "firebase"
 git clone https://github.com/shivsahni/FireBaseScanner
 cd FireBaseScanner/
 # usage
-python2 FireBaseScanner.py -p $apk_file
+python2 FirebaseMisconfig.py -p app.apk
 ```
 1. Go to browser : https://xyz.firebaseio.com/.json
 2. If "**Permission Denied**" : you cannot access it => **well configured**
@@ -142,14 +142,14 @@ docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf
 ```bash
 git clone https://github.com/Cyber-Buddy/APKHunt.git
 cd apkhunt
-go run apkhunt.go -p $app_full_path -l
+go run apkhunt.go -p app.apk -l
 ```
 
 ### MARA
 ```bash
 git clone --recursive https://github.com/xtiankisutsa/MARA_Framework
 cd MARA_Framework
-./mara.sh --help
+./mara.sh -s app.apk
 ```
 
 ### QARK
@@ -161,7 +161,7 @@ pip install . --user  # --user is only needed if not using a virtualenv
 qark --help
 
 # apk
-qark --apk path/to/my.apk
+qark --apk app.apk
 
 # java files
 qark --java $path_java_folder
@@ -194,9 +194,9 @@ Sensitive information, such as API keys, passwords, and other credentials, are d
 
 ```bash
 # Reverse Engineer the application :
-apktool d $apk_file
+apktool d app.apk
 # or
-jadx-gui $apk_file
+jadx-gui app.apk
 # look for sensitive infos such as passwords, api keys, etc...
 # check /lib files
 ```
