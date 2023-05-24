@@ -1,5 +1,5 @@
 # Dynamic Analysis
-In the docs, MAHH = [Mobile Application Hacker’s Handbook](https://github.com/mohammedshine/MOBILEAPP_PENTESTING_101/blob/bce9450a121abfd6420d0df6717471255ad99d3f/PDF/Mobile%20App%20Hackers%20Handbook.pdf]
+In the docs, MAHH = [Mobile Application Hacker’s Handbook](https://github.com/mohammedshine/MOBILEAPP_PENTESTING_101/blob/bce9450a121abfd6420d0df6717471255ad99d3f/PDF/Mobile%20App%20Hackers%20Handbook.pdf)
 
 {% embed url="https://mas.owasp.org/MAS_checklist/" %}
 OWASP checklist
