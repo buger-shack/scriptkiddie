@@ -337,7 +337,7 @@ adb shell am start -a android.intent.action.VIEW -d "scheme://hostname/path?para
 ### WebView Attacks
 {% embed url="https://book.hacktricks.xyz/mobile-pentesting/android-app-pentesting/webview-attacks" %}
 
-[WebView Remote Code Execution](https://labs.f-secure.com/advisories/webview-addjavascriptinterface-remote-code-execution/)
+{% embed url="https://labs.f-secure.com/advisories/webview-addjavascriptinterface-remote-code-execution/" %}
 
 >WebView is a view that allows an application to load web pages within it. Internally it uses web rendering engines such as Webkit. The Webkit rendering engine was used prior to Android version 4.4 to load these web pages. On the latest versions (after 4.4) of Android, it is done using Chromium. When an application uses a WebView, it is run within the context of the application, which has loaded the WebView. To load external web pages from the Internet, the application requires INTERNET permission in its `AndroidManifest.xml` file:
 
