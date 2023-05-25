@@ -1,4 +1,4 @@
-# 🎆 Networks Security
+# Networks Security
 
 {% hint style="info" %}
 **On Cisco Equipments.**
