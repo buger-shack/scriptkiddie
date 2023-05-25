@@ -161,6 +161,7 @@
   * [Reversing](mobile-hacking/android/reversing.md)
   * [Static Analysis](mobile-hacking/android/static-analysis.md)
   * [Dynamic Analysis](mobile-hacking/android/dynamic-analysis.md)
+* [Disable SSL Pinning](mobile-hacking/disable-ssl-pinning.md)
 * [iOS](mobile-hacking/ios.md)
 * [IOT](mobile-hacking/iot/README.md)
   * [IOTGoat OWASP | Walkthrough](mobile-hacking/iot/iotgoat-owasp-or-walkthrough.md)
