@@ -1,4 +1,4 @@
-# ❌ Bad Practices
+# Bad Practices
 
 ## Checklist
 
