@@ -1,4 +1,4 @@
-# ⚙ Bruteforce tools
+# Bruteforce tools
 
 ![](https://media0.giphy.com/media/l3fzT5zFwWu4qaMwM/giphy.gif?cid=ecf05e47di3px41edfczlb6njwlgi5v14azilnbcz5dy4r9v\&rid=giphy.gif\&ct=g)
 
