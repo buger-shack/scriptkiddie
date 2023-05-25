@@ -1,4 +1,4 @@
-# 🎨 Steganography | Cipher
+# Steganography | Cipher
 
 ## `Steganography`
 
