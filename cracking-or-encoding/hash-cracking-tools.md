@@ -1,4 +1,4 @@
-# 〰 Hash Cracking Tools
+# Hash Cracking Tools
 
 ## `Hashcat`
 
