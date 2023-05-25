@@ -11,3 +11,7 @@ HTTP SECURITY HEADERS SCANNER - Python
 {% embed url="https://github.com/buger-shack/http-methods-identifier" %}
 HTTP METHODS IDENTIFIER - Python
 {% endembed %}
+
+{% embed url="https://github.com/saladandonionrings/leaky" %}
+LEAKY - for db leaks
+{% endembed %}

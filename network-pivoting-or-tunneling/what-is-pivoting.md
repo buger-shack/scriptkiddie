@@ -6,7 +6,7 @@
 
 * Put simply, by using one of the _techniques_, it becomes possible to gain initial access to a remote network, and use it to _access other machines in the network_ that would **not otherwise be accessible** :
 
-![](<../../.gitbook/assets/image (82).png>)
+![](<../.gitbook/assets/image (82).png>)
 
 * In this diagram, there are **four** machines on the target network: one public facing server, with three machines which are not exposed to the internet. **By accessing the public server, we can then pivot to attack the remaining three targets.**
 

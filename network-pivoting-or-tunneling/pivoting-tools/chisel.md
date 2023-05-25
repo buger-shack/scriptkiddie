@@ -84,4 +84,4 @@ As with SSH, a local port forward is where we connect from our own attacking mac
 
 * For example, to connect to `172.16.0.5:8000` (the **compromised host** running a **chisel server**), forwarding our **local port** `2222` to `172.16.0.10:22` (our intended target), use: `./chisel client 172.16.0.5:8000 2222:172.16.0.10:22`
 
-### Use Cases&#x20;
+### Use Cases

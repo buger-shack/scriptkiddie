@@ -49,4 +49,4 @@ It will be extremely slow. Try to only use Nmap through a proxy when using the N
 
 Proxychains is an **acceptable** option when working with **CLI tools**, but if working in a **web browser** to access a **webapp** through a proxy, there is a better option available, namely: **FoxyProxy**!
 
-![](<../../../.gitbook/assets/image (75).png>)
+![](<../../.gitbook/assets/image (75).png>)

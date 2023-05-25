@@ -10,7 +10,7 @@
   * [Exposition Audit - Plan](web-hacking/initial-foothold/exposition-audit-plan.md)
   * [Internal Audit - Plan](web-hacking/initial-foothold/internal-audit-plan.md)
   * [External Audit - Plan](web-hacking/initial-foothold/external-audit-plan.md)
-* [OSINT](web-hacking/osint.md)
+* [OSINT](misc/osint.md)
 * [CTFs shortcuts](web-hacking/ctfs-shortcuts.md)
 * [Enumeration](web-hacking/enumeration/README.md)
   * [Network Scanners](web-hacking/enumeration/network-scanners.md)
@@ -22,9 +22,9 @@
   * [Security Headers](web-hacking/http-stuff/security-headers.md)
   * [HTTP Parameters](web-hacking/http-stuff/parameters.md)
 * [Sessions / Tokens](web-hacking/sessions-tokens/README.md)
-  * [Cookies](web-hacking/sessions-tokens/cookies.md)
-  * [JWT](web-hacking/sessions-tokens/jwt/README.md)
-    * [Attacking JWT](web-hacking/sessions-tokens/jwt/attacking-jwt.md)
+  * [Cookies](web-hacking/http-stuff/cookies.md)
+  * [JWT](web-hacking/http-stuff/jwt/README.md)
+    * [Attacking JWT](web-hacking/http-stuff/jwt/attacking-jwt.md)
 * [Injections](web-hacking/injections/README.md)
   * [HTML | XSS](web-hacking/injections/html-or-xss.md)
   * [SQLi](web-hacking/injections/sqli/README.md)
@@ -121,9 +121,9 @@
 * [Privilege Escalation](windows-hacking/privilege-escalation.md)
 * [Shells](windows-hacking/shells.md)
 * [Bypasses](windows-hacking/bypasses/README.md)
-  * [Antivirus](windows-hacking/bypasses/bypass-av.md)
-  * [AppLocker](windows-hacking/bypasses/applocker.md)
-  * [BitLocker](windows-hacking/bypasses/bitlocker.md)
+  * [Antivirus](windows-hacking/bypass-av.md)
+  * [AppLocker](windows-hacking/applocker.md)
+  * [BitLocker](windows-hacking/bitlocker.md)
 
 ## 💽 Systems
 
@@ -142,17 +142,17 @@
 
 ## 🎆 Networks
 
-* [Pivoting](networks/what-is-pivoting/README.md)
-  * [Tools / Guide](networks/what-is-pivoting/pivoting-tools/README.md)
-    * [Proxychains / FoxyProxy](networks/what-is-pivoting/pivoting-tools/proxychains-foxyproxy.md)
-    * [SSH Tunnelling / Port Forwarding](networks/what-is-pivoting/pivoting-tools/ssh-tunnelling-port-forwarding.md)
-    * [Plinx.exe](networks/what-is-pivoting/pivoting-tools/plinx.exe.md)
-    * [Socat](networks/what-is-pivoting/pivoting-tools/socat.md)
-    * [Chisel](networks/what-is-pivoting/pivoting-tools/chisel.md)
-    * [Sshuttle](networks/what-is-pivoting/pivoting-tools/sshuttle.md)
-    * [Ligolo-Ng : Pivoting use cases](networks/what-is-pivoting/pivoting-tools/ligolo-ng.md)
-* [Firewalls](networks/firewalls/README.md)
-  * [🔥 Evasion](networks/firewalls/evasion.md)
+* [Pivoting](network-pivoting-or-tunneling/what-is-pivoting.md)
+  * [Tools / Guide](network-pivoting-or-tunneling/pivoting-tools/README.md)
+    * [Proxychains / FoxyProxy](network-pivoting-or-tunneling/pivoting-tools/proxychains-foxyproxy.md)
+    * [SSH Tunnelling / Port Forwarding](network-pivoting-or-tunneling/pivoting-tools/ssh-tunnelling-port-forwarding.md)
+    * [Plinx.exe](network-pivoting-or-tunneling/pivoting-tools/plinx.exe.md)
+    * [Socat](network-pivoting-or-tunneling/pivoting-tools/socat.md)
+    * [Chisel](network-pivoting-or-tunneling/pivoting-tools/chisel.md)
+    * [Sshuttle](network-pivoting-or-tunneling/pivoting-tools/sshuttle.md)
+    * [Ligolo-Ng : Pivoting use cases](network-pivoting-or-tunneling/pivoting-tools/ligolo-ng.md)
+* [Firewalls](misc/firewalls/README.md)
+  * [🔥 Evasion](misc/firewalls/evasion.md)
 
 ## 📱 Mobile Hacking
 
@@ -252,4 +252,4 @@
 
 * [Searching for CVEs](bug-bounty-related/searching-for-cves.md)
 * [\[FR\] Laws](bug-bounty-related/fr-laws.md)
-* [Dorks](bug-bounty-related/dorks.md)
+* [Dorks](bug-bounty-related/bug-bounty-stuff/dorks.md)

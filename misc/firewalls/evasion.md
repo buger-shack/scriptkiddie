@@ -34,7 +34,7 @@ Nmap will choose two random source IP addresses to use as decoys.
 
 ### **Proxy**
 
-**Use an HTTP/SOCKS4 proxy.** Relaying the port scan via a proxy helps keep your IP address unknown to the target host. This technique allows you to keep your IP address hidden while the target logs the IP address of the proxy server.&#x20;
+**Use an HTTP/SOCKS4 proxy.** Relaying the port scan via a proxy helps keep your IP address unknown to the target host. This technique allows you to keep your IP address hidden while the target logs the IP address of the proxy server.
 
 You can go this route using the Nmap option `--proxies PROXY_URL`. For example :
 
@@ -46,19 +46,19 @@ This will send all its packets via the proxy server you specify. _Note that you 
 
 ### **Spoofed MAC Address**
 
-Spoof the source MAC address. Nmap allows you to **spoof your MAC address** using the option `--spoof-mac MAC_ADDRESS`. This technique is tricky; spoofing the MAC address works only if your system is on the **same network segment as the target** host.&#x20;
+Spoof the source MAC address. Nmap allows you to **spoof your MAC address** using the option `--spoof-mac MAC_ADDRESS`. This technique is tricky; spoofing the MAC address works only if your system is on the **same network segment as the target** host.
 
 The target system is going to reply to a spoofed MAC address. It allows you to exploit any trust relationship based on MAC addresses. Moreover, you can use this technique to hide your scanning activities on the network. For example, you can make your scans appear as if coming from a network printer.
 
 ### **Spoofed IP Address**
 
-Spoof the source IP address. Nmap lets you **spoof your IP address** using `-S IP_ADDRESS`. Spoofing the IP address is useful if your system is on the **same subnetwork as the target** host; otherwise, you won’t be able to read the replies sent back. The reason is that the target host will reply to the spoofed IP address, and unless you can capture the responses, you won’t benefit from this technique.&#x20;
+Spoof the source IP address. Nmap lets you **spoof your IP address** using `-S IP_ADDRESS`. Spoofing the IP address is useful if your system is on the **same subnetwork as the target** host; otherwise, you won’t be able to read the replies sent back. The reason is that the target host will reply to the spoofed IP address, and unless you can capture the responses, you won’t benefit from this technique.
 
 Another use for spoofing your IP address is when you control the system that has that particular IP address. Consequently, if you notice that the target started to block the spoofed IP address, you can switch to a different spoofed IP address that belongs to a system that you also control. This scanning technique can help you maintain stealthy existence; moreover, you can use this technique to exploit trust relationships on the network based on IP addresses.
 
 ### **Fixed Source Port Number**
 
-Use a specific **source port number**. Scanning from one particular source port number can be **helpful if you discover that the firewalls allow incoming packets from particular source port** numbers, such as port **53** or **80**. Without inspecting the packet contents, packets from source TCP port 80 or 443 look like packets from a web server, while packets from UDP port 53 look like responses to DNS queries.&#x20;
+Use a specific **source port number**. Scanning from one particular source port number can be **helpful if you discover that the firewalls allow incoming packets from particular source port** numbers, such as port **53** or **80**. Without inspecting the packet contents, packets from source TCP port 80 or 443 look like packets from a web server, while packets from UDP port 53 look like responses to DNS queries.
 
 You can set your port number using `-g` or `--source-port` options.
 
@@ -181,12 +181,12 @@ We have an SMTP server listening on port **25**; however, we cannot connect to t
 
 `ncat -lvnp 443 -c "ncat TARGET_SERVER 25"`
 
-`-lvnp 443` listens on TCP port 443. Because the port number is less than 1024, you need to run ncat as root in this case.&#x20;
+`-lvnp 443` listens on TCP port 443. Because the port number is less than 1024, you need to run ncat as root in this case.
 
-`-c` or `--sh-exec` executes the given command via _/bin/sh_.&#x20;
+`-c` or `--sh-exec` executes the given command via _/bin/sh_.
 
 `"ncat TARGET_SERVER 25"` will connect to the target server at port 25.
 
-As a result, `ncat` will listen on port 443, but it will forward all packets to port 25 on the target server. Because in this case, the firewall is blocking port 25 and allowing port 443, port tunneling is an efficient way to evade the firewall.&#x20;
+As a result, `ncat` will listen on port 443, but it will forward all packets to port 25 on the target server. Because in this case, the firewall is blocking port 25 and allowing port 443, port tunneling is an efficient way to evade the firewall.
 
-![Port Tunneling - Schema ](<../../.gitbook/assets/image (71).png>)
+![Port Tunneling - Schema](<../../.gitbook/assets/image (71).png>)

@@ -12,7 +12,7 @@ Whilst the following techniques could not be used to **set up a full proxy into 
 
 * For example, if you are attempting to get a **shell** on a **target** that does not have a **direct connection back** to your attacking computer, you could use socat to set up **a relay** on the **currently compromised machine**. This **listens** for the reverse shell from the target and then **forwards it immediately** back to the **attacking box**:
 
-![](<../../../.gitbook/assets/image (50).png>)
+![](<../../.gitbook/assets/image (50).png>)
 
 `Socat static binaries :`
 
