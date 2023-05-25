@@ -1,4 +1,4 @@
-# 🌡 Searching for CVEs
+# Searching for CVEs
 
 ## Searchsploit&#x20;
 
