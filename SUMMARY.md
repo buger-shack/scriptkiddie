@@ -1,7 +1,7 @@
 # Table of contents
 
 * [🏠 /home/red-squad](README.md)
-  * [⏲ Recently Added](readme/pipline.md)
+  * [⏰ Recently Added](readme/pipline.md)
   * [🥳 Support our projects](readme/support-our-projects.md)
 
 ## 🌐 Web Hacking
@@ -18,7 +18,7 @@
   * [Web Scanners](web-hacking/enumeration/web-scanners.md)
 * [HTTP Stuff](web-hacking/http-stuff/README.md)
   * [HTTP Methods](web-hacking/http-stuff/http-methods/README.md)
-    * [⛔ 403 Bypass](web-hacking/http-stuff/http-methods/403-bypass.md)
+    * [403 Bypass](web-hacking/http-stuff/http-methods/403-bypass.md)
   * [Security Headers](web-hacking/http-stuff/security-headers.md)
   * [HTTP Parameters](web-hacking/http-stuff/parameters.md)
 * [Sessions / Tokens](web-hacking/sessions-tokens/README.md)
