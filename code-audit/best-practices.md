@@ -1,4 +1,4 @@
-# ✅ Best Practices
+# Best Practices
 
 {% embed url="https://vladtoie.gitbook.io/secure-coding" %}
 Secure Coding Handbook
