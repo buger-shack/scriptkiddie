@@ -1,4 +1,4 @@
-# 🍯 HoneyPots
+# HoneyPots
 
 ![](<../.gitbook/assets/giphy (1).gif>)
 
