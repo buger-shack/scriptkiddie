@@ -127,8 +127,8 @@
 
 ## 💽 Systems
 
-* [➕ Services Enumeration](systems/services-enumeration.md)
-* [🖨 Printers](systems/printers/README.md)
+* [Services Enumeration](systems/services-enumeration.md)
+* [Printers](systems/printers/README.md)
   * [Printer Exploitation Tool (PRET)](systems/printers/printer-exploitation-tool-pret.md)
   * [CUPS](systems/printers/cups.md)
 
@@ -177,18 +177,18 @@
   * [👃 Sniffing](wireless-hacking/wi-fi-attacks/sniffing.md)
 * [Bluetooth](wireless-hacking/bluetooth.md)
 
-## 📕 Code Audit
+## 👨💻 Code Audit
 
 * [Best Practices](code-audit/best-practices.md)
 * [Bad Practices](code-audit/bad-practices.md)
 * [Tools](code-audit/tools.md)
 
-## 🐷 Thick Client Hacking
+## 🍑 Thick Client Hacking
 
 * [Thick Client Pentesting Methodology](thick-client-hacking/thick-client-pentesting-methodology.md)
 * [Resources](thick-client-hacking/resources.md)
 
-## 💥 MISC
+## 🗄 MISC
 
 * [CVEs](misc/cves/README.md)
   * [\[CVE-2021-34527\] - PrintNighmare](misc/cves/cve-2021-34527-printnighmare.md)
