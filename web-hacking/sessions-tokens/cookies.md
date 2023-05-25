@@ -1,4 +1,4 @@
-# 🍪 Cookies
+# Cookies
 
 ![](https://media0.giphy.com/media/EKUvB9uFnm2Xe/giphy.gif?cid=790b76117665cc87ce52d95e97e019b3293e3fe69096b44d\&rid=giphy.gif\&ct=g)
 

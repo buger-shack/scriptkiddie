@@ -1,4 +1,4 @@
-# 🧱 Bypass AV
+# Antivirus
 
 ## Obfuscated payloads
 

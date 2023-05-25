@@ -1,4 +1,4 @@
-# ⭕ Reverse Shells
+# Reverse Shells
 
 ## List
 
@@ -6,11 +6,9 @@
 Reverse Shell List
 {% endembed %}
 
-
-
 ## Reverse Shell Online Generators
 
-Host locally :&#x20;
+Host locally :
 
 {% embed url="https://github.com/0dayCTF/reverse-shell-generator" %}
 

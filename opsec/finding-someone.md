@@ -1,4 +1,4 @@
-# 🧑 Finding Someone
+# Finding Someone
 
 ## Everything
 

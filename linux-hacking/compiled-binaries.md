@@ -1,4 +1,4 @@
-# 👁 Compiled Binaries
+# Compiled Binaries
 
 {% embed url="https://github.com/andrew-d/static-binaries" %}
 

@@ -1,4 +1,4 @@
-# 🔓 AppLocker
+# AppLocker
 
 ## Brief
 

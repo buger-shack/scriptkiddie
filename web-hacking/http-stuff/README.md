@@ -1,2 +1,2 @@
-# 🌎 HTTP Stuff
+# HTTP Stuff
 

@@ -1,4 +1,4 @@
-# 👥 Active Directory
+# Active Directory
 
 Active Directory is a widely used directory service by Microsoft that stores information about users, computers, and other resources on a network. As with any technology, Active Directory has its own set of vulnerabilities that can be exploited by attackers to gain unauthorized access to network resources. Some common Active Directory vulnerabilities are:
 
@@ -12,22 +12,22 @@ Active Directory is a widely used directory service by Microsoft that stores inf
 
 ## Windows Active Directory pentest methodology
 
-{% content-ref url="1.-reconnaissance/" %}
-[1.-reconnaissance](1.-reconnaissance/)
+{% content-ref url="1.-reconnaissance" %}
+[1.-reconnaissance](1.-reconnaissance)
 {% endcontent-ref %}
 
-{% content-ref url="2.-initial-attack-vectors/" %}
-[2.-initial-attack-vectors](2.-initial-attack-vectors/)
+{% content-ref url="2.-initial-attack-vectors" %}
+[2.-initial-attack-vectors](2.-initial-attack-vectors)
 {% endcontent-ref %}
 
-{% content-ref url="3.-post-compromise-enumeration/" %}
-[3.-post-compromise-enumeration](3.-post-compromise-enumeration/)
+{% content-ref url="3.-post-compromise-enumeration" %}
+[3.-post-compromise-enumeration](3.-post-compromise-enumeration)
 {% endcontent-ref %}
 
-{% content-ref url="4.-post-compromise-attacks/" %}
-[4.-post-compromise-attacks](4.-post-compromise-attacks/)
+{% content-ref url="4.-post-compromise-attacks" %}
+[4.-post-compromise-attacks](4.-post-compromise-attacks)
 {% endcontent-ref %}
 
-{% content-ref url="5.-privesc-and-misc/" %}
-[5.-privesc-and-misc](5.-privesc-and-misc/)
+{% content-ref url="5.-privesc-and-misc" %}
+[5.-privesc-and-misc](5.-privesc-and-misc)
 {% endcontent-ref %}

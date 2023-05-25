@@ -1,4 +1,4 @@
-# 🎣 Phishing
+# Phishing
 
 ## Find domain name
 
@@ -16,7 +16,7 @@ dnstwist $domain
 ## Find person to impersonate
 
 {% hint style="info" %}
-OSINT :&#x20;
+OSINT :
 
 * hunter.io
 * LinkedIn

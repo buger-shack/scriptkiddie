@@ -1,4 +1,4 @@
-# 🍻 Support our projects
+# 🥳 Support our projects
 
 {% embed url="https://github.com/saladandonionrings/NextGen-Spoofer" %}
 ARP & DNS SPOOFER - Python

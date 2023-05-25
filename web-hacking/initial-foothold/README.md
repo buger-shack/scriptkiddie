@@ -1,3 +1,3 @@
-# 🦶 Initial Foothold
+# How To ?
 
 ![](../../.gitbook/assets/foot.gif)

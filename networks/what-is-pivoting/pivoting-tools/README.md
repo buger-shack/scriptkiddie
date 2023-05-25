@@ -2,7 +2,7 @@
 description: An all-in-one Red Teamer's guide to pivoting.
 ---
 
-# ⚙ Pivoting tools & Guide
+# Tools / Guide
 
 This is a Red Teamer's guide to pivoting, including a collection of all the necessary pivoting tools, use cases, and tips that will enable you to pivot and route your traffic through a tunnel (socks or TCP) that you create. With basic knowledge of networking and routing capabilities, you can follow the Lego brick patterns by interconnecting different tools and ports to step up your pivoting techniques.
 

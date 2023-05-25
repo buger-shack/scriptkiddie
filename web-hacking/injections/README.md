@@ -5,7 +5,7 @@ description: >-
   application handles user input.
 ---
 
-# 💉 Injections
+# Injections
 
 There are several types of injections that attackers can use to exploit vulnerabilities in web applications. Some of the most common include:
 

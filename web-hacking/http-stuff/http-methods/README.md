@@ -1,4 +1,4 @@
-# 🛣 HTTP Methods
+# HTTP Methods
 
 ## Identify Methods Used
 

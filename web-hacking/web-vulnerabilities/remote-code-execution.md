@@ -1,4 +1,4 @@
-# 🌡 Remote Code Execution
+# Remote Code Execution
 
 ![](https://media2.giphy.com/media/3orieNQgdcxedKjA3e/giphy.gif?cid=ecf05e47vcaxf58vv1mfubdyh4asgd6u8a0t54rnppx2k4o4\&rid=giphy.gif\&ct=g)
 
@@ -10,11 +10,9 @@ If an attacker **gains control** of a target computer through some sort of vulne
 * It is one of the cyber-attacks where an attacker can remotely execute commands on someone’s computer
 * It usually occurs due to malicious malware downloaded by the host and can happen regardless of the geographic location of the device.
 
-
-
 **How is it possible ?**
 
-_With RCE, hackers can edit or destroy important files, steal confidential data, perform DDoS (Distributed Denial of Service) attacks, and compromise the entire system._&#x20;
+_With RCE, hackers can edit or destroy important files, steal confidential data, perform DDoS (Distributed Denial of Service) attacks, and compromise the entire system._
 
 **The attacks can be occurred due to:**
 
@@ -40,7 +38,7 @@ Exploiting this kind of attack depends on various factors, including the design 
 For example, a user can include a malicious payload into an apache log file via **User-Agent or other HTTP headers**. In SSH, the user can inject a malicious payload in the **username section**.
 {% endhint %}
 
-#### **How To**&#x20;
+#### **How To**
 
 **Apache Log Files**
 

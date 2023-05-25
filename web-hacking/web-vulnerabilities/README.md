@@ -1,2 +1,2 @@
-# 🕸 Web Vulnerabilities
+# Web Vulnerabilities
 

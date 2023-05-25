@@ -1,6 +1,6 @@
-# 🌎 Web Scanners
+# Web Scanners
 
-## nikto&#x20;
+## nikto
 
 {% hint style="info" %}
 <mark style="color:blue;">**Website vulnerability Scanner**</mark>
@@ -21,7 +21,7 @@ nikto -h https://0.0.0.0 -ssl
 ## Whatweb
 
 {% hint style="info" %}
-<mark style="color:blue;">**WhatWeb**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">identifies websites</mark><mark style="color:blue;">**.**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">It</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**recognizes web technologies**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">including content management systems (</mark><mark style="color:blue;">**CMS**</mark><mark style="color:blue;">),</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**blogging platforms**</mark><mark style="color:blue;">,</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**statistic/analytics packages**</mark><mark style="color:blue;">,</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**JavaScript libraries**</mark><mark style="color:blue;">,</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**web servers**</mark><mark style="color:blue;">, and</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**embedded devices**</mark><mark style="color:blue;">.</mark>&#x20;
+<mark style="color:blue;">**WhatWeb**</mark> <mark style="color:blue;">identifies websites</mark><mark style="color:blue;">**.**</mark> <mark style="color:blue;">It</mark> <mark style="color:blue;">**recognizes web technologies**</mark> <mark style="color:blue;">including content management systems (</mark><mark style="color:blue;">**CMS**</mark><mark style="color:blue;">),</mark> <mark style="color:blue;">**blogging platforms**</mark><mark style="color:blue;">,</mark> <mark style="color:blue;">**statistic/analytics packages**</mark><mark style="color:blue;">,</mark> <mark style="color:blue;">**JavaScript libraries**</mark><mark style="color:blue;">,</mark> <mark style="color:blue;">**web servers**</mark><mark style="color:blue;">, and</mark> <mark style="color:blue;">**embedded devices**</mark><mark style="color:blue;">.</mark>
 {% endhint %}
 
 {% embed url="https://github.com/urbanadventurer/WhatWeb" %}

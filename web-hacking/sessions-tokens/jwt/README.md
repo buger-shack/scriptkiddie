@@ -1,4 +1,4 @@
-# ⭐ JWT
+# JWT
 
 ## Brief
 
@@ -6,7 +6,7 @@ JSON web tokens (JWTs) are a standardized format for sending cryptographically s
 
 Unlike with classic session tokens, all of the data that a server needs is stored client-side within the JWT itself. This makes JWTs a popular choice for highly distributed websites where users need to interact seamlessly with multiple back-end servers.
 
-A JWT consists of **3 parts**: a header, a payload, and a signature. These are each separated by a dot, as shown in the following example:&#x20;
+A JWT consists of **3 parts**: a header, a payload, and a signature. These are each separated by a dot, as shown in the following example:
 
 <figure><img src="../../../.gitbook/assets/image (123).png" alt=""><figcaption><p>JWT example</p></figcaption></figure>
 

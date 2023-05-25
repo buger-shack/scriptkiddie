@@ -1,4 +1,3 @@
-# 🤖 Android
+# Android
 
 ![](../.gitbook/assets/android.gif)
-

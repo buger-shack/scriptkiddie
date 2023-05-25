@@ -1,11 +1,11 @@
-# 🧱 WAF Bypass
+# WAF Bypass
 
 ## Brief
 
 {% hint style="info" %}
-A **WAF** or web application firewall helps protect web applications by **filtering** and **monitoring** HTTP traffic between a web application and the Internet.&#x20;
+A **WAF** or web application firewall helps protect web applications by **filtering** and **monitoring** HTTP traffic between a web application and the Internet.
 
-It typically protects web applications from attacks such as **cross-site forgery**, cross-site-scripting (**XSS**), **file inclusion**, and **SQL injection**, among others.&#x20;
+It typically protects web applications from attacks such as **cross-site forgery**, cross-site-scripting (**XSS**), **file inclusion**, and **SQL injection**, among others.
 
 A WAF is a protocol **layer 7** defense (in the OSI model), and is not designed to defend against all types of attacks. This method of attack mitigation is usually part of a suite of tools which together create a holistic defense against a range of attack vectors.
 {% endhint %}
@@ -77,7 +77,7 @@ UniOn%28SeLeCt+1%2C2%2C3%2C4%2C5%2C6%2C7%2C8%2C9%2C10%29
 https://example.com/page.php?id=1%252f%252a*/UNION%252f%252a /SELECT
 ```
 
-### Unicode&#x20;
+### Unicode
 
 {% hint style="info" %}
 * **ASCII** characters in Unicode encoding give us great variants for bypassing WAF.

@@ -1,9 +1,9 @@
-# 🗃 Directory/Files Scanners
+# Directory/Files Scanners
 
 ## gobuster
 
 {% hint style="info" %}
-<mark style="color:blue;">A tool used to</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**brute-force**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">URIs (directories and files), DNS subdomains and virtual host names.</mark>
+<mark style="color:blue;">A tool used to</mark> <mark style="color:blue;">**brute-force**</mark> <mark style="color:blue;">URIs (directories and files), DNS subdomains and virtual host names.</mark>
 {% endhint %}
 
 {% embed url="https://github.com/OJ/gobuster" %}
@@ -53,12 +53,10 @@ gobuster dns -d http://0.0.0.0 -w /usr/share/SecLists/Discovery/DNS/namelist.txt
 gobuster dir -u http://0.0.0.0 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x txt,html,js,json,php,py --proxy http://127.0.0.1:8081
 ```
 
-
-
 ## Feroxbuster
 
 {% hint style="info" %}
-<mark style="color:blue;">A simple, fast,</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**recursive**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">content discovery tool written in Rust.</mark>
+<mark style="color:blue;">A simple, fast,</mark> <mark style="color:blue;">**recursive**</mark> <mark style="color:blue;">content discovery tool written in Rust.</mark>
 {% endhint %}
 
 {% embed url="https://github.com/xmendez/wfuzz" %}

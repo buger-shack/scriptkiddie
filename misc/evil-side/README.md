@@ -1,2 +1,2 @@
-# 👹 Evil Side
+# Evil Side
 

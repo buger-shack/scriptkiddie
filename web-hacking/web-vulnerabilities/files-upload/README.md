@@ -1,2 +1,2 @@
-# 📁 Files / Upload
+# Files / Upload
 

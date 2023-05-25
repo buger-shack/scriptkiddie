@@ -1,9 +1,9 @@
-# 🖥 Network Scanners
+# Network Scanners
 
 ## nmap
 
 {% hint style="info" %}
-<mark style="color:blue;">Nmap is a</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**network scanner**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">created by</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**Gordon Lyon**</mark><mark style="color:blue;">. Nmap is used to</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**discover hosts**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">and</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**services**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">on a</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**computer network**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">by sending packets and analyzing the responses. Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection.</mark>
+<mark style="color:blue;">Nmap is a</mark> <mark style="color:blue;">**network scanner**</mark> <mark style="color:blue;">created by</mark> <mark style="color:blue;">**Gordon Lyon**</mark><mark style="color:blue;">. Nmap is used to</mark> <mark style="color:blue;">**discover hosts**</mark> <mark style="color:blue;">and</mark> <mark style="color:blue;">**services**</mark> <mark style="color:blue;">on a</mark> <mark style="color:blue;">**computer network**</mark> <mark style="color:blue;">by sending packets and analyzing the responses. Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection.</mark>
 {% endhint %}
 
 {% embed url="https://github.com/nmap/nmap" %}
@@ -116,10 +116,10 @@ nmap -p80 --script http-unsafe-output-escaping scanme.nmap.org
 nmap -p80 --script http-sql-injection scanme.nmap.org
 ```
 
-## rustscan&#x20;
+## rustscan
 
 {% hint style="info" %}
-<mark style="color:blue;">**Faster**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">than nmap</mark>
+<mark style="color:blue;">**Faster**</mark> <mark style="color:blue;">than nmap</mark>
 {% endhint %}
 
 {% embed url="https://github.com/RustScan/RustScan" %}

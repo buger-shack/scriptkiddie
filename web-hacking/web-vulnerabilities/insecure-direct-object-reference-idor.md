@@ -1,4 +1,4 @@
-# 💡 Insecure Direct Object Reference (IDOR)
+# IDOR
 
 ## Brief
 
@@ -14,7 +14,7 @@
 
 ### **Post Variables**
 
-Examining the contents of forms on a website can sometimes reveal fields that could be vulnerable to IDOR exploitation.&#x20;
+Examining the contents of forms on a website can sometimes reveal fields that could be vulnerable to IDOR exploitation.
 
 For instance, the following HTML code for a form that updates a user's password :
 

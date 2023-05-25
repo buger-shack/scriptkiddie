@@ -1,4 +1,4 @@
-# 🏛 Servers / CMS
+# Servers / CMS
 
 ## CMSMap
 

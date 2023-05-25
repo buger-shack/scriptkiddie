@@ -1,6 +1,6 @@
-# 📄 Security Headers
+# Security Headers
 
-#### Source&#x20;
+#### Source
 
 {% embed url="https://owasp.org/www-project-secure-headers" %}
 
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 python h_scan -u https://$target
 ```
 
-## :white\_check\_mark: Good&#x20;
+## :white\_check\_mark: Good
 
 ### Strict-Transport-Security (HSTS)
 
@@ -147,7 +147,7 @@ Setting this header will prevent the browser from interpreting files as somethin
 | --------- | ------------------------------------------------------------------------------------------- |
 | `nosniff` | Will prevent the browser from MIME-sniffing a response away from the declared content-type. |
 
-**Example**&#x20;
+**Example**
 
 ```
 X-Content-Type-Options: nosniff

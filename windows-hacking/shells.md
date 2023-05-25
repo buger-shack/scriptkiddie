@@ -1,4 +1,4 @@
-# 🐚 Shells
+# Shells
 
 ## Evil-WinRM
 

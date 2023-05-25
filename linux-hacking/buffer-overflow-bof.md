@@ -1,7 +1,7 @@
-# 📦 Buffer Overflow (BOF)
+# Buffer Overflow
 
 {% hint style="info" %}
-Buffer overflow is an **anomaly** that occurs when **software writing data to a buffer overflows the buffer’s capacity**, resulting in **adjacent memory locations being overwritten**.&#x20;
+Buffer overflow is an **anomaly** that occurs when **software writing data to a buffer overflows the buffer’s capacity**, resulting in **adjacent memory locations being overwritten**.
 
 _In other words, too much information is being passed into a container that does not have enough space, and that information ends up replacing data in adjacent containers._
 
@@ -51,8 +51,6 @@ info registers eip
 # Use the memory address to calculate the offset
 /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -q 0x69423569
 ```
-
-
 
 ![](<../.gitbook/assets/image (146).png>)
 
@@ -173,8 +171,6 @@ run $(python -c 'print "\x55" * (1040 - 124 - 95 - 4) + "\x90" * 124 + "\xda\xca
    Shellcode = "\xda\xca\xba\xe4\x11\xd4...<SNIP>...\x5a\x22\xa2"
    EIP = "\x4c\xd6\xff\xff"
 ```
-
-
 
 ### GDB Syntax
 

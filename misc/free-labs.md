@@ -2,7 +2,7 @@
 description: Test your pentesting knowledge!
 ---
 
-# 🍎 Free Labs
+# Hacking Labs
 
 ## Web
 
@@ -12,7 +12,7 @@ description: Test your pentesting knowledge!
 
 * [TestASP (Forum - ASP)](http://testasp.vulnweb.com)
 * [TestAspNet (Blog - .NET)](http://testaspnet.vulnweb.com)
-* [VulnWeb ](http://testphp.vulnweb.com)
+* [VulnWeb](http://testphp.vulnweb.com)
 * [Cenzic CrackMeBank](http://crackme.cenzic.com/)
 * [Google Gruyere (Python)](http://google-gruyere.appspot.com/start)
 * [Hacking-Lab (eg. OWASP Top 10)](https://www.hacking-lab.com/events/registerform.html?eventid=245)
@@ -31,15 +31,15 @@ description: Test your pentesting knowledge!
 
 * [The BodgeIt Store (Java)](http://code.google.com/p/bodgeit/)
 * [OWASP Bricks (PHP)](http://sechow.com/bricks/index.html)
-* [The ButterFly Security Project (PHP) ](http://sourceforge.net/projects/thebutterflytmp/)
-* [bWAPP - an extremely buggy web application! (PHP)  ](http://www.itsecgames.com)
+* [The ButterFly Security Project (PHP)](http://sourceforge.net/projects/thebutterflytmp/)
+* [bWAPP - an extremely buggy web application! (PHP)](http://www.itsecgames.com)
 * [Damn Vulnerable Web Application - DVWA (PHP)](http://www.dvwa.co.uk)
 * [Damn Vulnerable Web Services - DVWS (PHP)](http://dvws.secureideas.net)
 * [OWASP Hackademic Challenges Project (PHP)](https://www.owasp.org/index.php/OWASP\_Hackademic\_Challenges\_Project)
 * [Google Gruyere (Python)](http://google-gruyere.appspot.com)
 * [Hacme Bank (.NET)](http://www.mcafee.com/us/downloads/free-tools/hacme-bank.aspx)
 * [Hacme Books (Java)](http://www.mcafee.com/us/downloads/free-tools/hacmebooks.aspx)
-* [Hacme Casino (Ruby on Rails)](http://www.mcafee.com/us/downloads/free-tools/hacme-casino.aspx)&#x20;
+* [Hacme Casino (Ruby on Rails)](http://www.mcafee.com/us/downloads/free-tools/hacme-casino.aspx)
 * [Hacme Shipping (ColdFusion)](http://www.mcafee.com/us/downloads/free-tools/hacmeshipping.aspx)
 * [Hacme Travel (C++)](http://www.mcafee.com/us/downloads/free-tools/hacmetravel.aspx)
 * [Mutillidae (PHP)](http://www.irongeek.com/i.php?page=mutillidae/mutillidae-deliberately-vulnerable-php-owasp-top-10)
@@ -67,9 +67,9 @@ description: Test your pentesting knowledge!
 * [GameOver (VMware)](http://sourceforge.net/projects/null-gameover/)
 * [Hackxor (VMware)](http://hackxor.sourceforge.net/cgi-bin/index.pl)
 * [Hacme Bank Prebuilt VM (VMware)](http://ninja-sec.com/index.php/hacme-bank-prebuilt-vmware-image-ninja-sec-com/)
-* [Kioptrix4 (VMware & Hyper-V) ](http://www.kioptrix.com/blog/?p=604)
+* [Kioptrix4 (VMware & Hyper-V)](http://www.kioptrix.com/blog/?p=604)
 * [LAMPSecurity (VMware)](http://sourceforge.net/projects/lampsecurity/)
-* [Metasploitable (VMware) ](http://blog.metasploit.com/2010/05/introducing-metasploitable.html)
+* [Metasploitable (VMware)](http://blog.metasploit.com/2010/05/introducing-metasploitable.html)
 * [Metasploitable 2 (VMware)](https://community.rapid7.com/docs/DOC-1875)
 * [Moth (VMware)](http://www.bonsai-sec.com/en/research/moth.php)
 * [PentesterLab - The Exercises (ISO & PDF)](https://www.pentesterlab.com/exercises/)
@@ -89,7 +89,7 @@ description: Test your pentesting knowledge!
 ## Android
 
 * [DVAA](https://code.google.com/archive/p/dvaa/)
-* [DIVA Android](https://github.com/payatu/diva-android)&#x20;
+* [DIVA Android](https://github.com/payatu/diva-android)
   * [Walkthrough](https://danishzia.medium.com/diva-android-app-walkthrough-bce72b7f273a)
 * [Android InsecureBank v2](https://github.com/dineshshetty/Android-InsecureBankv2)
 * [hpAndro Android AppSec (Kotlin)](https://github.com/RavikumarRamesh/hpAndro1337)
@@ -99,7 +99,7 @@ description: Test your pentesting knowledge!
 * [OWASP Crackmes](https://github.com/OWASP/owasp-mstg/tree/master/Crackmes/Android)
 * [Sieve app](https://github.com/tanprathan/sievePWN)
 * [Purposefully Insecure and Vulnerable Android Application(PIIVA)](https://github.com/htbridge/pivaa)
-* [Damn Vulnerable Hybrid Mobile App (DVHMA) ](https://github.com/logicalhacking/DVHMA)
+* [Damn Vulnerable Hybrid Mobile App (DVHMA)](https://github.com/logicalhacking/DVHMA)
 * [Damn Vulnerable Bank](https://github.com/rewanthtammana/Damn-Vulnerable-Bank)
 
 ## IOT

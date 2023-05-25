@@ -1,4 +1,4 @@
-# 📺 IOT
+# IOT
 
 ![OWASP IOT TOP 10 - 2018](<../../.gitbook/assets/image (101).png>)
 
@@ -9,7 +9,7 @@ Check IOT default password
 {% endembed %}
 
 {% hint style="info" %}
-Use of :&#x20;
+Use of :
 
 * Easily bruteforced
 * Publicly available
@@ -37,8 +37,6 @@ See OWASP TOP 10, insecure interfaces in the ecosystem outside the device :
 * Backend API
 * Cloud
 * Mobile
-
-
 
 **Common issues :**
 
@@ -96,7 +94,7 @@ Lack of encryption or access control of sensitive data anywhere within the ecosy
 ### 9. Insecure Default Settings
 
 {% hint style="info" %}
-Bad filesystem permissions&#x20;
+Bad filesystem permissions
 
 Exposed services running as root
 {% endhint %}
@@ -106,4 +104,3 @@ Exposed services running as root
 {% hint style="info" %}
 Easily Available Debug Port Discovery
 {% endhint %}
-

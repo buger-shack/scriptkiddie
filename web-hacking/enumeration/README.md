@@ -2,5 +2,5 @@
 description: Enumeration is Key
 ---
 
-# ➕ Enumeration
+# Enumeration
 

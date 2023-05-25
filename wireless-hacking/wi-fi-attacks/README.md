@@ -1,4 +1,4 @@
-# ⚡ Wi-Fi Attacks
+# Wi-Fi Attacks
 
 {% embed url="https://mmmds.pl/wifi-cheatsheet" %}
 

@@ -1,4 +1,4 @@
-# 🪜 Privilege Escalation
+# Privilege Escalation
 
 {% embed url="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md" %}
 Source
@@ -818,7 +818,7 @@ Because (in this example) "C:\Program Files\nodejs" is _before_ "C:\WINDOWS\syst
 
 List of exploits kernel : [https://github.com/SecWiki/windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits)
 
-**#Security Bulletin   #KB     #Description    #Operating System**
+**#Security Bulletin #KB #Description #Operating System**
 
 * [MS17-017](https://github.com/SecWiki/windows-kernel-exploits/tree/master/MS17-017) 　\[KB4013081]　　\[GDI Palette Objects Local Privilege Escalation]　　(windows 7/8)
 * [CVE-2017-8464](https://github.com/SecWiki/windows-kernel-exploits/tree/master/CVE-2017-8464) 　\[LNK Remote Code Execution Vulnerability]　　(windows 10/8.1/7/2016/2010/2008)

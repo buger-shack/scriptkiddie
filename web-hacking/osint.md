@@ -1,4 +1,4 @@
-# 🎩 OSINT
+# OSINT
 
 {% hint style="info" %}
 **OSINT (open-source intelligence)** is a branch of intelligence that analyzes information about people or organizations from sources available to the public.
@@ -23,7 +23,7 @@ At the same time, cybercriminals use OSINT to identify promising targets and wea
 * Metainformation obtainable using specialized tools or by analyzing other materials (e.g., comments in program code).
 {% endhint %}
 
-### User OSINT&#x20;
+### User OSINT
 
 {% embed url="https://github.com/WebBreacher/WhatsMyName" %}
 user and username enumeration on various websites
@@ -32,11 +32,9 @@ user and username enumeration on various websites
 {% embed url="https://whatsmyname.app" %}
 
 {% embed url="https://namechk.com" %}
-&#x20;
-{% endembed %}
 
 {% embed url="https://github.com/sherlock-project/sherlock" %}
-Sherlock : Find usernames accross social media platform&#x20;
+Sherlock : Find usernames accross social media platform
 {% endembed %}
 
 {% embed url="https://github.com/khast3x/h8mail" %}
@@ -58,8 +56,6 @@ See your organization's attack surface
 ### Web based Host OSINT
 
 {% embed url="https://search.censys.io" %}
-&#x20;
-{% endembed %}
 
 {% embed url="https://www.shodan.io" %}
 
