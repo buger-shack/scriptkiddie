@@ -4,16 +4,16 @@
 
 **Resources :**
 
-* https://infosecwriteups.com/hail-frida-the-universal-ssl-pinning-bypass-for-android-e9e1d733d29
-* https://kishorbalan.medium.com/its-all-about-android-ssl-pinning-bypass-and-intercepting-proxy-unaware-applications-91689c0763d8
-* https://blog.certcube.com/android-ssl-pinng-bypass-with-frida/
+{% embed url="https://infosecwriteups.com/hail-frida-the-universal-ssl-pinning-bypass-for-android-e9e1d733d29" %}
+
+{% embed url="https://kishorbalan.medium.com/its-all-about-android-ssl-pinning-bypass-and-intercepting-proxy-unaware-applications-91689c0763d8" %}
+
+{% embed url="https://blog.certcube.com/android-ssl-pinng-bypass-with-frida/" %}
 
 ### Frida
 
 ```bash
-'''
-FRIDA SSL PINNING
-'''
+# install
 pip install frida-tools
 
 # get android device architecture
@@ -57,9 +57,6 @@ frida -U --codeshare pcipolloni/universal-android-ssl-pinning-bypass-with-frida 
 ### APK-MITM
 
 ```bash
-'''
-APK-MITM
-'''
 # install
 npm install -g apk-mitm
 
@@ -72,14 +69,20 @@ adb install $apk_patched
 
 ### Magisk - Move Certificates Module
 
-**1. Download Magisk.apk** : https://github.com/topjohnwu/Magisk/releases **2. Launch it in your device** : Allow SuperUser access **3. Follow :** https://www.xda-developers.com/how-to-install-magisk/ **4. Enable MagiskHide :** Magisk App > Modules > Enable 'Move Certificates'
+1.  **Download Magisk.apk** : [https://github.com/topjohnwu/Magisk/releases](https://github.com/topjohnwu/Magisk/releases)
+
+
+2.  **Launch it in your device** : Allow SuperUser access&#x20;
+
+
+3.  **Follow :** [https://www.xda-developers.com/how-to-install-magisk/](https://www.xda-developers.com/how-to-install-magisk/)
+
+
+4. **Enable MagiskHide :** Magisk App > Modules > Enable 'Move Certificates'
 
 ### Objection
 
 ```bash
-'''
-OBJECTION
-'''
 pip3 install objection
 
 # start frida server on android device
