@@ -1,4 +1,4 @@
-# 📜 Wordlists
+# Wordlists
 
 ![](https://media0.giphy.com/media/B7o99rIuystY4/giphy.gif?cid=ecf05e47cf3wyj24p0mb9x0ecz5kqfzxwwgade22vbck2cph\&rid=giphy.gif\&ct=g)
 
