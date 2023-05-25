@@ -19,6 +19,8 @@ rustscan -a $target -- -sC -sV -oN scan
 # Google Dorking (infos leak)
 site:$target filetype:txt
 site:$target filetype:pdf
+site:$target intext:admin
+site:$target inurl:admin
 
 # Accounts Leaks : intelx.io 
 
