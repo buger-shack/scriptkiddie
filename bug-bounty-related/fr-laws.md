@@ -1,4 +1,4 @@
-# ⚖ \[FR] Laws
+# [FR] Laws
 
 {% embed url="https://itrust.fr/ressources/cyberathack/Le%20pentest%20face%20au%20droit.pdf" %}
 Le Pentest face au droit
