@@ -1,4 +1,4 @@
-# 📦 Bug Bounty Stuff
+# Bug Bounty Stuff
 
 ## Get Started
 
