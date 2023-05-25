@@ -1,4 +1,4 @@
-# 🔍 Online IoC Scanners
+# IoC Scanners
 
 ## Have a doubt : scan me here
 
