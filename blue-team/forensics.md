@@ -1,4 +1,4 @@
-# 🐾 Forensics
+# Forensics
 
 ## Image analysis
 
