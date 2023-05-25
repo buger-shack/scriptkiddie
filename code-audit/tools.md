@@ -1,4 +1,4 @@
-# ⚙ Tools
+# Tools
 
 ## SONARQUBE
 
