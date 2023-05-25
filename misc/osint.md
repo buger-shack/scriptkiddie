@@ -79,8 +79,8 @@ network mapping of attack surfaces and external asset discovery
 provides an insight into what type of data has been exposed by breaches, cleartext passwords
 {% endembed %}
 
-{% embed url="https://leak.to" %}
-Exclusive leaks (need authentication)
+{% embed url="https://search.illicit.services" %}
+Search DB Leaks
 {% endembed %}
 
 * Shodan - Search for devies connected to the internet.
