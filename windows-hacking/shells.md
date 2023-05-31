@@ -4,7 +4,7 @@
 
 {% embed url="https://github.com/Hackplayers/evil-winrm" %}
 
-### Test
+### Test with cme
 
 ```bash
 cme winrm -i IP/hostname -u $USERNAME -p $PASSWORD/-H $LM_HASH
@@ -18,10 +18,18 @@ evil-winrm -i IP/hostname -u $USERNAME -H $HASH
 evil-winrm -i IP/hostname -u $USERNAME -p $PASSWORD
 ```
 
-## RDP - freerdp
+## RDP
+
+### freerdp
 
 ```bash
 freerdp /u:$user /p:$password /v:$ip
+```
+
+### remmina
+
+```bash
+remmina -c rdp://$user@$ip
 ```
 
 ## `Impacket-psexec`

@@ -132,6 +132,8 @@
   * [AppLocker](windows-hacking/applocker.md)
   * [BitLocker](windows-hacking/bitlocker.md)
 * [Useful AD Commands](windows-hacking/useful-ad-commands.md)
+* [Office](windows-hacking/office/README.md)
+  * [CVE-2023-21716 (Microsoft Word RCE)](windows-hacking/office/cve-2023-21716-microsoft-word-rce.md)
 
 ## 💽 Systems
 
