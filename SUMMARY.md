@@ -124,6 +124,7 @@
   * [Antivirus](windows-hacking/bypass-av.md)
   * [AppLocker](windows-hacking/applocker.md)
   * [BitLocker](windows-hacking/bitlocker.md)
+* [Useful AD Commands](windows-hacking/useful-ad-commands.md)
 
 ## 💽 Systems
 
