@@ -50,7 +50,8 @@
   * [💧 Drupal](web-hacking/servers-cms/drupal.md)
   * [✏ Apex](web-hacking/servers-cms/apex.md)
   * [🐦 Apache](web-hacking/servers-cms/apache.md)
-  * [🔷 WordPress](web-hacking/servers-cms/wordpress.md)
+  * [🔷 WordPress](web-hacking/servers-cms/wordpress/README.md)
+    * [Wordpress eBook Download < 1.2 - CVE-2016-10924](web-hacking/servers-cms/wordpress/wordpress-ebook-download-less-than-1.2-cve-2016-10924.md)
   * [⏩ SAP](web-hacking/servers-cms/sap.md)
   * [🕴 Jenkins](web-hacking/servers-cms/jenkins.md)
   * [🏢 Server-Side Vulnerabilities](web-hacking/servers-cms/server-side-vulnerabilities/README.md)
@@ -75,6 +76,7 @@
 * [Compiled Binaries](linux-hacking/compiled-binaries.md)
 * [Buffer Overflow](linux-hacking/buffer-overflow-bof.md)
 * [Docker Escape](linux-hacking/docker.md)
+* [File sharing](linux-hacking/file-sharing.md)
 
 ## 🪟 Windows Hacking
 
@@ -123,6 +125,7 @@
     * [Exploits](windows-hacking/active-directory/5.-privesc-and-misc/exploits/README.md)
       * [noPac - CVE-2021-42278](windows-hacking/active-directory/5.-privesc-and-misc/exploits/nopac-cve-2021-42278.md)
       * [ZeroLogon - CVE-2020-1472](windows-hacking/active-directory/5.-privesc-and-misc/exploits/zerologon-cve-2020-1472.md)
+      * [LocalPotato - CVE-2023-21746](windows-hacking/active-directory/5.-privesc-and-misc/exploits/localpotato-cve-2023-21746.md)
       * [PrintNightMare](windows-hacking/active-directory/5.-privesc-and-misc/exploits/printnightmare.md)
       * [Other CVEs](windows-hacking/active-directory/5.-privesc-and-misc/exploits/other-cves.md)
 * [Privilege Escalation](windows-hacking/privilege-escalation.md)
@@ -133,6 +136,7 @@
   * [BitLocker](windows-hacking/bitlocker.md)
 * [Useful AD Commands](windows-hacking/useful-ad-commands.md)
 * [Office](windows-hacking/office/README.md)
+  * [Forgot password of file ?](windows-hacking/office/forgot-password-of-file.md)
   * [CVE-2023-21716 (Microsoft Word RCE)](windows-hacking/office/cve-2023-21716-microsoft-word-rce.md)
 
 ## 💽 Systems

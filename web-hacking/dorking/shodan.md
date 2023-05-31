@@ -2,11 +2,37 @@
 
 ## Resources
 
-https://github.com/jakejarvis/awesome-shodan-queries
+{% embed url="https://github.com/jakejarvis/awesome-shodan-queries" %}
 
 ## Basic
 
-port: Search by specific port net: Search based on an IP/CIDR hostname: Locate devices by hostname os: Search by Operating System city: Locate devices by city country: Locate devices by country geo: Locate devices by coordinates org: Search by organization before/after: Timeframe delimiter hash: Search based on banner hash has\_screenshot:true Filter search based on a screenshot being present title: Search based on text within the title asn: Search ASN e.g. 'AS12345' ssl.jarm: Search by JARM fingerprint
+port: Search by specific port&#x20;
+
+net: Search based on an IP/CIDR&#x20;
+
+hostname: Locate devices by hostname&#x20;
+
+os: Search by Operating System&#x20;
+
+city: Locate devices by city&#x20;
+
+country: Locate devices by country&#x20;
+
+geo: Locate devices by coordinates&#x20;
+
+org: Search by organization&#x20;
+
+before/after: Timeframe delimiter&#x20;
+
+hash: Search based on banner hash&#x20;
+
+has\_screenshot:true Filter search based on a screenshot being present&#x20;
+
+title: Search based on text within the title&#x20;
+
+asn: Search ASN e.g. 'AS12345'&#x20;
+
+ssl.jarm: Search by JARM fingerprint
 
 #### city:
 
@@ -22,7 +48,12 @@ Find devices by giving geographical coordinates. `geo:"56.913055,118.250862"`
 
 #### Location
 
-`country:us` `country:ru country:de city:chicago`
+```
+country:us 
+country:ru 
+country:de 
+city:chicago
+```
 
 #### hostname:
 
@@ -34,7 +65,10 @@ Find devices based on an IP address or /x CIDR. `net:210.214.0.0/16`
 
 #### Organization
 
-`org:microsoft` `org:"United States Department"`
+```
+org:microsoft 
+org:"United States Department"
+```
 
 #### Autonomous System Number (ASN)
 
@@ -62,23 +96,67 @@ Expired certificates `ssl.cert.expired:true`
 
 #### Device Type
 
-`device:firewall` `device:router` `device:wap` `device:webcam` `device:media` `device:"broadband router"` `device:pbx` `device:printer` `device:switch` `device:storage` `device:specialized` `device:phone` `device:"voip"` `device:"voip phone"` `device:"voip adaptor"` `device:"load balancer"` `device:"print server"` `device:terminal` `device:remote` `device:telecom` `device:power` `device:proxy` `device:pda` `device:bridge`
+```
+device:firewall 
+device:router 
+device:wap 
+device:webcam 
+device:media 
+device:"broadband router" 
+device:pbx 
+device:printer 
+device:switch 
+device:storage 
+device:specialized 
+device:phone 
+device:"voip" 
+device:"voip phone" 
+device:"voip adaptor" 
+device:"load balancer" 
+device:"print server" 
+device:terminal 
+device:remote 
+device:telecom 
+device:power 
+device:proxy 
+device:pda 
+device:bridge
+```
 
 #### Operating System
 
-`os:"windows 7"` `os:"windows server 2012"` `os:"linux 3.x"`
+```
+os:"windows 7" 
+os:"windows server 2012"
+os:"linux 3.x"
+```
 
 #### Product
 
-`product:apache` `product:nginx` `product:android` `product:chromecast`
+```
+product:apache 
+product:nginx 
+product:android 
+product:chromecast
+```
 
 #### Customer Premises Equipment (CPE)
 
-`cpe:apple` `cpe:microsoft` `cpe:nginx` `cpe:cisco`
+```
+cpe:apple 
+cpe:microsoft 
+cpe:nginx 
+cpe:cisco
+```
 
 #### Server
 
-`server: nginx` `server: apache` `server: microsoft` `server: cisco-ios`
+```
+server: nginx 
+server: apache 
+server: microsoft 
+server: cisco-ios
+```
 
 #### ssh fingerprints
 

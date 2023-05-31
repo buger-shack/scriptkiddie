@@ -42,7 +42,7 @@ copy the hash onto your attacker machine and put it into a .txt file so we can c
 
 `hashcat -m 13100 -a 0 hash.txt wordlist.txt` - now crack that hash
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Impacket
 

