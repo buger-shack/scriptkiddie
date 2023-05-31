@@ -42,7 +42,11 @@ gospider -q -c 10 -S urls.txt -o scan
 python linkedin2username.py myname@email.com uber-
 ```
 
-### Leaked passwords&#x20;
+### Leaked passwords
+
+{% embed url="https://search.illicit.services/" %}
+Db leaks
+{% endembed %}
 
 {% embed url="https://intelx.io/" %}
 

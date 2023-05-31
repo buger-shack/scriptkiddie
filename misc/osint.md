@@ -79,7 +79,7 @@ network mapping of attack surfaces and external asset discovery
 provides an insight into what type of data has been exposed by breaches, cleartext passwords
 {% endembed %}
 
-{% embed url="https://search.illicit.services" %}
+{% embed url="https://search.illicit.services" fullWidth="false" %}
 Search DB Leaks
 {% endembed %}
 
