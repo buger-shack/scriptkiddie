@@ -69,7 +69,7 @@ docker pull sonarqube:8.9-community
 docker run -d — name sonarqube -p 9000:9000 sonarqube:8.9-community
 docker ps -a
 # go to http://localhost:9000
-# admin:admin
+# admin:sonarqube
 ```
 
 ## BANDIT

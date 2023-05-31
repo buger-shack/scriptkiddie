@@ -38,6 +38,8 @@
 
 > The Android Manifest is an XML file which contains **important** metadata about the Android app. This includes the package name, activity names, main activity (the entry point to the app), Android version support, hardware features support, permissions, and other configurations.
 
+### Tools
+
 {% tabs %}
 {% tab title="apkinspector" %}
 > Find permissions and dependencies used by an Android application.&#x20;
@@ -84,7 +86,7 @@ python2 APKEnum.py -p $apk_file
 ```
 {% endtab %}
 
-{% tab title="apkelaks" %}
+{% tab title="apkleaks" %}
 > Scanning APK file for URIs, endpoints & secrets.&#x20;
 
 {% embed url="https://github.com/dwisiswant0/apkleaks" %}
@@ -186,14 +188,6 @@ python2 Firebase_Exploit.py
 ```
 
 ## Unobfuscated code - Frameworks
-
-<details>
-
-<summary></summary>
-
-
-
-</details>
 
 ### MobSF
 

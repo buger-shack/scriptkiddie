@@ -50,7 +50,7 @@
   * [💧 Drupal](web-hacking/servers-cms/drupal.md)
   * [✏ Apex](web-hacking/servers-cms/apex.md)
   * [🐦 Apache](web-hacking/servers-cms/apache.md)
-  * [🔷 WordPress](web-hacking/servers-cms/wordpress/README.md)
+  * [🔷 WordPress](web-hacking/servers-cms/wordpress.md)
     * [Wordpress eBook Download < 1.2 - CVE-2016-10924](web-hacking/servers-cms/wordpress/wordpress-ebook-download-less-than-1.2-cve-2016-10924.md)
   * [⏩ SAP](web-hacking/servers-cms/sap.md)
   * [🕴 Jenkins](web-hacking/servers-cms/jenkins.md)
