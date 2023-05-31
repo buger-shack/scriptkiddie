@@ -2,7 +2,19 @@
 
 ## Identify Methods Used
 
-### Script
+### httpmethods
+
+{% embed url="https://github.com/ShutdownRepo/httpmethods" %}
+
+```bash
+# install
+git clone https://github.com/ShutdownRepo/httpmethods
+cd httpmethods
+python3 setup.py install
+
+# usage
+httpmethods -u http://www.example.com/
+```
 
 ### Metasploit
 
@@ -17,9 +29,7 @@ exploit
 
 ## List
 
-|                GET               |                                HEAD                               |            POST           |                                          PUT                                          |            DELETE            |               CONNECT              |                           OPTIONS                           |                                 TRACE                                 |                    PATCH                    |
-| :------------------------------: | :---------------------------------------------------------------: | :-----------------------: | :-----------------------------------------------------------------------------------: | :--------------------------: | :--------------------------------: | :---------------------------------------------------------: | :-------------------------------------------------------------------: | :-----------------------------------------: |
-| Retrieves data using a given URI | Same as GET but only transfers the status line and header section | Sends data the the server | Replaces all current representations of the target resource with the uploaded content | Deletes a specified resource | Establishes a tunnel to the server | Describes the communication options for the target resource | Performs message-loop-back test along the path to the target resource | Applies partial modifications to a resource |
+<table data-full-width="false"><thead><tr><th align="center">GET</th><th align="center">HEAD</th><th align="center">POST</th><th align="center">PUT</th><th align="center">DELETE</th><th align="center">CONNECT</th><th align="center">OPTIONS</th><th align="center">TRACE</th><th align="center">PATCH</th></tr></thead><tbody><tr><td align="center">Retrieves data using a given URI</td><td align="center">Same as GET but only transfers the status line and header section</td><td align="center">Sends data the the server</td><td align="center">Replaces all current representations of the target resource with the uploaded content</td><td align="center">Deletes a specified resource</td><td align="center">Establishes a tunnel to the server</td><td align="center">Describes the communication options for the target resource</td><td align="center">Performs message-loop-back test along the path to the target resource</td><td align="center">Applies partial modifications to a resource</td></tr></tbody></table>
 
 ## TRACE method
 
