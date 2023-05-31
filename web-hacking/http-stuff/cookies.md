@@ -1,6 +1,6 @@
 # Cookies
 
-![](https://media0.giphy.com/media/EKUvB9uFnm2Xe/giphy.gif?cid=790b76117665cc87ce52d95e97e019b3293e3fe69096b44d\&rid=giphy.gif\&ct=g)
+<figure><img src="https://media0.giphy.com/media/xT0xeMA62E1XIlup68/giphy.gif?cid=ecf05e47hzwww0fov1vtcj7c08nu9al2s4h4uil0vdhpf9si&#x26;ep=v1_gifs_search&#x26;rid=giphy.gif&#x26;ct=g" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Cookies are small bits of data that are stored in your browser. **Each browser will store them separately, so cookies in Chrome won't be available in Firefox.** They have a huge number of uses, but the most common are either session management or advertising (tracking cookies). Cookies are normally sent with every HTTP request made to a server.
