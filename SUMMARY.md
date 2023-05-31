@@ -89,7 +89,7 @@
       * [secretsdump](windows-hacking/active-directory/2.-initial-attack-vectors/impacket/secretsdump.md)
       * [findDelegation](windows-hacking/active-directory/2.-initial-attack-vectors/impacket/finddelegation.md)
       * [GetNPUsers](windows-hacking/active-directory/2.-initial-attack-vectors/impacket/getnpusers.md)
-      * [Lookupsid](windows-hacking/active-directory/2.-initial-attack-vectors/impacket/lookupsid.py.md)
+      * [Lookupsid](windows-hacking/active-directory/2.-initial-attack-vectors/lookupsid.py.md)
     * [SMBRelay](windows-hacking/active-directory/2.-initial-attack-vectors/smbrelay.md)
     * [Relay Poisoning Ressources](windows-hacking/active-directory/2.-initial-attack-vectors/relay-poisoning-ressources.md)
     * [Windows Secrets](windows-hacking/active-directory/2.-initial-attack-vectors/windows-secrets.md)

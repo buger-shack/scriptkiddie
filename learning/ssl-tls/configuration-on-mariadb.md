@@ -130,7 +130,7 @@ MariaDB [(bank)]> status;
 
 Logging in as **root**, we remove the old privileges of the user **foo** :
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (5) (1).png>)
 
 New ones are created, allowing the client to verify the server certificate and the server to verify the client certificate:
 
@@ -154,7 +154,7 @@ Check by logging in as a **foo** user:
 
 1 : The first TLS packet is "**Client Hello**". The client lists the SSL/TLS versions and cipher suites it is able to use (here 31 suites) :
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (6).png>)
 
 2 : Then a "**Server Hello**" packet arrives. The server consults the list of SSL/TLS versions and cipher suites and chooses the most recent one it can use. Then the server sends a message to the client containing the SSL/TLS version and the cipher suite it has chosen :
 

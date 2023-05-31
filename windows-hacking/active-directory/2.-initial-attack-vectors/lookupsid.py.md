@@ -1,4 +1,4 @@
-# Lookupsid.py
+# Lookupsid
 
 > _Windows SID brute forcer example through \[MS-LSAT] MSRPC Interface, aiming at finding remote users/groups._
 
