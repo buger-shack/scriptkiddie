@@ -25,6 +25,10 @@ At the same time, cybercriminals use OSINT to identify promising targets and wea
 
 ### User OSINT
 
+{% embed url="https://hunter.io/search" %}
+Get emails
+{% endembed %}
+
 {% embed url="https://github.com/WebBreacher/WhatsMyName" %}
 user and username enumeration on various websites
 {% endembed %}

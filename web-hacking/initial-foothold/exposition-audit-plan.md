@@ -34,20 +34,4 @@ gospider -q -c 10 -S urls.txt -o scan
 
 ## OSINT
 
-### Get emails
-
-{% embed url="https://hunter.io" %}
-
-```bash
-python linkedin2username.py myname@email.com uber-
-```
-
-### Leaked passwords
-
-{% embed url="https://search.illicit.services/" %}
-Db leaks
-{% endembed %}
-
-{% embed url="https://intelx.io/" %}
-
-{% embed url="https://haveibeenpwned.com/" %}
+[Here](../../misc/osint.md)
