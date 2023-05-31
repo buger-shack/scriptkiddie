@@ -154,7 +154,7 @@ Check by logging in as a **foo** user:
 
 1 : The first TLS packet is "**Client Hello**". The client lists the SSL/TLS versions and cipher suites it is able to use (here 31 suites) :
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (3).png>)
 
 2 : Then a "**Server Hello**" packet arrives. The server consults the list of SSL/TLS versions and cipher suites and chooses the most recent one it can use. Then the server sends a message to the client containing the SSL/TLS version and the cipher suite it has chosen :
 

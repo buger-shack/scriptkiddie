@@ -2,7 +2,9 @@
 
 ## SPN
 
-> A service principal name (SPN) is the name by which a Kerberos client uniquely identifies an instance of a service for a given Kerberos target computer. If you install multiple instances of a service on computers throughout a forest, each instance must have its own SPN. A given service instance can have multiple SPNs if there are multiple names that clients might use for authentication. For example, an SPN always includes the name of the host computer on which the service instance is running, so a service instance might register an SPN for each name or alias of its host.
+> A service principal name (SPN) is the name by which a **Kerberos client uniquely identifies an instance of a service** for a given Kerberos target computer.&#x20;
+>
+> If you install multiple instances of a service on computers throughout a forest, **each instance must have its own SPN**. A given service instance can have multiple SPNs if there are multiple names that clients might use for authentication. For example, an SPN always includes the name of the host computer on which the service instance is running, so a service instance might register an SPN for each name or alias of its host.
 
 ## Kerberoasting
 

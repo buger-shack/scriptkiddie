@@ -9,6 +9,18 @@ winpeas outputs :
     AlwaysInstallElevated set to 1 in HKCU!
 ```
 
+### Check
+
+```powershell
+# Check if these registry values are set to "1".
+
+reg query HKCU\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+reg query HKLM\SOFTWARE\Policies\Microsoft\Windows\Installer /v AlwaysInstallElevated
+
+Get-ItemProperty HKLM\Software\Policies\Microsoft\Windows\Installer
+Get-ItemProperty HKCU\Software\Policies\Microsoft\Windows\Installerpowe
+```
+
 **These registry keys tell windows that a user of any privilege can install .msi files are NT AUTHORITY\SYSTEM. So all you need to do is create a malicious .msi file, and run it.**
 
 ```bash

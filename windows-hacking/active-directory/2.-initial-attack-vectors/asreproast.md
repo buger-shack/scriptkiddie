@@ -1,10 +1,20 @@
 # ASREPRoast
 
-**In case of last resort.** **PS: This attack could be used in a post-compromise scenario but also in the initial attack vectors ;)**
+{% hint style="info" %}
+**In case of last resort.**&#x20;
+
+**PS: This attack could be used in a post-compromise scenario but also in the initial attack vectors ;)**
+{% endhint %}
 
 ## Brief
 
-ASREPRoast is about retrieving crackable hashes from KRB5 AS-REP responses for users without kerberoast preauthentication enabled. This isn’t as useful as Kerberoasting, as accounts have to have DONT\_REQ\_PREAUTH() explicitly set for them to be vulnerable and you’re still reliant upon weak password complexity for the attack to work. But who knows, might be the only weak point you need. Now, if you can enumerate accounts in a Windows domain that don’t require Kerberos preauthentication, you can easily request a piece of encrypted information for said accounts and efficiently crack the material offline, revealing the user’s password. To do that you need to :
+> ASREPRoast is about **retrieving crackable hashes** from **KRB5 AS-REP responses** for users **without kerberoast preauthentication** enabled.&#x20;
+>
+> This isn’t as useful as Kerberoasting, as accounts have to have _DONT\_REQ\_PREAUTH()_ explicitly set for them to be vulnerable and you’re still reliant upon weak password complexity for the attack to work. But who knows, might be the only weak point you need.&#x20;
+>
+> Now, if you can enumerate accounts in a Windows domain that don’t require Kerberos preauthentication, you can easily request a piece of encrypted information for said accounts and efficiently crack the material offline, revealing the user’s password.&#x20;
+>
+> **To do that you need to :**
 
 1. Send the **KRB\_AS\_REQ** to get the **KRB\_AS\_REP** with the encrypted information, to do so :
    1. If you have username :

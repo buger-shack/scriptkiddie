@@ -1,12 +1,12 @@
 # Rubeus
 
-{% embed url="https://github.com/GhostPack/Rubeus" %}
+> Rubeus include many tools and attacks include overpass the hash, ticket requests and renewals, ticket management, ticket extraction, harvesting, pass the ticket, AS-REP Roasting, and Kerberoasting, etc.
 
-Rubeus include many tools and attacks include overpass the hash, ticket requests and renewals, ticket management, ticket extraction, harvesting, pass the ticket, AS-REP Roasting, and Kerberoasting, etc.
+{% embed url="https://github.com/GhostPack/Rubeus" %}
 
 ## Harvesting Tickets
 
-For pass the ticket attack
+_For pass the ticket attack_
 
 `cd Downloads` - navigate to the directory Rubeus is in
 

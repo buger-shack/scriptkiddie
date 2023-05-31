@@ -1,4 +1,4 @@
-# ➕ Services Enumeration
+# Services Enumeration
 
 ## 53 - DNS
 
@@ -297,7 +297,7 @@ sslscan $IP
 nmap -sV --script ssl-enum-ciphers -p 443 $IP
 ```
 
-check :&#x20;
+check :
 
 {% embed url="https://pentestwiki.org/attacks-on-ssl-tls-protocols/#tools" %}
 

@@ -4,7 +4,11 @@
 
 > **Understanding Silver / Golden Tickets : https://en.hackndo.com/kerberos-silver-golden-tickets/**
 
-Golden Ticket attacks can be carried out against Active Directory domains, where access control is implemented using Kerberos tickets issued to authenticated users by a Key Distribution Service(KDC). The attacker gains control over the **domain’s KDC account** (KRBTGT account) by stealing its NTLM hash. This allows the attacker to generate Ticket Granting Tickets (TGTs) for any account in the Active Directory domain. With valid TGTs, the attacker can request access to any resource/system on its domain from the Ticket Granting Service (TGS).
+> Golden Ticket attacks can be carried out against Active Directory domains, where access control is implemented using Kerberos tickets issued to authenticated users by a Key Distribution Service(KDC).&#x20;
+>
+> The attacker gains control over the **domain’s KDC account** (KRBTGT account) by stealing its NTLM hash. This allows the attacker to generate Ticket Granting Tickets (**TGTs**) for any account in the Active Directory domain.&#x20;
+>
+> With **valid TGTs**, the attacker can request access to any resource/system on its domain from the Ticket Granting Service (TGS).
 
 **The NTLM hash of the krbtgt account can be obtained via :**
 

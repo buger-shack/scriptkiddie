@@ -2,7 +2,9 @@
 
 ## Brief
 
-All Windows versions since Windows Vista (including server variants) have IPv6 enabled and prefer it over IPv4. IPv6 attacks abuses the default IPv6 configuration in Windows networks to spoof DNS replies by acting as a malicious DNS server and redirect traffic to an attacker specified endpoint.
+> All Windows versions since Windows Vista (including server variants) have **IPv6 enabled** and prefer it over IPv4.&#x20;
+>
+> IPv6 attacks abuses the default IPv6 configuration in Windows networks to **spoof DNS** **replies** by acting as a malicious DNS server and redirect traffic to an attacker specified endpoint.
 
 ## Basic Attack
 

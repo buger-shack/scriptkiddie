@@ -1,4 +1,4 @@
-# ⛔ 403 Bypass
+# 403 Bypass
 
 {% embed url="https://github.com/sting8k/BurpSuite_403Bypasser" %}
 
