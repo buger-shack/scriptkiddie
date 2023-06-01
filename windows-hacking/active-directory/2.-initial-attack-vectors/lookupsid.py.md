@@ -12,4 +12,7 @@
 ```bash
 # synthax
 lookupsid.py $domain/$user:$password/$password_hash@$target_ip
+
+# example
+lookupsid.py hazard:stealth1agent@10.10.10.149
 ```

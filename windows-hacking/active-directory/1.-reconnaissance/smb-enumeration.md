@@ -94,6 +94,7 @@ enumprivs
 netshareenum
 netsessenum
 getdompwinfo
+lookupnames administrator
 ```
 
 ## `rpcdump` | MSRPC - port 135
