@@ -2,19 +2,21 @@
 
 ## AD Commands
 
+{% embed url="https://activedirectorypro.com/powershell-commands/" %}
+
+{% tabs %}
+{% tab title="Basics" %}
 ```powershell
-'''
-BASICS
-'''
 # Get Execution Policy
 get-executionpolicy
 
 # Show PowerShell Version
 $PSVersionTable
+```
+{% endtab %}
 
-'''
-USERS
-'''
+{% tab title="Users" %}
+```powershell
 # User list
 Get-ADUser -Filter *
 
@@ -44,10 +46,12 @@ net localgroup "Remote Management Users" john /add
 
 # to verify
 net user john
+```
+{% endtab %}
 
-'''
-GROUPS
-'''
+{% tab title="Groups" %}
+{% code fullWidth="true" %}
+```powershell
 # Get All Security Groups
 Get-ADGroup -filter *
 
@@ -56,22 +60,26 @@ Get-ADComputer -filter * | select name
 
 # Get all Windows 10 Computers
 Get-ADComputer -filter {OperatingSystem -Like '*Windows 10*'} -property * | select name, operatingsystem
+```
+{% endcode %}
+{% endtab %}
 
-'''
-COMPUTER
-'''
+{% tab title="Computer" %}
+```powershell
 # Get All Computers
 Get-AdComputer -filter *
+```
+{% endtab %}
 
-'''
-GPOs
-'''
+{% tab title="GPO" %}
+```powershell
 # Get all GPOs by status
 get-GPO -all | select DisplayName, gpostatus
+```
+{% endtab %}
 
-'''
-DOMAIN
-'''
+{% tab title="Domain" %}
+```powershell
 # all Active Directory commands
 get-command -Module ActiveDirectory
 
@@ -80,13 +88,16 @@ Get-ADDomain
 
 # Get all DC 
 Get-ADDomainController -filter * | select hostname, operatingsystem
+```
+{% endtab %}
 
-'''
-PASSWORDS
-'''
+{% tab title="Passwords" %}
+```powershell
 # Get all Fine Grained Password Policies
 Get-ADFineGrainedPasswordPolicy -filter *
 
 # Get Domain Default Password Policy
 Get-ADDefaultDomainPasswordPolicy
 ```
+{% endtab %}
+{% endtabs %}
