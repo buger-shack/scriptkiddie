@@ -40,7 +40,7 @@ show inter status err-disabled
 
 **Results :**
 
-![](<../.gitbook/assets/image (4) (1).png>)
+![](<../.gitbook/assets/image (4) (1) (1).png>)
 
 ### Wireshark
 

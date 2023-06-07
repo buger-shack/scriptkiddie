@@ -14,4 +14,4 @@
 </strong><strong>./kerbrute userenum -d $domain_ldap --dc $dc_ip /usr/share/SecLists/Usernames/xato-net-10-million-usernames.txt
 </strong></code></pre>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>

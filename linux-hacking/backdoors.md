@@ -16,7 +16,7 @@
 
 _pam\_unix.so_ file is responsible for **authentication**
 
-![](<../.gitbook/assets/image (10).png>)
+![](<../.gitbook/assets/image (10) (1).png>)
 
 _pam\_unix.so_ uses the unix\_verify\_password function to verify to user's supplied password **:**
 

@@ -1,6 +1,6 @@
 # IOTGoat OWASP | Walkthrough
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 > Copyright to book.redsquad.xyz
 
@@ -342,7 +342,7 @@ This XSS payload has been inserted in _/cgi-bin/luci/admin/network/firewall/forw
 <script>alert("HACKED!");</script>
 ```
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (1).png>)
 
 By clicking on _Edit_, we trigger the XSS :\\
 
@@ -394,7 +394,7 @@ From there, an attacker might be able to **take full control** of the machine.
 
 Logs are not enabled :
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../../.gitbook/assets/image (8) (1).png>)
 
 In addition, OpenWRT packages are **not updated by default.**
 

