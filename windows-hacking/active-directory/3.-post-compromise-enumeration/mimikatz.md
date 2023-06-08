@@ -16,7 +16,7 @@ _Used for dumping user credentials inside of a active directory network_
 
 `cd Downloads && mimikatz.exe` this will cd into the directory that mimikatz is kept as well as run the mimikatz binary
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 `privilege::debug` ensure that the output is "Privilege '20' ok" - This ensures that you're running mimikatz as an administrator; if you don't run mimikatz as an administrator, mimikatz will not run properly
 
@@ -40,7 +40,7 @@ We will first dump the hash and sid of the krbtgt user then create a golden tick
 
 `lsadump::lsa /inject /name:krbtgt` This dumps the hash and security identifier of the Kerberos Ticket Granting Ticket account allowing you to create a golden ticket
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Create golden ticket
 
@@ -58,7 +58,7 @@ Access other Machines! - You will now have another command prompt with access to
 
 <figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 ## Silver Ticket
 
@@ -74,7 +74,7 @@ Pass the ticket works by dumping the TGT from the LSASS memory of the machine.
 
 `privilege::debug` - Ensure this outputs \[output '20' OK] if it does not that means you do not have the administrator privileges to properly run mimikatz
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 `sekurlsa::tickets /export` - this will export all of the .kirbi tickets into the directory that you are currently in
 
@@ -86,11 +86,15 @@ Take the admin one
 
 Now that we have the ticket, we can perform a pass the ticket attack `kerberos::ptt <ticket>` - run this command inside of mimikatz with the ticket that you harvested from earlier. It will cache and impersonate the given ticket
 
-
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 `klist` - Here were just verifying that we successfully impersonated the ticket by listing our cached tickets.
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 You now have impersonated the ticket giving you the same rights as the TGT you're impersonating. To verify this we can look at the admin share.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Kerberos Backdoors
 

