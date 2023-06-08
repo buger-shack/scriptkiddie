@@ -16,6 +16,8 @@ nmap -sC -sV -p- $target -oN scan
 # or
 rustscan -a $target -- -sC -sV -oN scan
 
+# identify technologies / CMS -> check for vulnerabilities
+
 # Google Dorking (infos leak)
 site:$target filetype:txt
 site:$target filetype:pdf
@@ -52,14 +54,13 @@ Grey Box
 ## Secure, HTTPOnly flags
 ## session fixation
 
-# IDOR  / Improper Isolation or Compartmentalization :
-#	access URI functionalities with no auth / no privileges
-
-# Uploads : eicar / file uploads bypass / lfi ?
-# zipslip / CSV injection
-
 # Inputs : SQLi / XSS / CSRF / SSRF / SSTI / OS Injection
 
 # FUNCTIONALITIES 
+#       logout / session timeout ? if the session is properly killed after logout.
 #	password change, weak pass ?
+#       IDOR  / Improper Isolation or Compartmentalization :
+#	    access URI functionalities with no auth / no privileges
+#       Uploads : eicar / file uploads bypass / lfi ?
+#       zipslip / CSV injection
 ```

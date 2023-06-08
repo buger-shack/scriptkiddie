@@ -394,7 +394,7 @@ From there, an attacker might be able to **take full control** of the machine.
 
 Logs are not enabled :
 
-![](<../../.gitbook/assets/image (8) (1).png>)
+![](<../../.gitbook/assets/image (8) (1) (1).png>)
 
 In addition, OpenWRT packages are **not updated by default.**
 

