@@ -12,9 +12,11 @@ _**Disclaimer:** It is highly advised that you use the information you find for 
 
 ## Base
 
-**Links**&#x20;
+**Links**
 
 {% embed url="https://sector035.nl/articles/keeping-a-grip-on-google-ids" %}
+
+{% embed url="https://dorks.faisalahmed.me/" %}
 
 {% embed url="https://www.exploit-db.com/google-hacking-database" %}
 

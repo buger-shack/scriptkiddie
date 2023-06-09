@@ -1,10 +1,18 @@
 # Online Anonymity
 
-## Complete Guide
+## Tools
 
-{% embed url="https://anonfiles.com/Bf32x3Vayc/guide_md" %}
-Guide to online anonymity
+{% embed url="https://github.com/aforensics/HiddenVM" %}
+Use any desktop OS without leaving a trace.
 {% endembed %}
+
+{% embed url="https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/AnonOpSecPrivacy.md" %}
+
+## Are you Secure ?
+
+<figure><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDMyMzFjOTI3ZDNkNGM1MGVkYTBjMDcxZWI1ODUzYWRhNmZiMGIxMCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/yjW4Bc4csHqoCKKkjA/giphy.gif" alt="" width="188"><figcaption></figcaption></figure>
+
+{% embed url="https://github.com/Lissy93/personal-security-checklist" %}
 
 ## Being Anonymous on the Internet
 
@@ -24,9 +32,9 @@ Change your MAC address, many softwares exist.
 * Create a new VM, with the **Windows 7 iso**.
 * Open your VM and install all the necessary software: _Firefox_, _Ccleaner_, _Tor browser_, _Your VPN_, etc...
 * Open Firefox, type "_about:config_" and change the following setting: _media.peerconnection.enabled:_ change to "**false**"
-* List itemDownload this DNS fix :&#x20;
+* List itemDownload this DNS fix :
 
-[http://www.partage-facile.com/XE3JB81LAS/fixdns.zip.html](http://www.partage-facile.com/XE3JB81LAS/fixdns.zip.html)&#x20;
+[http://www.partage-facile.com/XE3JB81LAS/fixdns.zip.html](http://www.partage-facile.com/XE3JB81LAS/fixdns.zip.html)
 {% endhint %}
 
 :point\_right: You will now make a snapshot of your VM, you will call it "_Initial state_".
@@ -46,7 +54,7 @@ Change your MAC address, many softwares exist.
 {% endhint %}
 
 {% hint style="info" %}
-:tada:**YOU CAN NOW SURF WITHOUT RISK ! YOU ARE ANONYMOUS !**&#x20;
+:tada:**YOU CAN NOW SURF WITHOUT RISK ! YOU ARE ANONYMOUS !**
 
 **Of course, total anonymity does not exist. Always be careful.**
 {% endhint %}
@@ -61,10 +69,10 @@ Change your MAC address, many softwares exist.
 
 ## Testing your anonymity
 
-**Here are some tools to test your anonymity on the internet (WebRTC vulnerability and others):**&#x20;
+**Here are some tools to test your anonymity on the internet (WebRTC vulnerability and others):**
 
 {% embed url="https://privacy.net/analyzer" %}
-&#x20;Various: fingerprint, autofill leaks, info about your browser etc.
+Various: fingerprint, autofill leaks, info about your browser etc.
 {% endembed %}
 
 {% embed url="https://ipv6leak.com" %}
@@ -100,7 +108,7 @@ IP, geolocation, IP leak with WebRTC
 ## Extreme Privacy - What It Takes to Disappear
 
 {% embed url="https://inteltechniques.com/book7.html" %}
-Extreme Privacy - Michael Bazzell&#x20;
+Extreme Privacy - Michael Bazzell
 {% endembed %}
 
 {% embed url="https://www.amazon.fr/dp/B094LDWKGZ?dchild=1&keywords=extreme+privacy&language=en_US&linkCode=gs2&linkId=449c8b8fe32e9d67997625713aa70242&ref_=as_li_ss_tl&sr=8-3&tag=inteltechni0a-21" %}
