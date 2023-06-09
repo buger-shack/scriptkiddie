@@ -12,7 +12,9 @@ Use any desktop OS without leaving a trace.
 
 <figure><img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDMyMzFjOTI3ZDNkNGM1MGVkYTBjMDcxZWI1ODUzYWRhNmZiMGIxMCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/yjW4Bc4csHqoCKKkjA/giphy.gif" alt="" width="188"><figcaption></figcaption></figure>
 
-{% embed url="https://github.com/Lissy93/personal-security-checklist" %}
+{% embed url="https://security-list.js.org/#/README" %}
+Personal Security Checklist
+{% endembed %}
 
 ## Being Anonymous on the Internet
 

@@ -1,6 +1,6 @@
 # Google
 
-![](../../.gitbook/assets/go.gif)
+<figure><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWU3MmVjNjAyMWZlNzJhZWM4MWNiNjkzYTVlZTM2MmZiZTlhY2JlNSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/3orifgceWrEx980fxC/giphy.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Google hacking, also named **Google Dorking**, is a hacker technique that uses Google Search and other Google applications to find **security holes** in the **configuration** and computer code that websites are using. Google dorking could also be used for **OSINT**.

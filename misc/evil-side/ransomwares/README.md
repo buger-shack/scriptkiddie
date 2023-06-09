@@ -14,7 +14,7 @@ Most of the time, you don’t know your computer has been infected. You usually 
 
 ## Trojans
 
-![Trojan](<../../../.gitbook/assets/image (17).png>)
+<figure><img src="https://media2.giphy.com/media/26ueZ7bYkDQ4YeHx6/giphy.gif?cid=6c09b952jsnl7gmpdo2jnalxjmwo0io397hm6vym9u9bvszs&#x26;ep=v1_gifs_search&#x26;rid=giphy.gif&#x26;ct=g" alt="" width="375"><figcaption></figcaption></figure>
 
 {% embed url="https://github.com/Da2dalus/The-MALWARE-Repo" %}
 Malwares repo
@@ -105,7 +105,7 @@ This banking Trojan is another oldie but baddie. ZeuS/Zbot source code was first
 ### Protection
 
 {% hint style="info" %}
-After you **suspect** a Trojan infection on your system, you must immediately take the actions to **remove** it quickly so that the damage could be control. You can do that either **manually** or using an **antimalware program**.&#x20;
+After you **suspect** a Trojan infection on your system, you must immediately take the actions to **remove** it quickly so that the damage could be control. You can do that either **manually** or using an **antimalware program**.
 
 Following steps can be taken to get rid of Trojans from the system manually :
 

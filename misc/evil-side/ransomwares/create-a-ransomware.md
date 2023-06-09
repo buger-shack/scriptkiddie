@@ -8,10 +8,6 @@ Windows Ransomware
 
 ## Tutorials
 
-{% embed url="https://www.youtube.com/watch?v=ZYkYYAByeo8" %}
-French Version
-{% endembed %}
-
 {% embed url="https://www.youtube.com/watch?v=eiT7mslA63c" %}
 Create One With PowerShell
 {% endembed %}
@@ -38,7 +34,7 @@ Once you download the Atom payload builder, you can start **customizing** the de
   * The price and the message that needs to be displayed
 * You can also choose the directories which you need to infect, the files which can be locked and the countries you need to infiltrate into.
 
-The developers at Atom claim that their ransomware will be **undetectable by AV software**, uses fast and strong encryption algorithm and supports multiple languages.&#x20;
+The developers at Atom claim that their ransomware will be **undetectable by AV software**, uses fast and strong encryption algorithm and supports multiple languages.
 
 ## Tox : The Ransomware Construction Kit
 
