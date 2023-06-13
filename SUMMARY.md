@@ -3,6 +3,7 @@
 * [🏠 /home/red-squad](README.md)
   * [⏰ Recently Added](readme/pipline.md)
   * [🥳 Support our projects](readme/support-our-projects.md)
+  * [⚰ Is There Life After Death ?](readme/is-there-life-after-death.md)
 
 ## 🌐 Web Hacking
 
