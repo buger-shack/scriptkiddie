@@ -1,6 +1,6 @@
 # ⚰ Is There Life After Death ?
 
-## Answer
+## After compromising an infrastructure, web app, what is next ?
 
 The MITRE ATT\&CK resource is a good starting point. The end result of the attack will look a bit different based on the **goal of the bad actor**. The goal might be to :
 
