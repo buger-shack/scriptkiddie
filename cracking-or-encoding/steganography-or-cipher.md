@@ -4,11 +4,17 @@
 
 {% embed url="https://0xrick.github.io/lists/stego" %}
 
-### Audio Decrypt&#x20;
+### Images
+
+{% embed url="https://www.aperisolve.com" %}
+find secrets in images
+{% endembed %}
+
+### Audio Decrypt
 
 {% embed url="https://stylesuxx.github.io/steganography" %}
 
-### Brainfuck++>><<\[\[&#x20;
+### Brainfuck++>><<\[\[
 
 {% embed url="https://www.splitbrain.org/_static/ook" %}
 
@@ -27,4 +33,3 @@ Cipher identifier
 {% embed url="https://www.boxentriq.com/code-breaking" %}
 
 {% embed url="https://gchq.github.io/CyberChef" %}
-
