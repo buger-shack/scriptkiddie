@@ -7,6 +7,8 @@ description: >-
 
 # Injections
 
+<figure><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmRjMzE3YzAxNmUzZTgyMzkyYjRjZTk4MGExNjlhOGNjNjIyODBmZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xT5LMUeCoYH1DEGCys/giphy.gif" alt="" width="188"><figcaption></figcaption></figure>
+
 There are several types of injections that attackers can use to exploit vulnerabilities in web applications. Some of the most common include:
 
 1. SQL injection: This occurs when an attacker is able to insert SQL commands into an application's database queries, allowing them to manipulate or extract sensitive data from the database.
