@@ -8,9 +8,9 @@ GraphQL is designed to make APIs fast, flexible, and developer-friendly. It can 
 
 ## Tools
 
-{% embed url="https://github.com/Escape-Technologies/graphinder" %}
-
 ### graphinder
+
+{% embed url="https://github.com/Escape-Technologies/graphinder" %}
 
 <pre class="language-bash"><code class="lang-bash"><strong>pip install graphinder
 </strong># using specific python binary
@@ -20,6 +20,8 @@ graphinder -d $domain
 </code></pre>
 
 ### graphqlmap
+
+{% embed url="https://github.com/swisskyrepo/GraphQLmap" %}
 
 ```bash
 # installation

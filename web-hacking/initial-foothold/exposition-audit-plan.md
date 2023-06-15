@@ -34,4 +34,6 @@ gospider -q -c 10 -S urls.txt -o scan
 
 ## OSINT
 
-[Here](../../misc/osint.md)
+{% embed url="https://github.com/smicallef/spiderfoot" %}
+BEST TOOL FOR OSINT
+{% endembed %}

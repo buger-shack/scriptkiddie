@@ -1,5 +1,18 @@
 # 🕴 Jenkins
 
+## Enumeration
+
+```bash
+msf> use auxiliary/scanner/http/jenkins_enum
+
+# execute commands without authentication ?
+msf> use auxiliary/scanner/http/jenkins_command
+
+# get jenkins version
+/oops
+/error
+```
+
 ## RCE from Script Console
 
 > From : [https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76](https://gist.github.com/frohoff/fed1ffaab9b9beeb1c76)

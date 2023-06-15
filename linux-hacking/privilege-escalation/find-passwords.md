@@ -1,6 +1,8 @@
 # Find passwords
+
 ## MimiPenguin
->Takes advantage of cleartext credentials in memory by dumping the process and extracting lines that have a high probability of containing cleartext passwords. Must have **root** permissions.
+
+> Takes advantage of cleartext credentials in memory by dumping the process and extracting lines that have a high probability of containing cleartext passwords. Must have **root** permissions.
 
 {% embed url="https://github.com/huntergregal/mimipenguin" %}
 
@@ -12,8 +14,11 @@ cd mimipenguin/
 # usage
 ./mimipenguin.sh
 ```
-## Home Directories: 
->User's home directories can contain plaintext passwords. For example :
+
+## Home Directories
+
+> User's home directories can contain plaintext passwords. For example :
+
 ```bash
 .netrc 
 .pgpass
@@ -27,8 +32,10 @@ cd mimipenguin/
 /root/anaconda-ks.cfg
 ```
 
-## Configuration Files: 
+## Configuration Files
+
 **/etc** directory and subdirectories
+
 ```bash
 # (system user account information)
 /etc/passwd
@@ -58,17 +65,21 @@ tomcat-users.xml
 find / -name 'tomcat-users.xml'
 ```
 
-## Scheduled Jobs: 
->The cron configuration files and systemd timer units might contain scripts with embedded credentials.
-```text
+## Scheduled Jobs
+
+> The cron configuration files and systemd timer units might contain scripts with embedded credentials.
+
+```
 /var/spool/cron/* 
 /etc/crontab
 ```
-## Application Files: 
->Custom applications might store passwords in their configuration files. Check any locations where you have custom software installed.
+
+## Application Files
+
+> Custom applications might store passwords in their configuration files. Check any locations where you have custom software installed.
+
 ```bash
 # web app
 /var/www/html/
 # other application directories
 ```
-

@@ -36,29 +36,6 @@ nmap -sC -sV -p21 0.0.0.0
 nmap --script smb-os-discovery.nse -p445 0.0.0.0
 ```
 
-### :flag\_white: Flags
-
-```bash
--sV # attempts to determine the version of the services running
--p <x> # port scan for port x or scan all ports
--p- # scan all ports
--Pn # Disable host discovery and just scan for open ports
--A # Enables OS and version detection, executes in-build scripts for further enumeration 
--sC # Scan with the default nmap scripts
--oN # Output scan in normal
--oA # Output in the three major formats at once
--v # Verbose mode
--sU # UDP port scan
--sS # TCP SYN port scan
--T1-4 # Set timing template (higher is faster)
-
--iL <file> # scan targets list (separated by comas, space, tab or new line)
---open <IP/HostRange> # find open ports on a specified IP range (172.16.0.*)
---exclude <IP/Host> # exclude IP addresses or hosts from scans
--e <interface> # specify a network interface (e.g eth0, wlan0, enp2s0,etc), useful if we are connected both through our wired and wireless cards
-
-```
-
 #### :fire: Firewall Evasion
 
 ```bash
@@ -77,18 +54,6 @@ nmap -S www.microsoft.com www.facebook.com
 
 # Use a specific source port
 nmap 192.168.1.1 -g 53
-```
-
-#### :receipt: Scripts
-
-```bash
--sC # Scan with default NSE scripts. Considered useful for discovery and safe
---script default # Scan with default NSE scripts. Considered useful for discovery and safe
---script=banner # Scan with a single script. Example banner
---script=http* # Scan with a wildcard. Example http
---script=http,banner # Scan with two scripts. Example http and banner
---script "not intrusive" # Scan default, but remove intrusive scripts
---script-args snmpcommunity=admin # NSE script with arguments
 ```
 
 ### Examples

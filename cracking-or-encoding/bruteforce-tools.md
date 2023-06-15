@@ -1,6 +1,6 @@
 # Bruteforce tools
 
-![](https://media0.giphy.com/media/l3fzT5zFwWu4qaMwM/giphy.gif?cid=ecf05e47di3px41edfczlb6njwlgi5v14azilnbcz5dy4r9v\&rid=giphy.gif\&ct=g)
+<figure><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW83cWZsNnc5cmN5ZmQxMnEwcmgxdGRnZ2Z1MHFrbnJlMWFnNWMwNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zAow7d16Sf0xq/giphy.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 ## `Ffuf`
 
@@ -9,7 +9,7 @@
 {% embed url="https://github.com/ffuf/ffuf" %}
 
 {% hint style="info" %}
-_<mark style="color:blue;">Make sure you have</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**go**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">version</mark> <mark style="color:blue;"></mark><mark style="color:blue;">**1.13 or greater**</mark><mark style="color:blue;">.</mark>_
+_<mark style="color:blue;">Make sure you have</mark>_ _<mark style="color:blue;">**go**</mark>_ _<mark style="color:blue;">version</mark>_ _<mark style="color:blue;">**1.13 or greater**</mark><mark style="color:blue;">.</mark>_
 {% endhint %}
 
 ### Go | Update
@@ -67,7 +67,7 @@ ffuf -w valid_usernames.txt:W1,/usr/share/wordlists/best.txt:W2 -X POST -d "user
 ## `Hydra`
 
 {% hint style="info" %}
-<mark style="color:blue;">**Bruteforce**</mark> <mark style="color:blue;"></mark><mark style="color:blue;">tool.</mark>
+<mark style="color:blue;">**Bruteforce**</mark> <mark style="color:blue;">tool.</mark>
 {% endhint %}
 
 ### Installation
