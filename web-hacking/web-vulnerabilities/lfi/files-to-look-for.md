@@ -1,6 +1,6 @@
 # Files to look for
 
-![](https://media1.giphy.com/media/xT5LMKq8PTe64faIE0/giphy.gif?cid=ecf05e47zv6o77simmjq38a90z9gnljic954gsp7jozjedd8\&rid=giphy.gif\&ct=g)
+<figure><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjNjNDBmOTJlNzRiMDhkYjk0OWFhZDMyZWY3MzVkYzE4NjU5NTgxMyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/3o6MblAa0uE3a77V5K/giphy.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Linux
 

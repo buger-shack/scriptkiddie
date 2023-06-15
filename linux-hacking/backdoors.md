@@ -1,6 +1,6 @@
 # Backdoors
 
-<figure><img src="../.gitbook/assets/door.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTI4YTQxMDEzNTRiOTQzMmFjMzQxZmQ2NTg2MDRjZjQwYTUzZDIxNCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/3o6Mb6aijVsBCIc6oU/giphy.gif" alt="" width="375"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 <mark style="color:blue;">A backdoor refers to</mark> <mark style="color:blue;">**any method**</mark> <mark style="color:blue;">by which</mark> <mark style="color:blue;">**authorized**</mark> <mark style="color:blue;">and</mark> <mark style="color:blue;">**unauthorized users**</mark> <mark style="color:blue;">are able to get around normal security measures and</mark> <mark style="color:blue;">**gain high level**</mark> <mark style="color:blue;">user access (aka root access) on a computer</mark> <mark style="color:blue;">**system**</mark><mark style="color:blue;">,</mark> <mark style="color:blue;">**network**</mark><mark style="color:blue;">, or</mark> <mark style="color:blue;">**software application**</mark><mark style="color:blue;">.</mark>

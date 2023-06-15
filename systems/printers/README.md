@@ -1,3 +1,3 @@
 # Printers
 
-<figure><img src="https://media2.giphy.com/media/6k5aYgBKTxe3C/giphy.gif?cid=790b76119354a367e4727061fa771ac2a3d38407966b4e73&#x26;rid=giphy.gif&#x26;ct=g" alt=""><figcaption><p>Printers ...</p></figcaption></figure>
+<figure><img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2U1MDQ1YmE3ZjZhZTRiZjA3YjE3YjcxOTk2ZjI3OGU0MDJlYWIxZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/3orieQumixYZck9mRq/giphy.gif" alt="" width="375"><figcaption></figcaption></figure>

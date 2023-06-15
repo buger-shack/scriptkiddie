@@ -16,20 +16,19 @@ In this **XML external entity payload** is sent to the server and the server sen
 
 ### Impacts
 
-**OWASP TOP 10**
+{% hint style="warning" %}
+**OWASP TOP 10 :** _SSRF, DoS, RCE, XSS_
 
-* _SSRF_
-* _DoS_
-* _RCE_
-* _XSS_
 
-The CVSS score of an **XXE** is **7.5** and its severity is **Medium** with :
+
+The CVSS score of a **XXE** is **7.5** and its severity is **Medium** with :
 
 * **CWE-611**: Improper Restriction of XML External Entity.
 * **CVE-2019-12153**: Local File SSRF
 * **CVE-2019-12154**: Remote File SSRF
 * **CVE-2018-1000838**: Billion Laugh Attack
 * **CVE-2019-0340**: XXE via File Upload
+{% endhint %}
 
 ## XXE to SSRF
 

@@ -3,7 +3,7 @@
 ## NoSQLi
 
 {% hint style="info" %}
-NoSQL injection is a web security vulnerability that allows the attacker to have control over the database.
+NoSQL injection is a web security vulnerability that allows the attacker to have **control over the** **database**.
 
 A NoSQL injection happens by sending queries via **untrusted** and **unfiltered** web application input, which leads to leaked unauthorized information.
 
@@ -21,7 +21,7 @@ db.users.find({query})
 db.users.findOne(query)
 ```
 
-Functions where the query is JSON data that's send via the application :&#x20;
+Functions where the query is JSON data that's send via the application :
 
 ```json
 {"username": "admin", "password":"adminpass"}
@@ -35,8 +35,6 @@ Functions where the query is JSON data that's send via the application :&#x20;
 * `$where` - matches records based on Javascript condition.
 * `$exists` - matches records that have a certain field.
 * `$regex` - matches records that satisfy certain regular expressions.
-
-***
 
 #### `$ne`
 

@@ -1,6 +1,6 @@
 # Remote Code Execution
 
-![](https://media2.giphy.com/media/3orieNQgdcxedKjA3e/giphy.gif?cid=ecf05e47vcaxf58vv1mfubdyh4asgd6u8a0t54rnppx2k4o4\&rid=giphy.gif\&ct=g)
+<figure><img src="https://media1.giphy.com/media/3orifiiuxBpn9QNGmI/giphy.gif?cid=ecf05e47g2onuj8mriwxuy3196sjdgwva6zofjz73q5s7t3z&#x26;ep=v1_gifs_search&#x26;rid=giphy.gif&#x26;ct=g" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Brief
 
