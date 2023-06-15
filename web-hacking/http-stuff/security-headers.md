@@ -1,5 +1,7 @@
 # Security Headers
 
+<figure><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDhlMWQ2NTkzNDNiZDBhNTgzNzkzM2Y1OTNkYzQwNjIxNmViN2UzOCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/AMfgcGOLMqADK/giphy.gif" alt=""><figcaption></figcaption></figure>
+
 #### Source
 
 {% embed url="https://owasp.org/www-project-secure-headers" %}
@@ -173,11 +175,34 @@ X-Permitted-Cross-Domain-Policies: none
 
 ## :x: Deprecated
 
-* **HTTP Public Key Pinning (HPKP)**
-  * No longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes. Be aware that this feature may cease to work at any time.
-* **X-XSS-Protection**
-  * No longer recommended.
-  * `X-XSS-Protection: 0`
-  * Please use `Content-Security-Policy` instead.
-* **Expect-CT**
-  * Obsolete since June 2021
+{% tabs %}
+{% tab title="HTTP Public Key Pinning (HPKP)" %}
+{% hint style="danger" %}
+**No longer recommended. Deprecated.**
+
+Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes.&#x20;
+
+Be aware that this feature may cease to work at any time.
+{% endhint %}
+{% endtab %}
+
+{% tab title="X-XSS-Protection" %}
+{% hint style="danger" %}
+**No longer recommended. Deprecated.**
+
+This feature is non-standard and is not on a standards track. Do not use it on production sites facing the Web: it will not work for every user. There may also be large incompatibilities between implementations and the behavior may change in the future.
+
+Please use `Content-Security-Policy` instead.
+{% endhint %}
+{% endtab %}
+
+{% tab title="Expect-CT" %}
+{% hint style="danger" %}
+**No longer recommended. Deprecated.**
+
+This feature is no longer recommended. Though some browsers might still support it, it may have already been removed from the relevant web standards, may be in the process of being dropped, or may only be kept for compatibility purposes
+
+Obsolete since June 2021.
+{% endhint %}
+{% endtab %}
+{% endtabs %}
