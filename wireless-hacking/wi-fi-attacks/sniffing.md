@@ -1,4 +1,4 @@
-# 👃 Sniffing
+# Sniffing
 
 ## TinyCheck
 
@@ -11,4 +11,3 @@ TinyCheck allows you to easily capture network communications from a smartphone 
 {% embed url="https://github.com/KasperskyLab/TinyCheck" %}
 _Easily capture network communications from a smartphone or any device that can be associated with a Wi-Fi access point for quick analysis._
 {% endembed %}
-

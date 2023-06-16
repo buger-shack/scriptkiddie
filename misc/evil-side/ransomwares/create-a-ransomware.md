@@ -1,4 +1,4 @@
-# 🎨 Create A Ransomware
+# Create A Ransomware
 
 ## GitHub Projects
 

@@ -74,7 +74,7 @@
 * [Reverse Shells](linux-hacking/reverse-shells/README.md)
   * [Shell Stabilizing](linux-hacking/reverse-shells/shell-stabilizing.md)
   * [PwnCat](linux-hacking/reverse-shells/pwncat.md)
-  * [🏓 Ping-Pong](linux-hacking/reverse-shells/ping-pong.md)
+  * [Ping-Pong](linux-hacking/reverse-shells/ping-pong.md)
 * [Compiled Binaries](linux-hacking/compiled-binaries.md)
 * [Buffer Overflow](linux-hacking/buffer-overflow-bof.md)
 * [Docker Escape](linux-hacking/docker.md)
@@ -170,6 +170,7 @@
   * [SocksOverRDP](networks/what-is-pivoting/socksoverrdp.md)
 * [Firewalls](misc/firewalls/README.md)
   * [🔥 Evasion](misc/firewalls/evasion.md)
+* [Proxies](networks/proxies.md)
 
 ## 📱 Mobile Hacking
 
@@ -189,9 +190,9 @@
 ## 📡 Wireless Hacking
 
 * [Wi-Fi Attacks](wireless-hacking/wi-fi-attacks/README.md)
-  * [👹 EvilTwin](wireless-hacking/wi-fi-attacks/eviltwin.md)
-  * [⛓ Cracking WPA/WPA2](wireless-hacking/wi-fi-attacks/cracking-wpa-wpa2.md)
-  * [👃 Sniffing](wireless-hacking/wi-fi-attacks/sniffing.md)
+  * [EvilTwin](wireless-hacking/wi-fi-attacks/eviltwin.md)
+  * [Cracking WPA/WPA2](wireless-hacking/wi-fi-attacks/cracking-wpa-wpa2.md)
+  * [Sniffing](wireless-hacking/wi-fi-attacks/sniffing.md)
 * [Bluetooth](wireless-hacking/bluetooth.md)
 
 ## 👨💻 Code Audit
@@ -221,8 +222,8 @@
 * [Hacking Forums](misc/hacking-forums.md)
 * [Evil Side](misc/evil-side/README.md)
   * [💰 Ransomwares](misc/evil-side/ransomwares/README.md)
-    * [🎨 Create A Ransomware](misc/evil-side/ransomwares/create-a-ransomware.md)
-    * [📵 Disabling AntiMalware Tools](misc/evil-side/ransomwares/disabling-antimalware-tools.md)
+    * [Create A Ransomware](misc/evil-side/ransomwares/create-a-ransomware.md)
+    * [Disabling AntiMalware Tools](misc/evil-side/ransomwares/disabling-antimalware-tools.md)
   * [💣 DDoS](misc/evil-side/ddos/README.md)
     * [Tools](misc/evil-side/ddos/tools.md)
 
@@ -240,8 +241,8 @@
 * [Lock Picking](red-team/lock-picking.md)
 * [Scrapping People](red-team/scrapping.md)
 * [Phishing](red-team/phishing/README.md)
-  * [ℹ Infrastructure](red-team/phishing/infrastructure.md)
-  * [📚 Resources](red-team/phishing/resources.md)
+  * [Infrastructure](red-team/phishing/infrastructure.md)
+  * [Resources](red-team/phishing/resources.md)
 
 ## 🔵 BLUE TEAM
 

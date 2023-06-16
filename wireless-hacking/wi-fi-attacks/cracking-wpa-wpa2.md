@@ -1,4 +1,4 @@
-# ⛓ Cracking WPA/WPA2
+# Cracking WPA/WPA2
 
 ```bash
 # check wireless adapter

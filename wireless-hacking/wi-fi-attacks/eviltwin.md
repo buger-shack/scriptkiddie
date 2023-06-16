@@ -1,7 +1,7 @@
-# 👹 EvilTwin
+# EvilTwin
 
 {% hint style="info" %}
-An evil twin is a **fraudulent Wi-Fi access point** that appears to be legitimate but is set up to eavesdrop on wireless communications.&#x20;
+An evil twin is a **fraudulent Wi-Fi access point** that appears to be legitimate but is set up to eavesdrop on wireless communications.
 
 The evil twin is the wireless LAN equivalent of the **phishing** scam.
 {% endhint %}

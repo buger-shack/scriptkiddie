@@ -1,4 +1,4 @@
-# 📚 Resources
+# Resources
 
 ## Awesome Phishing
 

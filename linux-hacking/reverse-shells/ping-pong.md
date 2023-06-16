@@ -1,6 +1,6 @@
-# 🏓 Ping-Pong
+# Ping-Pong
 
-## TcpDump&#x20;
+## TcpDump
 
 {% hint style="info" %}
 Check **connectivity** between attacker and victim.
