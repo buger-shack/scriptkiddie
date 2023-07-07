@@ -57,7 +57,7 @@ ldapsearch -x -h $ip -b "DC=htb,DC=local" '(objectClass=Person)' sAMAccountName
 https://github.com/franc-pentest/ldeep.git
 
 # usage
-ldeep ldap -a -d winlab.local -s ldap://$IP users -v
+ldeep ldap -s ldap://10.13.37.15 -d amzcorp.local users
 ```
 
 ### ldapdomaindump

@@ -33,6 +33,7 @@
     * [SQLmap](web-hacking/injections/sqli/sqlmap.md)
     * [NoSQLi](web-hacking/injections/sqli/nosqli.md)
   * [XXE](web-hacking/injections/xxe.md)
+  * [LaTex](web-hacking/injections/latex.md)
 * [Web Vulnerabilities](web-hacking/web-vulnerabilities/README.md)
   * [CSRF](web-hacking/web-vulnerabilities/csrf.md)
   * [ClickJacking](web-hacking/web-vulnerabilities/clickjacking.md)
