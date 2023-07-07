@@ -27,6 +27,8 @@ nc -zv $host 1-65535
 ### Resources
 
 {% embed url="https://unit42.paloaltonetworks.com/docker-patched-the-most-severe-copy-vulnerability-to-date-with-cve-2019-14271/" %}
+Docker Patched the Most Severe Copy Vulnerability to Date With CVE-2019-14271
+{% endembed %}
 
 #### DeepCE
 

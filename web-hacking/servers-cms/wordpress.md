@@ -26,31 +26,27 @@ curl https://victim.com/ | grep 'content="WordPress'
 curl -s -I -X GET http://blog.example.com/?author=1
 ```
 
-### xmlrpc.php
+## xmlrpc.php
 
-## Active
+### Active
 
-**credentials brute-force or use it to launch DoS attacks**
+> Credentials brute-force or use it to launch DoS attacks
 
-{% content-ref url="https://github.com/relarizky/wpxploit" %}
-[https://github.com/relarizky/wpxploit](https://github.com/relarizky/wpxploit)
-{% endcontent-ref %}
+{% embed url="https://github.com/relarizky/wpxploit" %}
 
-### exploit
+### Exploit
 
-{% content-ref url="https://nitesculucian.github.io/2019/07/01/exploiting-the-xmlrpc-php-on-all-wordpress-versions/" %}
-[https://nitesculucian.github.io/2019/07/01/exploiting-the-xmlrpc-php-on-all-wordpress-versions/](https://nitesculucian.github.io/2019/07/01/exploiting-the-xmlrpc-php-on-all-wordpress-versions/)
-{% endcontent-ref %}
+{% embed url="https://nitesculucian.github.io/2019/07/01/exploiting-the-xmlrpc-php-on-all-wordpress-versions/" %}
 
-### SSRF
+## SSRF
 
 /wp-json/oembed/1.0/proxy
 
-#### try
+### Try
 
-{% content-ref url="https://worpress-site.com/wp-json/oembed/1.0/proxy?url=ybdk28vjsa9yirr7og2lukt10s6ju8.burpcollaborator.net" %}
-[https://worpress-site.com/wp-json/oembed/1.0/proxy?url=ybdk28vjsa9yirr7og2lukt10s6ju8.burpcollaborator.net](https://worpress-site.com/wp-json/oembed/1.0/proxy?url=ybdk28vjsa9yirr7og2lukt10s6ju8.burpcollaborator.net)
-{% endcontent-ref %}
+```
+https://worpress-site.com/wp-json/oembed/1.0/proxy?url=ybdk28vjsa9yirr7og2lukt10s6ju8.burpcollaborator.net
+```
 
 ## WPScan
 

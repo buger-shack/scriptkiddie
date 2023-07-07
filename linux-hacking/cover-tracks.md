@@ -40,7 +40,9 @@ shred -zu $filename
 <figure><img src="https://media4.giphy.com/media/12cpBxBl4WqlHO/giphy.gif?cid=ecf05e47rtrh31z2kel5j3sifm58o43i91cxklvkhd6sv2fc&#x26;ep=v1_gifs_search&#x26;rid=giphy.gif&#x26;ct=g" alt="" width="188"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-MoonWalk is a 400 KB single-binary executable that can clear your traces while penetration testing a Unix machine. It saves the state of system logs pre-exploitation and reverts that state including the filesystem timestamps post-exploitation leaving zero traces of a ghost in the shell.
+MoonWalk is a 400 KB single-binary executable that can **clear your traces** **while penetration testing a Unix machine**.&#x20;
+
+It saves the state of system logs pre-exploitation and reverts that state including the filesystem timestamps post-exploitation leaving zero traces of a ghost in the shell.
 {% endhint %}
 
 ### Installation
