@@ -16,7 +16,7 @@
 ### Android System
 
 * See : [**Disable SSL Pinning > Modify the network\_security\_config.xml file**](disable-ssl-pinning.md#modifying-the-network\_security\_config.xml-file)
-* [ProxyDroid](https://play.google.com/store/apps/details?id=org.proxydroid)
+* [**Android Proxy Toggle**](https://github.com/theappbusiness/android-proxy-toggle) **- GREAT**
 
 #### With ADB
 
