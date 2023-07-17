@@ -1,6 +1,6 @@
 # Tools
 
-## `MHHDOS`
+## `MHDDOS`
 
 {% embed url="https://github.com/MatrixTM/MHDDoS" %}
 
