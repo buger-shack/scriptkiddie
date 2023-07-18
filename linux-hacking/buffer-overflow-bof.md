@@ -16,7 +16,7 @@ Buffer overflows can be exploited by attackers with a goal of modifying a comput
 file bow32 | tr "," "\n"
 ```
 
-***
+
 
 ### How to attack ?
 

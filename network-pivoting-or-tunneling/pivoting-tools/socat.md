@@ -25,7 +25,7 @@ Generally speaking, however, hackers tend to use it to either create reverse/bin
 Specifically, in the above example we're creating a port forward from a port on the compromised server to a listening port on our own box. We could do this the other way though, by either forwarding a connection from the attacking machine to a target inside the network, or creating a direct link between a listening port on the attacking machine with the service on the internal server. This latter application is especially useful as it does not require opening a port on the compromised server.
 ```
 
-***
+
 
 ### Reverse Shell Relay
 

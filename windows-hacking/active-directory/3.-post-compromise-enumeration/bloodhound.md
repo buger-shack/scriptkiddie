@@ -29,7 +29,7 @@ Invoke-BloodHound -CollectionMethod All -Domain $TARGETDOMAIN -ZipFileName blood
 
 Once you finish that, copy the zip file to your system, and feed it to bloodhound through drag and drop or import data functionality.
 
-***
+
 
 ## WriteDACL
 

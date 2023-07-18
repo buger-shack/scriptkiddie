@@ -39,7 +39,7 @@ Which style of pivoting is more suitable will depend entirely on the **layout of
 * [Sshuttle ](pivoting-tools/sshuttle.md)(currently Unix only) : sshuttle is a nicer way to create a proxy when we have SSH access on a target
 * [Ligolo-Ng](pivoting-tools/ligolo-ng.md) : TODO
 
-***
+
 
 ## Enumeration
 
