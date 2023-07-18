@@ -2,9 +2,7 @@
 
 <figure><img src="https://media0.giphy.com/media/l2JeaHMchEJzFVyo0/giphy.gif?cid=ecf05e4775sqd0gvrrc0q8o006xkn65cooadarfo3kppav1v&#x26;ep=v1_gifs_search&#x26;rid=giphy.gif&#x26;ct=g" alt="" width="375"><figcaption></figcaption></figure>
 
-## Tools
-
-### Jailbreak
+## Jailbreak
 
 {% hint style="info" %}
 _Jailbreaking iPhones and iPads are common among Apple users who want to install apps that aren't available through Apple's official channels._
@@ -23,17 +21,17 @@ The terms “tethered” and “untethered” are sometimes used in relation to 
 
 {% embed url="https://canijailbreak.com" %}
 
-### Bypass Detection
+## Bypass Detection
 
 {% embed url="https://notsosecure.com/bypassing-jailbreak-detection-ios" %}
 
 {% embed url="https://www.theiphonewiki.com/wiki/Bypassing_Jailbreak_Detection" %}
 
-### SAST
+## SAST
 
 {% embed url="https://github.com/KJCracks/Clutch" %}
 
-### DAST
+## DAST
 
 {% embed url="https://iphonedevwiki.net/index.php/Cycript" %}
 
