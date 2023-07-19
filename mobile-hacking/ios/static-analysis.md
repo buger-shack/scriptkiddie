@@ -6,7 +6,7 @@
 
 Run MobSF > Drag and drop IPA file
 
-### Dump App Path Files on Host
+### Dump App Path Files
 
 ```bash
 git clone https://github.com/AloneMonkey/frida-ios-dump
