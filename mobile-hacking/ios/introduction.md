@@ -2,11 +2,15 @@
 
 ## Basics
 
-* **/Applications** : System Applications can be found
-* **/private/var/containers/** : User-installed applications
-* Apps have 2 main locations :
-  * Bundle : **/var/containers/Bundle/Application/**
-  * Data : **/var/mobile/Containers/Data/Application/**
+* System Applications can be found : **/Applications**
+* User-installed applications : **/private/var/containers/**
+* **Apps have 2 main locations** :
+  * **Bundle** :
+    * _/var/containers/Bundle/Application/_
+    * Contains the application's executable code along with any resources used by the application, such as the application's icon, interface files, and localized content.
+  * **Data** :
+    * _/var/mobile/Containers/Data/Application/_
+    * Applications can write files, create databases, save user preferences, etc on RUNTIME. This directory is sandboxed, meaning each application can only access its own directory and can't view or modify files in another application's directory.
 
 ```bash
 # install app on device
@@ -18,9 +22,9 @@ find /var/ -name "*.app"
 
 ### Structure of IPA file
 
-* IPA files are ZIP files : change the extension to .zip and decompress them
-  * .**app** is a zip archive containing the rest of the resources
-  * i**nfo.plist** : application-specific configurations
+* IPA files are **ZIP** files : change the extension to .zip and decompress them
+  * **name.app** is a zip archive containing the rest of the resources
+  * **info.plist** : application-specific configurations
   * `_CodeSignature/` : plist file with a signature for all the files in the bundle
   * **Assets.car** : zip archive containing assets (icons...)
   * **Frameworks/** : contains native librairies for the app as .dylib or .framework files
@@ -29,11 +33,25 @@ find /var/ -name "*.app"
   * **PkgInfo** : This file is an alternate way to specify the type and creator codes for the application or bundle.
   * **en.lproj**, **fr.proj**, **Base.lproj** : language packs containing resources for specific languages, and a default resource in case a language is not supported.
 
+### Jailbreak
+
+#### Taurine
+
+* Install Cydia via Zebra via Sileo
+* Otool :&#x20;
+  * Cydia repository: http://apt.thebigboss.org/repofiles/cydia/&#x20;
+  * **Installation**: search for _Big Boss Recommended Tools_ on Cydia&#x20;
+  * **Installation2**: search for _Darwin CC tools_ on Cydia
+
 ## Install Tools on iOS
 
-_**Cydia > Manage > Sources > Edit > Add**_ _https://cydia.akemi.ai/ https://build.frida.re_
+```
+Cydia > Manage > Sources > Edit > Add : 
+https://cydia.akemi.ai/ 
+https://build.frida.re
 
-_**Cydia > Search > HideJB / Frida / AppSync Unified**_
+Cydia > Search > HideJB / Frida / AppSync Unified
+```
 
 **Also :**
 
@@ -52,8 +70,13 @@ apt install otool
 
 ### Burp
 
+{% embed url="https://portswigger.net/burp/documentation/desktop/mobile/config-ios-device" %}
+
 **On device :**&#x20;
 
-_**Settings > Wi-Fi > Configure Proxy > Manual > IP:8082 Safari > http://burp > Download and Allow**_&#x20;
-
-_**Settings > General > Profile > PortSwigger CA > Install > Done Settings > General > About > Certificate Trust Settings > Enable PortSwigger CA**_
+```
+Settings > Wi-Fi > Configure Proxy > Manual > IP:8082 
+Safari > http://burp > Download and Allow 
+Settings > General > Profile > PortSwigger CA > Install > Done 
+Settings > General > About > Certificate Trust Settings > Enable Toggle PortSwigger CA
+```
