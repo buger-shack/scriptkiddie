@@ -97,7 +97,7 @@ otool -I -v <app-binary> | grep -w "_vsprintf"
 
 ```bash
 # binary analysis
-objection -g app explore
+objection -g "app" explore
 ios info binary
 
 <<'
@@ -108,7 +108,7 @@ PLIST Checks
 plistutil -i Info.plist -o Infoxml.plist
 
 # or objection
-objection -g "APP" explore
+objection -g "app" explore
 ios plist cat Info.plist
 
 # Check in the info.plist :
