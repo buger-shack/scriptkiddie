@@ -6,7 +6,7 @@
 
 Run MobSF > Drag and drop IPA file
 
-### Dump App Path Files
+### Dump App Path Files on Host
 
 ```bash
 git clone https://github.com/AloneMonkey/frida-ios-dump
@@ -18,13 +18,21 @@ python3 dump.py -H $ios-device-ip -p 22 $app-name
 
 ### Binary Analysis
 
+#### otool
+
 ```bash
 # obtain path of the app
 find /var/ -name "*.plist" | grep "<app>"
 
-'''
+<<'
+Script that does all the checks for binary
+https://github.com/saladandonionrings/iOS-Binary-Security-Analyzer
+'>>
+./check-binary.sh <binary>
+
+<<'
 Protections in the Binary
-'''
+'>>
 # PIE (Position Independent Executable): When enabled, the application loads into a random memory address every-time it launches, making it harder to predict its initial memory address.
 otool -hv <app-binary> | grep PIE
 # Output : should return PIE
@@ -49,21 +57,17 @@ otool -I -v <app-binary> | grep _objc_
 otool -arch all -Vl <app-binary> | grep -A5 LC_ENCRYPT
 # Output : if cryptid is 0 -> not encrypted
 
-''' 
+<<'
 Weak Crypto
-'''
+'>>
 # Weak Hashing Algorithms
 otool -I -v <app-binary> | grep -w "_CC_MD5"
 otool -I -v <app-binary> | grep -w "_CC_SHA1"
 # Good practice : no output
 
-'''
+<<'
 Insecure Functions
-'''
-# Faster | https://github.com/saladandonionrings/iOS-Binary-Security-Analyzer
-./check-binary.sh <binary>
-
-# Manual
+'>>
 # Insecure Random Functions
 otool -I -v <app-binary> | grep -w "_random"
 otool -I -v <app-binary> | grep -w "_srand"
@@ -87,15 +91,23 @@ otool -I -v <app-binary> | grep -w "_sprintf"
 otool -I -v <app-binary> | grep -w "_printf"
 otool -I -v <app-binary> | grep -w "_vsprintf"
 # Good practice : no output
+```
 
-'''
+#### objection
+
+```bash
+# binary analysis
+objection -g app explore
+ios info binary
+
+<<'
 PLIST Checks
-'''
+'>>
 # unzip the ipa file and then get the info.plist
 # convert into xml
 plistutil -i Info.plist -o Infoxml.plist
 
-# or with objection
+# or objection
 objection -g "APP" explore
 ios plist cat Info.plist
 
@@ -109,10 +121,10 @@ ios plist cat Info.plist
 
 ### Files Analysis
 
-* Search for sensitive information in files
+* Search for **sensitive** **information** in application files
 * App files in :&#x20;
-  * **/var/mobile/Containers/Data/Application/XXXXXXXX/**&#x20;
-  * **/private/var/containers/Bundle/Application/XXXXXXXX/**
+  * &#x20;`/var/mobile/Containers/Data/Application/XXXXXXXX/`
+  * `/private/var/containers/Bundle/Application/XXXXXXXX/`
 
 ```bash
 # search for IP
@@ -138,8 +150,36 @@ grep -Eo '(?:[A-Za-z0-9+\/]{4})*(?:[A-Za-z0-9+\/]{2}==|[A-Za-z0-9+\/]{3}=)?$' -r
 ```
 
 {% embed url="https://github.com/as0ler/BinaryCookieReader" %}
+Use this tool
+{% endembed %}
 
 ```bash
 wget https://raw.githubusercontent.com/as0ler/BinaryCookieReader/master/BinaryCookieReader.py
 python3 BinaryCookieReader.py $cookie-file
+```
+
+### Databases
+
+#### Core Data
+
+```
+/var/mobile/Containers/Data/Application/XXXXXXXX/Library/Application Support/.sqlite
+```
+
+#### Realm
+
+```
+/var/mobile/Containers/Data/Application/XXXXXXXX/Documents/.realm
+```
+
+#### Couchbase
+
+```
+/var/mobile/Containers/Data/Application/XXXXXXXX/Library/Application Support/CouchbaseLite/
+```
+
+#### YapDatabase
+
+```
+/var/mobile/Containers/Data/Application/XXXXXXXX/Library/Application Support/YapDatabase
 ```
