@@ -35,10 +35,12 @@ find /var/ -name "*.app"
 
 ### Jailbreak
 
+[Types of Jailbreaks](./#jailbreak)
+
 #### Taurine
 
-* Install Cydia via Zebra via Sileo
-* Otool :&#x20;
+* Install **Cydia** via **Zebra** via **Sileo**
+* **Otool** :&#x20;
   * Cydia repository: http://apt.thebigboss.org/repofiles/cydia/&#x20;
   * **Installation**: search for _Big Boss Recommended Tools_ on Cydia&#x20;
   * **Installation2**: search for _Darwin CC tools_ on Cydia
