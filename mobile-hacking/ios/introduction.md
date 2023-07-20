@@ -67,9 +67,13 @@ The main security features of iOS are:
 
 ## Install Tools on iOS
 
-Cydia > Manage > Sources > Edit > Add **https://cydia.akemi.ai/ https://build.frida.re**
+```
+Cydia > Manage > Sources > Edit > Add : 
+https://cydia.akemi.ai/ 
+https://build.frida.re
 
 Cydia > Search > HideJB / Frida / AppSync Unified
+```
 
 **Also :**
 
@@ -90,10 +94,9 @@ apt install otool
 
 {% embed url="https://portswigger.net/burp/documentation/desktop/mobile/config-ios-device" %}
 
-> **On device :**&#x20;
->
-> Settings > Wi-Fi > Configure Proxy > Manual > IP:8082 Safari > http://burp > Download and Allow&#x20;
->
-> Settings > General > Profile > PortSwigger CA > Install > Done&#x20;
->
-> Settings > General > About > Certificate Trust Settings > Enable Toggle PortSwigger CA
+```
+On device : 
+Settings > Wi-Fi > Configure Proxy > Manual > IP:8082 Safari > http://burp > Download and Allow 
+Settings > General > Profile > PortSwigger CA > Install > Done 
+Settings > General > About > Certificate Trust Settings > Enable Toggle PortSwigger CA
+```
