@@ -80,19 +80,15 @@ network mapping of attack surfaces and external asset discovery
 ### Data Breaches | Leaks
 
 {% embed url="https://intelx.io" %}
-provides an insight into what type of data has been exposed by breaches, cleartext passwords
+Provides an insight into what type of data has been exposed by breaches, cleartext passwords
 {% endembed %}
 
-{% embed url="https://search.illicit.services" fullWidth="false" %}
-Search DB Leaks
-{% endembed %}
-
-* Shodan - Search for devies connected to the internet.
-* Wigle - Database of wireless networks, with statistics.
-* Grep App - Search across a half milion git repos.
-* Binary Edge - Scans the internet for threat intelligence.
-* ONYPHE - Collects cyber-threat intelligence data.
-* GreyNoise - Search for devices connected to the internet.
+* **Shodan** - Search for devies connected to the internet.
+* **Wigle** - Database of wireless networks, with statistics.
+* **Grep App** - Search across a half milion git repos.
+* **Binary Edge** - Scans the internet for threat intelligence.
+* **ONYPHE** - Collects cyber-threat intelligence data.
+* **GreyNoise** - Search for devices connected to the internet.
 * Censys - Assessing attack surface for internet connected devices.
 * Hunter - Search for email addresses belonging to a website.
 * Fofa - Search for various threat intelligence.

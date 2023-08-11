@@ -139,6 +139,7 @@
   * [AppLocker](windows-hacking/applocker.md)
   * [BitLocker](windows-hacking/bitlocker.md)
 * [Office](windows-hacking/office/README.md)
+  * [Analyze office files](windows-hacking/office/analyze-office-files.md)
   * [Forgot password of file ?](windows-hacking/office/forgot-password-of-file.md)
   * [CVE-2023-21716 (Microsoft Word RCE)](windows-hacking/office/cve-2023-21716-microsoft-word-rce.md)
 
