@@ -1,4 +1,4 @@
-# ACLs
+# ACLs Abuse
 
 > An **ACL is an ordered list of ACEs (access control entry)** that define the protections that apply to an object and its properties. Each ACE identifies a security principal and specifies a set of access rights that are allowed, denied, or audited for that security principal. An object’s security descriptor can contain two ACLs:
 >
@@ -6,6 +6,8 @@
 > * A SACL that controls how access is audited
 >
 > When a user tries to access a file, the Windows system runs an AccessCheck and compares the security descriptor with the users access token and evaluates if the user is granted access and what kind of access depending on the ACEs set.
+
+{% embed url="https://lootsec.io/abusing-active-directory-acl/" %}
 
 ## DACL
 

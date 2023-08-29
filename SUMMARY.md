@@ -108,7 +108,7 @@
     * [Autologon](windows-hacking/active-directory/2.-initial-attack-vectors/autologon.md)
     * [PowerView.ps1](windows-hacking/active-directory/2.-initial-attack-vectors/powerview.ps1.md)
   * [3. Post-Compromise Enumeration](windows-hacking/active-directory/3.-post-compromise-enumeration/README.md)
-    * [ACLs](windows-hacking/active-directory/3.-post-compromise-enumeration/acls.md)
+    * [ACLs Abuse](windows-hacking/active-directory/3.-post-compromise-enumeration/acls-abuse.md)
     * [Computer enumeration](windows-hacking/active-directory/3.-post-compromise-enumeration/computer-enumeration.md)
     * [PowerView](windows-hacking/active-directory/3.-post-compromise-enumeration/powerview.md)
     * [BloodHound](windows-hacking/active-directory/3.-post-compromise-enumeration/bloodhound.md)
