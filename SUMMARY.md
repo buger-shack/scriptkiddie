@@ -90,7 +90,6 @@
     * [SMB Enumeration](windows-hacking/active-directory/1.-reconnaissance/smb-enumeration.md)
   * [2. Initial Attack Vectors](windows-hacking/active-directory/2.-initial-attack-vectors/README.md)
     * [Kerberos](windows-hacking/active-directory/2.-initial-attack-vectors/kerberos/README.md)
-      * [GetNPUsers](windows-hacking/active-directory/2.-initial-attack-vectors/kerberos/getnpusers.md)
       * [Lookupsid](windows-hacking/active-directory/2.-initial-attack-vectors/kerberos/lookupsid.py.md)
       * [findDelegation](windows-hacking/active-directory/2.-initial-attack-vectors/kerberos/finddelegation.md)
       * [ASREPRoast](windows-hacking/active-directory/2.-initial-attack-vectors/kerberos/asreproast.md)
