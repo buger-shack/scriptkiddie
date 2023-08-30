@@ -280,5 +280,5 @@
 ## 🐞 Bug Bounty Related
 
 * [Searching for CVEs](bug-bounty-related/searching-for-cves.md)
-* [\[FR\] Laws](bug-bounty-related/fr-laws.md)
+* [\[FR\] Legal](bug-bounty-related/fr-laws.md)
 * [Dorks](bug-bounty-related/bug-bounty-stuff/dorks.md)
