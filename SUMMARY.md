@@ -134,7 +134,7 @@
       * [noPac - CVE-2021-42278](windows-hacking/active-directory/5.-privesc-and-misc/exploits/nopac-cve-2021-42278.md)
       * [ZeroLogon - CVE-2020-1472](windows-hacking/active-directory/5.-privesc-and-misc/exploits/zerologon-cve-2020-1472.md)
       * [LocalPotato - CVE-2023-21746](windows-hacking/active-directory/5.-privesc-and-misc/exploits/localpotato-cve-2023-21746.md)
-      * [PrintNightMare](windows-hacking/active-directory/5.-privesc-and-misc/exploits/printnightmare.md)
+      * [PrintNightMare - CVE-2021-34527](windows-hacking/active-directory/5.-privesc-and-misc/exploits/printnightmare.md)
       * [Other CVEs](windows-hacking/active-directory/5.-privesc-and-misc/exploits/other-cves.md)
 * [Useful AD Commands](windows-hacking/useful-ad-commands.md)
 * [Privilege Escalation](windows-hacking/privilege-escalation.md)
@@ -219,7 +219,6 @@
 ## 🗄 MISC
 
 * [CVEs](misc/cves/README.md)
-  * [\[CVE-2021-34527\] - PrintNighmare](misc/cves/cve-2021-34527-printnighmare.md)
   * [\[CVE-2022-0847\] - dirtypipe](misc/cves/cve-2022-0847-dirtypipe.md)
   * [\[CVE-2021-4034\] - Pwnkit](misc/cves/cve-2021-4034-pwnkit.md)
   * [\[CVE-2021-45105\] - Log4J](misc/cves/cve-2021-45105-log4j.md)
@@ -247,6 +246,8 @@
 
 ## 🔴 RED TEAM
 
+* [Password Extract](red-team/password-extract/README.md)
+  * [Firefox](red-team/password-extract/firefox.md)
 * [Spy cam](red-team/spy-cam.md)
 * [Lock Picking](red-team/lock-picking.md)
 * [Scrapping People](red-team/scrapping.md)
