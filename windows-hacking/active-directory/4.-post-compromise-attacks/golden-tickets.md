@@ -2,24 +2,30 @@
 
 ## Brief
 
-> **Understanding Silver / Golden Tickets : https://en.hackndo.com/kerberos-silver-golden-tickets/**
+<details>
 
-> Golden Ticket attacks can be carried out against Active Directory domains, where access control is implemented using Kerberos tickets issued to authenticated users by a Key Distribution Service(KDC).&#x20;
->
-> The attacker gains control over the **domain’s KDC account** (KRBTGT account) by stealing its NTLM hash. This allows the attacker to generate Ticket Granting Tickets (**TGTs**) for any account in the Active Directory domain.&#x20;
->
-> With **valid TGTs**, the attacker can request access to any resource/system on its domain from the Ticket Granting Service (TGS).
+<summary>What is a Golden Ticket Attack ?</summary>
+
+Golden Ticket attacks can be carried out against Active Directory domains, where access control is implemented using **Kerberos** **tickets** issued to authenticated users by a Key Distribution Service(**KDC**).&#x20;
+
+The attacker **gains control** over the **domain’s KDC account** (KRBTGT account) by stealing its NTLM hash. This allows the attacker to generate Ticket Granting Tickets (**TGTs**) for any account in the Active Directory domain.&#x20;
+
+With **valid TGTs**, the attacker can request access to any resource/system on its domain from the Ticket Granting Service (TGS).
+
+[**Understanding Silver / Golden Tickets**](https://en.hackndo.com/kerberos-silver-golden-tickets/)
+
+</details>
 
 **The NTLM hash of the krbtgt account can be obtained via :**
 
-* DCSync (Mimikatz)
-* LSA (Mimikatz)
-* Hashdump (meterpreter)
-* NTDS.DIT
+* **DCSync** (Mimikatz)
+* **LSA** (Mimikatz)
+* **Hashdump** (meterpreter)
+* **NTDS.DIT**
 
 ## Attack
 
-The **DCSync** is a mimikatz feature which will try to impersonate a domain controller and request account password information from the targeted domain controller. This technique is less noisy as it doesn’t require direct access to the domain controller or retrieving the NTDS.DIT file over the network.
+> The **DCSync** is a Mimikatz feature which will try to impersonate a domain controller and request account password information from the targeted domain controller. This technique is less noisy as it doesn’t require direct access to the domain controller or retrieving the NTDS.DIT file over the network.
 
 ```powershell
 lsadump::dcsync /user:krbtgt

@@ -1,19 +1,27 @@
 # Kerberoasting - SPN
 
-## SPN
+<details>
 
-> A service principal name (SPN) is the name by which a **Kerberos client uniquely identifies an instance of a service** for a given Kerberos target computer.&#x20;
->
-> If you install multiple instances of a service on computers throughout a forest, **each instance must have its own SPN**. A given service instance can have multiple SPNs if there are multiple names that clients might use for authentication. For example, an SPN always includes the name of the host computer on which the service instance is running, so a service instance might register an SPN for each name or alias of its host.
+<summary>What is a SPN ?</summary>
 
-## Kerberoasting
+A service principal name (SPN) is the name by which a **Kerberos client uniquely identifies an instance of a service** for a given Kerberos target computer.&#x20;
 
-So what's this attack all about :
+If you install multiple instances of a service on computers throughout a forest, **each instance must have its own SPN**. A given service instance can have multiple SPNs if there are multiple names that clients might use for authentication. For example, an SPN always includes the name of the host computer on which the service instance is running, so a service instance might register an SPN for each name or alias of its host
 
-* An attacker **scans** Active Directory for **user accounts with SPN values set** using any number of methods, including PowerShell and LDAP queries, scripts provided by the Kerberoast toolkit, or tools like PowerSploit, Bloodhound ..
+</details>
+
+
+
+<details>
+
+<summary>Kerberoasting</summary>
+
+* An attacker **scans** Active Directory for **user accounts with SPN values set** using any number of methods, including PowerShell and LDAP queries, scripts provided by the Kerberoast toolkit, or tools like PowerSploit, Bloodhound, etc.
 * Once a list of target accounts is obtained, **the attacker requests service tickets** from AD using SPN values
 * Using **MimiKatz** or **GetSPN.py**, the attacker then extracts the service tickets to memory and saves the information to a file
 * Once the tickets are saved to disk, the attacker passes them into a **password cracking** script that will run a dictionary of passwords as NTLM hashes against the service tickets they have extracted until it can successfully open the ticket. When the ticket is finally opened, it’ll be presented to the attacker in clear text.
+
+</details>
 
 ### `Impacket-GetUserSPNs`
 
