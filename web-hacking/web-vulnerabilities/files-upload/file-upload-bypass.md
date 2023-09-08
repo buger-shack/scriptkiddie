@@ -15,6 +15,7 @@ When uploading a .php file;
 # Content-Type: application/x-php
 # to
 # Content-Type: image/jpeg
+# Content-Type: image/png
 ```
 
 ### Web shell upload via path traversal
@@ -77,7 +78,7 @@ Before uploading a php file;
 
 ### Remote Code Execution via Polyglot web shell upload
 
-In order to upload a php file where the file verification is done on the server side (checking if it is really a IMAGE file), we can **disguise a php file** **as an image file.**
+> In order to upload a php file where the file verification is done on the server side (checking if it is really a IMAGE file), we can **disguise a php file** **as an image file.**
 
 When uploading a php file :
 

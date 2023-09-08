@@ -1,12 +1,16 @@
 # IDOR
 
-## Brief
+<details>
 
-{% hint style="info" %}
-* It is a type of an **Access Control Vulnerability**.
-  * _An Access Control Vulnerability is when an attacker can gain access to information or actions not intended for them_.
-* An **IDOR** vulnerability can occur when a web server receives user-supplied input to retrieve objects (files, data, documents), and **too much trust** has been placed on that input data, and the web application does not validate whether the user should, in fact, have access to the requested object.
-{% endhint %}
+<summary>What is IDOR ?</summary>
+
+It is a type of an **Access Control Vulnerability**.
+
+* _An Access Control Vulnerability is when an attacker can gain access to information or actions not intended for them_.
+
+An **IDOR** vulnerability can occur when a web server receives user-supplied input to retrieve objects (files, data, documents), and **too much trust** has been placed on that input data, and the web application does not validate whether the user should, in fact, have access to the requested object.
+
+</details>
 
 ## Find and Exploit
 
