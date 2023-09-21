@@ -221,6 +221,7 @@
 
 ## 🗄 MISC
 
+* [Default Credentials](misc/default-credentials.md)
 * [CVEs](misc/cves/README.md)
   * [\[CVE-2022-0847\] - dirtypipe](misc/cves/cve-2022-0847-dirtypipe.md)
   * [\[CVE-2021-4034\] - Pwnkit](misc/cves/cve-2021-4034-pwnkit.md)
