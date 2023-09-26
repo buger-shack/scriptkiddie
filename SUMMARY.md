@@ -157,6 +157,7 @@
 * [Printers](systems/printers/README.md)
   * [Printer Exploitation Tool (PRET)](systems/printers/printer-exploitation-tool-pret.md)
   * [CUPS](systems/printers/cups.md)
+* [Fortinet](systems/fortinet.md)
 
 ## 🔑 CRACKING | ENCODING
 

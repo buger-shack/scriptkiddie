@@ -74,7 +74,7 @@ Pass the ticket works by dumping the TGT from the LSASS memory of the machine.
 
 `privilege::debug` - Ensure this outputs \[output '20' OK] if it does not that means you do not have the administrator privileges to properly run mimikatz
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 `sekurlsa::tickets /export` - this will export all of the .kirbi tickets into the directory that you are currently in
 
@@ -90,11 +90,11 @@ Now that we have the ticket, we can perform a pass the ticket attack `kerberos::
 
 `klist` - Here were just verifying that we successfully impersonated the ticket by listing our cached tickets.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 You now have impersonated the ticket giving you the same rights as the TGT you're impersonating. To verify this we can look at the admin share.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Kerberos Backdoors
 
