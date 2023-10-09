@@ -2,6 +2,18 @@
 
 ## Image analysis
 
+### Aperi'Solve
+
+{% embed url="https://www.aperisolve.com/" %}
+performs layer analysis on image ; uses exiftool, binwalk, zsteg etc
+{% endembed %}
+
+```bash
+# usage on cli
+sudo sh -c "$(curl -fs https://www.aperisolve.com/install.sh)"
+aperisolve <image>
+```
+
 ### Ghiro
 
 > Ghiro is a fully automated tool designed to run forensics analysis over a massive amount of images, just using an user friendly and fancy web application.
@@ -10,15 +22,23 @@
 
 #### Set Up
 
-[Download Ghiro](https://www.getghiro.org/appliances/0.2.1/Ghiro\_Appliance\_0.2.1-1.zip)&#x20;
+[Download Ghiro](https://www.getghiro.org/appliances/0.2.1/Ghiro\_Appliance\_0.2.1-1.zip)
 
 #### Usage
 
 {% embed url="https://www.hackingarticles.in/forensic-investigation-ghiro-for-image-analysis" %}
 
-> Username: ghiro&#x20;
+> Username: ghiro
 >
 > Password: ghiromanager
+
+### Stereograms
+
+> An autostereogram (also known as Magic Eye) is a 2D image designed to create the illusion of 3D. In each image, there is a 3D object that can only be viewed by looking at the image a certain way, as if the screen was transparent and you looked at the wall behind it.
+
+{% embed url="https://piellardj.github.io/stereogram-solver/" %}
+if you can't do it with your eyes... works perfectly
+{% endembed %}
 
 ## Disk Image Analysis
 
