@@ -151,6 +151,17 @@
   * [Analyze office files](windows-hacking/office/analyze-office-files.md)
   * [Forgot password of file ?](windows-hacking/office/forgot-password-of-file.md)
   * [CVE-2023-21716 (Microsoft Word RCE)](windows-hacking/office/cve-2023-21716-microsoft-word-rce.md)
+* [SCCM | MECM](windows-hacking/sccm-or-mecm/README.md)
+  * [Configuration Audit](windows-hacking/sccm-or-mecm/configuration-audit.md)
+  * [Dump](windows-hacking/sccm-or-mecm/dump.md)
+  * [Hack It](windows-hacking/sccm-or-mecm/hack-it/README.md)
+    * [Reconnaisance](windows-hacking/sccm-or-mecm/hack-it/reconnaisance.md)
+    * [PXE/OSD Exploitation](windows-hacking/sccm-or-mecm/hack-it/pxe-osd-exploitation.md)
+    * [NTLM Relay from SCCM Clients](windows-hacking/sccm-or-mecm/hack-it/ntlm-relay-from-sccm-clients.md)
+    * [Privilege Escalation](windows-hacking/sccm-or-mecm/hack-it/privilege-escalation.md)
+    * [Lateral Movement](windows-hacking/sccm-or-mecm/hack-it/lateral-movement.md)
+    * [Malware Deployment](windows-hacking/sccm-or-mecm/hack-it/malware-deployment.md)
+  * [Basics](windows-hacking/sccm-or-mecm/basics.md)
 
 ## 💽 Systems
 
