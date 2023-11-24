@@ -37,6 +37,8 @@ Get-CMSite
 
 ## Obtain SCCM administrative users and their roles
 Get-CMAdministrativeUser | Select-Object Name, RoleName
+# or
+Get-CMAdministrativeUser
 
 ## Retrieve infos about the management point configuration
 ### SslState : 0 not encrypted
@@ -122,6 +124,8 @@ Get-CMSoftwareUpdatePoint
 ```markdown
 # Require approval of computers from untrusted domains 
 - Console Configuration Manager (SCCM) > Administration > Site configuration > Sites > "Hierarchy settings" in the "Settings" group.
+# Only approved Console Extensions 
+- Console Configuration Manager (SCCM) > Administration > Site configuration > Sites > "Hierarchy settings" in the "Settings" group > General > (check box Only allow console extension that are approved for the hierarchy)
 
 # Signature & encryption
 ### PKI (HTTPS) & Signature enabled
