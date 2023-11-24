@@ -16,6 +16,7 @@
   * [🧑 User OSINT](web-hacking/osint/user-osint.md)
   * [🕸 Website OSINT](web-hacking/osint/website-osint.md)
   * [🗣 Breaches](web-hacking/osint/breaches.md)
+  * [💼 Business OSINT](web-hacking/osint/business-osint.md)
 * [Enumeration](web-hacking/enumeration/README.md)
   * [Network Scanners](web-hacking/enumeration/network-scanners.md)
   * [Directory/Files Scanners](web-hacking/enumeration/directory-files-scanners.md)
