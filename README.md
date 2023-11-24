@@ -4,16 +4,18 @@ description: Introduction
 
 # 🏠 /home/red-squad
 
-<figure><img src=".gitbook/assets/637A323A-181D-4AED-82B3-CBB896B86284.PNG" alt="Red Squad Logo" width="375"><figcaption></figcaption></figure>
-
 ## `whoami`
 
 {% hint style="danger" %}
-This gitbook is maintained by 2 young pentesters which is an inventory of everything we use in a daily basis and things learned about cybersecurity/pentesting/redteaming these past few years. We will try our best to update the gitbook alongside with new challanges that we meet.
+**Welcome to our GitBook**, a meticulously curated repository crafted by two dedicated young penetration testers. Our mission is to compile a comprehensive inventory of the tools, techniques, and knowledge we've amassed in the realms of cybersecurity, penetration testing, and red teaming over the recent years.
 
-You will find basic to advanced techniques/methods/informations that we encountered during our work and through various CTFs on tryhackme/hackthebox.
+As we navigate the evolving landscape of digital security, we commit to regularly updating this GitBook with fresh insights gleaned from the front lines of our professional challenges. Here, you will discover a spectrum of strategies, from foundational concepts to sophisticated methodologies, all of which have been battle-tested in our day-to-day operations and honed through countless Capture The Flag (CTF) exercises.
+
+Join us on this journey of continuous learning and discovery, where each page turn equips you with knowledge and empowers your cybersecurity endeavors.
 
 <mark style="color:red;">**⬆ Don't forget to support our projects and to BuyUsACoffee ⬆**</mark>
 {% endhint %}
 
 <figure><img src=".gitbook/assets/giphy.gif" alt=""><figcaption><p>Us</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (155).png" alt="" width="375"><figcaption></figcaption></figure>
