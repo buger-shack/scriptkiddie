@@ -8,6 +8,9 @@
 # scan ips
 nmap -sC -sV -iL $target_file 
 
+# infos
+whois $target
+
 # gowitness - screenshot web
 gowitness # screens
 # OR : https://github.com/michenriksen/aquatone

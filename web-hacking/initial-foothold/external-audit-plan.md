@@ -18,6 +18,9 @@ rustscan -a $target -- -sC -sV -oN scan
 
 # identify technologies / CMS -> check for vulnerabilities
 
+# whois
+whois $target
+
 # Google Dorking (infos leak)
 site:$target filetype:txt
 site:$target filetype:pdf
