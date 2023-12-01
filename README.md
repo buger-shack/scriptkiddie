@@ -16,4 +16,6 @@ Join us on this journey of continuous learning and discovery, where each page tu
 <mark style="color:red;">**⬆ Don't forget to support our projects and to BuyUsACoffee ⬆**</mark>
 {% endhint %}
 
-![IMG](https://files.oaiusercontent.com/file-mrrbaW4dSJNHU3czP0SDPBrX?se=2023-11-30T15%3A28%3A51Z\&sp=r\&sv=2021-08-06\&sr=b\&rscc=max-age%3D31536000%2C%20immutable\&rscd=attachment%3B%20filename%3D0c62095c-9fd5-4086-b8f7-f9ef1101db6f.webp\&sig=KKkw/WZY0EWWo6ykjkSdK8Co0JvCKKYxeXYecnixKc4%3D)
+
+
+<figure><img src=".gitbook/assets/0c62095c-9fd5-4086-b8f7-f9ef1101db6f.webp" alt="" width="563"><figcaption></figcaption></figure>
