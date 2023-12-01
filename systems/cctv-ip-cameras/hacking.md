@@ -2,7 +2,7 @@
 
 &#x20;
 
-<figure><img src="https://files.oaiusercontent.com/file-OW8irvYAmydhIli84eIXWFLd?se=2023-11-30T15%3A20%3A34Z&#x26;sp=r&#x26;sv=2021-08-06&#x26;sr=b&#x26;rscc=max-age%3D31536000%2C%20immutable&#x26;rscd=attachment%3B%20filename%3D8377d473-bc12-454a-a3a1-4e0c5f0c7e22.webp&#x26;sig=eoiustSWM5KBFOoikTflal4MLTJy8wfcu/W7Z9stZiI%3D" alt="" width="563"><figcaption><p>"<em>You see, but you do not observe</em>." - S. Holmes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (162).png" alt="" width="563"><figcaption><p>"You see, but you do not observe." - S. Holmes</p></figcaption></figure>
 
 ## Default credentials
 
