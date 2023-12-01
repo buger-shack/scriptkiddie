@@ -1,4 +1,4 @@
-# CTFs shortcuts
+# 🚩 CTFs shortcuts
 
 <figure><img src="../.gitbook/assets/ctf.gif" alt="" width="360"><figcaption></figcaption></figure>
 

@@ -2,7 +2,7 @@
 description: Test your pentesting knowledge!
 ---
 
-# Hacking Labs
+# 🔭 Hacking Labs
 
 ## Web
 

@@ -1,6 +1,6 @@
-# Wordlists
+# 📝 Wordlists
 
-![](https://media0.giphy.com/media/B7o99rIuystY4/giphy.gif?cid=ecf05e47cf3wyj24p0mb9x0ecz5kqfzxwwgade22vbck2cph\&rid=giphy.gif\&ct=g)
+![IMG](https://files.oaiusercontent.com/file-VRbKwQo7vUACMMbdFlAiH6Mv?se=2023-12-01T15%3A35%3A24Z\&sp=r\&sv=2021-08-06\&sr=b\&rscc=max-age%3D31536000%2C%20immutable\&rscd=attachment%3B%20filename%3D45351aba-f0ce-49a0-b0ab-b2d69cefc751.webp\&sig=NJNvlZ%2Baibyczc4TyeM%2BufElVEMwbo/W0firNaKYj/c%3D)
 
 ### All
 

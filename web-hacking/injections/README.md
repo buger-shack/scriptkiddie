@@ -5,7 +5,7 @@ description: >-
   application handles user input.
 ---
 
-# Injections
+# 💉 Injections
 
 <figure><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmRjMzE3YzAxNmUzZTgyMzkyYjRjZTk4MGExNjlhOGNjNjIyODBmZSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xT5LMUeCoYH1DEGCys/giphy.gif" alt="" width="188"><figcaption></figcaption></figure>
 

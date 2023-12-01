@@ -1,4 +1,4 @@
-# WAF Bypass
+# ⛔ WAF Bypass
 
 ## Brief
 

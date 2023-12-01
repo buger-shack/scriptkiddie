@@ -1,4 +1,4 @@
-# Bluetooth
+# 🫐 Bluetooth
 
 {% embed url="https://github.com/zedxpace/bluetooth-hacking-" %}
 Bluetooth Hacking

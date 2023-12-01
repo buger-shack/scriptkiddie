@@ -1,4 +1,4 @@
-# Tools
+# 🛠 Tools
 
 {% embed url="https://github.com/fabacab/awesome-cybersecurity-blueteam" %}
 Awesome Cybersecurity Blue Team Tools

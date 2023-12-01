@@ -1,22 +1,19 @@
-# HoneyPots
+# 🍯 HoneyPots
 
 ![](<../.gitbook/assets/giphy (1).gif>)
 
-## CanaryTokens&#x20;
+## CanaryTokens
 
 {% hint style="info" %}
-**Canary tokens are a free, quick, painless way to help defenders discover they've been breached (by having attackers announce themselves.)**\
+**Canary tokens are a free, quick, painless way to help defenders discover they've been breached (by having attackers announce themselves.)**\\
 
+**How tokens works (in 3 short steps):**
 
-#### How tokens works (in 3 short steps):
-
-1. Visit the site and get a free token (which could look like an URL or a hostname, depending on your selection.)&#x20;
+1. Visit the site and get a free token (which could look like an URL or a hostname, depending on your selection.)
 2. If an attacker ever uses the token somehow, we will give you an out of band (email or sms) notification that it's been visited.
 3. As an added bonus, we give you a bunch of hints and tools that increase the likelihood of an attacker tripping on a canary token.
 
-
-
-#### More Details:
+**More Details:**
 
 Tokens consist of a unique identifier (which can be embedded in either HTTP URLs or in hostnames.) Whenever that URL is requested, or the hostname is resolved, we send a notification email to the address tied to the token. You can get one in seconds, using just your browser.
 {% endhint %}

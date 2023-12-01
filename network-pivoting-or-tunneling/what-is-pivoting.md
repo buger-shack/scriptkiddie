@@ -1,4 +1,4 @@
-# Pivoting
+# 🌪 Pivoting
 
 {% hint style="info" %}
 <mark style="color:blue;">Pivoting is the</mark> _<mark style="color:blue;">art</mark>_ <mark style="color:blue;">of</mark> <mark style="color:blue;">**using access obtained**</mark> <mark style="color:blue;">over one machine to</mark> <mark style="color:blue;">**exploit another machine deeper in the network**</mark><mark style="color:blue;">. It is one of the most essential aspects of network penetration testing.</mark>

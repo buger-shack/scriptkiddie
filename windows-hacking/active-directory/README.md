@@ -1,4 +1,6 @@
-# Active Directory
+# 👥 Active Directory
+
+<figure><img src="../../.gitbook/assets/image (160).png" alt="" width="563"><figcaption></figcaption></figure>
 
 > Active Directory is a widely used directory service by Microsoft that stores information about users, computers, and other resources on a network.&#x20;
 >

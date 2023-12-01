@@ -1,4 +1,4 @@
-# Lock Picking
+# 🔒 Lock Picking
 
 ## Pick a Lock
 

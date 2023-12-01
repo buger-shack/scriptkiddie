@@ -1,4 +1,4 @@
-# Cover tracks
+# 👣 Cover tracks
 
 ## Log files
 

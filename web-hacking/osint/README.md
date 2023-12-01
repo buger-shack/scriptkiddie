@@ -1,4 +1,6 @@
-# OSINT
+# 🕵 OSINT
+
+<figure><img src="../../.gitbook/assets/image (158).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Open-source intelligence** (**OSINT**) is the collection and analysis of data gathered from open sources (covert sources and publicly available information \[PAI]) to produce actionable intelligence. OSINT is primarily used in national security, law enforcement, and business intelligence functions and is of value to analysts who use non-sensitive intelligence in answering classified, unclassified, or proprietary intelligence requirements across the previous intelligence disciplines.

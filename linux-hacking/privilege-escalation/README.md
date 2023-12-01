@@ -1,4 +1,4 @@
-# Privilege Escalation
+# 🧗 Privilege Escalation
 
 <figure><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWNmOTc3YTNkN2Q5NGNiN2Q1ODBlZjcyYzc0NTY5MjI3NWI1YzkwYSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/xT5LMGF5fDH7Nx3Y40/giphy.gif" alt="" width="375"><figcaption></figcaption></figure>
 

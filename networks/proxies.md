@@ -1,4 +1,4 @@
-# Proxies
+# 🔗 Proxies
 
 <figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption><p>Source : UpGuard</p></figcaption></figure>
 

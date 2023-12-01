@@ -1,4 +1,4 @@
-# Phishing
+# 🎣 Phishing
 
 ## Find domain name
 

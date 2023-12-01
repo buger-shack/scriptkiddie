@@ -1,6 +1,4 @@
-# Bruteforce tools
-
-<figure><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW83cWZsNnc5cmN5ZmQxMnEwcmgxdGRnZ2Z1MHFrbnJlMWFnNWMwNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zAow7d16Sf0xq/giphy.gif" alt="" width="375"><figcaption></figcaption></figure>
+# 🥊 Bruteforce tools
 
 ## `Ffuf`
 

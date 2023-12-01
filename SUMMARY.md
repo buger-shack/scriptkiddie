@@ -7,38 +7,38 @@
 
 ## 🌐 Web Hacking
 
-* [CTFs shortcuts](web-hacking/ctfs-shortcuts.md)
-* [Audits plan](web-hacking/initial-foothold/README.md)
+* [🚩 CTFs shortcuts](web-hacking/ctfs-shortcuts.md)
+* [🗺 Audits plan](web-hacking/initial-foothold/README.md)
   * [Exposition Audit - Plan](web-hacking/initial-foothold/exposition-audit-plan.md)
   * [Internal Audit - Plan](web-hacking/initial-foothold/internal-audit-plan.md)
   * [External Audit - Plan](web-hacking/initial-foothold/external-audit-plan.md)
-* [OSINT](web-hacking/osint/README.md)
+* [🕵 OSINT](web-hacking/osint/README.md)
   * [🧑 User OSINT](web-hacking/osint/user-osint.md)
   * [🕸 Website OSINT](web-hacking/osint/website-osint.md)
   * [🗣 Breaches](web-hacking/osint/breaches.md)
   * [💼 Business OSINT](web-hacking/osint/business-osint.md)
-* [Enumeration](web-hacking/enumeration/README.md)
+* [⏩ Enumeration](web-hacking/enumeration/README.md)
   * [Network Scanners](web-hacking/enumeration/network-scanners.md)
   * [Directory/Files Scanners](web-hacking/enumeration/directory-files-scanners.md)
   * [Web Scanners](web-hacking/enumeration/web-scanners/README.md)
     * [Subdomains](web-hacking/enumeration/web-scanners/subdomains.md)
-* [HTTP Stuff](web-hacking/http-stuff/README.md)
+* [🔗 HTTP Stuff](web-hacking/http-stuff/README.md)
   * [HTTP Methods](web-hacking/http-stuff/http-methods/README.md)
     * [403 Bypass](web-hacking/http-stuff/http-methods/403-bypass.md)
   * [Security Headers](web-hacking/http-stuff/security-headers.md)
   * [HTTP Parameters](web-hacking/http-stuff/parameters.md)
-* [Sessions / Tokens](web-hacking/sessions-tokens/README.md)
+* [🔐 Sessions / Tokens](web-hacking/sessions-tokens/README.md)
   * [Cookies](web-hacking/http-stuff/cookies.md)
   * [JWT](web-hacking/http-stuff/jwt/README.md)
     * [Attacking JWT](web-hacking/http-stuff/jwt/attacking-jwt.md)
-* [Injections](web-hacking/injections/README.md)
+* [💉 Injections](web-hacking/injections/README.md)
   * [HTML | XSS](web-hacking/injections/html-or-xss.md)
   * [SQLi](web-hacking/injections/sqli/README.md)
     * [SQLmap](web-hacking/injections/sqli/sqlmap.md)
     * [NoSQLi](web-hacking/injections/sqli/nosqli.md)
   * [XXE](web-hacking/injections/xxe.md)
   * [LaTex](web-hacking/injections/latex.md)
-* [Web Vulnerabilities](web-hacking/web-vulnerabilities/README.md)
+* [🪱 Web Vulnerabilities](web-hacking/web-vulnerabilities/README.md)
   * [CSRF](web-hacking/web-vulnerabilities/csrf.md)
   * [ClickJacking](web-hacking/web-vulnerabilities/clickjacking.md)
   * [Files / Upload](web-hacking/web-vulnerabilities/files-upload/README.md)
@@ -48,11 +48,11 @@
   * [LFI](web-hacking/web-vulnerabilities/lfi/README.md)
     * [Files to look for](web-hacking/web-vulnerabilities/lfi/files-to-look-for.md)
   * [Remote Code Execution](web-hacking/web-vulnerabilities/remote-code-execution.md)
-* [Dorking](web-hacking/dorking/README.md)
+* [😎 Dorking](web-hacking/dorking/README.md)
   * [Google](web-hacking/dorking/google.md)
   * [Shodan](web-hacking/dorking/shodan.md)
-* [WAF Bypass](web-hacking/waf-bypass.md)
-* [Servers / CMS](web-hacking/servers-cms/README.md)
+* [⛔ WAF Bypass](web-hacking/waf-bypass.md)
+* [✍ Servers / CMS](web-hacking/servers-cms/README.md)
   * [🐈 Tomcat](web-hacking/servers-cms/tomcat.md)
   * [💧 Drupal](web-hacking/servers-cms/drupal.md)
   * [✏ Oracle APEX](web-hacking/servers-cms/apex.md)
@@ -64,33 +64,33 @@
   * [🏢 Server-Side Vulnerabilities](web-hacking/servers-cms/server-side-vulnerabilities/README.md)
     * [Server-Side Request Forgery](web-hacking/servers-cms/server-side-vulnerabilities/server-side-request-forgery.md)
     * [Server-Side Template Injection](web-hacking/servers-cms/server-side-vulnerabilities/server-side-template-injection.md)
-* [API](web-hacking/api/README.md)
+* [🖇 API](web-hacking/api/README.md)
   * [GraphQL](web-hacking/api/graphql.md)
 
 ## 🐧 Linux Hacking
 
-* [Privilege Escalation](linux-hacking/privilege-escalation/README.md)
+* [🧗 Privilege Escalation](linux-hacking/privilege-escalation/README.md)
   * [Find passwords](linux-hacking/privilege-escalation/find-passwords.md)
   * [Ansible](linux-hacking/privilege-escalation/ansible.md)
   * [Manual Checks](linux-hacking/privilege-escalation/manual-checks.md)
   * [Automated Checks](linux-hacking/privilege-escalation/automated-checks.md)
-* [Cover tracks](linux-hacking/cover-tracks.md)
-* [Backdoors](linux-hacking/backdoors.md)
-* [Reverse Shells](linux-hacking/reverse-shells/README.md)
+* [👣 Cover tracks](linux-hacking/cover-tracks.md)
+* [🚪 Backdoors](linux-hacking/backdoors.md)
+* [⭕ Reverse Shells](linux-hacking/reverse-shells/README.md)
   * [Shell Stabilizing](linux-hacking/reverse-shells/shell-stabilizing.md)
   * [PwnCat](linux-hacking/reverse-shells/pwncat.md)
   * [Ping-Pong](linux-hacking/reverse-shells/ping-pong.md)
-* [Compiled Binaries](linux-hacking/compiled-binaries.md)
-* [Buffer Overflow](linux-hacking/buffer-overflow-bof.md)
+* [🔢 Compiled Binaries](linux-hacking/compiled-binaries.md)
+* [🌊 Buffer Overflow](linux-hacking/buffer-overflow-bof.md)
   * [Introduction](linux-hacking/buffer-overflow-bof/introduction.md)
   * [Fundamentals](linux-hacking/buffer-overflow-bof/fundamentals.md)
   * [Exploits](linux-hacking/buffer-overflow-bof/exploits.md)
-* [Docker Escape](linux-hacking/docker.md)
-* [File sharing](linux-hacking/file-sharing.md)
+* [🐳 Docker Escape](linux-hacking/docker.md)
+* [🤝 File sharing](linux-hacking/file-sharing.md)
 
 ## 🪟 Windows Hacking
 
-* [Active Directory](windows-hacking/active-directory/README.md)
+* [👥 Active Directory](windows-hacking/active-directory/README.md)
   * [1. Reconnaissance](windows-hacking/active-directory/1.-reconnaissance/README.md)
     * [First Steps](windows-hacking/active-directory/1.-reconnaissance/first-steps.md)
     * [LDAP Enumeration](windows-hacking/active-directory/1.-reconnaissance/ldapsearch.md)
@@ -141,18 +141,18 @@
       * [LocalPotato - CVE-2023-21746](windows-hacking/active-directory/5.-privesc-and-misc/exploits/localpotato-cve-2023-21746.md)
       * [PrintNightMare - CVE-2021-34527](windows-hacking/active-directory/5.-privesc-and-misc/exploits/printnightmare.md)
       * [Other CVEs](windows-hacking/active-directory/5.-privesc-and-misc/exploits/other-cves.md)
-* [Useful AD Commands](windows-hacking/useful-ad-commands.md)
-* [Privilege Escalation](windows-hacking/privilege-escalation.md)
-* [Shells](windows-hacking/shells.md)
-* [Bypasses](windows-hacking/bypasses/README.md)
+* [💡 Useful AD Commands](windows-hacking/useful-ad-commands.md)
+* [🧗 Privilege Escalation](windows-hacking/privilege-escalation.md)
+* [🐚 Shells](windows-hacking/shells.md)
+* [🔓 Bypasses](windows-hacking/bypasses/README.md)
   * [Antivirus](windows-hacking/bypass-av.md)
   * [AppLocker](windows-hacking/applocker.md)
   * [BitLocker](windows-hacking/bitlocker.md)
-* [Office](windows-hacking/office/README.md)
+* [📃 Office](windows-hacking/office/README.md)
   * [Analyze office files](windows-hacking/office/analyze-office-files.md)
   * [Forgot password of file ?](windows-hacking/office/forgot-password-of-file.md)
   * [CVE-2023-21716 (Microsoft Word RCE)](windows-hacking/office/cve-2023-21716-microsoft-word-rce.md)
-* [SCCM | MECM](windows-hacking/sccm-or-mecm/README.md)
+* [👩💻 SCCM | MECM](windows-hacking/sccm-or-mecm/README.md)
   * [Configuration Audit](windows-hacking/sccm-or-mecm/configuration-audit.md)
   * [Dump](windows-hacking/sccm-or-mecm/dump.md)
   * [Hack It](windows-hacking/sccm-or-mecm/hack-it/README.md)
@@ -166,23 +166,17 @@
 
 ## 💽 Systems
 
-* [Services Enumeration](systems/services-enumeration.md)
-* [Printers](systems/printers/README.md)
+* [🐕🦺 Services Enumeration](systems/services-enumeration.md)
+* [🖨 Printers](systems/printers/README.md)
   * [Printer Exploitation Tool (PRET)](systems/printers/printer-exploitation-tool-pret.md)
   * [CUPS](systems/printers/cups.md)
-* [Fortinet](systems/fortinet.md)
-
-## 🔑 CRACKING | ENCODING
-
-* [Bruteforce tools](cracking-or-encoding/bruteforce-tools.md)
-* [Wordlists](cracking-or-encoding/wordlists.md)
-* [Hash Cracking Tools](cracking-or-encoding/hash-cracking-tools.md)
-* [Encoding | Decoding Tools](cracking-or-encoding/encoding-or-decoding-tools.md)
-* [Steganography | Cipher](cracking-or-encoding/steganography-or-cipher.md)
+* [🛡 Fortinet](systems/fortinet.md)
+* [📹 CCTV / IP Cameras](systems/cctv-ip-cameras/README.md)
+  * [Hacking](systems/cctv-ip-cameras/hacking.md)
 
 ## 🎆 Networks
 
-* [Pivoting](network-pivoting-or-tunneling/what-is-pivoting.md)
+* [🌪 Pivoting](network-pivoting-or-tunneling/what-is-pivoting.md)
   * [Tools / Guide](network-pivoting-or-tunneling/pivoting-tools/README.md)
     * [Proxychains / FoxyProxy](network-pivoting-or-tunneling/pivoting-tools/proxychains-foxyproxy.md)
     * [SSH Tunnelling / Port Forwarding](network-pivoting-or-tunneling/pivoting-tools/ssh-tunnelling-port-forwarding.md)
@@ -192,13 +186,13 @@
     * [Sshuttle](network-pivoting-or-tunneling/pivoting-tools/sshuttle.md)
     * [Ligolo-Ng : Pivoting use cases](network-pivoting-or-tunneling/pivoting-tools/ligolo-ng.md)
   * [SocksOverRDP](networks/what-is-pivoting/socksoverrdp.md)
-* [Firewalls](misc/firewalls/README.md)
+* [🔥 Firewalls](misc/firewalls/README.md)
   * [🔥 Evasion](misc/firewalls/evasion.md)
-* [Proxies](networks/proxies.md)
+* [🔗 Proxies](networks/proxies.md)
 
 ## 📱 Mobile Hacking
 
-* [Android](mobile-hacking/android.md)
+* [🤖 Android](mobile-hacking/android.md)
   * [Introduction](mobile-hacking/android/introduction.md)
   * [Reversing](mobile-hacking/android/reversing.md)
   * [Static Analysis](mobile-hacking/android/static-analysis.md)
@@ -206,48 +200,48 @@
   * [Disable SSL Pinning](mobile-hacking/android/disable-ssl-pinning.md)
   * [Bypass Root Detection](mobile-hacking/android/bypass-root-detection.md)
   * [Network / Traffic Analysis](mobile-hacking/android/network-traffic-analysis.md)
-* [iOS](mobile-hacking/ios/README.md)
+* [🍏 iOS](mobile-hacking/ios/README.md)
   * [Introduction](mobile-hacking/ios/introduction.md)
   * [Static Analysis](mobile-hacking/ios/static-analysis.md)
   * [Dynamic Analysis](mobile-hacking/ios/dynamic-analysis.md)
-* [IOT](mobile-hacking/iot/README.md)
+* [📺 IOT](mobile-hacking/iot/README.md)
   * [IOTGoat OWASP | Walkthrough](mobile-hacking/iot/iotgoat-owasp-or-walkthrough.md)
   * [Resources](mobile-hacking/iot/resources.md)
 
 ## 📡 Wireless Hacking
 
-* [Wi-Fi Attacks](wireless-hacking/wi-fi-attacks/README.md)
+* [🎆 Wi-Fi Attacks](wireless-hacking/wi-fi-attacks/README.md)
   * [EvilTwin](wireless-hacking/wi-fi-attacks/eviltwin.md)
   * [Cracking WPA/WPA2](wireless-hacking/wi-fi-attacks/cracking-wpa-wpa2.md)
   * [Sniffing](wireless-hacking/wi-fi-attacks/sniffing.md)
-* [Bluetooth](wireless-hacking/bluetooth.md)
+* [🫐 Bluetooth](wireless-hacking/bluetooth.md)
 
 ## 👨💻 Code Audit
 
-* [Best Practices](code-audit/best-practices.md)
-* [Bad Practices](code-audit/bad-practices.md)
-* [Tools](code-audit/tools.md)
+* [✔ Best Practices](code-audit/best-practices.md)
+* [❌ Bad Practices](code-audit/bad-practices.md)
+* [⚒ Tools](code-audit/tools.md)
 
 ## 🍑 Thick Client Hacking
 
-* [Thick Client Pentesting Methodology](thick-client-hacking/thick-client-pentesting-methodology.md)
-* [Resources](thick-client-hacking/resources.md)
+* [📝 Thick Client Pentesting Methodology](thick-client-hacking/thick-client-pentesting-methodology.md)
+* [🗄 Resources](thick-client-hacking/resources.md)
 
 ## 🗄 MISC
 
-* [Default Credentials](misc/default-credentials.md)
-* [CVEs](misc/cves/README.md)
+* [🔑 Default Credentials](misc/default-credentials.md)
+* [🔻 CVEs](misc/cves/README.md)
   * [\[CVE-2022-0847\] - dirtypipe](misc/cves/cve-2022-0847-dirtypipe.md)
   * [\[CVE-2021-4034\] - Pwnkit](misc/cves/cve-2021-4034-pwnkit.md)
   * [\[CVE-2021-45105\] - Log4J](misc/cves/cve-2021-45105-log4j.md)
   * [\[CVE-2018-15473\] - OPENSSH < 7.7](misc/cves/cve-2018-15473-openssh-less-than-7.7.md)
-* [Browser Extensions](misc/firefox-extensions.md)
-* [AI](misc/ai/README.md)
+* [🦊 Browser Extensions](misc/firefox-extensions.md)
+* [🤖 AI](misc/ai/README.md)
   * [chatGPT alternatives](misc/ai/chatgpt-alternatives.md)
-* [Hacking Labs](misc/free-labs.md)
-* [Exploitation Frameworks](misc/exploitation-frameworks.md)
-* [Hacking Forums](misc/hacking-forums.md)
-* [Evil Side](misc/evil-side/README.md)
+* [🔭 Hacking Labs](misc/free-labs.md)
+* [🔫 Exploitation Frameworks](misc/exploitation-frameworks.md)
+* [🗯 Hacking Forums](misc/hacking-forums.md)
+* [👿 Evil Side](misc/evil-side/README.md)
   * [💰 Ransomwares](misc/evil-side/ransomwares/README.md)
     * [Create A Ransomware](misc/evil-side/ransomwares/create-a-ransomware.md)
     * [Disabling AntiMalware Tools](misc/evil-side/ransomwares/disabling-antimalware-tools.md)
@@ -256,51 +250,56 @@
 
 ## 🕵 OPSEC
 
-* [Finding Someone](opsec/finding-someone.md)
-* [Privacy](opsec/privacy/README.md)
+* [🗝 Privacy](opsec/privacy/README.md)
   * [Best tools](opsec/privacy/best-tools.md)
   * [Online Anonymity](opsec/privacy/online-anonymity.md)
   * [Browser Configuration](opsec/privacy/browser-configuration.md)
 
+## 🔑 CRACKING | ENCODING
+
+* [🥊 Bruteforce tools](cracking-or-encoding/bruteforce-tools.md)
+* [📝 Wordlists](cracking-or-encoding/wordlists.md)
+* [🧨 Cracking Tools](cracking-or-encoding/hash-cracking-tools.md)
+* [🔬 Encoding | Decoding Tools](cracking-or-encoding/encoding-or-decoding-tools.md)
+* [🔍 Steganography | Cipher](cracking-or-encoding/steganography-or-cipher.md)
+
 ## 🔴 RED TEAM
 
-* [Password Extract](red-team/password-extract/README.md)
+* [📥 Password Extract](red-team/password-extract/README.md)
   * [Firefox](red-team/password-extract/firefox.md)
-* [Spy cam](red-team/spy-cam.md)
-* [Lock Picking](red-team/lock-picking.md)
-* [Scrapping People](red-team/scrapping.md)
-* [Phishing](red-team/phishing/README.md)
+* [🕵 Spy cam](red-team/spy-cam.md)
+* [🔒 Lock Picking](red-team/lock-picking.md)
+* [🎣 Phishing](red-team/phishing/README.md)
   * [Infrastructure](red-team/phishing/infrastructure.md)
   * [Resources](red-team/phishing/resources.md)
 
 ## 🔵 BLUE TEAM
 
-* [Forensics](blue-team/forensics.md)
-* [Malware Analysis](blue-team/malware-analysis.md)
-* [Tools](blue-team/tools.md)
-* [HoneyPots](blue-team/honeypots.md)
-* [Networks Security](blue-team/networks-security.md)
-* [Online IoC Scanners](blue-team/online-ioc-scanners.md)
-
-## 🖥 DEVELOPERS
-
-* [IDE](developers/ide.md)
-
-## 📚 LEARNING
-
-* [Windows](learning/windows/README.md)
-  * [Active Directory](learning/windows/active-directory.md)
-  * [Kerberos](learning/windows/kerberos.md)
-* [LFI | RFI](learning/lfi-or-rfi.md)
-* [SQL](learning/sql/README.md)
-  * [SQSHell | sqsh | skwish](learning/sql/sqshell-or-sqsh-or-skwish.md)
-  * [NoSQL](learning/sql/nosql.md)
-  * [DB infos](learning/sql/db-infos.md)
-* [SSL/TLS](learning/ssl-tls/README.md)
-  * [Configuration on MariaDB](learning/ssl-tls/configuration-on-mariadb.md)
+* [🧩 Forensics](blue-team/forensics.md)
+* [🦹 Malware Analysis](blue-team/malware-analysis.md)
+* [🛠 Tools](blue-team/tools.md)
+* [🍯 HoneyPots](blue-team/honeypots.md)
+* [🎆 Networks Security](blue-team/networks-security.md)
+* [🪙 Online IoC Scanners](blue-team/online-ioc-scanners.md)
 
 ## 🐞 Bug Bounty Related
 
 * [Searching for CVEs](bug-bounty-related/searching-for-cves.md)
 * [\[FR\] Legal](bug-bounty-related/fr-laws.md)
 * [Dorks](bug-bounty-related/bug-bounty-stuff/dorks.md)
+
+## 🖥 DEVELOPERS
+
+* [👨💻 IDE](developers/ide.md)
+
+## 📚 LEARNING
+
+* [Windows](learning/windows/README.md)
+  * [Active Directory](learning/windows/active-directory.md)
+  * [Kerberos](learning/windows/kerberos.md)
+* [SQL](learning/sql/README.md)
+  * [SQSHell | sqsh | skwish](learning/sql/sqshell-or-sqsh-or-skwish.md)
+  * [NoSQL](learning/sql/nosql.md)
+  * [DB infos](learning/sql/db-infos.md)
+* [SSL/TLS](learning/ssl-tls/README.md)
+  * [Configuration on MariaDB](learning/ssl-tls/configuration-on-mariadb.md)

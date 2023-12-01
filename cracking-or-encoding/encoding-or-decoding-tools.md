@@ -1,4 +1,4 @@
-# Encoding | Decoding Tools
+# 🔬 Encoding | Decoding Tools
 
 ## Online tools
 

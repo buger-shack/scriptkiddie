@@ -1,4 +1,4 @@
-# Resources
+# 🗄 Resources
 
 {% embed url="https://payatu.com/blog/farid/Thick-Client-Basic" %}
 

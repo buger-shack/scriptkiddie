@@ -1,4 +1,4 @@
-# Hash Cracking Tools
+# 🧨 Cracking Tools
 
 ## `Hashcat`
 
@@ -43,7 +43,7 @@ For more information : [https://hashcat.net/wiki/doku.php?id=rule\_based\_attack
 
 You can locate a handful of hashcat rules available by default on Kali Linux in : **/usr/share/hashcat/rules**
 
-The following is a list of rules that can be used if the password is not present in a word list chosen. **Note** : This list is sorted by its complexity, meaning the bottom rule will rule the rest of the rules :wink:&#x20;
+The following is a list of rules that can be used if the password is not present in a word list chosen. **Note** : This list is sorted by its complexity, meaning the bottom rule will rule the rest of the rules :wink:
 
 * `best64.rule`
 * `rockyou-30000.rule`

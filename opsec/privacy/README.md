@@ -1,4 +1,4 @@
-# Privacy
+# 🗝 Privacy
 
 {% hint style="info" %}
 **Why Online Privacy is important ?**

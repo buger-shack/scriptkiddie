@@ -1,4 +1,4 @@
-# Browser Extensions
+# 🦊 Browser Extensions
 
 ### HackTools
 

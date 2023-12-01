@@ -2,7 +2,7 @@
 description: Integrated Development Environment (IDE)
 ---
 
-# IDE
+# 👨💻 IDE
 
 ### Python
 

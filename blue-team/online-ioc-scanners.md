@@ -1,4 +1,4 @@
-# IoC Scanners
+# 🪙 Online IoC Scanners
 
 ## Have a doubt : scan me here
 
@@ -10,7 +10,7 @@ Online Yara feed + more.
 
 {% embed url="https://valhalla.nextron-systems.com" %}
 
-`sha256sum <file>`&#x20;
+`sha256sum <file>`
 
 ### AlienVault
 
@@ -39,4 +39,3 @@ Analyze suspicious files, domains, IPs and URLs to detect malware and other brea
 {% endhint %}
 
 {% embed url="https://www.virustotal.com/gui/home/upload" %}
-
