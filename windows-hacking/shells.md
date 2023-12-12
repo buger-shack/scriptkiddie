@@ -7,7 +7,7 @@
 ### Test with cme
 
 ```bash
-cme winrm -i IP/hostname -u $USERNAME -p $PASSWORD/-H $LM_HASH
+nxc winrm -i IP/hostname -u $USERNAME -p $PASSWORD/-H $LM_HASH
 ```
 
 ### Port : 5985

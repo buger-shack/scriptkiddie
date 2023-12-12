@@ -29,5 +29,3 @@ python responder.py -I <interface> -rdwv
 ```bash
 hashcat -m 5600 hashes.txt dictionary.txt
 ```
-
-Check for more : Hashcat

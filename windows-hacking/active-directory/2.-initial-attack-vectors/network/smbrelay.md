@@ -16,7 +16,7 @@ Instead of cracking hashes to find the clear password, you can relay those hashe
 In order to relay hashes, we must **have valid targets**. Valid targets are, as predescribed, machines with SMB Signing disabled. So to get a list of those valide targets we can use for example CrackMapExec :
 
 ```bash
-cme smb $network_ip/$cidr --gen-relay-list Targets.txt
+nxc smb $network_ip/$cidr --gen-relay-list Targets.txt
 # or
 nmap --script=smb2-security-mode.nse -p445 $network_ip
 ```

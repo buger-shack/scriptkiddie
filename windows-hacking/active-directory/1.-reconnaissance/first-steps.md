@@ -11,7 +11,7 @@ rustscan -a $ip
 ## Domain Name
 
 ```bash
-cme smb $network_ip
+nxc smb $network_ip
 ```
 
 ## Domain Controllers
@@ -58,25 +58,26 @@ enum4linux -G 0.0.0.0
 enum4linux -S 0.0.0.0
 ```
 
-### `crackmapexec`
+### `netexec`
 
 > Post-exploitation tool that helps automate assessing the security of large Active Directory networks.
 
-{% embed url="https://github.com/byt3bl33d3r/CrackMapExec" %}
+{% embed url="https://github.com/Pennyw0rth/NetExec" %}
 
 #### Installation
 
-{% embed url="https://mpgn.gitbook.io/crackmapexec/getting-started/installation/installation-on-unix" %}
+{% embed url="https://www.netexec.wiki/getting-started/installation/installation-on-unix" %}
 
 ```bash
 # only in upgraded Windows servers from 2003 - No auth attempt
 # to get password policy, minimum length, account lockout threshold
-crackmapexec smb domain/IP --pass-pol -u '' -p ''
-crackmapexec smb domain/IP -u USER -p WORDLIST	
+nxc smb $domainOrIP --pass-pol -u '' -p ''	
+
 # The usernames with RID greater than 1000 into a username file
-crackmapexec smb vulnet.thm -u robot -p '' --rid-brute | grep  SidTypeUser	
+nxc smb $domainOrIP -u robot -p '' --rid-brute | grep  SidTypeUser	
+
 # Enumerate a user share
-crackmapexec smb 10.10.10.161 -u svc-alfresco -p s3rvice --shares
+nxc smb $domainOrIP -u $user -p $passwd --shares
 ```
 
 ### UO | Users Enumeration

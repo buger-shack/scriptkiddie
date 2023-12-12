@@ -11,7 +11,7 @@ This means the **process stores multiple forms of hashed passwords**, and in som
 </details>
 
 ```bash
-cme smb $ip -u $local_admin -H $hash -M lsassy --local-auth
+nxc smb $ip -u $local_admin -H $hash -M lsassy --local-auth
 ```
 
 ## More

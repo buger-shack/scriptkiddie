@@ -35,11 +35,9 @@ enum4linux -a $ip
 # If you've obtained credentials, you can pull a full list of users regardless of the RestrictAnonymous option
 enum4linux -u '$user' -p '$pass' -a $ip
 
-
-# crackmapexec
+# netexec
 # display shares and their permissions
-crackmapexec smb $ip -u '$user' -p '$pass' --shares
-
+nxc smb $ip -u '$user' -p '$pass' --shares
 
 # nmap
 # enumerate smb shares 

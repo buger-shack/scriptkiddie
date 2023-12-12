@@ -68,5 +68,5 @@ ldeep ldap -s ldap://10.13.37.15 -d amzcorp.local users
 {% embed url="https://github.com/dirkjanm/ldapdomaindu" %}
 
 ```bash
-ldapdomaindump --user "support.htb\\ldap" -p 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' support.htb
+ldapdomaindump --user "$domain\\ldap" -p $passwd $domain
 ```
