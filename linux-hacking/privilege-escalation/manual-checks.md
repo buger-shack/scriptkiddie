@@ -152,8 +152,6 @@ MEMORY
 # some services can save clear-text creds in memory
 ps aux # grab the process id
 gdb -p SERVICE; gdb PROCID
-Files permissions
-If you fin something interesting, check
 ```
 
 ### Files permissions
