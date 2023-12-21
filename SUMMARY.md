@@ -163,6 +163,9 @@
     * [Lateral Movement](windows-hacking/sccm-or-mecm/hack-it/lateral-movement.md)
     * [Malware Deployment](windows-hacking/sccm-or-mecm/hack-it/malware-deployment.md)
   * [Basics](windows-hacking/sccm-or-mecm/basics.md)
+* [💎 Microsoft 365](windows-hacking/microsoft-365/README.md)
+  * [Configuration](windows-hacking/microsoft-365/configuration.md)
+  * [Hacking](windows-hacking/microsoft-365/hacking.md)
 
 ## 💽 Systems
 
@@ -207,6 +210,13 @@
 * [📺 IOT](mobile-hacking/iot/README.md)
   * [IOTGoat OWASP | Walkthrough](mobile-hacking/iot/iotgoat-owasp-or-walkthrough.md)
   * [Resources](mobile-hacking/iot/resources.md)
+
+## Configuration
+
+* [ChromeOS](configuration/chromeos.md)
+* [IBM](configuration/ibm/README.md)
+  * [AS400](configuration/ibm/as400.md)
+  * [AIX](configuration/ibm/aix.md)
 
 ## 📡 Wireless Hacking
 

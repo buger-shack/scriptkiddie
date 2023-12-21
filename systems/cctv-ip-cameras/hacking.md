@@ -69,7 +69,7 @@ cd python-onvif && python setup.py install
 
 ### Commands
 
-**- Get the hostname using this python script :**
+**Get the hostname using this python script :**
 
 ```python
 # python script
@@ -132,9 +132,9 @@ go install
 camerattack rtsp://0.0.0.0:8554/live.sdp
 ```
 
-## Tricks
+## Tricks that could work
 
-* Try to login with empty passwords 7+ times
+> Try to login with empty passwords 7+ times
 
 ## Tools
 

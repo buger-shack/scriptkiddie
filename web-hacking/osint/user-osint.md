@@ -26,7 +26,7 @@ emails & names
 {% endtab %}
 
 {% tab title="Usernames" %}
-
+{% embed url="https://www.aware-online.com/en/osint-tools/username-tools/" %}
 
 {% embed url="https://whatsmyname.app/" %}
 usernames
