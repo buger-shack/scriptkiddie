@@ -52,6 +52,12 @@ python3 sherlock $username
 Visit this and check for API keys
 {% endembed %}
 
+### Pastebins
+
+{% embed url="https://psbdmp.ws/api/search/email/" %}
+add email address in url
+{% endembed %}
+
 ## Get emails of company with LinkedIn
 
 ```bash
