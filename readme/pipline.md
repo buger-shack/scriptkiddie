@@ -2,6 +2,13 @@
 
 <figure><img src="../.gitbook/assets/image (156).png" alt="" width="563"><figcaption></figcaption></figure>
 
+#### December 2023
+
+* [x] Systems > CCTV / IP Cameras
+* [x] Windows Hacking > Microsoft 365
+* [x] Configuration > ChromeOS
+* [x] Configuration > IBM
+
 #### November 2023
 
 * [x] Windows Hacking > SCCM

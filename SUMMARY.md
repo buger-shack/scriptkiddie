@@ -61,6 +61,7 @@
     * [Wordpress eBook Download < 1.2 - CVE-2016-10924](web-hacking/servers-cms/wordpress/wordpress-ebook-download-less-than-1.2-cve-2016-10924.md)
   * [⏩ SAP](web-hacking/servers-cms/sap.md)
   * [🕴 Jenkins](web-hacking/servers-cms/jenkins.md)
+  * [🖇 Joomla!](web-hacking/servers-cms/joomla.md)
   * [🏢 Server-Side Vulnerabilities](web-hacking/servers-cms/server-side-vulnerabilities/README.md)
     * [Server-Side Request Forgery](web-hacking/servers-cms/server-side-vulnerabilities/server-side-request-forgery.md)
     * [Server-Side Template Injection](web-hacking/servers-cms/server-side-vulnerabilities/server-side-template-injection.md)
