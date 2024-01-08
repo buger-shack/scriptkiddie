@@ -15,7 +15,7 @@
 * [🕵 OSINT](web-hacking/osint/README.md)
   * [🧑 User OSINT](web-hacking/osint/user-osint.md)
   * [🕸 Website OSINT](web-hacking/osint/website-osint.md)
-  * [🗣 Breaches](web-hacking/osint/breaches.md)
+  * [🗣 Breaches/Leaks](web-hacking/osint/breaches-leaks.md)
   * [💼 Business OSINT](web-hacking/osint/business-osint.md)
 * [⏩ Enumeration](web-hacking/enumeration/README.md)
   * [Network Scanners](web-hacking/enumeration/network-scanners.md)
@@ -283,6 +283,10 @@
 * [🎣 Phishing](red-team/phishing/README.md)
   * [Infrastructure](red-team/phishing/infrastructure.md)
   * [Resources](red-team/phishing/resources.md)
+
+## Whistle Blowing
+
+* [CCTV](whistle-blowing/cctv.md)
 
 ## 🔵 BLUE TEAM
 
