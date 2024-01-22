@@ -42,3 +42,9 @@ wireshark /path/to/your/capture
 {% embed url="https://github.com/nfcgate/nfcgate" %}
 
 > NFCGate is an Android application designed to capture, analyze or modify NFC traffic
+
+## Common problems
+
+### "Wi-Fi connected but no Internet"&#x20;
+
+Settings > Date & Time > Check 'Use Network-provided time'&#x20;
