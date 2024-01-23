@@ -208,6 +208,7 @@
   * [Introduction](mobile-hacking/ios/introduction.md)
   * [Static Analysis](mobile-hacking/ios/static-analysis.md)
   * [Dynamic Analysis](mobile-hacking/ios/dynamic-analysis.md)
+  * [JailBreak](mobile-hacking/ios/jailbreak.md)
 * [📺 IOT](mobile-hacking/iot/README.md)
   * [IOTGoat OWASP | Walkthrough](mobile-hacking/iot/iotgoat-owasp-or-walkthrough.md)
   * [Resources](mobile-hacking/iot/resources.md)
