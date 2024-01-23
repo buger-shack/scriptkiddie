@@ -329,6 +329,8 @@ frida-ps -Uai
 
 # get logs of the app :
 adb logcat --pid=2244
+# or without frida : 
+adb logcat | grep "$(adb shell ps | grep $app_name | awk '{print $2}')"
 
 # find logged infos by the app when you log in, etc
 adb logcat --pid=2244 | grep "password"
