@@ -65,6 +65,26 @@
 
 > Look for these files to see what information is shipped along with the application. This is an easy source of secrets and info leaks.
 
+## Binary properties analysis
+
+```bash
+# decompile the APK
+apktool d your_app.apk -o app
+# Change directory to the lib folder
+cd app/lib
+# fin .so files
+ls
+
+# ASLR (PIE) check
+readelf -h *.so | grep 'Type:'
+# RELRO check
+readelf -l *.so | grep GNU_RELRO
+# Stack canaries check
+objdump -d *.so | grep '__stack_chk_fail'
+# NX bit check
+readelf -W -l *.so | grep GNU_STACK
+```
+
 ## Information Gathering / Enumeration
 
 ### Tools
@@ -327,3 +347,4 @@ cd  /data/data/com.$appname
 # check in external storages too :
 cd /storage
 ```
+
