@@ -24,6 +24,10 @@
 adb shell settings put global http_proxy YOUR_IP:YOUR_PORT
 ```
 
+#### Having Issues ?
+
+{% embed url="https://blog.nviso.eu/2020/11/19/proxying-android-app-traffic-common-issues-checklist/" %}
+
 ## TCPDump
 
 > Packet analyzer, get the details of the visible traffic of the device.
