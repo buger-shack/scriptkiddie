@@ -191,16 +191,34 @@ ssh-keyscan $IP
 ## 21 - FTP
 
 ```bash
-# metasploit
-services -p 21 -c info -o /tmp/ftpinfo
-cat /tmp/ftpinfo | cut -d , -f2 | sort | uniq
+#
+# Information Gathering
+#
+nmap -sV -sT --script ftp-* -p21 $target
 
-# or
-use auxiliary/scanner/ftp/ftp_version
-services -p 21 -R
+# Banner
+nc -vn $target 21
+openssl s_client -connect $target:21 -starttls ftp
 
-# nmap
-nmap -sV --script ftp-* -p 21 $IP
+# Anonymous Login ?
+ftp $target 21
+# login : anonymous
+# password : anonymous
+
+# Packet Sniffing with Wireshark ? 
+# identify ftp traffic
+wireshark
+
+# 
+# BRUTEFORCE
+#
+wget https://raw.githubusercontent.com/rix4uni/FTPBruteForce/main/ftp-username-password.txt
+# it's username:password so :
+awk -F ':'  '{print $1}'  ftp-username-password.txt  > usernames.txt
+awk -F ':'  '{print $2}'  ftp-username-password.txt  > passwords.txt
+
+hydra -L usernames.txt -P passwords.txt ftp://$target
+
 ```
 
 ## 25 - SMTP
@@ -210,7 +228,6 @@ nmap -sV --script ftp-* -p 21 $IP
 ```bash
 # metasploit
 use auxiliary/scanner/smtp/smtp_version
-services -p 25 -u -R
 ```
 
 ### Open Relays
@@ -220,16 +237,14 @@ Tests if an SMTP server will accept (via a code 250) an e-mail by using a variat
 ```bash
 # metasploit
 use auxiliary/scanner/smtp/smtp_relay
-services -p 25 -u -R
 ```
 
 ### User Enumeration Utility
 
-Allows the enumeration of users: VRFY (confirming the names of valid users) and EXPN (which reveals the actual address of users aliases and lists of e-mail (mailing lists)). Through the implementation of these SMTP commands can reveal a list of valid users. User files contains only Unix usernames so it skips the Microsoft based Email SMTP Server. This can be changed using UNIXONLY option and custom user list can also be provided.
+> Allows the enumeration of users: VRFY (confirming the names of valid users) and EXPN (which reveals the actual address of users aliases and lists of e-mail (mailing lists)). Through the implementation of these SMTP commands can reveal a list of valid users. User files contains only Unix usernames so it skips the Microsoft based Email SMTP Server. This can be changed using UNIXONLY option and custom user list can also be provided.
 
 ```bash
 use auxiliary/scanner/smtp/smtp_enum
-services -p 25 -u -R
 ```
 
 ## 69 - TFTP

@@ -226,7 +226,8 @@
   * [EvilTwin](wireless-hacking/wi-fi-attacks/eviltwin.md)
   * [Cracking WPA/WPA2](wireless-hacking/wi-fi-attacks/cracking-wpa-wpa2.md)
   * [Sniffing](wireless-hacking/wi-fi-attacks/sniffing.md)
-* [🫐 Bluetooth](wireless-hacking/bluetooth.md)
+* [🫐 Bluetooth](wireless-hacking/bluetooth/README.md)
+  * [BLE Locks Hacking](wireless-hacking/bluetooth/ble-locks-hacking.md)
 
 ## 👨💻 Code Audit
 
