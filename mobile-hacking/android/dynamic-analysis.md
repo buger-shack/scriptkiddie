@@ -197,6 +197,8 @@ adb install mobi.acpm.inspeckage.apk
 
 ### Exported Activities / Service
 
+> One time, I used an exported activity as a very good way to bypass the MFA on an app :relaxed:
+
 In **AndroidManifest.xml**, check for exported activities :
 
 ```bash
