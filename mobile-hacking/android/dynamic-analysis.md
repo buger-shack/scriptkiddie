@@ -6,10 +6,6 @@ In the docs, MAHH = [Mobile Application Hacker’s Handbook](https://github.com/
 OWASP Mobile Application Security Checklist
 {% endembed %}
 
-{% embed url="https://dsopas.github.io/MindAPI/play/" %}
-MindMap
-{% endembed %}
-
 ## Tools
 
 ### Drozer
