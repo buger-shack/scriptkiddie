@@ -2,6 +2,10 @@
 
 <figure><img src="../.gitbook/assets/image (156).png" alt="" width="563"><figcaption></figcaption></figure>
 
+#### February 2024
+
+* [x] Configuration Audit > Android
+
 #### December 2023
 
 * [x] Systems > CCTV / IP Cameras
@@ -20,9 +24,6 @@
 * [x] Windows Hacking > Office
 * [x] Mobile Hacking > Android
 * [x] Mobile Hacking > iOS
-
-#### July 2023
-
 * [x] Web Hacking > Injections > LaTex
 * [x] Networks > Pivoting > SocksOverRDP
 * [x] Networks > Proxies
