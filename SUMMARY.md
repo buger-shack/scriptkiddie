@@ -51,6 +51,7 @@
 * [😎 Dorking](web-hacking/dorking/README.md)
   * [Google](web-hacking/dorking/google.md)
   * [Shodan](web-hacking/dorking/shodan.md)
+  * [Twitter / GitHub](web-hacking/dorking/twitter-github.md)
 * [⛔ WAF Bypass](web-hacking/waf-bypass.md)
 * [✍️ Servers / CMS](web-hacking/servers-cms/README.md)
   * [🐈 Tomcat](web-hacking/servers-cms/tomcat.md)
