@@ -254,6 +254,7 @@
 * [🦊 Browser Extensions](misc/firefox-extensions.md)
 * [🤖 AI](misc/ai/README.md)
   * [chatGPT alternatives](misc/ai/chatgpt-alternatives.md)
+  * [Large Language Model Hacking](misc/ai/large-language-model-hacking.md)
 * [🔭 Hacking Labs](misc/free-labs.md)
 * [🔫 Exploitation Frameworks](misc/exploitation-frameworks.md)
 * [🗯️ Hacking Forums](misc/hacking-forums.md)
