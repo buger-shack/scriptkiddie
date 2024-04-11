@@ -1,12 +1,8 @@
-# 🕸 Website OSINT
+# 🕸️ Website OSINT
 
 
 
 {% tabs %}
-{% tab title="General" %}
-
-{% endtab %}
-
 {% tab title="DNS" %}
 {% embed url="https://dnsdumpster.com/" %}
 

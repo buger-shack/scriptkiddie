@@ -12,6 +12,7 @@
   * [Exposition Audit - Plan](web-hacking/initial-foothold/exposition-audit-plan.md)
   * [Internal Audit - Plan](web-hacking/initial-foothold/internal-audit-plan.md)
   * [External Audit - Plan](web-hacking/initial-foothold/external-audit-plan.md)
+* [Exploration Audit](web-hacking/exploration-audit.md)
 * [🕵️ OSINT](web-hacking/osint/README.md)
   * [🧑 User OSINT](web-hacking/osint/user-osint.md)
   * [🕸️ Website OSINT](web-hacking/osint/website-osint.md)
