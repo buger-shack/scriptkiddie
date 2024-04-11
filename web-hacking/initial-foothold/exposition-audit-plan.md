@@ -1,42 +1,76 @@
 # Exposition Audit - Plan
 
-## Aim
+{% hint style="info" %}
+The objective is to define the attack surface of a company, mainly made up of all the elements of its information system exposed on the Internet.
+{% endhint %}
 
-> The objective is to define the attack surface of a company, mainly made up of all the elements of its information system exposed on the Internet.
+## Reconnaissance
 
-```bash
-# scan ips
-nmap -sC -sV -iL $target_file 
+* Have your target organization name
+* Search through [RIPE.net](https://apps.db.ripe.net/db-web-ui/fulltextsearch) :&#x20;
+  * `domain.example > person > e-mail -> GO`
+  * Get these IP blocs that belongs to the company
 
-# infos
-whois $target
+### Subdomains find
 
-# gowitness - screenshot web
-gowitness # screens
-# OR : https://github.com/michenriksen/aquatone
+#### Google Dorks
 
-# visualize screens
-gowitness server -P screens/ -D db.sqlite3 report
-
-# enum subdomains
-python3 theHarvester.py -d $domain -b hackertarget
-
-# check for "forbidden", enumerate with gobuster/wfuzz/feroxbuster/ffuf
-wfuzz -w raft-large-directories.txt --hc 404,403 https://$target/FUZZ
-
-# faster
-ffuf -u http://$target/FUZZ -w raft-large-directories.txt -fc 401,403,404 -fs 0
-
-# minimal reconnaissance/crawling - finalrecon
-python3 finalrecon.py --full https://$target
-
-# gospider - web crawling
-gospider -q -c 10 -s "https://$target"
-gospider -q -c 10 -S urls.txt -o scan
+```txt
+site:domain.example -www
 ```
 
-## OSINT
+#### Tools
 
-{% embed url="https://github.com/smicallef/spiderfoot" %}
-BEST TOOL FOR OSINT
-{% endembed %}
+**shodan**
+
+```bash
+# install
+pip install shodan
+# usage
+shodan domain domain.example
+```
+
+**OneForAll**
+
+```bash
+git clone https://github.com/shmilylty/OneForAll.git
+cd OneForAll
+pip3 install -r requirements.txt
+
+# usage
+python3 oneforall.py --target domain.example run 
+```
+
+**subfinder**
+
+```bash
+# install 
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+
+# usage
+subfinder -d domain.example -o domain-sub
+```
+
+## Scans
+
+### nmap
+
+```bash
+# for each ip bloc :
+blocip=0.0.0.0
+filename=$(echo $blocip | tr '/' '-')
+nmap -sn -v $blocip -oA ./${filename}_up --min-rate 1000
+grep Up ${filename}_up.gnmap | awk '{print $2}' > ip-up-${filename}.txt
+nmap -p- --open -sV -Pn -sT -v -iL ip-up-${filename}.txt -oA ./${filename}-full-scan --min-rate 1000
+```
+
+## Exploit
+
+### gowitness
+
+* Get a capture of each web service
+
+```bash
+gowitness file -f web.txt
+gowitness report serve -a 127.0.0.1:7171
+```
