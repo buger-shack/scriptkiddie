@@ -10,6 +10,26 @@ Google hacking, also named **Google Dorking**, is a hacker technique that uses G
 _**Disclaimer:** It is highly advised that you use the information you find for legal purposes only. The unauthorized access of information can lead to a criminal proceeding against you. So use Google hacking with care (and written permission)._
 {% endhint %}
 
+
+
+## Tools
+
+### metagoofil
+
+
+
+{% embed url="https://github.com/opsdisk/metagoofil" %}
+
+```bash
+# install
+git clone https://github.com/opsdisk/metagoofil
+cd metagoofil
+pip install -r requirements.txt
+
+# usage
+python3 metagoofil.py -d domain.com -t doc -l 50 -n 50 -o /tmp/result -f /tmp/result/result.html -u
+```
+
 ## Base
 
 **Links**

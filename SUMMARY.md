@@ -147,6 +147,7 @@
 * [🧗 Privilege Escalation](windows-hacking/privilege-escalation.md)
 * [🐚 Shells](windows-hacking/shells.md)
 * [🔓 Bypasses](windows-hacking/bypasses/README.md)
+  * [UAC](windows-hacking/bypasses/uac.md)
   * [Antivirus](windows-hacking/bypass-av.md)
   * [AppLocker](windows-hacking/applocker.md)
   * [BitLocker](windows-hacking/bitlocker.md)
