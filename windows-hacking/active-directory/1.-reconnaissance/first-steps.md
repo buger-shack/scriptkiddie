@@ -1,4 +1,8 @@
-# First Steps
+---
+description: Enumerate the network and its services, find the DC,
+---
+
+# Domain Network Enumeration
 
 ## Network Enumeration
 
@@ -18,19 +22,25 @@ nxc smb $network_ip
 
 They are usually DNS Servers. They have usually LDAP listening port 389.
 
-```bash
-nmap -p53,389 $network_ip
-
-nmcli dev show eth0/interface
-
-nslookup -type=SRV _ldap._tcp.dc.msdcs.<domain.local>
-```
+<pre class="language-bash"><code class="lang-bash"><strong># with nmap
+</strong><strong>nmap -p53,88,389 $network_ip --open -v -oN dc
+</strong># with nmcli
+nmcli dev show $iface
+# with nslookup
+nslookup -type=SRV _ldap._tcp.dc.msdcs.$domain
+</code></pre>
 
 ## Enumerate alive machines
 
-```bash
-sudo zmap -i <iface> -P 2 --probe-module=icmp_echoscan -B 1M --max-targets=10000000 -o targets_rfc1918.txt $network_ips
-```
+<pre class="language-bash"><code class="lang-bash"><strong># with zmap
+</strong><strong>sudo zmap -i $iface -P 2 --probe-module=icmp_echoscan -B 1M --max-targets=10000000 -o targets_rfc1918.txt $network_ips
+</strong><strong>
+</strong><strong># with arp-scan
+</strong>arp-scan -d $networkrange
+
+# with nxc - smb, ssh, rdp
+nxc smb $networkrange
+</code></pre>
 
 ## Enumerate services
 

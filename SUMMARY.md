@@ -94,7 +94,7 @@
 
 * [👥 Active Directory](windows-hacking/active-directory/README.md)
   * [1. Reconnaissance](windows-hacking/active-directory/1.-reconnaissance/README.md)
-    * [First Steps](windows-hacking/active-directory/1.-reconnaissance/first-steps.md)
+    * [Domain Network Enumeration](windows-hacking/active-directory/1.-reconnaissance/first-steps.md)
     * [LDAP Enumeration](windows-hacking/active-directory/1.-reconnaissance/ldapsearch.md)
     * [SMB Enumeration](windows-hacking/active-directory/1.-reconnaissance/smb-enumeration.md)
     * [Find Users - Enumeration](windows-hacking/active-directory/1.-reconnaissance/find-users-enumeration.md)
