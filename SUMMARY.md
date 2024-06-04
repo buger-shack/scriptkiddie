@@ -94,10 +94,9 @@
 
 * [👥 Active Directory](windows-hacking/active-directory/README.md)
   * [1. Reconnaissance](windows-hacking/active-directory/1.-reconnaissance/README.md)
-    * [Domain Network Enumeration](windows-hacking/active-directory/1.-reconnaissance/first-steps.md)
-    * [LDAP Enumeration](windows-hacking/active-directory/1.-reconnaissance/ldapsearch.md)
-    * [SMB Enumeration](windows-hacking/active-directory/1.-reconnaissance/smb-enumeration.md)
-    * [Find Users - Enumeration](windows-hacking/active-directory/1.-reconnaissance/find-users-enumeration.md)
+    * [Domain Network Enumeration](windows-hacking/active-directory/1.-reconnaissance/first-steps/README.md)
+      * [SMB Enumeration](windows-hacking/active-directory/1.-reconnaissance/first-steps/smb-enumeration.md)
+      * [LDAP Enumeration](windows-hacking/active-directory/1.-reconnaissance/first-steps/ldapsearch.md)
   * [2. Initial Attack Vectors](windows-hacking/active-directory/2.-initial-attack-vectors/README.md)
     * [Kerberos](windows-hacking/active-directory/2.-initial-attack-vectors/kerberos/README.md)
       * [Lookupsid](windows-hacking/active-directory/2.-initial-attack-vectors/kerberos/lookupsid.py.md)
