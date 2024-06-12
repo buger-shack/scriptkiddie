@@ -53,6 +53,12 @@ subfinder -d domain.example -o domain-sub
 
 ## Scans
 
+### IP2FQDN
+
+```bash
+dig +short ptr $ip.in-addr.arpa
+```
+
 ### nmap
 
 ```bash
@@ -64,7 +70,7 @@ grep Up ${filename}_up.gnmap | awk '{print $2}' > ip-up-${filename}.txt
 nmap -p- --open -sV -Pn -sT -v -iL ip-up-${filename}.txt -oA ./${filename}-full-scan --min-rate 1000
 ```
 
-## Exploit
+## Visualize hosts
 
 ### gowitness
 
