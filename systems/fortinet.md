@@ -1,4 +1,4 @@
-# 🛡 Fortinet
+# 🛡️ Fortinet
 
 ## Ports
 
@@ -7,24 +7,26 @@
 ### Scan for ports
 
 ```bash
-nmap -sV -sC -iL targets.txt -v -p514,541,666,701,1003,8008,8010,8888,8890,9443,10443,13000,13001,13002,13003,13004,13005,13006,13007,13030,13031,13032,13033,13034,13035,13036,13037,13038,13039 -oN fortigate
+nmap -sV -sC -iL targets-fortinet.txt -v -p514,541,666,701,1003,8008,8010,8888,8890,9443,10443,13000,13001,13002,13003,13004,13005,13006,13007,13030,13031,13032,13033,13034,13035,13036,13037,13038,13039 -oN fortigate
 ```
 
 ## 443 - Fortinet
 
-> Default credentials :&#x20;
->
-> admin:
+{% hint style="success" %}
+**Default credentials :**&#x20;
+
+admin:\<empty>
+{% endhint %}
 
 ## 541 - Fortinet SSL/VPN
 
 ```bash
 # INTERACT
-openssl s_client -connect 50.247.206.121:541
+openssl s_client -connect $ip:541
 
 # or nc
 
-nc 50.247.206.121 541
+nc $ip 541
 ```
 
 ## 10443/8443 - Fortigate SSL/VPN
@@ -40,5 +42,5 @@ source venv/bin/activate
 python3 -m pip install -r requirements.txt
 
 # usage 
-python3 CVE-2023-27997-check.py &#x3C;IP> &#x3C;PORT>
+python3 CVE-2023-27997-check.py $ip $port
 </code></pre>

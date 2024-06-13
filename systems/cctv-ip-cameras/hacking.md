@@ -29,7 +29,7 @@ curl -i -X OPTIONS rtsp://$ip/stream1 RTSP/1.1
 ### Scanning
 
 ```bash
-nmap -sV --script "rtsp-*" -p <PORT> <IP>
+nmap -sV --script "rtsp-*" -p $port $ip
 ```
 
 ### Bruteforce
@@ -52,7 +52,7 @@ docker run --net=host -t ullaakut/cameradar -t $ip
 # bruteforce
 docker run -t ullaakut/cameradar -t $ip -p $port -T 3s -s 3 -d
 # with custom wordlist
-docker run  ullaakut/cameradar -t -v /usr/share/seclists/Passwords/Common-Credentials:/tmp/dictionaries -c "tmp/dictionaries/10-million-password-list-top-1000000.json" -t 192.168.1.101
+docker run  ullaakut/cameradar -t -v /usr/share/seclists/Passwords/Common-Credentials:/tmp/dictionaries -c "tmp/dictionaries/10-million-password-list-top-1000000.json" -t $ip
 ```
 
 ## ONVIF
