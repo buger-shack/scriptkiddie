@@ -1,19 +1,18 @@
 # Tools
 
-# `MHDDoS` | https://github.com/MatrixTM/MHDDoS.git
+# `MHDDoS`
 ![mhddos.png](https://camo.githubusercontent.com/febab07389036813b4e52541b3d9d1dc4c111a409a0f7e3d4cef148dfa77f70b/68747470733a2f2f692e6962622e636f2f33463656394a512f4d4844446f532e706e67)
 
 {% hint style="info" %}
 Layer 4 and 7
 {% endhint %}
 
-{% embed url="https://github.com/MatrixTM/MHDDoS" %}
-
 ```bash
 git clone https://github.com/MatrixTM/MHDDoS.git
 cd MHDDoS
 pip install -r requirements.txt
 ```
+{% embed url="https://github.com/MatrixTM/MHDDoS" %}
 
 ## `NetBot`
 
