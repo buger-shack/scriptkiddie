@@ -3,7 +3,6 @@
 ## Brief
 
 <details>
-
 <summary>What is a Buffer Overflow ?</summary>
 
 In short, buffer overflows are caused by **incorrect program code**, which cannot process too large amounts of data correctly by the CPU and can, therefore, manipulate the CPU's processing. Suppose too much data is written to a reserved memory buffer or stack that is not limited, for example. In that case, specific registers will be overwritten, which may allow code to be executed.

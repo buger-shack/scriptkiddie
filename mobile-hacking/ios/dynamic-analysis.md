@@ -2,14 +2,15 @@
 
 * Connect device to the laptop
 
-<pre class="language-bash"><code class="lang-bash"><strong># get app name
-</strong><strong>frida-ps -Uai
-</strong>objection -g "APP" explore
+```bash
+# get app name
+frida-ps -Uai
+objection -g "APP" explore
 # view the environment variables for the app
 env 
 
 # 1. Sensitive information
-cd &#x3C;env>
+cd <env>
 cd Documents
 ios plist userInfo.plist
 
@@ -63,4 +64,5 @@ ios sslpinning disable
 # 6. Monitor the logs
 # on host
 idevicesyslog -p 1337
-</code></pre>
+```
+

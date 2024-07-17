@@ -114,3 +114,7 @@ LLM OWASP top 10
 {% embed url="https://chat.lmsys.org/" %}
 chat with different LLMs
 {% endembed %}
+
+{% embed url="https://github.com/leondz/garak/" %}
+LLM Vulnerability Scanner
+{% endembed %}

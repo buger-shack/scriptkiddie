@@ -8,6 +8,16 @@ CyberChef : Encode | Decode anything
 
 {% embed url="https://cryptii.com" %}
 
+## Hash identifier
+
+```bash
+# install 
+pip install hashid
+
+# usage
+hashid $hash
+```
+
 ### URL Dencoder
 
 {% embed url="https://meyerweb.com/eric/tools/dencoder" %}

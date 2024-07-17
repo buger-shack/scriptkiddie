@@ -1,4 +1,4 @@
-# Find passwords
+# Find interesting files
 
 ## MimiPenguin
 
@@ -37,6 +37,9 @@ cd mimipenguin/
 **/etc** directory and subdirectories
 
 ```bash
+# find config files : 
+find / ! -path "*/proc/*" -iname "*config*" -type f 2>/dev/null
+
 # (system user account information)
 /etc/passwd
 /etc/shadow

