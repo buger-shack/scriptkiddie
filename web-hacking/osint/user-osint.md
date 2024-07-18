@@ -6,9 +6,6 @@
 
 ## Usernames
 
-{% tabs %}
-{% tab title="Emails" %}
-
 {% embed url="https://hacksnation.com/d/150-how-to-find-out-anything-about-a-person-the-best-tutorial-you-can-find" %}
 
 {% embed url="https://app.osintracker.com/" %}
@@ -76,8 +73,6 @@ chmod +x install.sh
 nano config.json # add hibp api key
 python3 pwnedornot.py -f mails-list.txt
 ```
-{% endtab %}
-{% endtabs %}
 
 ## **Search by Phone number**
 

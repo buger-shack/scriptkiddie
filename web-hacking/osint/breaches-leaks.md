@@ -1,4 +1,6 @@
-# 🗣 Breaches
+# 🗣️ Breaches/Leaks
+
+## 🗣 Breaches
 
 <figure><img src="../../.gitbook/assets/image (161).png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -8,7 +10,7 @@
 Monitors the entire Pastebin
 {% endembed %}
 
-- Usage : `https://psbdmp.ws/api/search/<email>`
+* Usage : `https://psbdmp.ws/api/search/<email>`
 
 {% embed url="https://breachdirectory.org/" %}
 
@@ -34,15 +36,15 @@ Email / Username, password breaches check
 Check if the email show up in someone's stealer logs
 {% endembed %}
 
-- Usage https://cavalier.hudsonrock.com/api/json...@email.com
+* Usage https://cavalier.hudsonrock.com/api/json...@email.com
 
-# Tools
+## Tools
 
-- [WhatBreach](https://github.com/Ekultek/WhatBreach) — An OSINT tool facilitating the discovery of breaches involving a specific email address, capable of loading public databases.
-- [h8mail](https://github.com/khast3x/h8mail) и [pwnedOrNot](https://github.com/thewhiteh4t/pwnedOrNot) — Tools for finding passwords from compromised email addresses in public databases.
-- [Infoga](https://github.com/m4ll0k/Infoga) — Collects email account information from public sources and checks for email leaks using the haveibeenpwned.com API.
+* [WhatBreach](https://github.com/Ekultek/WhatBreach) — An OSINT tool facilitating the discovery of breaches involving a specific email address, capable of loading public databases.
+* [h8mail](https://github.com/khast3x/h8mail) и [pwnedOrNot](https://github.com/thewhiteh4t/pwnedOrNot) — Tools for finding passwords from compromised email addresses in public databases.
+* [Infoga](https://github.com/m4ll0k/Infoga) — Collects email account information from public sources and checks for email leaks using the haveibeenpwned.com API.
 
-## Pastebins
+### Pastebins
 
 {% embed url="https://psbdmp.ws/api/search/email/" %}
 add email address in url

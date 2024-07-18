@@ -2,7 +2,7 @@
 
 ## Protocols used
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 > **RTSD** : Application-Layer protocol used for commanding streaming media servers via pause and play capabilities. **Most IP cameras use the Real-Time Streaming Protocol** to establish and control video and audio streams. The content is delivered using **RTP** (Real-time Transport Protocol). RSTP does not provide configuration. That must be done using the URI and IP address. **Most systems support RTSP as a fallback even if they are using a different protocol such as PSIA or ONVIF**. _RTSP as an umbrella term describes the **entire stack of RTP** : RTCP (Real-Time Control Protocol), RTSPS (RTSPS over SSL/Secure RTSP) and RTSP_.
 
