@@ -55,10 +55,6 @@
   * [LFI](web-hacking/web-vulnerabilities/lfi/README.md)
     * [Files to look for](web-hacking/web-vulnerabilities/lfi/files-to-look-for.md)
   * [Remote Code Execution](web-hacking/web-vulnerabilities/remote-code-execution.md)
-* [😎 Dorking](web-hacking/dorking/README.md)
-  * [Google](web-hacking/dorking/google.md)
-  * [Shodan](web-hacking/dorking/shodan.md)
-  * [Twitter / GitHub](web-hacking/dorking/twitter-github.md)
 * [⛔ WAF Bypass](web-hacking/waf-bypass.md)
 * [✍️ Servers / CMS](web-hacking/servers-cms/README.md)
   * [🐈 Tomcat](web-hacking/servers-cms/tomcat.md)
@@ -297,9 +293,9 @@
   * [Infrastructure](red-team/phishing/infrastructure.md)
   * [Resources](red-team/phishing/resources.md)
 
-## Whistle Blowing
+## 🌀 Whistle Blowing
 
-* [CCTV](whistle-blowing/cctv.md)
+* [📹 CCTV](whistle-blowing/cctv.md)
 
 ## 🔵 BLUE TEAM
 
