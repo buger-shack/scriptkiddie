@@ -16,6 +16,4 @@ Join us on this journey of continuous learning and discovery, where each page tu
 <mark style="color:red;">**⬆ Don't forget to support our projects and to BuyUsACoffee ⬆**</mark>
 {% endhint %}
 
-
-
-<figure><img src=".gitbook/assets/0c62095c-9fd5-4086-b8f7-f9ef1101db6f.webp" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (165).png" alt="" width="375"><figcaption></figcaption></figure>
