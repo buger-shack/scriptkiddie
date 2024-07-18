@@ -25,17 +25,19 @@
 
 <figure><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWU3MmVjNjAyMWZlNzJhZWM4MWNiNjkzYTVlZTM2MmZiZTlhY2JlNSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/3orifgceWrEx980fxC/giphy.gif" alt="" width="375"><figcaption></figcaption></figure>
 
-​
+{% hint style="info" %}
+Google hacking, also named **Google Dorking**, is a hacker technique that uses Google Search and other Google applications to find **security holes** in the **configuration** and computer code that websites are using. Google dorking could also be used for **OSINT**.&#x20;
+{% endhint %}
 
-\{% hint style="info" %\} Google hacking, also named **Google Dorking**, is a hacker technique that uses Google Search and other Google applications to find **security holes** in the **configuration** and computer code that websites are using. Google dorking could also be used for **OSINT**. \{% endhint %\}
-
-\{% hint style="warning" %\} _**Disclaimer:** It is highly advised that you use the information you find for legal purposes only. The unauthorized access of information can lead to a criminal proceeding against you. So use Google hacking with care (and written permission)._ \{% endhint %\}
+{% hint style="warning" %}
+_**Disclaimer:** It is highly advised that you use the information you find for legal purposes only. The unauthorized access of information can lead to a criminal proceeding against you. So use Google hacking with care (and written permission)._
+{% endhint %}
 
 ### Tools
 
 #### metagoofil
 
-\{% embed url="[https://github.com/opsdisk/metagoofil](https://github.com/opsdisk/metagoofil)" %\}
+{% embed url="https://github.com/opsdisk/metagoofil" %}
 
 ```
 # install
@@ -51,11 +53,11 @@ python3 metagoofil.py -d domain.com -t doc -l 50 -n 50 -o /tmp/result -f /tmp/re
 
 **Links**
 
-\{% embed url="[https://sector035.nl/articles/keeping-a-grip-on-google-ids](https://sector035.nl/articles/keeping-a-grip-on-google-ids)" %\}
+{% embed url="https://sector035.nl/articles/keeping-a-grip-on-google-ids" %}
 
-\{% embed url="[https://dorks.faisalahmed.me/](https://dorks.faisalahmed.me/)" %\}
+{% embed url="https://dorks.faisalahmed.me/" %}
 
-\{% embed url="[https://www.exploit-db.com/google-hacking-database](https://www.exploit-db.com/google-hacking-database)" %\}
+{% embed url="https://www.exploit-db.com/google-hacking-database" %}
 
 | **OPERATOR**   | **DESCRIPTION**                                                                 | **EXAMPLE**                                     |
 | -------------- | ------------------------------------------------------------------------------- | ----------------------------------------------- |
@@ -272,72 +274,47 @@ inurl:admin inurl:userlist Generic userlist files
 
 ### Database
 
-\{% embed url="[https://www.boxpiper.com/posts/google-dork-list](https://www.boxpiper.com/posts/google-dork-list)" %\} Check this \{% endembed %\}
+{% embed url="https://www.boxpiper.com/posts/google-dork-list" %}
 
-\{% embed url="[https://www.ma-no.org/en/security/google-dorks-find-interesting-data-search-like-hacker](https://www.ma-no.org/en/security/google-dorks-find-interesting-data-search-like-hacker)" %\}
-
-\{% embed url="[https://www.exploit-db.com/google-hacking-database](https://www.exploit-db.com/google-hacking-database)" %\}
+{% embed url="https://www.ma-no.org/en/security/google-dorks-find-interesting-data-search-like-hacker" %}
 
 ### Shodan
 
 #### Resources
 
-\{% embed url="[https://github.com/jakejarvis/awesome-shodan-queries](https://github.com/jakejarvis/awesome-shodan-queries)" %\}
+{% embed url="https://github.com/jakejarvis/awesome-shodan-queries" %}
 
 #### Basic
 
-port: Search by specific port
+`port:` Search by specific port
 
-net: Search based on an IP/CIDR
+`net:` Search based on an IP/CIDR
 
-hostname: Locate devices by hostname
+`hostname:` Locate devices by hostname
 
-os: Search by Operating System
+`os:` Search by Operating System
 
-city: Locate devices by city
+`city:` Locate devices by city
 
-country: Locate devices by country
+`country:` Locate devices by country
 
-geo: Locate devices by coordinates
+`geo:` Locate devices by coordinates
 
-org: Search by organization
+`org:` Search by organization
 
-before/after: Timeframe delimiter
+`before/after:` Timeframe delimiter
 
-hash: Search based on banner hash
+`hash:` Search based on banner hash
 
-has\_screenshot:true Filter search based on a screenshot being present
+`has_screenshot:true` Filter search based on a screenshot being present
 
-title: Search based on text within the title
+`title:` Search based on text within the title
 
-asn: Search ASN e.g. 'AS12345'
+`asn:` Search ASN e.g. 'AS12345'
 
-ssl.jarm: Search by JARM fingerprint
+`ssl.jarm:` Search by JARM fingerprint
 
-**city:**
-
-Find devices in a particular city. `city:"Bangalore"`
-
-**country:**
-
-Find devices in a particular country. `country:"IN"`
-
-**geo:**
-
-Find devices by giving geographical coordinates. `geo:"56.913055,118.250862"`
-
-**Location**
-
-```
-country:us 
-country:ru 
-country:de 
-city:chicago
-```
-
-**hostname:**
-
-Find devices matching the hostname. `server: "gws" hostname:"google"` `hostname:example.com -hostname:subdomain.example.com` `hostname:example.com,example.org`
+### Examples
 
 **net:**
 
@@ -986,8 +963,6 @@ Exposed wp-config.php files containing database credentials.
 
 ## Twitter / GitHub
 
-\{% embed url="[https://github.com/igorbrigadir/twitter-advanced-search](https://github.com/igorbrigadir/twitter-advanced-search)" %\} Twitter dork \{% endembed %\}
+{% embed url="https://github.com/techgaun/github-dorks" %}
 
-\{% embed url="[https://github.com/techgaun/github-dorks](https://github.com/techgaun/github-dorks)" %\} GitHub \{% endembed %\}
-
-\
+{% embed url="https://github.com/igorbrigadir/twitter-advanced-search" %}
