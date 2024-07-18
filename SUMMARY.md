@@ -17,6 +17,7 @@
   * [🕸️ Website OSINT](web-hacking/osint/website-osint.md)
   * [🗣️ Breaches/Leaks](web-hacking/osint/breaches-leaks.md)
   * [💼 Business OSINT](web-hacking/osint/business-osint.md)
+  * [🧅 TOR network](web-hacking/osint/tor-network.md)
 * [⏩ Enumeration](web-hacking/enumeration/README.md)
   * [Network Scanners](web-hacking/enumeration/network-scanners.md)
   * [Directory/Files Scanners](web-hacking/enumeration/directory-files-scanners.md)
