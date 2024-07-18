@@ -25,3 +25,7 @@
 > site:bizjournals.com inurl:potm “company\_name“
 >
 > site:linkedin.com “company\_name” “present (1 month)”
+
+## Leaks
+
+{% embed url="https://intelx.io" %}

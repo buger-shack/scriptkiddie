@@ -1,5 +1,20 @@
 # 🧩 Forensics
 
+## Tools
+
+### On Premise
+
+- SaferWall : <https://github.com/saferwall/saferwall>
+- Cuckoo : <https://cuckoo.sh/docs/installation/index.html>
+- Noriben (Python, Sysmon) : <https://github.com/Rurik/Noriben>
+
+### Online
+
+- Virus Total : <https://virustotal.com>
+- Any Run : <https://any.run/>
+- Cuckoo : <https://cuckoo.cert.ee/>
+- Cape Sandbox : <https://capesandbox.com/>
+
 ## Image analysis
 
 ### Aperi'Solve
@@ -53,6 +68,21 @@ if you can't do it with your eyes... works perfectly
 #### Usage
 
 ![](<../.gitbook/assets/image (148).png>)
+
+### General
+
+- [Foremost](https://github.com/korczis/foremost) : deleted files retrieval
+- [Photorec](https://www.cgsecurity.org/wiki/PhotoRec#google_vignette) : deleted files retrieval
+
+### Linux
+
+- [dcfldd](https://github.com/adulau/dcfldd) : acquisition tool (enhanced dd)
+- [dc3dd](https://github.com/Seabreg/dc3dd) : acquisition tool (enhanced dd)
+
+### Windows
+
+- [FTK Imager](https://www.exterro.com/ftk-product-downloads/ftk-imager-version-4-7-1) : disk and RAM acquisition under Windows
+- [sleuthkit](https://sleuthkit.org/) : NTFS analysis
 
 ## Memory Analysis
 
@@ -122,3 +152,32 @@ volatility -f file.mem --profile=Win7SP1x64 procdump -p 3496 --dump-dir $dumpfol
 ### Tutorials
 
 {% embed url="https://www.hackingarticles.in/usb-forensics-detection-investigation" %}
+
+## Binary Analysis
+
+### Windows
+
+- [PE Studio](https://www.winitor.com/download)
+- [PEiD](https://www.softpedia.com/get/Programming/Packers-Crypters-Protectors/PEiD-updated.shtml) : packer identification on Windows binary
+- [Procmon.exe (from Sysinternals)](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon) : Monitoring of API used by malwares, registry base monitoring
+- [Sysmon.exe (from Sysinternals)](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) : Executable file behavior analysis
+
+### Linux
+
+- [binwalk](https://github.com/ReFirmLabs/binwalk) : Analyze headers / magic numbers
+
+## Network Analysis
+
+- [Suricata](https://suricata.io/) : IDS and OCAP analysis
+- [https://www.snort.org/](https://www.snort.org/) : IDS
+- [Network Miner](https://www.netresec.com/?page=NetworkMiner) (not free) : PCAP analysis
+- <https://packetlife.net/> : filter for tcpdump and wireshark
+- [Moloch](https://molo.ch/)
+
+## Mobile Analysis
+
+{% embed url="https://github.com/mvt-project/mvt" %}
+
+## Phishing Analysis
+
+{% embed url="https://github.com/emalderson/ThePhish" %}
