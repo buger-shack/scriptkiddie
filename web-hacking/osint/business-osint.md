@@ -2,6 +2,8 @@
 
 ## Methodology
 
+https://techjournalism.medium.com/osint-checklist-for-company-investigations-86c3752c095d" %}
+
 ### IP addresses
 
 1. FInd public infos about the enterprise :
@@ -26,6 +28,6 @@
 >
 > site:linkedin.com “company\_name” “present (1 month)”
 
-## Leaks
+## Leaks / DNS
 
 {% embed url="https://intelx.io" %}

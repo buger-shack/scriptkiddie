@@ -17,3 +17,6 @@ OSINT sources can be divided up into **six** different categories of information
 OSINT is distinguished from research in that it applies the process of intelligence to create tailored knowledge supportive of a specific decision by a specific individual or group.
 {% endhint %}
 
+# Ressources
+
+- [BellingCat's Onine Investigation ToolKit](https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit?gid=930747607#gid=930747607)

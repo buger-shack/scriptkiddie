@@ -13,7 +13,8 @@
 ### Utilities
 
 * [TorBot](https://github.com/DedSecInside/TorBot) — A convenient Onion crawler that collects addresses and page titles, extracts email addresses from sites, verifies link activity, and saves reports in JSON. It's Docker compatible.
+* [PryingDeep](https://github.com/iudicium/pryingdeep) — An OSINT tool to collect intelligence on the dark web.
 * [VililantOnion](https://github.com/andreyglauzer/VigilantOnion) — An Onion crawler with support for keyword search.
 * [Katana-ds](https://github.com/TebbaaX/Katana) — A Python tool for automating searches using Google Dorks with TOR support
 * [OnionSearch](https://github.com/megadose/OnionSearch) — A Python3 script for automating .onion searches via public services.
-* [Devils Eye](https://github.com/rly0nheart/thedevilseye) — An OSINT tool for Darkweb searches that doesn't require TOR installation and can also explore the i2p network.
+* [Devils Eye](https://github.com/rly0nheart/thedevilseye) — An OSINT tool for Darkweb searches that doesn't require TOR installation and can also explore the i2p network

@@ -15,3 +15,8 @@
 * [Rapid7 - DB](https://www.rapid7.com/db/) — A database containing details of over 180 thousand vulnerabilities and 4 thousand exploits, with all exploits included in Metasploit.
 * [Exploit DB](https://www.exploit-db.com/) — A CVE-compliant archive of publicly available exploits and vulnerable software.
 * [sploitus](https://sploitus.com/) — A search engine for exploits and hacking tools.
+
+### IOC
+
+- [Prowl - Lupovis](https://prowl.lupovis.io/?ip=) — Information gathering about IP address, top threats
+- [ThreatMinor](https://www.threatminer.org/) — ThreatMiner is a threat intelligence portal designed to enable analysts to research under a single interface.

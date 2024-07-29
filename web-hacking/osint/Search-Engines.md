@@ -2,7 +2,7 @@
 
  ![img](https://i.imgur.com/oWb3pNC.png)
 
-## Online Services
+## Online ServicesS
 
 - [Hopain Tools](https://osint.hopain.cyou/Search.html), [Inteltechniques](https://inteltechniques.com/tools/Search.html), [IntelligenceX](https://intelx.io/tools?tab=general), [Aware OSINT Tools](https://www.aware-online.com/osint-tools/) — These serve as starting points for numerous general and specialized search engines, all heavily oriented towards OSINT.
 - [Shodan](https://www.shodan.io/) — Search by ip, name, or domain

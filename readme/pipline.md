@@ -2,37 +2,18 @@
 
 <figure><img src="../.gitbook/assets/image (156).png" alt="" width="563"><figcaption></figcaption></figure>
 
-#### February 2024
+#### July 2024
 
-* [x] Configuration Audit > Android
+* [x] OSINT
+  * [x] Search Engines
+  * [x] Breaches Leaks
+  * [x] Vulnerabilities and IOC
+  * [x] Source Code
+  * [x] TOR Network
+  * [x] Domains, IP; IOT
+  * [x] Dorks
 
-#### December 2023
+* [x] Blue Team
+  * [x] Forensics
 
-* [x] Systems > CCTV / IP Cameras
-* [x] Windows Hacking > Microsoft 365
-* [x] Configuration > ChromeOS
-* [x] Configuration > IBM
 
-#### November 2023
-
-* [x] Windows Hacking > SCCM
-
-#### September 2023
-
-* [x] Systems > Fortinet
-* [x] Linux Hacking > Buffer Overflow
-* [x] Windows Hacking > Office
-* [x] Mobile Hacking > Android
-* [x] Mobile Hacking > iOS
-* [x] Web Hacking > Injections > LaTex
-* [x] Networks > Pivoting > SocksOverRDP
-* [x] Networks > Proxies
-* [x] Web Hacking > Servers / CMS > Tomcat
-* [x] Web Hacking > Servers / CMS > Apex
-* [x] Web Hacking > Servers / CMS > Drupal
-* [x] Linux Hacking > Privilege Escalation > Ansible
-* [x] MISC > AI > chatGPT alternatives
-* [x] Web Hacking > Servers / CMS > CMSMap
-* [x] Web Hacking > Servers / CMS > Jenkins
-* [x] Windows Hacking > Active Directory > 2. Initial Attack Vectors > linWinPwn
-* [x] Red Team > Phishing

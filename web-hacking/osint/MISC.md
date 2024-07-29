@@ -15,5 +15,5 @@
 ## Others
 
 - https://web.archive.org/ — ¯_(ツ)_/¯
-- https://geospy.web.app/ — Get location from a picture (AI)
+- https://github.com/The-Osint-Toolbox/Image-Research-OSINT — Image Resarch OSINT Links
 - https://imgur.com/a/0Umsm8O — EVERY Car Plate on the map

@@ -21,7 +21,7 @@
 
 ### Google
 
-​
+
 
 <figure><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWU3MmVjNjAyMWZlNzJhZWM4MWNiNjkzYTVlZTM2MmZiZTlhY2JlNSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/3orifgceWrEx980fxC/giphy.gif" alt="" width="375"><figcaption></figcaption></figure>
 

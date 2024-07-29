@@ -12,7 +12,6 @@
 
 ## Services:
 
-- [Hunter.io](https://hunter.io) Find emails of people working in companies
 - [OSINT Industries](https://app.osint.industries/) — Reveal what's behind any contact
 - [AwareOnline : Username tools](https://www.aware-online.com/en/osint-tools/username-tools/) — Investigations, check usernames
 - [Hunter](https://hunter.io/) и [Skymem](http://www.skymem.info/) — Search for corporate email addresses by URL.
@@ -42,7 +41,7 @@
 - [Marple](https://github.com/soxoj/marple) — Facilitates search by login across public search engines from Google to Torch to Qwant
 - [GHunt](https://github.com/mxrch/GHunt) — A modular tool for collecting data about Google accounts.
 - [UserFinder](https://github.com/mishakorzik/UserFinder) — A tool for finding profiles by username.
-- https://emailrep.io/ - Mail verification service with some features
+- [Simple Email Reputation](https://emailrep.io/) — Mail verification service with some features
 
 ## Passwords
 
