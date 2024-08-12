@@ -36,7 +36,14 @@ Email / Username, password breaches check
 Check if the email show up in someone's stealer logs
 {% endembed %}
 
-<<<<<<< Updated upstream
+{% embed url="https://oathnet.ru" %}
+Find anyone that left a trace on the Internet - Free : 5 searches a day
+{% endembed %}
+
+
+
+
+
 * Usage https://cavalier.hudsonrock.com/api/json...@email.com
 =======
 - Usage `https://cavalier.hudsonrock.com/api/json...@email.com`

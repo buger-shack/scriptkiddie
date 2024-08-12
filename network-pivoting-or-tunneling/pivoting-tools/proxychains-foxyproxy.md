@@ -21,7 +21,7 @@ Proxychains can often slow down a connection : performing an nmap scan through i
 # to use proxychain
 proxychain <application -options>
 
-// eg : use netcat with traffic passing through proxychian
+# eg : use netcat with traffic passing through proxychian
 proxychains nc $ip $port
 ```
 
@@ -29,21 +29,17 @@ The master config file is located at _/etc/proxychains.conf_
 
 However, it's actually the last location where proxychains will look. The locations (in order) are:
 
-```
 - The current directory (i.e. ./proxychains.conf)
 - ~/.proxychains/proxychains.conf
 - /etc/proxychains.conf
-```
 
-```
-"NOTE !!"
-# When performing Nmap scan through proxychains :
-Comment out the proxy_dns
+**When performing Nmap scan through proxychains :**
 
-Can only use TCP scans -- so no UDP or SYN scans. ICMP Echo packets (Ping requests) will also not work through the proxy, so use the  -Pn  switch to prevent Nmap from trying it.
+- Comment out the proxy_dns
 
-It will be extremely slow. Try to only use Nmap through a proxy when using the NSE (i.e. use a static binary to see where the open ports/hosts are before proxying a local copy of nmap to use the scripts library).
-```
+- Can only use TCP scans -- so no UDP or SYN scans. ICMP Echo packets (Ping requests) will also not work through the proxy, so use the  -Pn  switch to prevent Nmap from trying it.
+
+- It will be extremely slow. Try to only use Nmap through a proxy when using the NSE (i.e. use a static binary to see where the open ports/hosts are before proxying a local copy of nmap to use the scripts library).
 
 ### FoxyProxy
 

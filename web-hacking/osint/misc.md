@@ -3,6 +3,7 @@
 ### Telegram OSINT
 
 * [https://t.me/fvcksystem\_bot](https://t.me/fvcksystem\_bot) — Eye of God ( this one is amazing )
+* https://t.me/IDOOSINTBOT — Bot for searching within leaks using email, phone number etc
 * [https://t.me/osint\_maigret\_bot](https://t.me/osint\_maigret\_bot) — Maigret
 * [https://t.me/telesint\_bot](https://t.me/telesint\_bot) — Telesint
 * [https://t.me/OverloadCyberBot](https://t.me/OverloadCyberBot) — Overload

