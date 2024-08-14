@@ -25,8 +25,6 @@ Domain controllers are the **center of Active Directory** -- they control the re
 * Allows admin access to manage domain resources
 {% endhint %}
 
-
-
 ## AD DS Data Store
 
 {% hint style="info" %}
@@ -36,8 +34,6 @@ The **Active Directory Data Store** holds the **databases** and **processes** ne
 * Stored by default in %SystemRoot%\NTDS
 * accessible only by the domain controller
 {% endhint %}
-
-
 
 ## Forest Overview
 
@@ -57,8 +53,6 @@ The Forest consists of these parts which we will go into farther detail with lat
 * Domain Schema - Rules for object creation
 {% endhint %}
 
-
-
 ## Users Overview
 
 {% hint style="info" %}
@@ -69,8 +63,6 @@ Users are the **core** to Active Directory; without users why have Active Direct
 * Local Administrators - These users can make changes to local machines as an administrator and may even be able to control other normal users, but they cannot access the domain controller
 * Domain Users - These are your everyday users. They can log in on the machines they have the authorization to access and may have local administrator rights to machines depending on the organization.
 {% endhint %}
-
-
 
 ## Groups Overview
 
@@ -112,8 +104,6 @@ Groups make it easier to give permissions to users and objects by organizing the
 
 ﻿Trusts are a mechanism in place for users in the network to gain access to other resources in the domain. For the most part, trusts outline the way that the domains inside of a forest communicate to each other, in some environments trusts can be extended out to external domains and even forests in some cases.
 
-\
-
 
 ![](https://i.imgur.com/4uGI3bF.png)
 
@@ -125,8 +115,6 @@ There are **two types of trusts** that determine how the domains communicate. I'
 
 The type of trusts put in place determines how the domains and trees in a forest are able to communicate and send data to and from each other when attacking an Active Directory environment you can sometimes abuse these trusts in order to move laterally throughout the network.&#x20;
 {% endhint %}
-
-
 
 ## Domain Policies Overview
 
@@ -186,22 +174,3 @@ The best way to show how the cloud takes security precautions past what is alrea
 | OU Tree               | Flat Structure |
 | Domains and Forests   | Tenants        |
 | Trusts                | Guests         |
-
-## Useful AD Commands
-
-```powershell
-# create a new user
-net user john abc123!
-
-# create a domain user
-net user john abc123! /add /domain
-
-# add the created user to a group
-net group "Exchange Windows Permissions" john /add
-
-# add the created user to a localgroup
-net localgroup "Remote Management Users" john /add
-
-# to verify
-net user john
-```
