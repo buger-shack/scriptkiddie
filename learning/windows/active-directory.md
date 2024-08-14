@@ -162,7 +162,7 @@ Azure acts as the **middle man** between your **physical Active Directory** and 
 
 ![](https://i.imgur.com/J8q52i2.png)
 
-### Security Overview&#x20;
+### Security Overview
 
 The best way to show how the cloud takes security precautions past what is already provided with a physical network is to show a comparison with a cloud Active Directory environment :&#x20;
 
