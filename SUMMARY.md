@@ -321,6 +321,7 @@
 * [Windows](learning/windows/README.md)
   * [Active Directory](learning/windows/active-directory.md)
   * [Kerberos](learning/windows/kerberos.md)
+  * [Pass-the-\*](learning/windows/pass-the.md)
 * [SQL](learning/sql/README.md)
   * [SQSHell | sqsh | skwish](learning/sql/sqshell-or-sqsh-or-skwish.md)
   * [NoSQL](learning/sql/nosql.md)
