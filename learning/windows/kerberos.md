@@ -73,7 +73,7 @@ However, if the **delegation** is enabled, the web server can **impersonate** th
 
 **DEMO** : https://www.youtube.com/watch?v=2hGWdqkmpL0
 
-## Kerberos Constrained Delegation attack
+### Kerberos Constrained Delegation attack
 
 #### Requirements
 
@@ -113,7 +113,7 @@ To understand the authentication flow, let’s take an example of a user authent
 
 ![step3](https://miro.medium.com/v2/resize:fit:720/format:webp/1*s6RwWyNiNrKuEqiotoOclA.png)
 
-## Kerberos Resource-based Constrained Delegation
+### Kerberos Resource-based Constrained Delegation
 
 #### Requirements
 
