@@ -24,7 +24,7 @@
   * [🥸 Dorks](web-hacking/osint/dorks.md)
   * [⚔️ Vulnerabilities and IOC](web-hacking/osint/vulnerabilities-and-ioc.md)
   * [📦 MISC](web-hacking/osint/misc.md)
-* [⏩ Enumeration](web-hacking/enumeration/README.md)
+* [Enumeration](web-hacking/enumeration/README.md)
   * [Network Scanners](web-hacking/enumeration/network-scanners.md)
   * [Directory/Files Scanners](web-hacking/enumeration/directory-files-scanners.md)
   * [Web Scanners](web-hacking/enumeration/web-scanners/README.md)
@@ -260,13 +260,6 @@
   * [Large Language Model Hacking](misc/ai/large-language-model-hacking.md)
 * [🔭 Hacking Labs](misc/free-labs.md)
 * [🔫 Exploitation Frameworks](misc/exploitation-frameworks.md)
-* [🗯️ Hacking Forums](misc/hacking-forums.md)
-* [👿 Evil Side](misc/evil-side/README.md)
-  * [💰 Ransomwares](misc/evil-side/ransomwares/README.md)
-    * [Create A Ransomware](misc/evil-side/ransomwares/create-a-ransomware.md)
-    * [Disabling AntiMalware Tools](misc/evil-side/ransomwares/disabling-antimalware-tools.md)
-  * [💣 DDoS](misc/evil-side/ddos/README.md)
-    * [Tools](misc/evil-side/ddos/tools.md)
 
 ## 🕵️ OPSEC
 
