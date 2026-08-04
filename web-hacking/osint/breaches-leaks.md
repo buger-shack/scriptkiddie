@@ -67,6 +67,7 @@ https://techjournalism.medium.com/how-to-verify-leak-data-3b0c8d8b764a
   * Tools :
     * [PDFMiner](https://pypi.org/project/pdfminer/)
     * [metadata2go.com](https://www.metadata2go.com/)
+    * [Metadata Remover](https://metadataremover.ai/metadata-viewer) — Browser-local viewer for supported EXIF, GPS, XMP, IPTC, and AI metadata; files are not uploaded.
     * [Jimpl](https://jimpl.com/)
     * [VerEXIF](http://www.verexif.com/en/)
     * [Metadata Interrogator](https://www.metadataanalysis.com/)
