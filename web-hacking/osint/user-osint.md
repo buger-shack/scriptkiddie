@@ -16,6 +16,7 @@
 - [AwareOnline : Username tools](https://www.aware-online.com/en/osint-tools/username-tools/) — Investigations, check usernames
 - [Hunter](https://hunter.io/) и [Skymem](http://www.skymem.info/) — Search for corporate email addresses by URL.
 - [whatsmyname](https://whatsmyname.app/) — Searches for accounts in various services by login, based on public JSON.
+- [WhatsMyName Apps](https://whatsmynameapps.us/) — Free web search for a username on 3,150+ sites (WhatsMyName, Sherlock and Maigret data) with profile details and export. Also on [Android](https://play.google.com/store/apps/details?id=whatsmyname.app.us).
 - [User Searcher](https://www.user-searcher.com/) — A free tool for finding a user by login on over 2 thousand websites.
 - [CheckUserNames](https://checkusernames.com/), [Instant Username Search](https://instantusername.com/#/), [Namecheckr](https://www.namecheckr.com/), [peekyou](https://www.peekyou.com/username), [usersearch](https://usersearch.org/) —Online services for searching user accounts by login.
 
